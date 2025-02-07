@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistente de exclusão e cancelamento de componentes &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Atualização de grupo de recursos dos roteiros" href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html" />
+    <link rel="prev" title="Manutenção de OPs" href="Manuten%C3%A7%C3%A3o%20de%20OPs.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20Roteiro.html">Manutenção de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20de%20OPs.html">Manutenção de OPs</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Assistente de exclusão e cancelamento de componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html">Atualização de grupo de recursos dos roteiros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html">Atualização de Custo/Hora</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20insumos%20para%20itens%20de%20baixo%20custo.html">Saída de insumos para itens de baixo custo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Assistente de exclusão e cancelamento de componentes</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="assistente-de-exclusao-e-cancelamento-de-componentes">
+<h1>Assistente de exclusão e cancelamento de componentes<a class="headerlink" href="#assistente-de-exclusao-e-cancelamento-de-componentes" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para acessar a tela de Assistente de exclusão/cancelamento de componentes é necessário ir ao menu:</p>
+<p><strong>Produção -&gt; Manutenção -&gt; Assistente de exclusão/cancelamento de componentes</strong></p>
+<p>Essa tela permite realizar a exclusão ou cancelamento de componentes das linhas da OP.</p>
+<p>Para carregar a lista de componentes na tela, o usuário tem três opções de filtro:</p>
+<ul class="simple">
+<li><p><strong>Nº OP:</strong> Traz componentes de acordo com um intervalo de número de OPs.</p></li>
+<li><p><strong>Operação:</strong> Traz componentes que pertencem à operação selecionada.</p></li>
+<li><p><strong>Componente:</strong> Traz todas as ocorrências do mesmo componente em linhas de OPs.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.002.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.002.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.002.png" style="width: 671.2px; height: 436.0px;" /></a>
+<p>Ao filtrar pelo nº da OP, se o usuário selecionar o filtro De ou o filtro Até, e o valor do campo Até não for maior ou igual ao valor do campo De, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.003.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.003.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.003.png" style="width: 244.0px; height: 10.4px;" /></a>
+<p><em>BR One :: Campo “Até” deve ser maior ou igual ao campo “De”.</em></p>
+<p>Após selecionar pelo menos um filtro, o usuário deve clicar no botão Filtrar para carregar os componentes na tela. Se o usuário tentar filtrar os componentes sem selecionar nenhum filtro, será mostrada a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.004.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.004.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.004.png" style="width: 316.8px; height: 12.8px;" /></a>
+<p><em>BR One :: Selecione ao menos um filtro para que sejam exibidos os componentes.</em></p>
+<p>Se o usuário tentar filtrar os componentes e o filtro não trazer nenhum resultado, será mostrada a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.005.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.005.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.005.png" style="width: 346.40000000000003px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Não foi encontrado nenhum componente de acordo com os filtros selecionados.</em></p>
+<p>Se a configuração Permitir edição de OP após liberação não estiver marcada e o usuário não possuir a autorização Ordem de produção – permitir edição após  liberação, o filtro irá trazer somente as OPs que o usuário tem permissão para editar (status “Planejada”).</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.006.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.006.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.006.png" style="width: 680.0px; height: 170.4px;" /></a>
+<p>Após filtrar os componentes corretamente, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.007.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.007.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.007.png" style="width: 168.0px; height: 14.4px;" /></a>
+<p><em>BR One :: Filtro realizado com sucesso.</em></p>
+<p>Após realizar o filtro, os componentes serão carregados na tela, onde há uma caixa de seleção para marcar cada componente que se deseja excluir/cancelar.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.008.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.008.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.008.png" style="width: 676.8000000000001px; height: 233.60000000000002px;" /></a>
+<p>É possível marcar/desmarcar todas as linhas ao clicar duas vezes na coluna que contém as caixas de seleção.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.009.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.009.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.009.png" style="width: 664.8000000000001px; height: 264.0px;" /></a>
+<p>Ao clicar no botão Executar, todos os componentes selecionados serão excluídos ou cancelados. Se a OP possuir o status “Planejada”, o componente será excluído, e se a OP possuir o status “Liberada”, o componente será cancelado.</p>
+<p>Se o usuário clicar no botão Executar sem antes ter carregado os componentes na tela, será mostrada a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.010.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.010.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.010.png" style="width: 383.20000000000005px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Selecione ao menos um filtro e clique em “Filtrar” para que sejam exibidos os componentes.</em></p>
+<p>Se o usuário clicar no botão Executar sem antes ter selecionado pelo menos um componente, será mostrada a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.011.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.011.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.011.png" style="width: 289.6px; height: 10.4px;" /></a>
+<p><em>BR One :: Selecione pelo menos um componente a ser excluído/cancelado.</em></p>
+<p>Se o usuário selecionar algum componente em que a OP tenha o status “Liberada”, a configuração Permitir edição de OP após liberação não estiver marcada, o campo Permitir edição de OP após liberação da OP também não estiver marcado, e clicar no botão Executar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.012.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.012.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.012.png" style="width: 520.0px; height: 9.600000000000001px;" /></a>
+<p><em>BR One :: Configuração “Permitir edição de OP após liberação” deve ser marcada antes de cancelar um componente de uma OP com status “Liberada”. (Linha X)</em></p>
+<p>Se o usuário selecionar todos os componentes de uma determinada OP e clicar no botão Executar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.013.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.013.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.013.png" style="width: 344.0px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Não é permitido excluir/cancelar todos os componentes de uma OP. (OP nº X)</em></p>
+<p>Após selecionar todos os componentes e executar o processo de exclusão/cancelamento de componentes de linhas das OPs, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.014.png"><img alt="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.014.png" src="../../../_images/Aspose.Words.4b6d2d33-6782-4641-bf36-8b10450f2ebb.014.png" style="width: 180.0px; height: 10.4px;" /></a>
+<p><em>BR One :: Operação realizada com sucesso.</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Manuten%C3%A7%C3%A3o%20de%20OPs.html" class="btn btn-neutral float-left" title="Manutenção de OPs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html" class="btn btn-neutral float-right" title="Atualização de grupo de recursos dos roteiros" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

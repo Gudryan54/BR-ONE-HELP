@@ -1,0 +1,45 @@
+Versão 4.11.331
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Melhoria**
+   
+- **Permissão para alterar cadastro de recurso**
+
+Na atualização mais recente do **BR One 331**, foi implementada uma melhoria
+para controlar as permissões de alteração no cadastro de recursos.
+Agora, será possível definir, por usuário, se ele terá **autorização
+total** ou estará **sem autorização** para realizar alterações.
+
+-  Usuários **sem autorização** poderão realizar qualquer tipo de
+   alteração no cadastro de recursos.
+
+.. image :: /_static/Releases\ Notes/Produção/V331/img32013-01.png
+
+
+-  Usuários **com autorização total** estarão restritos a modificar
+   apenas o status e a observação no cadastro de recursos.
+
+.. image :: /_static/Releases\ Notes/Produção/V331/img32013-02.png
+
+.. note::
+
+   **Correções**
+
+- **Cálculo incorreto de datas na Ordem de Produção - HANA** 
+
+Realizado ajuste no cálculo das datas das operações da ordem de
+produção.
+
+- **Ajuste no resultado ao executar MRP** 
+
+Realizado ajuste na execução do MRP para que, ao utilizar a opção de
+estoque mínimo, a fonte de demanda de fornecimento (Solicitações de
+compra e pedidos de compra) não seja considerada.
+
+- **Campo preço unitário na NF de Entrada exibindo em branco**
+
+Realizado ajuste para a exibição do preço unitário na Nota Fiscal de Entrada 
+no retorno dos componentes estocáveis no processo de beneficiamento de compras. 
+Agora, o preço unitário é exibido conforme o valor registrado na NF de remessa.

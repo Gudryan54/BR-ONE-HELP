@@ -1,0 +1,21 @@
+Versão 4.11.331
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Correções**
+
+- **Divergência no valor da quantidade registrada na ficha**
+
+Realizado ajuste para que, ao gerar uma ficha de análise na entrada de
+Produto Acabado (PA) para itens administrados por **“Nenhum”**, seja
+considerada a quantidade informada no documento de entrada de
+mercadorias.
+
+- **Ficha não está sendo aprovada automaticamente após aprovação das linhas**
+
+Realizado ajuste na tela de fechamento de custo contábil para que, após
+a simulação, a aba Realizado ajuste para permitir a aprovação automática
+do campo **“Aprovada”** no cabeçalho, quando todas as linhas da ficha
+estiverem com o status **“Aprovada”**. Esse ajuste é aplicado às fichas de
+ordens de produção no SAP.

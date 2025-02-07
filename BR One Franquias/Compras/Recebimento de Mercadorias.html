@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recebimento de Mercadorias &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Devolução de Mercadorias" href="Devolu%C3%A7%C3%A3o%20de%20Mercadorias.html" />
+    <link rel="prev" title="Acesso ao Módulo" href="Acesso%20ao%20M%C3%B3dulo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Acesso%20ao%20M%C3%B3dulo.html">Acesso ao Módulo</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Recebimento de Mercadorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Devolu%C3%A7%C3%A3o%20de%20Mercadorias.html">Devolução de Mercadorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Solicita%C3%A7%C3%A3o%20de%20Compras.html">Solicitação de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MGC.html">MGC de Master</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Recebimento de Mercadorias</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="recebimento-de-mercadorias">
+<h1>Recebimento de Mercadorias<a class="headerlink" href="#recebimento-de-mercadorias" title="Link permanente para este cabeçalho"></a></h1>
+<p>O Processo de Recebimento de mercadorias consiste na confirmação e pré-configuração recebimento da Nota Fiscal de Entrada pelo escritório sendo disponibilizado para recebimento na loja.</p>
+<p>A loja ficará responsável pela conferência dos itens e finalização do processo que irá movimentar o estoque da loja e lançamentos no financeiro (contas a pagar).</p>
+<p>Para que os processos ocorram de forma correta, é necessário que as parametrizações de impostos estejam realizadas na base de dados. Se necessário, revisei as determinações e criação de impostos.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Processo no SAP</strong></p></li>
+</ul>
+</div></blockquote>
+<p>As Notas Fiscais de Entrada são recebidas através do add-on Invent ou Skill e os documentos ficarão registrados como esboço para posterior recebimento pela loja.</p>
+<p>Os esboços poderão ser consultados através do caminho: <strong>Módulos &gt; Compras &gt; Relatórios de Compras &gt; Relatório de Esboços de documento.</strong></p>
+<img alt="../../_images/0015.png" src="../../_images/0015.png" />
+<p>A tela irá mostrar os lançamentos realizados de acordo com o usuário selecionado. Certifique-se de selecionar o usuário correto ou defina “todos”.</p>
+<img alt="../../_images/0025.png" src="../../_images/0025.png" />
+<p>As informações serão apresentadas na tela. Utilize o filtro para delimitar as buscas, trazendo apenas o fornecedor que deseja pesquisar, por exemplo. Os documentos até o momento são apenas esboços,
+não estão gerando estoque ou quaisquer lançamentos financeiros no SAP.
+Isso dependerá do lançamento da loja.</p>
+<img alt="../../_images/0034.png" src="../../_images/0034.png" />
+<p>Veja que no esboço da Nota Fiscal de Entrada temos o <strong>fornecedor (1)</strong>, <strong>status do documento (2)</strong> (que será alterado após a efetivação do recebimento), as <strong>datas pertinentes ao documento (3)</strong>,
+que serão: lançamento (refere-se a data que de fato o documento será inserido no SAP), vencimento (data de vencimento da Nota Fiscal) e data do documento (refere-se a data de emissão do documento fiscal).
+Além disso temos as informações de <strong>conteúdo (4)</strong> com as informações dos itens, quantidades, tributação, dentro outros.</p>
+<p>Certifique-se de que o documento está como “sim” em <strong>“Validar Recebimento no APP” (5)</strong>. Importante: mesmo que essa opção esteja marcada como sim, para o recebimento de mercadoria pelo aplicativo é necessário que esses outros dois campos também estejam habilitados:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>BR One – Configurações por filial</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Caminho:</strong> Administração &gt; Definição &gt; BR One Franquias &gt; Módulo Caixa e Cofre &gt; Configurações por Filial</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../_images/0052.png" src="../../_images/0052.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Cadastro do parceiro de negócios</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Caminho:</strong> Módulos &gt; Parceiro de Negócios &gt; Cadastro do Parceiro de Negócios</p>
+<img alt="../../_images/0063.png" src="../../_images/0063.png" />
+<p>Após finalizadas as configurações a NF ficará disponível para recebimento no aplicativo. Essas são parametrizações iniciais, não sendo necessária a realização em cada inserção de documento.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Processo no APP</strong></p></li>
+</ul>
+</div></blockquote>
+<p>Ao acessar o módulo compras no aplicativo serão apresentadas as notas fiscais recebidas, pendentes e devolução de acordo com o demonstrado em Introdução deste manual.  <strong>Clique em Recebimento de Mercadoria.</strong></p>
+<p>O app mostrará as Notas Fiscais disponíveis. Importante que os lançamentos sejam feitos no dia de recebimento na loja sendo verificado todos os itens listados na NF com o real enviado pelo fornecedor.
+Certifique-se também se as unidades de medidas estão de acordo com a Nota Fiscal.</p>
+<img alt="../../_images/0072.png" src="../../_images/0072.png" />
+<p>O aplicativo mostrará os recebimentos disponíveis. Faça a busca do recebimento que deseja lançar pelo <strong>número da nota fiscal (1)</strong> e/ou por <strong>situação (2).</strong></p>
+<p>Será possível visualizar o <strong>tipo de documento (3), numeração SAP (4)</strong> (não confunda essa numeração com a número da nota fiscal. Essa numeração é interna na base de dados SAP), razão social do <strong>fornecedor (5)</strong>, <strong>numeração da Nota Fiscal (6)</strong>, <strong>data de emissão do documento (7)</strong> e <strong>situação do recebimento (8)</strong>.
+Faça a seleção do documento.</p>
+<img alt="../../_images/0082.png" src="../../_images/0082.png" />
+<p>Ao abrir o recebimento, note que serão habilitadas duas abas: <strong>Informações (1)</strong> e <strong>Itens (2)</strong>.
+Na aba informações temos os dados recebidos do XML e cadastros no SAP. Serão apresentadas as informações da Nota Fiscal emitida pelo cliente.
+Nesta tela faça a alteração das datas de lançamento e vencimento, se necessário.  A data do documento está diretamente relacionada com a emissão da NF pelo fornecedor, por este motivo o campo estará bloqueado para edições.</p>
+<p><strong>Botão PROSSEGUIR (4)</strong> – Finaliza o processo de recebimento.
+<strong>Botão SALVAR (3)</strong> – Salva, para continuar posteriormente se perder os lançamentos efetuados. Não finaliza o processo.</p>
+<p>Em itens, faça a conferência dos itens em comparação com a Nota Fiscal de entrada.</p>
+<img alt="../../_images/0092.png" src="../../_images/0092.png" />
+<p>Veja que é informado o nome do item, número de catálogo, a quantidade faturada e o real recebido.</p>
+<p>Selecione o item, flag caso tenha recebido de fato nas quantidades apresentadas ou clique o “lápis” para inserir a quantidade recebida.
+Caso a listagem seja extensa e não possa conferir todos os itens, clique no botão salvar para continuar em outro momento. Lembre-se de finalizar o processo antes de fechar o turno.</p>
+<img alt="../../_images/0092.png" src="../../_images/0092.png" />
+<p>Finalizando o recebimento, estando todos os itens em conformidade com a Nota Fiscal, clique em prosseguir para finalizar o processo. Com isso, será realizada a movimentação de estoque na loja e os lançamentos financeiros para o Contas a Pagar.</p>
+<img alt="../../_images/0101.png" src="../../_images/0101.png" />
+<p>Os lançamentos serão realizados e gerado um lançamento contábil manual no SAP. Veja:</p>
+<img alt="../../_images/011.png" src="../../_images/011.png" />
+<p>Lembre-se que efetuar recebimentos retroativos afetará o estoque atual considerando os lançamentos de contagens, desperdícios, break e promoções. Veja esses processos no manual de estoque.</p>
+<p>Caso econtre divergências no recebimento, comunique o escritório ara as devidas correções.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Acesso%20ao%20M%C3%B3dulo.html" class="btn btn-neutral float-left" title="Acesso ao Módulo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Devolu%C3%A7%C3%A3o%20de%20Mercadorias.html" class="btn btn-neutral float-right" title="Devolução de Mercadorias" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

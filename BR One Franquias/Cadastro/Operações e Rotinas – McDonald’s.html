@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Operações e Rotinas – McDonald’s &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Instalação do Aplicativo" href="Instala%C3%A7%C3%A3o%20do%20Aplicativo.html" />
+    <link rel="prev" title="Tela do aplicativo - TV" href="Tela%20do%20aplicativo%20-%20TV.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Detalhamento%20do%20ecossistema.html">Detalhamento do ecossistema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Telas%20BrOne%20Franquias%20no%20SAP.html">Telas BrOne Franquias no SAP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tela%20do%20aplicativo%20-%20Celular.html">Tela do aplicativo - Celular</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tela%20do%20aplicativo%20-%20TV.html">Tela do aplicativo - TV</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Operações e Rotinas – McDonald’s</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Instala%C3%A7%C3%A3o%20do%20Aplicativo.html">Instalação do Aplicativo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Operações e Rotinas – McDonald’s</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="operacoes-e-rotinas-mcdonalds">
+<h1>Operações e Rotinas – McDonald’s<a class="headerlink" href="#operacoes-e-rotinas-mcdonalds" title="Link permanente para este cabeçalho"></a></h1>
+<p><strong>Nota:</strong> As imagens utilizadas se referem apenas a um teste.</p>
+<p><strong>Observações:</strong></p>
+<ul class="simple">
+<li><p>Primeiramente realizar as integrações dos PLUs através do módulo de integração “Integração de cadastros PLU”;</p></li>
+<li><p>Após a integração dos PLUs, realizar a integração dos combos e receitas.</p></li>
+</ul>
+<p><strong>Explicações gerais:</strong></p>
+<ul class="simple">
+<li><p><strong>Item Master</strong> = Item de estoque, compra e venda (empréstimos entre lojas)</p></li>
+</ul>
+<p>Ex. CARNE, PAO, QUEIJO DO LANCHE.</p>
+<ul class="simple">
+<li><p><strong>Ingrediente</strong> = Variação de unidade de compra e código de fornecedor.</p></li>
+</ul>
+<p>Ex. Código de unidade de compra + código de barras.</p>
+<p>E catálogo PN (porém não integrado, pois não tem end-point SERVICE LAYER).</p>
+<ul class="simple">
+<li><p><strong>PLU</strong> = Item de venda.</p></li>
+</ul>
+<p>Ex. BIG MAC.</p>
+<ul class="simple">
+<li><p><strong>Receita</strong> = Estrutura de produtos com o vínculo do item de venda com o item de estoque/compra.</p></li>
+</ul>
+<p>Ex. PLUs + Master.</p>
+<p>55 BIG MAC
+CARNE
++ QUEIJO
++ PAO</p>
+<ul class="simple">
+<li><p><strong>Combo</strong> = Vínculo de item de venda (PLU) com outro item de venda que possui receita.</p></li>
+</ul>
+<p>Ex. Código promocional do BIG MAC (cartela/app/mercado)</p>
+<p>999999 Big Mac - Clássicos do dia</p>
+<p>Ex. 999999 Big Mac = 55 BIG MAC</p>
+<p>Outras palavras, níveis de produção.</p>
+<p><strong>Como adicionar os cockpit da rotina e operações</strong></p>
+<p>Será necessário adicionar os cockpit para realização da rotina.</p>
+<p>Acessar o <strong>Lápis.</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.001.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.001.png" />
+<p>Selecionar o <strong>+.</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.002.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.002.png" />
+<p>Na opção <strong>Todos,</strong> selecionar <strong>indicador-chave de desempenho.</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.003.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.003.png" />
+<p>Procurar os 3 cockpit:  <strong>PLU Base, PLU Geral, Total Processamento Estoque, Total Processamento NF e Erro Validação (Estoque + NF).</strong></p>
+<p><strong>Total de Processamento de Estoque e NF</strong> traz a visão do Big Number dos processamentos de Nota Fiscal de Saída e Estoque que estão pendentes em todas as bases.</p>
+<p><strong>Erro Validação Estoque e NF</strong> traz a visão do Big Number dos erros de validação de Nota Fiscal de Saída e Estoque de todas as bases, onde será necessário reprocessar esses erros conforme a operação.</p>
+<p><strong>PLU Base</strong> traz a visão dos PLUs contidos na base que está conectado, para serem integrados.</p>
+<p><strong>PLU Geral</strong> traz a visão de dos PLUs de todas as bases que tem para serem integrados.</p>
+<p>Clicar em <strong>+</strong> para adicionar.</p>
+<p>, chat ou mensagem de texto</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.004.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.004.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.005.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.005.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.006.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.006.png" />
+<p>Selecione um cockpit e arraste pela sua tela conforme sua preferência.</p>
+<p>Se arrastar para a lixeira no canto inferior direito, ele será removido.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.007.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.007.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.008.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.008.png" />
+<p>Após este processo, só clicar no ícone positivo localizado no canto superior direito e atualizar o cockpit.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.009.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.009.png" />
+<p><strong>Consultar os itens de Integração PLU</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.010.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.010.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.011.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.011.png" />
+<p><strong>Company:</strong> Identificação da franquia.</p>
+<p><strong>PLU Integração:</strong> Código do PLU de venda, recebido através da API da ARCOS DOURADOS.</p>
+<p><strong>PLU Receita:</strong> Código PLU que possui vínculo com os itens controlados pelo estoque (Masters).</p>
+<p><strong>Tipo Integração:</strong> Combo, Receita ou Brinquedo.</p>
+<p><strong>Combo =</strong> Seguir primeiro o tópico “3. Realizar a integração dos PLUs dos itens não cadastrados” e depois “4. Realizar a integração dos Combos”.</p>
+<p><strong>Receita =</strong> Seguir primeiro o tópico “3. Realizar a integração dos PLUs dos itens não cadastrados” e depois “5. Realizar a integração das Receitas”.</p>
+<p><strong>Brinquedo =</strong> Seguir tópico “6. Realizar a integração dos Brinquedos”.</p>
+<p><strong>Integração do PLU</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.013.jpeg" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.013.jpeg" />
+<p>Este é <strong>PLU de integração</strong> consultado no cockpit <strong>PLU BASE</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.014.jpeg" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.014.jpeg" />
+<p>Buscar o PLU de Integração na tela de <strong>integração de PLU</strong> e inserir o código no campo <strong>Código:</strong> e Clicar em <strong>Procurar</strong>.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.015.jpeg" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.015.jpeg" />
+<p>Este é o <strong>PLU Receita</strong> consultado pelo cockpit <strong>PLU BASE.</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.016.jpeg" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.016.jpeg" />
+<p>Modelo PLU – PLU Receita</p>
+<p><strong>Observação:</strong> Sempre conferir o Status <strong>“Processados”</strong> e <strong>“Novos”</strong> caso não encontre o plu (sem resultados e coluna vazias).</p>
+<p><em>No caso de **receita*</em> é necessário cadastrar um modelo semelhante com o Grupo de Itens e Código de NCM iguais.</p>
+<p><strong>Código:</strong> Preencher o “PLU Integração” encontrado na tabela do cockpit.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>Modelo PLU:</strong> Preencher com “PLU Receita” encontrado na tabela do cockpit.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar</strong></p>
+<p><strong>Realizar a integração dos Combos</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.017.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.017.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.018.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.018.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.019.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.019.png" />
+<p><strong>Código:</strong> Preencher o “PLU Integração” encontrado na tabela do cockpit.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar.</strong></p>
+<p><strong>Realizar a integração dos Combos (Tratativa de exceção)</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.020.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.020.png" />
+<p><strong>Observação:</strong> Ao procurar o código do combo para integração e identificar as colunas “PLU SAP” e “Descrição SAP” vazias, será preciso realizar a tratativa de exceção, pesquisando em “Cadastro do item” o código do item para atualizar na aba “Integração” o flag de “Combo”.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.021.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.021.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.022.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.022.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.023.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.023.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.024.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.024.png" />
+<p><strong>Realizar Cadastro Manual de Receita - Combo (Tratativa de exceção)</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.025.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.025.png" />
+<p><strong>Observação:</strong> Ao procurar o código do combo para integração e identificar as colunas vazias, será preciso realizar a tratativa de exceção, pesquisando em “Cadastro do item” o código do item.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.026.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.026.png" />
+<p><strong>Observação:</strong> Clique o botão direito do mouse na tela de cadastro do item para visualizar as opções e selecione “Estrutura de Produtos”.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.027.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.027.png" />
+<p><strong>Observação:</strong> Selecione os registros de dados (setas na barra superior) para visualizar e verificar os depósitos, por exemplo: se você realizar essa verificação e os depósitos serem “1”, você irá fazer a inserir a receita com o mesmo depósito “1”.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.028.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.028.png" />
+<p><strong>Observação:</strong></p>
+<p>Dê Ctrl + F para realizar busca.</p>
+<p>Insira o código plu do combo em Nº do Produto e Dê Enter e faça a busca.</p>
+<p>Em Nº do Item insira o ‘plu da receita e busque por ele para preencher os campos.</p>
+<p>Insira o mesmo depósito da verificação realizada na etapa anterior em “Depósito”.</p>
+<p><strong>Realizar a integração das Receitas</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.029.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.029.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.030.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.030.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.031.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.031.png" />
+<p><strong>Código:</strong> Preencher o “PLU Receita” encontrado na tabela do cockpit.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar.</strong></p>
+<p><strong>Observação:</strong> Ao procurar o código da receita para integração e identificar as colunas “PLU SAP” e “Descrição SAP” vazias, será preciso realizar a tratativa de exceção, pesquisando em “Cadastro do item” o código do item para atualizar na aba “Integração” o flag de “Receita”.</p>
+<p><strong>Realizar a integração das Receitas (Tratativa de exceção)</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.032.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.032.png" />
+<p><strong>Observação:</strong> Ao procurar o código da receita para integração e identificar as colunas “PLU SAP” e “Descrição SAP” vazias, será preciso realizar a tratativa de exceção, pesquisando em “Cadastro do item” o código do item para atualizar na aba “Integração” o flag de “Receita” e “Cadastro modelo”.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.033.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.033.png" />
+<p><strong>Observação:</strong></p>
+<p>Em Cadastro do Item buscar pelo código PLU da Receita</p>
+<p>Ir na aba “Integração”</p>
+<p>Ativar o flag “Cadastro modelo” e “Receita”</p>
+<p>Copiar o Nome Estrangeiro e colar no Cadastro modelo</p>
+<p>Dar OK e finalizar processo.</p>
+<p><strong>Erro de Master na integração de Receita (Tratativa de exceção)</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.034.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.034.png" />
+<p><strong>Observação:</strong> Ao procurar o código da receita para integração e identificar as colunas o seguinte erro “Não foi possível recuperar o item master. MasterId: ‘xxxx’, será preciso realizar a tratativa de exceção, pesquisando em “Cadastro do item” o código do master para atualizar na aba “Integração”.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.035.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.035.png" />
+<p><strong>Observação:</strong></p>
+<p>Entrar no “Cadastro do Item” e “Integração”</p>
+<p>Mudar o campo “Tipo do item” &gt; “M – Item Master”.</p>
+<p>Marcar Flag “Cadastro Modelo”.</p>
+<p>Copiar a descrição e colar na descrição do modelo.</p>
+<p>Inserir o Nº do item no “Código de Integração” (Ctrl + Shift + U – para fazer a edição nos campos bloqueados).**</p>
+<p><strong>Realizar a integração dos Brinquedos</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.036.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.036.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.037.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.037.png" />
+<p><strong>Código:</strong> Preencher o “PLU Integração” encontrado tabela do cockpit.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>Modelo PLU:</strong> Preencher sempre com o código “95234”.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar.</strong></p>
+<p><strong>Realizar a integração dos Brinquedos (Tratativa de Exceção)</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.038.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.038.png" />
+<p><strong>Observação:</strong> Identificando a coluna Master vazia, após a integração, pesquisar o PLU em Cadastro do item e acessar a aba Integração.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.039.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.039.png" />
+<p><strong>Observação:</strong> Ao verificar o campo “Código master” vazio, apertar as teclas <strong>CTRL + SHIFT + U</strong> para abrir a opção “Campos definidos pelo usuário” na lateral da tela.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.040.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.040.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.041.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.041.png" />
+<p><strong>Observação:</strong> Preencher o campo “Código master” com a descrição <strong>Master.800</strong> e atualizar o cadastro do item.</p>
+<p>Interface gráfica do usuário, Texto, Aplicativo, Email</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.042.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.042.png" />
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.043.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.043.png" />
+<p><strong>Cadastrar manualmente o PLU Brinquedo</strong></p>
+<p>Acessar o cadastro do item no SAP.</p>
+<p>Interface gráfica do usuário, Texto, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.044.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.044.png" />
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.045.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.045.png" />
+<p>Pesquisar pelo modelo padrão de PLU Brinquedo <strong>“95234”</strong>.</p>
+<p>Clicar botão direito do mouse e ir em <strong>Duplicar</strong>.</p>
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.046.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.046.png" />
+<p>Alterar o Nº do item para o código do <strong>PLU Brinquedo</strong> que está sendo integrando.</p>
+<p>Alterar <strong>Descrição</strong> e <strong>Nome</strong> <strong>Estrangeiro</strong> para o do PLU Brinquedo.</p>
+<p>Ir na aba <strong>Integração.</strong></p>
+<p>Desativar todos os flag do <strong>Tipo do item.</strong></p>
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.047.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.047.png" />
+<p>Agora, será preciso alterar o <strong>código de integração</strong>, <strong>ingrediente</strong> e <strong>master</strong> que estão bloqueados nesta tela.</p>
+<p><strong>CTRL + SHIFT + U</strong> (será aberta uma tela de visão, para realizar alterações nos campos bloqueados).</p>
+<p>Insira no código integração o do <strong>PLU Brinquedo</strong>.</p>
+<p>Insira no <strong>código ingrediente e master</strong> o Código Ingrediente e Master caso souber. (dependendo do caso, não será necessário alterar, <strong>somente o código integração</strong>)</p>
+<p>Interface gráfica do usuário</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.048.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.048.png" />
+<p>Clicar em <strong>adicionar</strong> e será feita a <strong>integração do PLU Brinquedo</strong>.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.049.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.049.png" />
+<p><em>Realizar a integração dos Master*</em></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.050.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.050.png" />
+<p>Interface gráfica do usuário</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.051.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.051.png" />
+<p><strong>Observação:</strong> Será necessário consultar um modelo para o master a ser integrado, clicando no campo “Modelo master” e apertando a tecla TAB.</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.052.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.052.png" />
+<p><strong>Observação:</strong> Pode ser pesquisado um modelo pela “Descrição do item” ou “Código NCM” (Para trocar a busca para essas colunas, será necessário duplo clique no cabeçalho desejado).</p>
+<p>Interface gráfica do usuário, Texto, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.053.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.053.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.054.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.054.png" />
+<p><strong>Código:</strong> Preencher o “Código do item” encontrado na consulta.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>Modelo master:</strong> Preencher com o master modelo encontrado na consulta.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar.</strong></p>
+<p><strong>Realizar a integração dos Ingredientes</strong></p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.055.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.055.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.056.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.056.png" />
+<p><strong>Observação:</strong> Será necessário consultar a unidade de medida para o ingrediente a ser integrado, clicando no campo “UM SAP” e apertando a tecla TAB.</p>
+<p>Interface gráfica do usuário, Texto</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.057.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.057.png" />
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.058.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.058.png" />
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.059.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.059.png" />
+<p><strong>Código:</strong> Preencher o “Código do item” encontrado na consulta.</p>
+<p><strong>Status:</strong> Novos ou Processados.</p>
+<p><strong>Operação (Cabeçalho):</strong> Não integrados.</p>
+<p><strong>Selecionar:</strong> Ativar o flag.</p>
+<p><strong>UM SAP:</strong> Preencher com a unidade de medida do ingrediente.</p>
+<p><strong>Operação (Linha):</strong> Integrar.</p>
+<p><strong>Processar.</strong></p>
+<p><strong>Realizar os Reprocessamentos de NF e Estoque</strong></p>
+<p>, Email</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.060.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.060.png" />
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.061.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.061.png" />
+<p>Interface gráfica do usuário, Aplicativo</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.062.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.062.png" />
+<p>Descrição gerada automaticamente com confiança baixa](Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.063.png</p>
+<p><strong>Loja:</strong> Selecionar a loja da base.</p>
+<p><strong>Tipo Log:</strong> Nota Fiscal de Saída <strong>(NF)</strong> &amp; Baixa de Estoque <strong>(Estoque)</strong></p>
+<p>Interface gráfica do usuário, Texto, Aplicativo, Word</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.064.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.064.png" />
+<p><strong>Status:</strong> Não validado e Erro de processamento</p>
+<p>Interface gráfica do usuário, Texto, Aplicativo, Email</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.065.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.065.png" />
+<p><strong>Filtrar:</strong> Selecionar.</p>
+<p><strong>Selecionar:</strong> Ativar Flag da linha</p>
+<p><strong>Observação:</strong> Utilizando o <strong>SHIFT</strong> + Clicando na última linha no flag será selecionado todas as linhas.</p>
+<p><strong>Reprocessar.</strong></p>
+<p>Interface gráfica do usuário, Texto, Aplicativo, Email</p>
+<img alt="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.012.png" src="../../_images/Aspose.Words.bdf55294-7177-4f13-b2e4-241ec30fd0e6.012.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Tela%20do%20aplicativo%20-%20TV.html" class="btn btn-neutral float-left" title="Tela do aplicativo - TV" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Instala%C3%A7%C3%A3o%20do%20Aplicativo.html" class="btn btn-neutral float-right" title="Instalação do Aplicativo" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

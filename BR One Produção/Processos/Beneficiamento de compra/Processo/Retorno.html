@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processo de Retorno &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Assistente de cancelamento de retorno" href="Assistente%20de%20Cancelamento%20de%20retorno.html" />
+    <link rel="prev" title="Gerar pedido de compra adicional" href="Pedido%20de%20compra%20adicional.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Utiliza%C3%A7%C3%B5es.html">Configuração de utilização</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Componentes.html">Configurações dos itens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Parceiro%20de%20Negocios.html">Configuração Parceiro de negócio (Fornecedor)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Roteiro.html">Configuração do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Boas%20pr%C3%A1ticas%20de%20saldo%20com%20itens%20de%20terceiro.html">Boas práticas de saldo com itens de terceiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Remessa.html">Processo de Remessa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Cancelamento%20remessa.html">Cancelamento da remessa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Pedido%20de%20compra%20adicional.html">Gerar pedido de compra adicional</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Processo de Retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20Cancelamento%20de%20retorno.html">Assistente de cancelamento de retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de produto acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mat%C3%A9ria%20Prima%20Fornecedor.html">Matéria Prima do Fornecedor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Processo de Retorno</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="processo-de-retorno">
+<h1>Processo de Retorno<a class="headerlink" href="#processo-de-retorno" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para realização do retorno do <strong>Beneficiamento de Compras</strong> é utilizado a tela de <strong>BR One :: Assistente de retorno</strong>.</p>
+<p>Para acessar a tela de Assistente de Retorno é necessário ir  no menu:</p>
+<p><strong>Produção -&gt; Beneficiamento -&gt; Compras -&gt; Assistente de retorno</strong></p>
+<p>No assistente de retorno é necessário selecionar um <strong>Fornecedor</strong> e <strong>Filial</strong> para que os documentos vinculados a eles sejam exibidos nas abas <strong>Pedido de Compra</strong> e <strong>Remessa</strong>.</p>
+<ul class="simple">
+<li><p><strong>Aba pedido de compra</strong></p></li>
+</ul>
+<p>É possível utilizar os filtros para encontrar o pedido que deseja de acordo com o fornecedor do cabeçalho, selecione as linhas do item de serviço referente a Ordem de produção (<strong>OP</strong>), informe a quantidade que deseja realizar o retorno e clique no campo <strong>Liberar pedidos para retorno</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0126.png"><img alt="../../../../_images/img0126.png" src="../../../../_images/img0126.png" style="width: 696.0px; height: 418.40000000000003px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Remessa</strong></p></li>
+</ul>
+<p>A segunda aba é de <strong>Remessa</strong> e nela você pode utilizar os filtros para encontrar os documentos de remessa (<strong>Devolução de mercadoria</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong>) de acordo com o fornecedor do cabeçalho. Para liberar as linhas para o retorno, selecione a mesma na coluna <strong>Selecionar</strong>, informe as quantidades de peças boas, refugo e não industrializado e selecione o botão <strong>Liberar remessas para retorno</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0225.png"><img alt="../../../../_images/img0225.png" src="../../../../_images/img0225.png" style="width: 696.0px; height: 419.20000000000005px;" /></a>
+<p>Nesta aba há também a possibilidade de utilizar o parâmetro <strong>Considerar somente os PCs liberados</strong>, quando o mesmo está marcado, somente irá aparecer as remessas que possuírem um pedido de compra liberado, caso contrário, a remessa não será exibida, neste caso, basta desmarcar a flag e realizar o filtro das mesmas.</p>
+<ul class="simple">
+<li><p><strong>Aba Esboço de retorno</strong></p></li>
+</ul>
+<p>Na aba <strong>Esboço de retorno</strong> o campo <strong>NF retorno serviço</strong> vai definir se o retorno do beneficiamento (<strong>Itens de serviços</strong>) será feito no <strong>Mesmo documento</strong> ou em <strong>Documentos separados</strong>.</p>
+<p>Nesta aba também serão selecionados os documentos a serem retornados, marque as linhas e clique no botão <strong>Gerar</strong>, assim os documentos serão gerados em esboços de acordo com o tipo de retorno informado.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0321.png"><img alt="../../../../_images/img0321.png" src="../../../../_images/img0321.png" style="width: 778.4000000000001px; height: 428.0px;" /></a>
+<p>As formas que os documentos serão retornados, são:</p>
+<p>Caso a opção <strong>Gerar NF de entrada e dev.de NF de entrada</strong> das <strong>configurações do beneficiamento</strong> estiver marcada e estiver para gerar <strong>Documentos separados</strong>, serão gerados os esboços:</p>
+<ul class="simple">
+<li><p>Nota Fiscal de Entrada para item de serviço;</p></li>
+<li><p>Nota Fiscal de Entrada para componentes de terceiros definido como peças boas;</p></li>
+<li><p>Nota Fiscal de Entrada para os componentes de terceiros definido como refugo e não industrializados.</p></li>
+</ul>
+<p>Caso a opção <strong>Gerar NF de entrada e dev.de NF de entrada</strong> das <strong>configurações do beneficiamento</strong> estiver marcada e estiver para gerar <strong>Mesmo Documento</strong>, serão gerados os esboços:</p>
+<ul class="simple">
+<li><p>Nota Fiscal de Entrada com o item de serviço e os componentes de terceiros definido como peças boas;</p></li>
+<li><p>Nota Fiscal de Entrada para os componentes de terceiros definido como refugo e não industrializado.</p></li>
+</ul>
+<p>Caso a opção <strong>Gerar NF de entrada e dev.de NF de entrada</strong> das <strong>configurações do beneficiamento</strong> estiver desmarcada e estiver para gerar <strong>Documentos separados</strong>, serão gerados os esboços:</p>
+<ul class="simple">
+<li><p>Nota Fiscal de Entrada para item de serviço;</p></li>
+<li><p>Recebimento de Mercadoria para os componentes de terceiros definido como peças boas;</p></li>
+<li><p>Recebimento de Mercadoria para os componentes de terceiros definido como refugo e não industrializados.</p></li>
+</ul>
+<p>Caso a opção <strong>Gerar NF de entrada e dev.de NF de entrada</strong> das <strong>configurações do beneficiamento</strong> estiver desmarcada e estiver para gerar <strong>Mesmo Documento</strong>, serão gerados os esboços:</p>
+<ul class="simple">
+<li><p>Nota Fiscal de Entrada com o item de serviço e os componentes de terceiros definido como peças boas;</p></li>
+<li><p>Recebimento de Mercadoria para os componentes de terceiros definido como refugo e não industrializado.</p></li>
+</ul>
+<p>Todos os documentos gerados são listados na tela <strong>BR One :: Esboços gerados</strong>.</p>
+<ul class="simple">
+<li><p><strong>Esboços gerados</strong></p></li>
+</ul>
+<p>O sistema irá abrir a tela de esboços gerados, nela é possível validar cada esboço de documento e adicioná-los separadamente. Caso identifique alguma informação incorreta é possível remover todos os esboços sem exceção, através do botão <strong>Remover esboços</strong>, porém para essa funcionalidade nenhum dos esboços pode ter sido adicionado, caso adicione algum esboço a função não irá permitir remover os demais esboços.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0417.png"><img alt="../../../../_images/img0417.png" src="../../../../_images/img0417.png" style="width: 656.8000000000001px; height: 354.40000000000003px;" /></a>
+<p><strong>Documentos separados</strong></p>
+<ul class="simple">
+<li><p><strong>Esboço de NF de entrada</strong></p></li>
+</ul>
+<p>Essa nota será utilizada para cobrança do serviço e vai recuperar informações do pedido de compra como: <strong>Item de serviço</strong>, <strong>quantidade</strong>, <strong>depósito</strong> e <strong>valor</strong>.</p>
+<p>A utilização será recuperada do campo <strong>Utilização para serviços</strong> das <strong>configurações do beneficiamento</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0516.png"><img alt="../../../../_images/img0516.png" src="../../../../_images/img0516.png" style="width: 667.2px; height: 404.8px;" /></a>
+<p>Nota fiscal de entrada para serviços gera <strong>LCM</strong> e <strong>Rateio de Custos de Terceiros</strong></p>
+<p>Contabilização do LCM da Nota:</p>
+<p><strong>Crédito:</strong> PN/ Impostos</p>
+<p><strong>Débito:</strong> Impostos recuperar/ Outras Despesas Operacionais</p>
+<ul class="simple">
+<li><p><strong>Esboço de Recebimento de mercadoria</strong> ou <strong>Nota Fiscal de Entrada</strong></p></li>
+</ul>
+<p>Nas linhas do esboço do recebimento, o sistema retorna os componentes que foram beneficiados (peças boas).</p>
+<p>A utilização é carregada do campo <strong>Utilização para materiais (retorno)</strong> das <strong>configurações do beneficiamento</strong> e o depósito da linha é carregado conforme configuração para multifiliais ou base simples.</p>
+<img alt="../../../../_images/img0617.png" src="../../../../_images/img0617.png" />
+<p>Ao adicionar o <strong>Recebimento de mercadoria</strong> ou <strong>Nota Fiscal de Entrada</strong>, o add-on abrirá a tela de saída de insumos para os componentes com método de baixa como manual.</p>
+<p>No cabeçalho é informado o número da OP, o depósito conforme cadastro do PN, sequência da operação do beneficiamento e a quantidade de P.A.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0715.png"><img alt="../../../../_images/img0715.png" src="../../../../_images/img0715.png" style="width: 348.8px; height: 298.40000000000003px;" /></a>
+<p>A saída de insumos irá gerar um <strong>LCM</strong>:</p>
+<p><strong>Crédito:</strong> Conta de Estoque</p>
+<p><strong>Débito:</strong> Conta de material em processo (WIP)</p>
+<ul class="simple">
+<li><p><strong>Esboço de Recebimento de mercadoria</strong> ou <strong>Nota Fiscal de Entrada (Refugo e não industrializados)</strong></p></li>
+</ul>
+<p>Nesse esboço serão exibidos os componentes que foram apontados como refugo e não industrializados.</p>
+<p>Para os componentes classificados como refugo, a utilização será preenchida do campo <strong>Utilização para materiais (retorno)</strong>, já para os componentes não industrializados a utilização será preenchida do campo <strong>Utilização para dev. mat. não Indust.</strong>, ambos definidos na tela de <strong>configurações do beneficiamento</strong>.
+Depósito será preenchido conforme a configuração para multifiliais ou base simples.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0813.png"><img alt="../../../../_images/img0813.png" src="../../../../_images/img0813.png" style="width: 666.4000000000001px; height: 406.40000000000003px;" /></a>
+<p>Para os itens <strong>Itens não industrializados</strong>, ao adicionar o documento de recebimento de mercadoria ou nota fiscal de entrada, será validado o parâmetro <strong>Gerar transferência de estoque por DI</strong> da tela <strong>BR One :: configurações de beneficiamento</strong>.
+Caso esteja marcado, o sistema irá gerar e adicionar a transferência de estoque automaticamente por DI, caso esteja desmarcado o sistema irá abrir a tela de do “<strong>Pedido de transferência de estoque/Transferência de estoque”</strong> para o usuário validar e adicionar.</p>
+<p>A transferência utilizará os depósitos:</p>
+<ul class="simple">
+<li><p><strong>Do depósito:</strong> Padrão do fornecedor</p></li>
+<li><p><strong>Para depósito:</strong> Padrão do item</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/img0913.png"><img alt="../../../../_images/img0913.png" src="../../../../_images/img0913.png" style="width: 476.0px; height: 440.8px;" /></a>
+<p>A transferência de estoque irá gerar um <strong>LCM</strong>:</p>
+<ul class="simple">
+<li><p><strong>Credito:</strong> Conta de estoque</p></li>
+<li><p><strong>Debito:</strong> Conta de estoque</p></li>
+</ul>
+<p>Para os itens refugados com método de baixa como manual, será aberto a tela saída de insumos.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1011.png"><img alt="../../../../_images/img1011.png" src="../../../../_images/img1011.png" style="width: 413.6px; height: 300.0px;" /></a>
+<p>A saída de insumo para itens refugados gera <strong>LCM</strong>:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de estoque</p></li>
+<li><p><strong>Débito:</strong> Conta de material em processo (WIP)</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>As peças retornadas como não industrializadas estarão novamente disponíveis para remessa.</p>
+</div>
+<p><strong>Mesmo documento</strong></p>
+<p><strong>Esboço de NF de entrada:</strong></p>
+<p>Essa nota será utilizada para a cobrança do serviço e vai recuperar informações do pedido de compra como: <strong>Item de serviço</strong>, <strong>quantidade</strong>, <strong>depósito</strong> e <strong>valor</strong>.
+A <strong>utilização</strong> será recuperada do campo <strong>Utilização para serviços</strong> das <strong>configurações do beneficiamento</strong>. Como está definido para mesmo documento, os componentes com as peças boas também são emitidos nessa <strong>Nota Fiscal de Entrada</strong>. A utilização para esses componentes é carregada do campo <strong>Utilização para materiais (retorno)</strong> das <strong>configurações do beneficiamento</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1112.png"><img alt="../../../../_images/img1112.png" src="../../../../_images/img1112.png" style="width: 666.4000000000001px; height: 405.6px;" /></a>
+<p>Nota fiscal de entrada para serviços gera <strong>LCM</strong> e Rateio de Custos de Terceiros.</p>
+<p>A contabilização gerada na Nota:</p>
+<p><strong>Crédito:</strong> PN/ Impostos</p>
+<p><strong>Débito:</strong> Impostos recuperar / Outras Despesas Operacionais</p>
+<p>Ao adicionar o <strong>NF de Entrada</strong>, o add-on abrirá a tela de saída de insumos para os componentes com método de baixa como <strong>manual</strong>.</p>
+<p>No cabeçalho é informado, o número da O.P., a sequência da operação do beneficiamento e a quantidade de P.A.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1211.png"><img alt="../../../../_images/img1211.png" src="../../../../_images/img1211.png" style="width: 348.0px; height: 298.40000000000003px;" /></a>
+<p>A saída de insumos irá gerar um <strong>LCM</strong>, e o depósito é recuperado do padrão do fornecedor.</p>
+<p>-<strong>Credito:</strong> Conta de Estoque</p>
+<p>-<strong>Debito:</strong> Conta de material em processo (WIP)</p>
+<p>E o processo de <strong>Refugo</strong> e <strong>Material não beneficiados</strong>, ocorre normalmente conforme tópico <strong>Esboço de Recebimento de mercadoria</strong> ou <strong>Nota Fiscal de Entrada (Refugo e não industrializados)</strong>.</p>
+<ul class="simple">
+<li><p><strong>Rateio de custos de terceiros</strong></p></li>
+</ul>
+<p>O Rateio de custo de terceiro é realizado com base na <strong>NF de Entrada</strong> do componente de serviço, com o valor sem os impostos de acordo com a quantidade.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1311.png"><img alt="../../../../_images/img1311.png" src="../../../../_images/img1311.png" style="width: 775.2px; height: 421.6px;" /></a>
+<p>Ao adicionar manualmente uma nota pela tela <strong>Rateio de custos de terceiros</strong>, é essencial seguir certas premissas para garantir que essas notas sejam exibidas ao selecionar o campo <strong>NF de entrada</strong>. Estas premissas incluem:</p>
+<ul class="simple">
+<li><p>Item de serviço(sem ser estocável)</p></li>
+<li><p>Deposito de envio direto</p></li>
+<li><p>O campo <strong>Rateio de terceiros</strong>, aba <strong>Dados de produção</strong>, deve estar marcado</p></li>
+<li><p>O campo <strong>Utilizar no rateio de custo de terceiros</strong>, aba <strong>Dados de produção</strong>, não pode ser marcado</p></li>
+<li><p><strong>Relatório de vínculos com Ordem de produção de Beneficiamento</strong></p></li>
+</ul>
+<p>Foi adicionado um recurso chamado <strong>Relatório de vínculos com OPs de Beneficiamento</strong> no menu auxiliar da Nota Fiscal de Entrada.
+Esse recurso só pode ser acessado quando o documento da Nota Fiscal estiver no modo <strong>OK</strong>, indicando que todas as alterações necessárias já foram realizadas.
+Ao selecionar o <strong>Relatório de vínculos com OPs de Beneficiamento</strong>, uma nova tela será exibida, contendo informações sobre os documentos vinculados por meio do processo de beneficiamento.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1412.png"><img alt="../../../../_images/img1412.png" src="../../../../_images/img1412.png" style="width: 665.6px; height: 400.8px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/img159.png"><img alt="../../../../_images/img159.png" src="../../../../_images/img159.png" style="width: 416.0px; height: 274.40000000000003px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Pedido%20de%20compra%20adicional.html" class="btn btn-neutral float-left" title="Gerar pedido de compra adicional" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Assistente%20de%20Cancelamento%20de%20retorno.html" class="btn btn-neutral float-right" title="Assistente de cancelamento de retorno" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

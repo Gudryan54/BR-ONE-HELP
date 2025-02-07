@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seleção de lote automática por data de vencimento &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Saída de Produto Acabado" href="Sa%C3%ADda%20de%20PA.html" />
+    <link rel="prev" title="Apontamento de Refugo" href="Apontamento%20de%20Refugo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20Insumos.html">Saída de Insumos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Produ%C3%A7%C3%A3o.html">Apontamento de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estorno%20de%20Apontamento.html">Estornos de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Refugo.html">Apontamento de Refugo</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Seleção de lote automática por data de vencimento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20PA.html">Saída de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20Componentes.html">Entrada de Componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Altera%C3%A7%C3%A3o%20status%20recurso.html">Alteração status recurso</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Terminal%20de%20apontamento.html">Terminal de Apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parada%20de%20m%C3%BAltiplos%20recursos.html">Parada de múltiplos recursos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Monitor%20de%20recursos.html">Monitor de recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Seleção de lote automática por data de vencimento</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="selecao-de-lote-automatica-por-data-de-vencimento">
+<h1>Seleção de lote automática por data de vencimento<a class="headerlink" href="#selecao-de-lote-automatica-por-data-de-vencimento" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na aba <strong>BR One</strong> (<em>Administração &gt; Inicialização do sistema &gt; Configurações do Documento</em>), temos o parâmetro para <strong>Obrigar a seleção
+de lotes com base na data de vencimento mais antiga</strong>. Isso determina se a seleção dos lotes levará em consideração o lote com a data de vencimento
+mais antiga.</p>
+<img alt="../../../_images/img0116.png" src="../../../_images/img0116.png" />
+<p>Quando o parâmetro está desmarcado, a seleção dos lotes com a data de vencimento mais antiga não é obrigatória. Nesse caso, é permitido
+selecionar os lotes manualmente ou utilizar o botão de <strong>“Seleção automática”</strong>.</p>
+<p>Quando o parâmetro está marcado, a seleção manual dos lotes com a data de vencimento mais antiga não será permitida manualmente. A seleção deve
+ser feita exclusivamente pelo botão de <strong>“Seleção Automática”</strong>, que selecionará automaticamente os lotes com a data de vencimento mais
+antiga.</p>
+<ol class="arabic simple">
+<li><p><strong>Seleção do Número de Lote por Data de Vencimento</strong></p></li>
+</ol>
+<p>Na tela de seleção de lotes, foi adicionado um botão para auxiliar nesse processo. Esse botão oferece três opções:</p>
+<img alt="../../../_images/img0214.png" src="../../../_images/img0214.png" />
+<ul class="simple">
+<li><p>Linha selecionada;</p></li>
+<li><p>Todas as linhas;</p></li>
+<li><p>Limpas todas as linhas.</p></li>
+</ul>
+<ol class="upperroman simple">
+<li><p><strong>Linha Selecionada:</strong></p>
+<ul class="simple">
+<li><p>Realiza a seleção de lotes apenas para a linha que estiver
+selecionada na matriz <strong>“Linhas de Documentos”</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<img alt="../../../_images/img0315.png" src="../../../_images/img0315.png" />
+<p>Ao selecionar essa opção, caso o parâmetro citado acima esteja
+desmarcado, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img0413.png" src="../../../_images/img0413.png" />
+<p>Se a resposta for <strong>Sim</strong>, será selecionado o lote com data de Vencimento mais antiga, caso a resposta seja <strong>Não</strong>, será selecionado
+um lote aleatoriamente.</p>
+<p>Porém, se o parâmetro estiver <strong>marcado</strong>, a mensagem mostrada acima não será exibida, por ser obrigatório que os lotes sejam selecionados
+considerando a data de vencimento mais antiga. Para garantir que os lotes selecionados são os com data de vencimento mais antiga, não será
+permitido realizar a seleção manual dos lotes, portanto os botões com essa funcionalidade não poderão ser utilizados.</p>
+<img alt="../../../_images/img0613.png" src="../../../_images/img0613.png" />
+<p>Caso seja clicado nas setas, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img0712.png" src="../../../_images/img0712.png" />
+<p>BR One :: Não é permitido selecionar os lotes manualmente.</p>
+<ol class="upperroman simple" start="2">
+<li><p><strong>Todas as Linhas:</strong></p>
+<ul class="simple">
+<li><p>Aplica a seleção de lotes para todas as linhas da matriz
+<strong>“Linhas de Documentos”</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<p>Realiza a seleção automática do lote para todas as linhas. O processo
+ocorre semelhante ao descrito acima, tendo como única diferença que os
+lotes serão atribuídos para todas as linhas e não somente para a que
+estiver selecionada.</p>
+<ol class="upperroman simple" start="3">
+<li><p><strong>Limpar Todas as Linhas:</strong></p>
+<ul class="simple">
+<li><p>Remove a seleção de lotes de todas as linhas da matriz <strong>“Linhas
+de Documentos”.</strong></p></li>
+</ul>
+</li>
+</ol>
+<p>Limpa todos os lotes que estiverem na matriz “Lotes selecionados”. Para
+isso, o formulário precisa estar atualizado e, caso não esteja, uma
+mensagem de erro será exibida.</p>
+<img alt="../../../_images/img0811.png" src="../../../_images/img0811.png" />
+<img alt="../../../_images/img0911.png" src="../../../_images/img0911.png" />
+<p>BR One :: O formulário precisa estar atualizado para executar essa operação.</p>
+<p><strong>Telas em que poderão ser utilizadas:</strong></p>
+<ul class="simple">
+<li><p>Pedido de transferência de estoque;</p></li>
+<li><p>Transferência de estoque;</p></li>
+<li><p>Saída de insumos;</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Apontamento%20de%20Refugo.html" class="btn btn-neutral float-left" title="Apontamento de Refugo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Sa%C3%ADda%20de%20PA.html" class="btn btn-neutral float-right" title="Saída de Produto Acabado" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

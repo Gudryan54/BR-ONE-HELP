@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancelamento durante o processo &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Assistente de cancelamento" href="Assistente%20de%20cancelamento.html" />
+    <link rel="prev" title="Transf. filiais - Relatório de NF de Entrada pendentes" href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Filiais.html">Configurações de Filiais</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Configura%C3%A7%C3%B5es%20de%20transfer%C3%AAncia%20entre%20filiais.html">Configurações de transferência entre filiais</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Transfer%C3%AAncia%20de%20estoque%20pelo%20MRP.html">Transferência entre filiais - MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Transfer%C3%AAncia%20de%20estoque%20Manual.html">Transferência entre filiais - Manual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html">Transf. filiais - Relatório de NF de Entrada pendentes</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Cancelamento durante o processo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20cancelamento.html">Assistente de cancelamento</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Cancelamento durante o processo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cancelamento-durante-o-processo">
+<h1>Cancelamento durante o processo<a class="headerlink" href="#cancelamento-durante-o-processo" title="Link permanente para este cabeçalho"></a></h1>
+<p>É importante saber que, durante o processo de <strong>Transferência entre filiais</strong> é possível realizar o cancelamento de um Nota Fiscal de Saída, caso necessário.</p>
+<p>Caso já tenha sido gerado um esboço da Nota Fiscal de Entrada correspondente, será necessário cancelá-lo antes de cancelar a Nota Fiscal de Saída.</p>
+<p><strong>Cancelamento da transferência de estoque após adicionar.</strong></p>
+<p>Caso queira realizar o cancelamento da transferência de estoque após adicionar com o esboço Nota Fiscal de Saída.</p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.029.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.029.png" />
+<p>Primeiramente deve ser realizado o cancelamento do esboço Nota Fiscal de Saída.</p>
+<p>Se houver algum valor ou informação incorreta no esboço da Nota Fiscal de Saída que foi gerado pela transferência de estoque. É possível fazer seu cancelamento, através:</p>
+<p><strong>Relatórios de vendas &gt; Relatório de esboços de documento</strong></p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.030.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.030.png" />
+<p>Para cancelar um documento de Esboço Nota Fiscal de Saída, é necessário seguir os seguintes passos:</p>
+<ol class="arabic simple">
+<li><p>Na tela de <strong>“Relatório de esboços do documento”</strong>, selecione a opção <strong>“Vendas – C/R” -&gt; “Notas Fiscais de Saída”</strong> e clique em <strong>“Ok”</strong>.</p></li>
+<li><p>Isso abrirá uma nova tela com os esboços de Notas Fiscais de Saída. Selecione o documento desejado e clique com o botão direito do mouse na opção “Remover”.</p></li>
+<li><p>Feito isso, o documento será cancelado.</p></li>
+<li><p>Na tela de transferência de estoque, é possível gerar um novo esboço de Nota Fiscal de Saída, com as informações corretas.</p></li>
+</ol>
+<p><strong>Cancelamento com a Nota Fiscal de Saída efetivada</strong></p>
+<p>Se já foi adicionado uma Nota Fiscal de Saída e gerou um esboço de Nota Fiscal de Entrada no sistema, é importante saber que não será possível cancelar a Nota Fiscal de Saída sem antes de cancelar o esboço da Nota Fiscal de Entrada correspondente.</p>
+<p><strong>Relatórios de compras &gt; Relatório de esboços de documento</strong></p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.031.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.031.png" />
+<ol class="arabic simple">
+<li><p>Na tela de “Relatório de esboços do documento”, selecione a opção “Compras – C/R” &gt; “Notas Fiscais de Entrada” e clique em “Ok”.</p></li>
+<li><p>Isso abrirá uma nova tela com os esboços de Notas Fiscais de Entrada. Selecione o documento desejado e clique com o botão direito do mouse na opção “Remover”.</p></li>
+<li><p>Feito isso, o documento será cancelado.</p></li>
+<li><p>Na tela de transferência de estoque, é possível gerar um novo esboço de Nota Fiscal de Saída, com as informações corretas.</p></li>
+</ol>
+<p>Ao seguir esses passos, o esboço da Nota Fiscal de Entrada será cancelado, permitindo que você possa, então, cancelar a Nota Fiscal de Saída correspondente.</p>
+<p>Caso não deseje cancelar a Nota Fiscal de Saída correspondente, pode gerar um novo esboço de Nota Fiscal de Entrada.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html" class="btn btn-neutral float-left" title="Transf. filiais - Relatório de NF de Entrada pendentes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Assistente%20de%20cancelamento.html" class="btn btn-neutral float-right" title="Assistente de cancelamento" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

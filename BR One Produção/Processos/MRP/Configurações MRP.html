@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações MRP &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Configurações do Cadastro do Item" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html" />
+    <link rel="prev" title="MRP - Item Fictício" href="../Item%20Ficticio/MRP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Configurações MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html">Configurações do Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20Roteiro%20MRP.html">Configurações do Cadastro do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Previs%C3%A3o%20de%20consumo.html">Previsão por consumo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20MRP.html">Assistente de MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%201.html">Etapa 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%202.html">Etapa 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%203.html">Etapa 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%204.html">Etapa 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%205.html">Etapa 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Combina%C3%A7%C3%B5es%20MRP.html">Combinações MRP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Configurações MRP</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracoes-mrp">
+<h1>Configurações MRP<a class="headerlink" href="#configuracoes-mrp" title="Link permanente para este cabeçalho"></a></h1>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Com o MRP é possível identificar os itens de compra e produção em determinado período de acordo com a necessidade da empresa, inicialmente é necessário realizar as parametrizações na base para utilização do processo.</p>
+<p>Na tela <strong>‘Configurações de produção’</strong> na Aba <strong>‘MRP’</strong> é necessário realizar as configurações globais do processo.</p>
+<a class="reference internal image-reference" href="../../../_images/0115.png"><img alt="../../../_images/0115.png" class="align-center" src="../../../_images/0115.png" style="width: 602.4px; height: 340.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<section id="nao-vincular-documentos-de-origem-ao-processar-recomendacoes-do-mrp">
+<h2>Não vincular documentos de origem ao processar recomendações do MRP<a class="headerlink" href="#nao-vincular-documentos-de-origem-ao-processar-recomendacoes-do-mrp" title="Link permanente para este cabeçalho"></a></h2>
+<p>Quando esse flag está desmarcado, todos os documentos criados requisitando e/ou atribuindo itens ao estoque serão vinculados à OP criada através da recomendação do MRP.</p>
+<p>Por exemplo , foi criado um pedido de venda <strong>101</strong> para o <strong>PA01_03</strong> solicitando <strong>50 peças</strong> desse item:</p>
+<a class="reference internal image-reference" href="../../../_images/0213.png"><img alt="../../../_images/0213.png" class="align-center" src="../../../_images/0213.png" style="width: 472.0px; height: 221.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>PA03_MRP</strong> possui os itens de compra <strong>Comp02_MRP</strong> e <strong>Comp03_MRP</strong> em seu roteiro:</p>
+<a class="reference internal image-reference" href="../../../_images/0313.png"><img alt="../../../_images/0313.png" class="align-center" src="../../../_images/0313.png" style="width: 656.0px; height: 229.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o <strong>‘Assistente de MRP’</strong>, é recomendada a criação da <strong>‘Solicitação de compra’</strong> <strong>Comp02_MRP</strong> e <strong>Comp03_MRP</strong> e de uma <strong>‘Ordem de produção’</strong> para o item <strong>PA03_MRP</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/046.png"><img alt="../../../_images/046.png" class="align-center" src="../../../_images/046.png" style="width: 677.6px; height: 480.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Realizando o processamento dessas recomendações, os documentos serão criados e vinculados à ordem do item pai, nesse caso, o <strong>PA01_MRP</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/056.png"><img alt="../../../_images/056.png" class="align-center" src="../../../_images/056.png" style="width: 672.8000000000001px; height: 430.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A solicitação de compra dos <strong>Comp02_MRP</strong> e <strong>Comp03_MRP</strong> são encontradas na aba <strong>‘Compra/OP’</strong> da aba <strong>‘Documentos’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/066.png"><img alt="../../../_images/066.png" class="align-center" src="../../../_images/066.png" style="width: 674.4000000000001px; height: 431.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando a flag da configuração desse processo está marcada, os documentos vinculados à ordem criada através da recomendação do MRP não são vinculados, assim, os documentos não são incluídos automaticamente na aba <strong>‘Documentos’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/079.png"><img alt="../../../_images/079.png" class="align-center" src="../../../_images/079.png" style="width: 598.4px; height: 337.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Considerando o mesmo cenário acima, ao executar o MRP os documentos não são vinculados a OP do item pai:</p>
+<a class="reference internal image-reference" href="../../../_images/0810.png"><img alt="../../../_images/0810.png" class="align-center" src="../../../_images/0810.png" style="width: 676.8000000000001px; height: 322.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/096.png"><img alt="../../../_images/096.png" class="align-center" src="../../../_images/096.png" style="width: 684.0px; height: 320.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="preencher-campo-programacao-dos-documentos-gerados-com">
+<h2>Preencher campo programação dos documentos gerados com<a class="headerlink" href="#preencher-campo-programacao-dos-documentos-gerados-com" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse campo define se ao processar uma recomendação do MRP (Ordem de produção), no campo <strong>‘Programação’</strong>, irá ser setado o <strong>‘Item pai’</strong>, o <strong>‘Id da execução do MRP’</strong> ou se ele ficará ‘vazio’.</p>
+<a class="reference internal image-reference" href="../../../_images/1014.png"><img alt="../../../_images/1014.png" class="align-center" src="../../../_images/1014.png" style="width: 600.8000000000001px; height: 340.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Nenhum:</strong> o campo ‘Programação’ ficará vazio.</p></li>
+<li><p><strong>Item pai:</strong> no campo ‘Programação’ indicará o ‘Item pai’ da solicitação ou da ordem de produção.</p></li>
+<li><p><strong>Id da execução do MRP:</strong> no campo ‘Programação’ irá o id da execução do MRP.</p></li>
+</ul>
+<p><strong>Exemplos:</strong></p>
+<p>Recomendação MRP para o item PA02_MRP:</p>
+<a class="reference internal image-reference" href="../../../_images/115.png"><img alt="../../../_images/115.png" class="align-center" src="../../../_images/115.png" style="width: 684.0px; height: 480.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Configuração como <strong>Item pai:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/126.png"><img alt="../../../_images/126.png" class="align-center" src="../../../_images/126.png" style="width: 626.4000000000001px; height: 134.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Configuração como <strong>Id da execução do MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/137.png"><img alt="../../../_images/137.png" class="align-center" src="../../../_images/137.png" style="width: 628.0px; height: 103.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="quantidade-de-dias-entre-operacoes">
+<h2>Quantidade de dias entre operações<a class="headerlink" href="#quantidade-de-dias-entre-operacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse campo define a quantidade de dias a serem considerados entre uma operação e outra, quando o script realiza o cálculo das datas das operações de uma <strong>Ordem de produção</strong> (criado através do MRP ou tela de Ordem de produção).</p>
+<p><strong>Considerando o seguinte cenário:</strong></p>
+<p>Calendário com 8 horas disponíveis por dia e sem finais de semana:</p>
+<a class="reference internal image-reference" href="../../../_images/147.png"><img alt="../../../_images/147.png" class="align-center" src="../../../_images/147.png" style="width: 421.2px; height: 315.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Roteiro com os seguintes tempos variáveis:</p>
+<a class="reference internal image-reference" href="../../../_images/155.png"><img alt="../../../_images/155.png" class="align-center" src="../../../_images/155.png" style="width: 656.0px; height: 427.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Uma previsão de venda com quantidade 100 peças para o item do roteiro:</p>
+<a class="reference internal image-reference" href="../../../_images/165.png"><img alt="../../../_images/165.png" class="align-center" src="../../../_images/165.png" style="width: 505.6px; height: 338.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP considerando somente esta previsão de venda, serão obtidos resultados diferentes para a data de liberação e lead time, dependendo do que for parametrizado na configuração.</p>
+<ul class="simple">
+<li><p><strong>Quando a configuração estiver com o valor 1, será adicionado 1 dia de diferença entre as operações.</strong></p></li>
+</ul>
+<p>Logo, a data de liberação será no dia 25/04/2024 e o lead time será de 7 dias.</p>
+<a class="reference internal image-reference" href="../../../_images/175.png"><img alt="../../../_images/175.png" class="align-center" src="../../../_images/175.png" style="width: 926.4000000000001px; height: 25.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Abaixo segue o detalhamento do cálculo realizado:</p>
+<a class="reference internal image-reference" href="../../../_images/185.png"><img alt="../../../_images/185.png" class="align-center" src="../../../_images/185.png" style="width: 627.9px; height: 156.1px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/194.png"><img alt="../../../_images/194.png" class="align-center" src="../../../_images/194.png" style="width: 393.3px; height: 126.9px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Quando a configuração estiver com o valor 0 (zero), será considerado apenas o tempo do calendário configurado.</strong></p></li>
+</ul>
+<p>Logo, a data se liberação será no dia 01/05/2024 e o lead time será de 1 dia.</p>
+<a class="reference internal image-reference" href="../../../_images/204.png"><img alt="../../../_images/204.png" class="align-center" src="../../../_images/204.png" style="width: 924.0px; height: 24.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Abaixo, segue o detalhamento do cálculo realizado:</p>
+<a class="reference internal image-reference" href="../../../_images/215.png"><img alt="../../../_images/215.png" class="align-center" src="../../../_images/215.png" style="width: 641.1999999999999px; height: 119.69999999999999px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="limite-de-memoria-para-processo-mb">
+<h2>Limite de memória para processo (MB)<a class="headerlink" href="#limite-de-memoria-para-processo-mb" title="Link permanente para este cabeçalho"></a></h2>
+<p>Para que não haja um uso de memória maior que a quantidade disponível para o MRP, deve ser definido neste campo o limite da memória, para quando o MRP estiver sendo processado.</p>
+<p>Não há limite máximo ou mínimo para a memória.</p>
+<a class="reference internal image-reference" href="../../../_images/224.png"><img alt="../../../_images/224.png" class="align-center" src="../../../_images/224.png" style="width: 596.0px; height: 333.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="limite-de-nivel-do-low-level-code-llc">
+<h2>Limite de nível do Low Level Code (LLC)<a class="headerlink" href="#limite-de-nivel-do-low-level-code-llc" title="Link permanente para este cabeçalho"></a></h2>
+<p>Para que o sistema não trave, caso exista roteiros em loop infinito, pode-se definir um número máximo de nível que o cálculo de LLC irá descer para retornar com valores.</p>
+<p>Por padrão, esse valor é 50.</p>
+<a class="reference internal image-reference" href="../../../_images/233.png"><img alt="../../../_images/233.png" class="align-center" src="../../../_images/233.png" style="width: 594.4px; height: 334.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Caso o MRP identifique que algum roteiro com recursividade, será retornado a seguinte mensagem de erro durante a execução do MRP:</p>
+<a class="reference internal image-reference" href="../../../_images/23-01.png"><img alt="../../../_images/23-01.png" class="align-center" src="../../../_images/23-01.png" style="width: 985.6px; height: 16.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Erro ao processar MRP. Retorno: 1). [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Maximum stored procedure, function, trigger, or view nesting level exceeded (limit 32).2). [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Checkin</strong></p>
+<p>Essa mensagem irá ocorrer independente do nível de LLC configurado.</p>
+<p>Para encontrar o roteiro com recursividade o BR One possui a funcionalidade “Verificação de roteiros recursivos”, que pode ser acessada através do caminho abaixo:</p>
+<p><strong>Ajuda -&gt; Support Desk -&gt; Restaurar -&gt; BR One -&gt; BR One Produção: Verificação de roteiros recursivos</strong></p>
+<a class="reference internal image-reference" href="../../../_images/23-02.png"><img alt="../../../_images/23-02.png" class="align-center" src="../../../_images/23-02.png" style="width: 681.5px; height: 260.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao clicar nessa funcionalidade, o add-on irá validar todos os cadastros de roteiros e irá identificar a estrutura que está recursiva:</p>
+<a class="reference internal image-reference" href="../../../_images/23-03.png"><img alt="../../../_images/23-03.png" class="align-center" src="../../../_images/23-03.png" style="width: 351.0px; height: 120.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/23-04.png"><img alt="../../../_images/23-04.png" class="align-center" src="../../../_images/23-04.png" style="width: 522.0px; height: 345.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="relatorios">
+<h2>Relatórios<a class="headerlink" href="#relatorios" title="Link permanente para este cabeçalho"></a></h2>
+<p>Existe a possibilidade de gerar o relatório de <strong>‘Carga Máquina’</strong> dentro do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/243.png"><img alt="../../../_images/243.png" class="align-center" src="../../../_images/243.png" style="width: 676.0px; height: 483.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O relatório é proveniente do <strong>Crystal Reports</strong> e o caminho deve ser previamente configurado em seu respectivo campo. O relatório será gerado a partir do ID da execução do MRP com base no que for executado.</p>
+<a class="reference internal image-reference" href="../../../_images/253.png"><img alt="../../../_images/253.png" class="align-center" src="../../../_images/253.png" style="width: 601.6px; height: 339.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="permitir-geracao-de-pedido-de-compras">
+<h2>Permitir geração de Pedido de Compras<a class="headerlink" href="#permitir-geracao-de-pedido-de-compras" title="Link permanente para este cabeçalho"></a></h2>
+<p>A flag <strong>‘Permitir geração de Pedido de Compras’</strong> definirá se o usuário gerará solicitação de compras ou pedido de compras através do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/263.png"><img alt="../../../_images/263.png" class="align-center" src="../../../_images/263.png" style="width: 600.8000000000001px; height: 340.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>As caixas de opções <strong>‘Processar solicitação de compras’</strong> e <strong>‘Processar pedido de compras’</strong> serão utilizadas para configurar como deverão ser processadas as recomendações sugeridas pelo MRP.</p>
+<p>Para <strong>‘Solicitação de compras’</strong>, o usuário poderá escolher entre:</p>
+<a class="reference internal image-reference" href="../../../_images/273.png"><img alt="../../../_images/273.png" class="align-center" src="../../../_images/273.png" style="width: 445.5px; height: 86.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Agrupar por itens:</strong> Cria o documento de compra de acordo com os itens;</p></li>
+<li><p><strong>Seleção em documento único:</strong> Todos os itens processados irão para o mesmo documento de compra;</p></li>
+<li><p><strong>Grupo de itens:</strong> Os itens serão agrupados de acordo com o ‘Grupo de itens’;</p></li>
+<li><p><strong>Fornecedor preferencial:</strong> Os itens serão agrupados de acordo com ‘Fornecedor Preferencial’;</p></li>
+<li><p><strong>Fabricante:</strong> Os itens serão agrupados de acordo com o ‘Fabricante’.</p></li>
+</ul>
+<p>Para <strong>‘Pedidos de compras’</strong>, existem apenas duas opções:</p>
+<a class="reference internal image-reference" href="../../../_images/283.png"><img alt="../../../_images/283.png" class="align-center" src="../../../_images/283.png" style="width: 450.0px; height: 139.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Agrupar por itens:</strong> Cria o documento de compra de acordo com os itens;</p></li>
+<li><p><strong>Fornecedor preferencial:</strong> Os itens serão agrupados de acordo com ‘Fornecedor preferencial’.</p></li>
+</ul>
+<p>A opção padrão do add-on é <strong>‘Agrupar por itens’</strong>, podendo ser alterada a qualquer momento.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="nao-exibir-alerta-sobre-data-de-abertura-de-operacao-menor-ou-igual-data-atual">
+<h2>Não exibir alerta sobre data de abertura de operação menor ou igual data atual<a class="headerlink" href="#nao-exibir-alerta-sobre-data-de-abertura-de-operacao-menor-ou-igual-data-atual" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro indica se deve aparecer um alerta em tela quando usuário processar uma linha no <strong>‘Assistente de MRP’</strong> onde a data da coluna <strong>‘Data de liberação’</strong> seja igual ou menor que a data atual.</p>
+<a class="reference internal image-reference" href="../../../_images/304.png"><img alt="../../../_images/304.png" class="align-center" src="../../../_images/304.png" style="width: 602.4px; height: 339.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando a flag estiver marcada indica ao addon que a mensagem de alerta não deve ser exibida em tela para o usuário. Com a flag desmarcada, a mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/315.png"><img alt="../../../_images/315.png" class="align-center" src="../../../_images/315.png" style="width: 450.0px; height: 139.5px;" /></a>
+<p><strong>BR One :: Data de início da primeira operação da OP a ser aberta para o item nº X é menor ou igual a data atual. Continuar?</strong></p>
+<p>Neste caso, o usuário poderá escolher entre três opções:</p>
+<ul class="simple">
+<li><p><strong>Sim:</strong> Ao clicar em sim, a linha indicada na mensagem será processada normalmente.</p></li>
+<li><p><strong>Não:</strong> Ao clicar em não, o processo será cancelado.</p></li>
+<li><p><strong>Sim p/ todos:</strong> Ao clicar em Sim p/ todos, todas as linhas selecionadas que possuam a data de liberação menor ou igual a data atual serão processadas normalmente.</p></li>
+</ul>
+</section>
+<section id="considerar-lead-time-fixo-independente-do-calculado">
+<h2>Considerar Lead Time fixo independente do calculado<a class="headerlink" href="#considerar-lead-time-fixo-independente-do-calculado" title="Link permanente para este cabeçalho"></a></h2>
+<p>Quando um PA estiver fixo em dias e a configuração ‘Considerar leadtime fixo independente do calculado’ estiver marcada, todas as operações devem iniciar e terminar no mesmo dia.</p>
+<a class="reference internal image-reference" href="../../../_images/324.png"><img alt="../../../_images/324.png" class="align-center" src="../../../_images/324.png" style="width: 602.4px; height: 340.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para o exemplo abaixo, será considerado que o calendário de compra e o calendário dos recursos é o mesmo, 8h por dia de segunda à sexta.</p>
+<p>O item <strong>PA03_MRP</strong> é um item pai e para ele, há o pedido de venda com a data de entrega para o dia 15/02/2024.</p>
+<a class="reference internal image-reference" href="../../../_images/333.png"><img alt="../../../_images/333.png" class="align-center" src="../../../_images/333.png" style="width: 473.6px; height: 224.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O item <strong>PA03_MRP</strong> tem leadtime fixo de 10 dias:</p>
+<a class="reference internal image-reference" href="../../../_images/343.png"><img alt="../../../_images/343.png" class="align-center" src="../../../_images/343.png" style="width: 557.6px; height: 308.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao rodar o MRP dia 23/01/2024, a seguinte recomendação foi feita:</p>
+<a class="reference internal image-reference" href="../../../_images/353.png"><img alt="../../../_images/353.png" class="align-center" src="../../../_images/353.png" style="width: 921.5999999999999px; height: 241.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ambos os itens de compra <strong>Comp02_MRP</strong> e <strong>Comp03_MRP</strong> foram recomendados para compra no dia 01/02/2023 (quinta feira), onde os componentes serão liberados no mesmo dia e o <strong>PA03_MRP</strong> ficará pronto no dia 15/02/2023, contabilizando no total 10 dias úteis.</p>
+</section>
+<section id="tratar-abrir-op-para-mesma-linha-de-pedido-de-venda-vinculado">
+<h2>Tratar abrir OP para mesma linha de pedido de venda vinculado<a class="headerlink" href="#tratar-abrir-op-para-mesma-linha-de-pedido-de-venda-vinculado" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro foi criado com a finalidade de bloquear ou alertar inserção da ordem de produção através da recomendação do MRP quando ela for vinculada a um pedido de venda e o mesmo já estiver vinculado à outra Ordem de produção que esteja com seu status diferente de <strong>‘Fechado’</strong> ou <strong>‘Cancelado’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/363.png"><img alt="../../../_images/363.png" class="align-center" src="../../../_images/363.png" style="width: 601.6px; height: 342.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, é possível selecionar três opções de configuração:</p>
+<ul class="simple">
+<li><p><strong>Não validar:</strong> Quando selecionado <strong>‘Não validar’</strong>, nada ocorrerá e a <strong>‘Ordem de produção’</strong> será inserida com o pedido de venda vinculado independentemente de o pedido estar vinculado ou não à outra ordem de produção.</p></li>
+<li><p><strong>Bloquear:</strong> Quando selecionado <strong>Bloquear’</strong>, uma mensagem será exibida, e a ação será cancelada e recomendação não será executada.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/373.png"><img alt="../../../_images/373.png" class="align-center" src="../../../_images/373.png" style="width: 450.90000000000003px; height: 138.6px;" /></a>
+<p><strong>BR One :: A OP a ser aberta para o item ‘x’ já existe para a mesma linha do pedido de venda a ser vinculado.</strong></p>
+<ul class="simple">
+<li><p><strong>Alertar:</strong> Quando selecionado <strong>‘Alertar’</strong>, uma mensagem será exibida ao usuário solicitando a confirmação do processo.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/383.png"><img alt="../../../_images/383.png" class="align-center" src="../../../_images/383.png" style="width: 449.1px; height: 138.6px;" /></a>
+<p><strong>BR One :: A OP a ser aberta para o item ‘x’ já existe para a mesma linha do pedido de venda a ser vinculado. Deseja criar novamente?</strong></p>
+<ul class="simple">
+<li><p>Caso usuário aceite, a <strong>‘Ordem de produção’</strong> será inserida normalmente e o <strong>‘Pedido de venda’</strong> em questão será vinculado.</p></li>
+<li><p>Caso usuário não aceite, o processo será interrompido e a <strong>‘Ordem de produção’</strong> não será processada.</p></li>
+</ul>
+<p>Existe também a possibilidade de negar todas as recomendações utilizando a opção <strong>‘Não p/ todos’</strong>, entretanto, essa função só servirá para as recomendações seguintes, ou seja, todas as anteriores onde foi escolhida a opção <strong>‘Sim’</strong> serão processadas.</p>
+</section>
+<section id="deposito-das-recomendacoes">
+<h2>Depósito das recomendações<a class="headerlink" href="#deposito-das-recomendacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>No campo <strong>‘Depósito das recomendações’</strong> será definido a origem do depósito das linhas das recomendações de compra.</p>
+<a class="reference internal image-reference" href="../../../_images/393.png"><img alt="../../../_images/393.png" class="align-center" src="../../../_images/393.png" style="width: 597.6px; height: 336.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>É possível selecionar duas opções:</p>
+<a class="reference internal image-reference" href="../../../_images/403.png"><img alt="../../../_images/403.png" class="align-center" src="../../../_images/403.png" style="width: 427.5px; height: 56.7px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Depósito do roteiro:</strong> Com essa configuração o depósito utilizado, será o depósito do roteiro do item.</p></li>
+<li><p><strong>Depósito padrão do item:</strong> Com essa configuração o depósito utilizado, será o depósito padrão do item.</p></li>
+</ul>
+</section>
+<section id="considerar-a-data-do-documento-de-origem-da-demanda">
+<h2>Considerar a data do documento de origem da demanda<a class="headerlink" href="#considerar-a-data-do-documento-de-origem-da-demanda" title="Link permanente para este cabeçalho"></a></h2>
+<p>Parâmetro indica se o MRP deve considerar a data do documento de origem ou então será considerado o cálculo dos leadtimes dos processos.</p>
+<a class="reference internal image-reference" href="../../../_images/414.png"><img alt="../../../_images/414.png" class="align-center" src="../../../_images/414.png" style="width: 598.4px; height: 337.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando o parâmetro estiver marcado, será considerada a data da fonte de demanda, ou seja, os componentes de um semiacabado terão a data anterior da liberação da OP.</p>
+<a class="reference internal image-reference" href="../../../_images/424.png"><img alt="../../../_images/424.png" class="align-center" src="../../../_images/424.png" style="width: 947.5px; height: 99.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No exemplo acima os itens <strong>Comp02_MRP</strong> e o <strong>Comp03_MRP</strong> são componentes do semiacabado <strong>PA02_MRP</strong>, com isso a data de vencimento deles ficou para 30/01/2024, enquanto a data de liberação do semi <strong>PA02_MRP</strong> ficou para 31/01/2024.</p>
+<p>Quando o parâmetro estiver desmarcado, será considerado o cálculo dos leadtimes dos processos, então, será considerada a compra para mesma data de vencimento da OP.</p>
+<a class="reference internal image-reference" href="../../../_images/433.png"><img alt="../../../_images/433.png" class="align-center" src="../../../_images/433.png" style="width: 940.5px; height: 104.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="manter-data-de-origem-do-documento-da-demanda-para-calculos-de-fornecimento">
+<h2>Manter data de origem do documento da demanda para cálculos de fornecimento<a class="headerlink" href="#manter-data-de-origem-do-documento-da-demanda-para-calculos-de-fornecimento" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro indica se a data de origem dos documentos de demanda será mantida e utilizada para realizar os cálculos de fornecimento.</p>
+<a class="reference internal image-reference" href="../../../_images/443.png"><img alt="../../../_images/443.png" class="align-center" src="../../../_images/443.png" style="width: 600.0px; height: 340.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando o parâmetro está marcado o addon irá manter as datas de origem do documento de demanda para realizar os cálculos de fornecimento, neste caso o MRP pode exibir datas no passado.</p>
+<a class="reference internal image-reference" href="../../../_images/453.png"><img alt="../../../_images/453.png" class="align-center" src="../../../_images/453.png" style="width: 773.0px; height: 96.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando o parâmetro está desmarcado o addon não irá manter as datas de origem do documento de demanda para realizar os cálculos de fornecimento, neste caso o MRP não irá exibir as datas no passado.</p>
+<a class="reference internal image-reference" href="../../../_images/463.png"><img alt="../../../_images/463.png" class="align-center" src="../../../_images/463.png" style="width: 773.5px; height: 167.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="permitir-alterar-a-data-de-vencimento-na-aba-recomendacao">
+<h2>Permitir alterar a data de vencimento na aba Recomendação<a class="headerlink" href="#permitir-alterar-a-data-de-vencimento-na-aba-recomendacao" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro indica a possibilidade de alteração da <strong>‘Data de vencimento’</strong> na aba, <strong>‘Recomendações’</strong> da tela de <strong>‘Assistente de MRP’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/473.png"><img alt="../../../_images/473.png" class="align-center" src="../../../_images/473.png" style="width: 600.0px; height: 339.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando o parâmetro está marcado o addon irá permitir a alteração do campo <strong>‘Data de vencimento’</strong> da aba, <strong>‘Recomendações’</strong> da tela de <strong>‘Assistente de MRP’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/483.png"><img alt="../../../_images/483.png" class="align-center" src="../../../_images/483.png" style="width: 718.4000000000001px; height: 329.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando o parâmetro está desmarcado o addon não irá permitir a alteração do campo <strong>‘Data de vencimento’</strong> da aba, <strong>‘Recomendações’</strong> da tela de <strong>‘Assistente de MRP’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/493.png"><img alt="../../../_images/493.png" class="align-center" src="../../../_images/493.png" style="width: 720.8000000000001px; height: 335.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="calcular-estoque-minimo-com-demanda-no-passado">
+<h2>Calcular estoque mínimo com demanda no passado<a class="headerlink" href="#calcular-estoque-minimo-com-demanda-no-passado" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro indica o estoque mínimo como um fornecimento no passado, considerando assim essa necessidade nos cálculos realizados juntamente com as demandas que estão vencidas no passado.</p>
+<a class="reference internal image-reference" href="../../../_images/503.png"><img alt="../../../_images/503.png" class="align-center" src="../../../_images/503.png" style="width: 603.2px; height: 342.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Essa configuração pode ser marcada apenas quando o parâmetro <strong>‘Manter data de origem do documento da demanda para cálculos de fornecimento’</strong> estiver marcado.</p>
+<p>Caso usuário tente marcar o parâmetro <strong>‘Calcular estoque mínimo como demanda no passado’</strong> sem marcar o parâmetro citado acima, o addon irá retornar a seguinte mensagem de erro:</p>
+<a class="reference internal image-reference" href="../../../_images/513.png"><img alt="../../../_images/513.png" class="align-center" src="../../../_images/513.png" style="width: 707.0px; height: 13.0px;" /></a>
+<p><strong>BR One :: Não é possível marcar, pois o parâmetro ‘Manter data da origem do documento da demanda para cálculos de fornecimentos’ está desmarcado.</strong></p>
+<p>Caso o parâmetro esteja desmarcado e o usuário desmarque o flag <strong>‘Manter data de origem do documento da demanda para cálculos de fornecimento’</strong> o mesmo será desmarcado automaticamente.</p>
+<p>Para os exemplos abaixo, considere que o item <strong>‘A0001’</strong> possui configurado um estoque mínimo de 1.000 peças.</p>
+<a class="reference internal image-reference" href="../../../_images/522.png"><img alt="../../../_images/522.png" class="align-center" src="../../../_images/522.png" style="width: 640.8000000000001px; height: 268.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, quando marcado, o parâmetro <strong>‘Calcular estoque mínimo como demanda no passado’</strong> considera as necessidades de estoque mínimo juntamente nos cálculos realizados com vencimento no passado.</p>
+<p>Utilizando o cenário proposto acima como exemplo, ao executar o <strong>‘Assistente de MRP’</strong> com a configuração de nível de estoque igual a <strong>‘Mínimo’</strong>, o addon irá calcular a necessidade de estoque mínimo como demanda no passado.</p>
+<a class="reference internal image-reference" href="../../../_images/531.png"><img alt="../../../_images/531.png" class="align-center" src="../../../_images/531.png" style="width: 612.0px; height: 428.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, quando desmarcado, o parâmetro <strong>‘Calcular estoque mínimo como demanda no passado’</strong> considera as necessidades de estoque mínimo normalmente para o dia de execução do MRP.</p>
+<p>Utilizando o cenário proposto acima como exemplo, ao executar o <strong>‘Assistente de MRP’</strong> com a configuração de nível de estoque igual a <strong>‘Mínimo’</strong>, o addon irá calcular a necessidade de estoque mínimo como demanda normal.</p>
+<a class="reference internal image-reference" href="../../../_images/542.png"><img alt="../../../_images/542.png" class="align-center" src="../../../_images/542.png" style="width: 616.8000000000001px; height: 432.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="pasta-de-resultado-do-mrp">
+<h2>Pasta de resultado do MRP<a class="headerlink" href="#pasta-de-resultado-do-mrp" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro permite ao usuário configurar uma pasta que irá armazenar o histórico de execução do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/551.png"><img alt="../../../_images/551.png" class="align-center" src="../../../_images/551.png" style="width: 601.6px; height: 340.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para configurar a pasta, basta clicar no botão destacado na imagem acima <strong>[…]</strong>, com isso deve ser indicado um caminho onde será armazenado o histórico de execução do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/561.png"><img alt="../../../_images/561.png" class="align-center" src="../../../_images/561.png" style="width: 665.0px; height: 375.9px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao selecionar ou criar uma pasta o campo será preenchido.</p>
+<a class="reference internal image-reference" href="../../../_images/571.png"><img alt="../../../_images/571.png" class="align-center" src="../../../_images/571.png" style="width: 601.6px; height: 343.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Dessa forma toda vez que ao abrir o histórico e por alguma razão leve ao congestionamento do sistema, o cenário será levado para a pasta criada <strong>‘MRP JSON’</strong>.</p>
+<ul class="simple">
+<li><p><strong>No Assistente de MRP, na ETAPA 1:</strong></p></li>
+</ul>
+<p>Para selecionar um cenário para revisão, é necessário clicar no botão <strong>‘Histórico’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/581.png"><img alt="../../../_images/581.png" class="align-center" src="../../../_images/581.png" style="width: 617.6px; height: 437.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Selecione um histórico e dê duplo clique.</p>
+<a class="reference internal image-reference" href="../../../_images/591.png"><img alt="../../../_images/591.png" class="align-center" src="../../../_images/591.png" style="width: 572.0px; height: 270.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Após o carregamento o <strong>‘Assistente de MRP’</strong> vai para a <strong>ETAPA 5</strong> mostrando os resultados do histórico.</p>
+<a class="reference internal image-reference" href="../../../_images/601.png"><img alt="../../../_images/601.png" class="align-center" src="../../../_images/601.png" style="width: 613.6px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Caso o histórico leve um tempo elevado para abrir as informações, elas serão levadas para a pasta definida no campo <strong>‘Pasta de resultado do MRP’</strong>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Item%20Ficticio/MRP.html" class="btn btn-neutral float-left" title="MRP - Item Fictício" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html" class="btn btn-neutral float-right" title="Configurações do Cadastro do Item" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

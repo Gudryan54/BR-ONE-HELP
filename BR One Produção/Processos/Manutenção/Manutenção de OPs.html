@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manutenção de OPs &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Assistente de exclusão e cancelamento de componentes" href="Assistente%20de%20exclus%C3%A3o%20e%20cancelamento%20de%20componentes.html" />
+    <link rel="prev" title="Manutenção de Roteiro" href="Manuten%C3%A7%C3%A3o%20Roteiro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20Roteiro.html">Manutenção de Roteiro</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Manutenção de OPs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20exclus%C3%A3o%20e%20cancelamento%20de%20componentes.html">Assistente de exclusão e cancelamento de componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html">Atualização de grupo de recursos dos roteiros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html">Atualização de Custo/Hora</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20insumos%20para%20itens%20de%20baixo%20custo.html">Saída de insumos para itens de baixo custo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Manutenção de OPs</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="manutencao-de-ops">
+<h1>Manutenção de OPs<a class="headerlink" href="#manutencao-de-ops" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para acessar a tela de Manutenção de OPs é necessário ir no menu:</p>
+<p><strong>Produção -&gt; Manutenção -&gt; Manutenção de OPs</strong></p>
+<p>A Manutenção de OPs é um utilitário para facilitar a troca de status de OPs em lotes ou individualmente.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.002.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.002.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.002.png" style="width: 441.6px; height: 364.8px;" /></a>
+<p>O cabeçalho tela <strong>“Manutenção de OPs”</strong> consiste em filtros de busca. Após ter preenchido os filtros desejados, basta pressionar o botão Filtrar.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.003.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.003.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.003.png" style="width: 443.20000000000005px; height: 364.8px;" /></a>
+<p>Na gride é apresentado as OPs de acordo com o filtro selecionado:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.004.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.004.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.004.png" style="width: 507.20000000000005px; height: 370.40000000000003px;" /></a>
+<p>Para realizar as alterações em lotes, basta preencher os campos, com os dados desejados e clicar respectivamente no botão “Aplicar” de cada um dos campos.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.005.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.005.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.005.png" style="width: 508.8px; height: 372.8px;" /></a>
+<p>Os campos que podem ser alterados pela tela em lote são:</p>
+<ul class="simple">
+<li><p>Status;</p></li>
+<li><p>Projeto;</p></li>
+<li><p>Data de vencimento;</p></li>
+<li><p>Programação;</p></li>
+<li><p>Regra de distribuição.</p></li>
+</ul>
+<p>Ao preencher os dados e aplicar, as mudanças serão realizadas em lotes, ou seja, em todas as OPs filtradas anteriormente.</p>
+<p>Para realizar as alterações individualmente, basta clicar nos campos que deseja alterar, diretamente na linha da OP, e clicar em “Atualizar”.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.006.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.006.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.006.png" style="width: 508.8px; height: 372.8px;" /></a>
+<p>Ao preencher os dados nos campos possíveis diretamente na linha da OP desejada, ela será alterada individualmente.</p>
+<p>Importante salientar que o campo “Data de vencimento” apenas poderá ser alterado individualmente ou em lote quando as OPs estiverem com o status “Planejada”.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.007.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.007.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.007.png" style="width: 507.20000000000005px; height: 371.20000000000005px;" /></a>
+<p>OPs com status planejadas podem ter a “Data de vencimento” alteradas em lotes ou individualmente.</p>
+<p>Depois que as alterações desejadas forem realizadas, basta pressionar o botão ‘Atualizar’ para salvar.</p>
+<p>Após realizar todas as operações, será exibido um log com os resultados onde mostrará as linhas que tiveram sucesso e as linhas que tiveram erro na atualização.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.008.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.008.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.008.png" style="width: 662.4000000000001px; height: 353.6px;" /></a>
+<p>Todas as mensagens de validação que tenham ação Sim/Não do usuário (ao alterar o status da OP).</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.009.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.009.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.009.png" style="width: 384.8px; height: 116.0px;" /></a>
+<p>Exibirão os botões Sim p/ todos e Não p/ todos.</p>
+<p>Não é possível fechar uma OP caso o usuário logado não possuir a licença e permissões necessárias para realizar fechamentos contábeis ou caso uma OP tente ser fechada sem que o usuário logado e o usuário adicional não possua as devidas licenças.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.010.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.010.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.010.png" style="width: 199.20000000000002px; height: 18.400000000000002px;" /></a>
+<p><em>BR One:: Nenhuma licença SAP</em></p>
+<p>Nesse caso será exibida a seguinte mensagem de erro: “Nenhuma licença SAP”</p>
+<p>Caso uma OP tente ser fechada sem que o usuário logado e o usuário adicional não possua autorização para realizar lançamento contábil manual, caso uma OP tente ser fechada sem que o usuário logado e o usuário adicional possua autorização para realizar reavaliação do estoque ou caso uma OP tente ser fechada sem que o usuário logado não possua licenças ou autorização para realizar lançamento contábil manual e não haja nenhum usuário adicional cadastro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.011.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.011.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.011.png" style="width: 367.20000000000005px; height: 14.4px;" /></a>
+<p><em>BR One:: Usuário não possui autorização para realizar lançamentos contábeis</em></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.012.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.012.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.012.png" style="width: 370.40000000000003px; height: 16.0px;" /></a>
+<p><em>BR One:: Usuário não possui autorização para realizar reavaliação do estoque.</em></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.013.png"><img alt="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.013.png" src="../../../_images/Aspose.Words.a79e69f2-dbc9-410e-9296-87e7babfb5c8.013.png" style="width: 364.0px; height: 14.4px;" /></a>
+<p><em>BR One:: Não existe usuário configurado para o fechamento da ordem de produção</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Manuten%C3%A7%C3%A3o%20Roteiro.html" class="btn btn-neutral float-left" title="Manutenção de Roteiro" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Assistente%20de%20exclus%C3%A3o%20e%20cancelamento%20de%20componentes.html" class="btn btn-neutral float-right" title="Assistente de exclusão e cancelamento de componentes" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

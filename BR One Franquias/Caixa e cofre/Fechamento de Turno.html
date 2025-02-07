@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fechamento de Turno &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Estoque" href="../Estoque/Estoque.html" />
+    <link rel="prev" title="Suprimento de Troco" href="Suprimento%20de%20Troco.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Acesso%20ao%20M%C3%B3dulo.html">Acesso ao Módulo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abertura%20de%20Turno.html">Abertura de Turno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abertura%20de%20Caixa.html">Abertura de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sangria%20de%20Caixa.html">Sangria de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Estorno%20de%20Sangria.html">Estorno de Sangria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20de%20Caixa.html">Fechamento de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Petty%20Cash.html">Petty Cash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Transfer%C3%AAncia%20entre%20cofres.html">Transferência entre Cofres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Coleta%20de%20Valores.html">Coleta de Valores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Suprimento%20de%20Troco.html">Suprimento de Troco</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Fechamento de Turno</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Fechamento de Turno</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fechamento-de-turno">
+<h1>Fechamento de Turno<a class="headerlink" href="#fechamento-de-turno" title="Link permanente para este cabeçalho"></a></h1>
+<p>O fechamento de turno deverá ser o último processo realizado pelo
+gerente de loja ao encerrar suas atividades. O módulo só estará
+disponível se todos os caixas estiverem fechados. Certifique-se de ter
+realizado todos os processos antes do fechamento do turno.</p>
+<a class="reference internal image-reference" href="../../_images/image62.png"><img alt="" src="../../_images/image62.png" style="width: 6.26389in; height: 3.37708in;" /></a>
+<p>Ao clicar em Fechamento de Turno, serão apresentadas as transações
+realizadas durante o turno. Será mostrado a soma dos valores
+transacionados por meio de pagamento em vendas informados no fechamento
+de caixa, além dos resumos no rodapé da tela, contendo: vendas,
+sangrias, quebras, apurado e saldo cofre troco.</p>
+<p>Nessa etapa, não é possível fazer alterações, clique em próximo para
+prosseguir com o fechamento de turno.</p>
+<a class="reference internal image-reference" href="../../_images/image63.png"><img alt="" src="../../_images/image63.png" style="width: 6.26389in; height: 3.37708in;" /></a>
+<p>Ao clicar em próximo, defina o valor encontrado em saldo do cofre fundo
+de troco. Informe corretamente o valor para que o próximo gente faça a
+abertura do turno de forma correta.</p>
+<a class="reference internal image-reference" href="../../_images/image64.png"><img alt="" src="../../_images/image64.png" style="width: 6.26389in; height: 3.37361in;" /></a>
+<p>O fechamento do caixa estará finalizado e será demonstrado um resumo dos
+valores em relação as sangrias de caixa, depósitos em cofre boca de lobo
+e depósitos em cofre fundo de troco.</p>
+<a class="reference internal image-reference" href="../../_images/image64.png"><img alt="" src="../../_images/image64.png" style="width: 6.26389in; height: 3.37361in;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Suprimento%20de%20Troco.html" class="btn btn-neutral float-left" title="Suprimento de Troco" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Estoque/Estoque.html" class="btn btn-neutral float-right" title="Estoque" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

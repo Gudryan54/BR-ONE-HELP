@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adiciona uma linha no GRID da Ordem de Produção &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Exclui uma linha de conteúdo na Ordem de Produção" href="Exclui%20linha%20de%20conteudo%20na%20OP.html" />
+    <link rel="prev" title="Adiciona uma Ordem de Produção" href="Adiciona%20OP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#configuracao">Configuração</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-producao">Apontamento de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-refugo">Apontamento de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#colaboradores">Colaboradores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#entrada-de-produto-acabado">Entrada de Produto Acabado</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20API.html#ordem-de-producao">Ordem de Produção</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Ordem%20de%20Produ%C3%A7%C3%A3o%20Introdu%C3%A7%C3%A3o.html">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Busca%20OP%20com%20pagina%C3%A7%C3%A3o.html">Busca Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fecha%20OP.html">Fechar Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Libera%20OP.html">Liberar Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atualiza%20OP.html">Atualização de Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adiciona%20OP.html">Adiciona uma Ordem de Produção</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adiciona uma linha no GRID da Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Exclui%20linha%20de%20conteudo%20na%20OP.html">Exclui uma linha de conteúdo na Ordem de Produção</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#status-dos-recursos">Status dos Recursos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#classificacoes-de-refugo">Classificações de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#saida-de-insumos">Saída de Insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ficha-de-analise">Ficha de Análise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20API.html">BR One API</a></li>
+      <li class="breadcrumb-item active">Adiciona uma linha no GRID da Ordem de Produção</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adiciona-uma-linha-no-grid-da-ordem-de-producao">
+<h1>Adiciona uma linha no GRID da Ordem de Produção<a class="headerlink" href="#adiciona-uma-linha-no-grid-da-ordem-de-producao" title="Link permanente para este cabeçalho"></a></h1>
+<p>Este endpoint permite adicionar uma linha no GRID da Ordem de Produção. É possível adicionar uma Operação, um recurso ou um componente, para realizar a adição a OP deve possuir status “<strong>Planejado</strong>”, para isso deve ser informado os campos e o JSON abaixo:</p>
+<a class="reference internal image-reference" href="../../_images/077.png"><img alt="../../_images/077.png" src="../../_images/077.png" style="width: 682.2px; height: 74.7px;" /></a>
+<a class="reference internal image-reference" href="../../_images/078.png"><img alt="../../_images/078.png" src="../../_images/078.png" style="width: 555.3000000000001px; height: 305.1px;" /></a>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Adição de linha</span><a class="headerlink" href="#id1" title="Link Permanente para esse código"></a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;modeloAnalise&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;desconsiderarLeadTime&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;dataInicio&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-14&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;horaInicio&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;dataTermino&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-14&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;horaTermino&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;linhasOperacao&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;tipoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;codigoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadeBase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadeFixa&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadePlanejada&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tempoFixo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tempoVariavel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tempoPlanejado&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dimensao1&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dimensao2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;depositoComponente&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;metodoBaixa&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dataInicio&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-14&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;horaInicio&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;dataTermino&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-14&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;horaTermino&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;observacao&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;observacao2&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;percentualPerda&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;recursos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;codigoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>Segue abaixo exemplos de adição de linha para uma OP:</p>
+<ul class="simple">
+<li><p><strong>Adição de Operação:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/080.png"><img alt="../../_images/080.png" src="../../_images/080.png" style="width: 556.2px; height: 300.6px;" /></a>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Modelo de Analise</span><a class="headerlink" href="#id2" title="Link Permanente para esse código"></a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;modeloAnalise&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;00000002&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p><strong>Obs.: Para adição de operação não é necessário enviar nenhum valor no JSON, para isso basta informar { }.</strong></p>
+<a class="reference internal image-reference" href="../../_images/082.png"><img alt="../../_images/082.png" src="../../_images/082.png" style="width: 618.4000000000001px; height: 428.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Adição de Recurso:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/083.png"><img alt="../../_images/083.png" src="../../_images/083.png" style="width: 556.2px; height: 300.6px;" /></a>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Adição Recurso</span><a class="headerlink" href="#id3" title="Link Permanente para esse código"></a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;linhasOperacao&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;tipoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MQ&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;codigoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GRM&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadeBase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tempoFixo&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;tempoVariavel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;recursos&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;codigoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;R-LASER-001&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/085.png"><img alt="../../_images/085.png" src="../../_images/085.png" style="width: 767.2px; height: 432.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Adição de Componente:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/086.png"><img alt="../../_images/086.png" src="../../_images/086.png" style="width: 556.2px; height: 300.6px;" /></a>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">Adição de Componente</span><a class="headerlink" href="#id4" title="Link Permanente para esse código"></a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;linhasOperacao&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;tipoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CP&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;codigoRecurso&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;item_nenhum_02&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadeBase&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;quantidadeFixa&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;depositoComponente&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;01&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;metodoBaixa&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;M&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<a class="reference internal image-reference" href="../../_images/088.png"><img alt="../../_images/088.png" src="../../_images/088.png" style="width: 763.2px; height: 429.6px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Adiciona%20OP.html" class="btn btn-neutral float-left" title="Adiciona uma Ordem de Produção" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Exclui%20linha%20de%20conteudo%20na%20OP.html" class="btn btn-neutral float-right" title="Exclui uma linha de conteúdo na Ordem de Produção" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

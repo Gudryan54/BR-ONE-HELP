@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relátorio de Recursividade de OPs &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Relatório Inventário no relatório do depósito" href="Relat%C3%B3rio%20Invent%C3%A1rio%20no%20relat%C3%B3rio%20do%20dep%C3%B3sito.html" />
+    <link rel="prev" title="Relátorio de Recursividade de Roteiro" href="Relat%C3%B3rio%20Recursividade%20Roteiro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Apontamento%20na%20OP.html">Relatório de Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Verificar%20Qtde%20disponiveis%20na%20OP.html">Verificar quantidade dos itens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Implos%C3%A3o.html">Relatório de Implosão</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Explos%C3%A3o.html">Relatório de Explosão</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Recursividade%20Roteiro.html">Relátorio de Recursividade de Roteiro</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Relátorio de Recursividade de OPs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Invent%C3%A1rio%20no%20relat%C3%B3rio%20do%20dep%C3%B3sito.html">Relatório Inventário no relatório do depósito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Dispon%C3%ADvel%20para%20promessa.html">Relatório Disponível para promessa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Saldo%20de%20Dep%C3%B3sito.html">Relatório Saldo de depósito</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Relátorio de Recursividade de OPs</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="relatorio-de-recursividade-de-ops">
+<h1>Relátorio de Recursividade de OPs<a class="headerlink" href="#relatorio-de-recursividade-de-ops" title="Link permanente para este cabeçalho"></a></h1>
+<p>Este relatório tem como objetivo indicar as Ordens de Produção que possuem recursividade, a tela pode ser acessada através do caminho abaixo:</p>
+<p><strong>Menu principal -&gt; Produção -&gt; Relatórios de produção -&gt; Relatório de recursividade de ordens de produção</strong></p>
+<a class="reference internal image-reference" href="../../_images/0134.png"><img alt="../../_images/0134.png" src="../../_images/0134.png" style="width: 681.0px; height: 547.0px;" /></a>
+<p>No cabeçalho da tela ‘Relatório de recursividade de ordens de produção’, há três filtros que podem ser utilizados na busca das ordens de produção recursivas, são eles:</p>
+<ul class="simple">
+<li><p><strong>Data</strong></p></li>
+<li><p><strong>Nº do item</strong></p></li>
+<li><p><strong>Ordem de produção</strong></p></li>
+</ul>
+<p>Cada um dos filtros citados acima possui algumas regras e especificidades, segue abaixo detalhes:</p>
+<ul class="simple">
+<li><p><strong>Data:</strong></p></li>
+</ul>
+<p>É o único campo obrigatório da tela, caso não seja informado e o usuário tente realizar a procura das OPs recursivas, o add-on irá retornar a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../_images/0229.png"><img alt="../../_images/0229.png" src="../../_images/0229.png" style="width: 208.0px; height: 17.0px;" /></a>
+<p><strong>BR One :: O filtro de data é obrigatório.</strong></p>
+<p>Neste filtro é permitido inserir um período de no máximo 31 dias,  caso usuário insira um período maior, o add-on irá retornar a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../_images/0327.png"><img alt="../../_images/0327.png" src="../../_images/0327.png" style="width: 303.0px; height: 15.0px;" /></a>
+<p><strong>BR One :: O filtro de data tem um período superior a 31 dias.</strong></p>
+<p><strong>Exemplo:</strong></p>
+<a class="reference internal image-reference" href="../../_images/0420.png"><img alt="../../_images/0420.png" src="../../_images/0420.png" style="width: 671.0px; height: 547.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Nº do item:</strong></p></li>
+</ul>
+<p>Este filtro permite selecionar um intervalo de itens, ao aplicar o filtro, serão retornados apenas as OPs recursivas que façam parte do intervalo selecionado.</p>
+<p><strong>Exemplo:</strong></p>
+<a class="reference internal image-reference" href="../../_images/0520.png"><img alt="../../_images/0520.png" src="../../_images/0520.png" style="width: 669.0px; height: 546.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Ordem de produção:</strong></p></li>
+</ul>
+<p>Este filtro permite selecionar um intervalo de OPs, ao aplicar o filtro, serão retornados apenas as OPs recursivas que façam parte do intervalo de OPs selecionado.</p>
+<p><strong>Exemplo:</strong></p>
+<a class="reference internal image-reference" href="../../_images/0618.png"><img alt="../../_images/0618.png" src="../../_images/0618.png" style="width: 671.0px; height: 549.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Relat%C3%B3rio%20Recursividade%20Roteiro.html" class="btn btn-neutral float-left" title="Relátorio de Recursividade de Roteiro" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Relat%C3%B3rio%20Invent%C3%A1rio%20no%20relat%C3%B3rio%20do%20dep%C3%B3sito.html" class="btn btn-neutral float-right" title="Relatório Inventário no relatório do depósito" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

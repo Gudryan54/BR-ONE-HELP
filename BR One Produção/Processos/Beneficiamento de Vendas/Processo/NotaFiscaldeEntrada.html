@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nota Fiscal de Entrada &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Ordem de Produção" href="OrdemdeProducao.html" />
+    <link rel="prev" title="Pedidos de Venda" href="PedidodeVenda.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Configuracoes.html">Configurações do Beneficiamento de Vendas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/ParceirosdeNegocios.html">Parceiro de Negócios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastrodoItem.html">Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/DefinicaoUM.html">Definições de Unidades de Medidas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastroRoteiro.html">Cadastro de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PedidodeVenda.html">Pedidos de Venda</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Nota Fiscal de Entrada</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OrdemdeProducao.html">Ordem de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AssistenteFaturamento.html">Assistente de Faturamento e Retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AssistenteCancelamento.html">Assistente de Cancelamento de Faturamento</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Nota Fiscal de Entrada</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="nota-fiscal-de-entrada">
+<h1>Nota Fiscal de Entrada<a class="headerlink" href="#nota-fiscal-de-entrada" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na tela de <strong>Nota Fiscal de Entrada</strong> foram inseridos novos campos que serão utilizados no processo de Beneficiamento de Vendas.</p>
+<p>Ao contrário do beneficiamento de compras onde a sua empresa compra o beneficiamento de uma empresa terceira e manda os componentes para serem beneficiados, no beneficiamento de vendas a sua empresa é a fornecedora deste serviço, então se faz necessário receber do cliente os componentes que farão parte do processo, e isso acontece por meio da nota fiscal de entrada.</p>
+<p>Como exemplo do funcionamento para o processo podemos imaginar uma empresa que vende o beneficiamento para uma cobertura de chocolate. Neste caso o cliente manda os componentes desta cobertura para a empresa, o fornecedor realiza o processo de beneficiamento dos itens e então devolve ao cliente a cobertura de chocolate pronta.</p>
+<p>Ao analisar o roteiro do item que será beneficiado <strong>Cobertura de chocolate</strong> é possível notar que existem 4 componentes necessários, e dentre eles apenas o item <strong>Chocolate em pó</strong> possui o depósito <strong>01</strong> com o campo <strong>Faturado</strong> selecionado.</p>
+<p><strong>Obs.</strong> Quando nas configurações do beneficiamento o cálculo dos insumos é Realizado o campo <strong>Faturado</strong> a ser considerado é o da <strong>Ordem de Produção</strong> e não do <strong>Roteiro</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/121.png"><img alt="../../../../_images/121.png" src="../../../../_images/121.png" style="width: 996.8000000000001px; height: 265.6px;" /></a>
+<p>Como já explicado na documentação de roteiro, quando o depósito vinculado ao componente for um depósito próprio, significa que este componente não virá de um terceiro.</p>
+<a class="reference internal image-reference" href="../../../../_images/132.png"><img alt="../../../../_images/132.png" src="../../../../_images/132.png" style="width: 590.4px; height: 145.6px;" /></a>
+<p>Já quando os componentes estiverem vinculados a depósito de terceiro, significa que estes componentes serão recebidos do cliente para que o beneficiamento seja realizado. Este recebimento dos componentes ocorrerá por meio da <strong>Nota Fiscal de Entrada</strong> com as utilizações <strong>Entrada industrialização encomenda</strong> ou <strong>Entrada industrialização triangular</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/142.png"><img alt="../../../../_images/142.png" src="../../../../_images/142.png" style="width: 412.8px; height: 271.2px;" /></a>
+<p>A diferença entre uma nota de industrialização por <strong>encomenda</strong> e uma nota de industrialização <strong>triangular</strong> é que na nota de industrialização por <strong>encomenda</strong> os componentes são recebidos do seu cliente (o mesmo que você vendeu o beneficiamento), já no caso da nota <strong>triangular</strong> você vende o beneficiamento para o seu cliente, mas não é ele quem envia os componentes e sim um <strong>terceiro</strong>. Acompanhe o exemplo a seguir.</p>
+<a class="reference internal image-reference" href="../../../../_images/15.jpg"><img alt="../../../../_images/15.jpg" src="../../../../_images/15.jpg" style="width: 520.8000000000001px; height: 422.40000000000003px;" /></a>
+<p>O processo de <strong>triangulação</strong> se faz necessário pois, ao invés do cliente comprar os componentes para o beneficiamento, receber eles no seu estoque e depois mandar para a empresa que vai fazer o beneficiamento, ele pode comprar os itens do fornecedor e pedir para que o fornecedor faça a entrega dos itens direto na empresa que fará o beneficiamento, isso diminuirá custos com transporte e tempo de entrega. O que vai entrar no depósito do cliente posteriormente será apenas o item já beneficiado.</p>
+<p>Na nota fiscal de entrada com a utilização <strong>Entrada industrialização encomenda</strong> é necessário conter no cabeçalho o fornecedor vinculado ao cliente do pedido de vendas conforme a imagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/16.png"><img alt="../../../../_images/16.png" src="../../../../_images/16.png" style="width: 1084.0px; height: 471.20000000000005px;" /></a>
+<p>Quando a utilização da nota for <strong>Entrada industrialização encomenda</strong> também é preciso que o depósito seja o mesmo da configuração <strong>Receb. benef. Vendas</strong>. Mesmo que haja um depósito diferente, ao tentar adicionar a nota fiscal o sistema trocará o depósito automaticamente para o depósito configurado <strong>Receb. benef. Vendas</strong> configurado no cadastro do PN.</p>
+<a class="reference internal image-reference" href="../../../../_images/17.png"><img alt="../../../../_images/17.png" src="../../../../_images/17.png" style="width: 871.2px; height: 470.40000000000003px;" /></a>
+<p>Ao entrar com os componentes que serão utilizados, o depósito <strong>Receb. benef. Vendas</strong> irá armazenar os itens de terceiros. O campo <strong>Depósito cliente</strong> das linhas dos itens também terá seu preenchimento automático.</p>
+<a class="reference internal image-reference" href="../../../../_images/181.png"><img alt="../../../../_images/181.png" src="../../../../_images/181.png" style="width: 895.2px; height: 387.20000000000005px;" /></a>
+<p>A nota fiscal de entrada onde a utilização for igual <strong>Entrada industrialização encomenda</strong> ou <strong>Entrada industrialização triangular</strong> em alguma linha, todas as linhas precisam estar com a mesma utilização, caso contrário o erro abaixo impedirá a adição da nota.</p>
+<a class="reference internal image-reference" href="../../../../_images/191.png"><img alt="../../../../_images/191.png" src="../../../../_images/191.png" style="width: 397.6px; height: 120.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/201.png"><img alt="../../../../_images/201.png" src="../../../../_images/201.png" style="width: 669.6px; height: 288.8px;" /></a>
+<p><em>BR One :: Não é permitido adicionar o documento do processo de beneficiamento com ‘Utilização’ diferente nas linhas dos itens.</em></p>
+<p>Ao adicionar a nota fiscal de entrada, no rodapé do documento a tela <strong>Controle estoque terceiro</strong> estará disponível para acesso.</p>
+<a class="reference internal image-reference" href="../../../../_images/212.png"><img alt="../../../../_images/212.png" src="../../../../_images/212.png" style="width: 200.8px; height: 64.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Controle estoque terceiro.</strong></p></li>
+</ul>
+<p>O botão <strong>Oper. Adicionais</strong> abrirará a tela de consulta de <strong>Controle de Estoque de Terceiro</strong> para cada nota fiscal de entrada, esta tela vai exibir o controle do saldo do material recebido do cliente no processo de <strong>Beneficiamento de Vendas</strong>, tanto no processo de industrialização por <strong>encomenda</strong> quanto no processo de industrialização <strong>triangular</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/221.png"><img alt="../../../../_images/221.png" src="../../../../_images/221.png" style="width: 1176.0px; height: 102.4px;" /></a>
+<p>Quando o componente entra com uma unidade de medida diferente da unidade de medida de estoque, o saldo também é controlado em unidade. Note o exemplo abaixo, onde houve a entrada do componente Verniz, ele é comprado em caixa e cada caixa possui 24 unidades, logo ao comprar 2 caixas o sistema deve armazenar no depósito de terceiro um saldo de 48 unidades.</p>
+<a class="reference internal image-reference" href="../../../../_images/23.png"><img alt="../../../../_images/23.png" src="../../../../_images/23.png" style="width: 776.8000000000001px; height: 376.0px;" /></a>
+<p><strong>Atenção:</strong> Como detalhado na documentação de <strong>Parceiro de negócios</strong>, quando a empresa utiliza o processo de qualidade na entrada, isso é, gera ficha de análise para os componentes de terceiros, o depósito de <strong>Receb. benef. Vendas</strong> será diferente do depósito <strong>Benef. Vendas</strong> isso porque primeiro o componente entrará no depósito para inspeção (Receb. benef. Vendas) e somente após a ficha ser aprovada esta mercadoria será transferida para o depósito de <strong>Benef. Vendas</strong> e estará pronta para ser consumida na OP.</p>
+<p>Caso a empresa não utilize o processo de qualidade o mesmo depósito deve ser definido para os depósitos de <strong>Benef. Vendas</strong> e <strong>Receb. benef. Vendas</strong>, sendo assim, logo que houver a entrada da nota fiscal com os componentes, eles já estarão no depósito correto para serem consumidos dentro da OP.</p>
+<ul class="simple">
+<li><p><strong>Processo de Triangulação:</strong></p></li>
+</ul>
+<p>O processo de triangulação possui esta denominação pois irá envolver mais um participante no processo de beneficiamento, que é o fornecedor dos componentes, segue abaixo um exemplo da participação deste terceiro participante no processo de remessa:</p>
+<a class="reference internal image-reference" href="../../../../_images/24.jpg"><img alt="../../../../_images/24.jpg" src="../../../../_images/24.jpg" style="width: 520.8000000000001px; height: 422.40000000000003px;" /></a>
+<p>Então diferente do processo de industrialização normal onde o cliente encomenda o beneficiamento do produtor e envia os componentes para a realização da industrialização, no processo de triangulação o cliente vai encomendar o beneficiamento do industrializador, porém quem fará o envio da matéria prima é o seu fornecedor.</p>
+<p>O fornecedor da matéria prima faz a venda para o cliente como de costume, emite a nota fiscal faturando os componentes, mas nos casos de triangulação este fornecedor encaminhará os componentes ao endereço do industrializador e não no endereço do cliente.</p>
+<p>Neste processo, o produtor vai emitir duas notas fiscais de entrada:</p>
+<p><strong>1º Nota Fiscal de Entrada com a utilização Entrada industrialização triangular</strong> onde o fornecedor no cabeçalho é a empresa que está enviando os componentes. Esta nota precisa ter o campo <strong>Cliente encomendante</strong> preenchido com o Cliente do beneficiamento, isso é necessário para o sistema identificar em qual depósito irá armazenar a mercadoria recebida. Este campo apresentará apenas clientes que estão com o <strong>Fornecedor Vinculado</strong> na tela de Parceiros de Negócios no campo <strong>Definição Benef. Vendas</strong> e deverá ser obrigatório caso exista uma linha com Utilização igual a <strong>Entrada de industrialização triangular</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/25.png"><img alt="../../../../_images/25.png" src="../../../../_images/25.png" style="width: 983.2px; height: 404.0px;" /></a>
+<p><strong>2º Nota Fiscal de Entrada com a utilização Entrada cobertura fiscal</strong> onde o fornecedor do cabeçalho é o fornecedor vinculado ao cadastro cliente do beneficiamento, esta nota irá conter os itens que o fornecedor mandou e a numeração da nota fiscal que entrou deste fornecedor no campo <strong>NF triangular</strong>. Para o preenchimento do campo <strong>NF triangular</strong> é necessário dar um tab e escolher a nota, será listado todas as notas fiscais de entrada com a utilização <strong>Entrada industrialização triangular</strong>.</p>
+<p>Este campo deverá ser preenchido apenas para as notas com utilização <strong>Entrada cobertura fiscal</strong>. É possível utilizar a nota de cobertura para cobrir fiscalmente mais de uma nota fiscal, para isso é necessário informar os itens nas linhas e as numerações de notas.</p>
+<a class="reference internal image-reference" href="../../../../_images/26.png"><img alt="../../../../_images/26.png" src="../../../../_images/26.png" style="width: 1067.2px; height: 437.6px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/27.png"><img alt="../../../../_images/27.png" src="../../../../_images/27.png" style="width: 1076.8px; height: 472.0px;" /></a>
+<p><strong>NF Cobertura Fiscal:</strong> Assim que a nota de cobertura fiscal for adicionada, ao voltar na nota do fornecedor (com a utilização entrada industrialização triangular) que agora está coberta fiscalmente é possível consultar a nota de cobertura pela opção abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/GIF02.gif"><img alt="../../../../_images/GIF02.gif" src="../../../../_images/GIF02.gif" style="width: 796.0px; height: 468.8px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/28.png"><img alt="../../../../_images/28.png" src="../../../../_images/28.png" style="width: 1081.6000000000001px; height: 502.40000000000003px;" /></a>
+<p>Para as notas que são cobertura fiscal a tela de <strong>Controle de estoque de terceiros</strong> não fará o controle dos saldos pois como o parâmetro <strong>só imposto</strong> está selecionado, nenhuma movimentação de estoque é realizada, portanto não há saldo a ser controlado. Caso tente abrir a tela a mensagem abaixo será exibida:</p>
+<a class="reference internal image-reference" href="../../../../_images/29.png"><img alt="../../../../_images/29.png" src="../../../../_images/29.png" style="width: 432.0px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Não é permitido abrir a operação adicional de ‘Controle estoque terceiro’ para este tipo de documento.</em></p>
+<p>No caso do processo de triangulação o controle dos saldos fica sendo realizado na nota fiscal com a utilização <strong>Entrada industrialização triangular</strong>, acessando o botão <strong>Oper. Adicionais &gt; Controle estoque terceiro</strong>.</p>
+<p><strong>Depósito do Cliente:</strong> Este campo será preenchido automaticamente pelo processo com o Depósito definido no novo campo ‘Benef. Vendas’ da tabela vinculada ao Cadastro do Parceiro de Negócio.</p>
+<a class="reference internal image-reference" href="../../../../_images/30.png"><img alt="../../../../_images/30.png" src="../../../../_images/30.png" style="width: 1080.8px; height: 412.0px;" /></a>
+<p><strong>NF de ajuste de Beneficiamento:</strong> Este campo será informado manualmente pelo usuário quando necessário realizar <strong>Nota Fiscal Entrada</strong> ou <strong>Dev. Nota Fiscal de Saída</strong> própria em cenário onde não se possa mais cancelar os documentos gerados pelo processo de <strong>Assistente de Faturamento e Retorno</strong>.</p>
+<p>O campo apresentará as notas fiscais de <strong>Dev.de Nota Fiscal de Entrada</strong> e <strong>Nota Fiscal de Saída</strong> com utilização igual a <strong>Retorno industrialização encomenda</strong> e <strong>Retorno industrialização triangular</strong> que não esteja cancelada, não seja uma nota de cancelamento e que não esteja vinculado a outra <strong>NF Entrada</strong> e <strong>Dev. Nota Fiscal de Saída</strong>.</p>
+<p>Segue explicação do processo da NF de ajuste abaixo:</p>
+<p>A nota fiscal de ajuste pode ser necessária em casos onde os componentes utilizados no processo de beneficiamento já foram retornados para o cliente por meio de uma <strong>Dev. Nota Fiscal de Entrada</strong> ou uma <strong>Nota Fiscal de Saída</strong>, estes documentos já foram transmitidos para a <strong>SEFAZ</strong> a mais de 24 horas e por algum motivo é necessário o cancelamento dos mesmos. Como o tempo para o cancelamento das notas já foi atingido e você irá precisar que os saldos retornem para o sistema é possível criar uma <strong>Nota Fiscal de Ajuste</strong>.</p>
+<p>Para criar uma <strong>Nota Fiscal de Ajuste</strong>, é necessário abrir a tela de <strong>Nota Fiscal de Entrada</strong> ou <strong>Dev. Nota Fiscal de Saída</strong>, preencher os mesmos componentes da <strong>Nota Fiscal de Saída</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong>, as mesmas quantidades, o mesmo depósito (<strong>Expedição</strong>) e a mesma utilização do documento que será ajustado (<strong>retorno industrialização encomenda ou retorno industrialização triangular</strong>).</p>
+<p>No nosso exemplo abaixo, vamos utilizar a <strong>Nota Fiscal de Entrada</strong>, mas o processo pode ser realizado em uma <strong>Dev. Nota Fiscal de Saída</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/NFE1.png"><img alt="../../../../_images/NFE1.png" src="../../../../_images/NFE1.png" style="width: 1084.0px; height: 279.2px;" /></a>
+<p>Após a criação da <strong>Nota Fiscal de Entrada</strong> ou <strong>Dev. Nota Fiscal de Saída</strong> (Nota de ajuste) na aba <strong>Imposto</strong> é necessário selecionar no campo <strong>“NF de ajuste de Benef.”</strong> a <strong>Nota Fiscal de Saída</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong> que será ajustada (saldo retornado para o sistema). Aparecerão todas as <strong>Notas Fiscais de Saída</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong> que não estejam canceladas, vinculadas em outras NF.</p>
+<a class="reference internal image-reference" href="../../../../_images/NFE2.png"><img alt="../../../../_images/NFE2.png" src="../../../../_images/NFE2.png" style="width: 1085.6000000000001px; height: 474.40000000000003px;" /></a>
+<p>Após a adição da <strong>NF de ajuste</strong>, o saldo será retornado o sistema, ele poderá ser visualizado na tela de <strong>Controle de estoque de terceiro</strong> da <strong>Nota Fiscal de Entrada</strong> original (que entrou com os componentes pela primeira vez) e na etapa 2 do assistente de faturamento e retorno na opção <strong>Movimento</strong>, essa quantidade estará novamente disponível para que seja retornado ao cliente.</p>
+<p>Caso o documento de <strong>NF Saída</strong> ou <strong>Dev. NFe</strong> for cancelado e o mesmo estiver vinculado a uma <strong>NFe</strong>, o campo será atualizado automaticamente.</p>
+<a class="reference internal image-reference" href="../../../../_images/311.png"><img alt="../../../../_images/311.png" src="../../../../_images/311.png" style="width: 648.8000000000001px; height: 348.0px;" /></a>
+<p>Caso a <strong>Nota Fiscal de Entrada</strong> seja duplicada, os campos abaixo não serão copiados para uma nova <strong>Nota Fiscal de Entrada</strong>:</p>
+<ul class="simple">
+<li><p><strong>Cliente encomendante</strong></p></li>
+<li><p><strong>Documento ajuste Benef. Vendas</strong></p></li>
+<li><p><strong>Depósito cliente</strong></p></li>
+<li><p><strong>NF Triangular</strong></p></li>
+<li><p><strong>Chave documento base</strong></p></li>
+<li><p><strong>Linha documento base</strong></p></li>
+<li><p><strong>Tipo documento base</strong></p></li>
+</ul>
+<p><strong>Validações para as utilizações de NF de Entrada</strong></p>
+<p><strong>NF de Entrada Encomenda</strong></p>
+<ul class="simple">
+<li><p>Todas as linhas devem possuir a mesma <strong>Utilização</strong>.</p></li>
+</ul>
+<p><strong>NF de Entrada Triangular</strong></p>
+<ul class="simple">
+<li><p>Todas as linhas devem possuir a mesma <strong>Utilização</strong>;</p></li>
+<li><p>É obrigatório preencher o campo <strong>Cliente encomendante</strong>.</p></li>
+</ul>
+<p><strong>NF de Entrada Cobertura Fiscal</strong></p>
+<ul class="simple">
+<li><p>Todas as linhas devem possuir a mesma <strong>Utilização</strong>;</p></li>
+<li><p>Quando a utilização for <strong>Entrada Cobertura Fiscal</strong>, o campo <strong>NF Triangular</strong> é obrigatório em todas as linhas.</p></li>
+</ul>
+<p><strong>NF de Entrada Ajuste</strong></p>
+<ul class="simple">
+<li><p>Pode ser um documento de <strong>Devolução de NF de Entrada</strong> ou uma <strong>Nota Fiscal de Saída</strong>;</p></li>
+<li><p>A quantidade de linhas de itens, código dos itens e quantidade dos itens devem ser iguais aos da <strong>NF de Entrada</strong>;</p></li>
+<li><p>A utilização das linhas deverão ser do tipo <strong>Retorno industrialização encomenda</strong> ou <strong>Retorno industrialização triangular</strong>.</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="PedidodeVenda.html" class="btn btn-neutral float-left" title="Pedidos de Venda" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="OrdemdeProducao.html" class="btn btn-neutral float-right" title="Ordem de Produção" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

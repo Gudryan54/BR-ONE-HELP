@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coleta de Valores &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Suprimento de Troco" href="Suprimento%20de%20Troco.html" />
+    <link rel="prev" title="Transferência entre Cofres" href="Transfer%C3%AAncia%20entre%20cofres.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Acesso%20ao%20M%C3%B3dulo.html">Acesso ao Módulo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abertura%20de%20Turno.html">Abertura de Turno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abertura%20de%20Caixa.html">Abertura de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Sangria%20de%20Caixa.html">Sangria de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Estorno%20de%20Sangria.html">Estorno de Sangria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20de%20Caixa.html">Fechamento de Caixa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Petty%20Cash.html">Petty Cash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Transfer%C3%AAncia%20entre%20cofres.html">Transferência entre Cofres</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Coleta de Valores</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Suprimento%20de%20Troco.html">Suprimento de Troco</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20de%20Turno.html">Fechamento de Turno</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Coleta de Valores</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coleta-de-valores">
+<h1>Coleta de Valores<a class="headerlink" href="#coleta-de-valores" title="Link permanente para este cabeçalho"></a></h1>
+<p>A função Coleta de Valores está relacionada com a coleta realizada pela
+transportadores de valores. Nessa aba, defina se os valores que serão
+coletados do cofre <strong>Boca de Lobo (1)</strong>, <strong>Fundo de Troco (2)</strong> e
+<strong>Notas Inválidas (3)</strong> (como por exemplo as notas falsas ou
+danificadas). Defina a <strong>descrição (4)</strong> do lançamento e clique em
+<strong>Próximo (5)</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/image50.png"><img alt="" src="../../_images/image50.png" style="width: 6.26389in; height: 3.36667in;" /></a>
+<p>O sistema informará que o processo é irreversível, isso quer dizer que
+depois de adicionado será realizado um lançamento contábil no SAP que
+não poderá ser excluído.</p>
+<a class="reference internal image-reference" href="../../_images/image51.png"><img alt="" src="../../_images/image51.png" style="width: 5.03593in; height: 2.37236in;" /></a>
+<p>Caso esteja de acordo com o lançamento, confirme a operação. Se
+necessário ajustes, clique em “não” e faça as devidas correções. Ao
+concluir, o aplicativo irá gerar um lançamento contábil automático no
+SAP.</p>
+<a class="reference internal image-reference" href="../../_images/image52.png"><img alt="" src="../../_images/image52.png" style="width: 6.26389in; height: 3.37014in;" /></a>
+<p>O impacto contábil dessa operação abrangerá os lançamentos de <strong>DÉBITO</strong>
+na conta <strong>CAIXA NUMERÁRIOS</strong> (conta destinada aos recebimentos
+coletados pela transportadora de valores) e <strong>CRÉDITO</strong> nas respectivas
+contas de <strong>COFRE BOCA DE LOBO e FUNDO DE TROCO</strong>.</p>
+<p>Em relação aos lançamentos informados como dinheiro inutilizável, será
+feito um <strong>DÉBITO</strong> na conta <strong>DINHEIRO INUTILIZÁVEL</strong> e um <strong>CRÉDITO</strong>
+na conta <strong>COFRE BOCA DE LOBO</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/image53.png"><img alt="" src="../../_images/image53.png" style="width: 6.26389in; height: 3.29861in;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Transfer%C3%AAncia%20entre%20cofres.html" class="btn btn-neutral float-left" title="Transferência entre Cofres" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Suprimento%20de%20Troco.html" class="btn btn-neutral float-right" title="Suprimento de Troco" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+Versão 4.11.321
+~~~~~~~~~~~~~~~~
+
+**Correções**
+
+- **Depósito DO sendo preenchido incorretamente**
+
+Realizado ajuste para garantir o preenchimento adequado do campo **"DO depósito"** ao abrir um esboço de transferência de estoque,
+especialmente após a inclusão de uma **"NF transporte"** e realizar o **"Recebimento de mercadoria"**.

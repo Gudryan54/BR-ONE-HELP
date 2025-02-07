@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memória de cálculo: Subindo custos de Herança &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Make to Order" href="../MaketoOrder/Make%20to%20Order.html" />
+    <link rel="prev" title="Estrutura dos Produtos sem custo antecipado" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20custo%20cont%C3%A1bil.html">Fechamento de custo contábil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html">Fechamento de custo em Segundo Plano</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Movimentos%20do%20Fechamento%20de%20Custo.html">Movimentos do Fechamento de Custo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html">Memória de Cálculo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html">Estrutura dos Produtos com custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html">Estrutura dos Produtos sem custo antecipado</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Memória de cálculo: Subindo custos de Herança</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Memória de cálculo: Subindo custos de Herança</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="memoria-de-calculo-subindo-custos-de-heranca">
+<h1>Memória de cálculo: Subindo custos de Herança<a class="headerlink" href="#memoria-de-calculo-subindo-custos-de-heranca" title="Link permanente para este cabeçalho"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para uma melhor visualização das imagens, abra-as em outra guia.</p>
+</div>
+<p>Quando é realizado o fechamento de custo, o mesmo considera todos as movimentações e as alocações de custos para assim realizar as movimentações necessárias. Para os itens pais, o processo é similar ao demonstrado anteriormente com o item <strong>‘SA_ARB_Nivel-02_001’</strong>, entretanto, para o item pai, o fechamento de custo deve subir os custos de herança.</p>
+<p>Que são os custos do item filho (SA) produzido e consumido em uma OP do pai, dentro do período de fechamento.</p>
+<p>Considerando a estrutura de produto <strong>‘PA_ARB_Nivel-01_001’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/401.png"><img alt="../../../_images/401.png" class="align-center" src="../../../_images/401.png" style="width: 735.0px; height: 95.39999999999999px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Podemos identificar que o mesmo possui um item filho do tipo semi-acabado, o <strong>‘SA_ARB_Nivel-02_001’</strong>, logo, no fechamento deve ser alocado os custos deste item filho, para o item pai, isso é o que chamamos de herança.</p>
+<p>Para subirmos o custo do SA para o PA na memória de cálculo, primeiro devemos acessar o ‘Relatório de verificação de estoque’ do <strong>‘SA_ARB_Nivel-02_001’</strong> e verificar se houve consumo do mesmo dentro de uma OP, para o item analisado.</p>
+<p>Em nosso exemplo, identificamos que houve consumo no dia 31/05, na saída de mercadoria (SO 1339) na OP 757, que é a ordem de produção utilizada para produção do <strong>‘PA_ARB_Nivel-01_001’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/412.png"><img alt="../../../_images/412.png" class="align-center" src="../../../_images/412.png" style="width: 609.0px; height: 373.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Identificado que houve consumo em OP, devemos subir o custo dessa herança para o PA, para isso precisamos da ‘Diferença da transação do filho’ para essa linha especificamente.</p>
+<p>Recapitulando os cálculos anteriores, identificamos que o valor referido é de 416,55:</p>
+<a class="reference internal image-reference" href="../../../_images/422.png"><img alt="../../../_images/422.png" class="align-center" src="../../../_images/422.png" style="width: 1101.6px; height: 38.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Obs.: O valor considerado deve ser positivo, pois o mesmo está sendo alocado (entrando) nos custos do PA.</p>
+<p>Para sequencia precisamos analisar o relatório de verificação de estoque do PA e pegar as seguintes informações:</p>
+<a class="reference internal image-reference" href="../../../_images/431.png"><img alt="../../../_images/431.png" class="align-center" src="../../../_images/431.png" style="width: 763.1999999999999px; height: 157.79999999999998px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p>Soma das entradas: soma de todas as entradas dentro do período do fechamento.</p></li>
+</ul>
+<div style="text-align: center;">
+  <p><b>Soma das entradas = EM1202 + EM1203 + EM1204 + EM1205</b></p>
+  <p><b>Soma das entradas = 30 + 40 + 20 + 10</b></p>
+  <p><b>Soma das entradas = 100</b></p>
+</div><ul class="simple">
+<li><p>Soma das saídas: soma todas as saídas dentro do período do fechamento.</p></li>
+</ul>
+<div style="text-align: center;">
+  <p><b>Soma das saídas = NS126 + NS127</b></p>
+  <p><b>Soma das saídas = 60 + 20</b></p>
+  <p><b>Soma das saídas = 80</b></p>
+</div><ul class="simple">
+<li><p>Custo unitário: diferença entre ‘Diferença de transação do filho’ com a soma de maior valor.</p></li>
+</ul>
+<div style="text-align: center;">
+  <p><b>Custo unitário = ‘Diferença de transação do filho’ / soma de maior valor</b></p>
+  <p><b>Custo unitário = 416,55 / 100</b></p>
+  <p><b>Custo unitário = 4,17</b></p>
+</div><a class="reference internal image-reference" href="../../../_images/441.png"><img alt="../../../_images/441.png" class="align-center" src="../../../_images/441.png" style="width: 638.0px; height: 79.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Com as informações acima basta calcular a diferença de LCM, que é realizada apenas nas saídas vinculadas na OP, dentro do período de fechamento e os valores que serão enviados para CPV (Soma LCMs) e será reavaliado em estoque (Estoque):</p>
+<a class="reference internal image-reference" href="../../../_images/451.png"><img alt="../../../_images/451.png" class="align-center" src="../../../_images/451.png" style="width: 645.6px; height: 132.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, ao simular o fechamento de custo para o mês 06/2024, analisando apenas o item <strong>‘PA_ARB_Nivel-01_001’</strong>, os valores de herança devem ser conforme calculo abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/461.png"><img alt="../../../_images/461.png" class="align-center" src="../../../_images/461.png" style="width: 547.0px; height: 63.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Segue Cadastro de GGF para o mês 06/2024:</p>
+<a class="reference internal image-reference" href="../../../_images/471.png"><img alt="../../../_images/471.png" class="align-center" src="../../../_images/471.png" style="width: 679.5px; height: 114.75px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao realizar a simulação, temos o rateio na aba ‘Resultado’:</p>
+<a class="reference internal image-reference" href="../../../_images/481.png"><img alt="../../../_images/481.png" class="align-center" src="../../../_images/481.png" style="width: 1140.6px; height: 90.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>E os lançamentos na aba ‘LCM e Reavaliações’:</p>
+<a class="reference internal image-reference" href="../../../_images/491.png"><img alt="../../../_images/491.png" class="align-center" src="../../../_images/491.png" style="width: 1110.0px; height: 123.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Conforme calculado acima, os lançamentos de herança deveriam ser:</p>
+<ul class="simple">
+<li><p>Um LCM de herança para a conta de CPV no valor de 333,23.</p></li>
+<li><p>E uma reavaliação de estoque no valor de 83,31.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/501.png"><img alt="../../../_images/501.png" class="align-center" src="../../../_images/501.png" style="width: 1113.6px; height: 122.39999999999999px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Como destaque acima, os valores bateram conforme os cálculos realizados, logo, o fechamento de custo levou corretamente os valores de herança para o item pai.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html" class="btn btn-neutral float-left" title="Estrutura dos Produtos sem custo antecipado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../MaketoOrder/Make%20to%20Order.html" class="btn btn-neutral float-right" title="Make to Order" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

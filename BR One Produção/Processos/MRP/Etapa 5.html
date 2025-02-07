@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etapa 5 &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Combinações MRP" href="Combina%C3%A7%C3%B5es%20MRP.html" />
+    <link rel="prev" title="Etapa 4" href="Etapa%204.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20MRP.html">Configurações MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html">Configurações do Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20Roteiro%20MRP.html">Configurações do Cadastro do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Previs%C3%A3o%20de%20consumo.html">Previsão por consumo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20MRP.html">Assistente de MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%201.html">Etapa 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%202.html">Etapa 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%203.html">Etapa 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%204.html">Etapa 4</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Etapa 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Combina%C3%A7%C3%B5es%20MRP.html">Combinações MRP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Etapa 5</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="etapa-5">
+<h1>Etapa 5<a class="headerlink" href="#etapa-5" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na <strong>‘Etapa 5’</strong> são apresentados os resultados, as recomendações e o CRP.</p>
+<p>No cabeçalho por padrão são mostrados:</p>
+<ul class="simple">
+<li><p><strong>Horizonte planejamento:</strong> Data inicial e final estipulada na etapa 2.</p></li>
+<li><p><strong>Calculado às:</strong> Hora que o MRP foi executado.</p></li>
+<li><p><strong>Id execução:</strong> ID gerado na execução do MRP.</p></li>
+<li><p>E os campos <strong>‘Descrição’</strong> e <strong>‘Tipo do item’</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0123.png"><img alt="../../../_images/0123.png" class="align-center" src="../../../_images/0123.png" style="width: 640.8000000000001px; height: 138.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No campo <strong>‘Descrição’</strong> podem ser feitas buscas de acordo com o tipo filtro selecionado no campo <strong>‘Tipo do campo’</strong>:</p>
+<ul class="simple">
+<li><p><strong>Nº do item</strong></p></li>
+<li><p><strong>Nº do item pai</strong></p></li>
+<li><p><strong>Descrição</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0220.png"><img alt="../../../_images/0220.png" class="align-center" src="../../../_images/0220.png" style="width: 491.0px; height: 68.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/0320.png"><img alt="../../../_images/0320.png" class="align-center" src="../../../_images/0320.png" style="width: 646.4000000000001px; height: 459.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<section id="aba-resultado">
+<h2>Aba Resultado<a class="headerlink" href="#aba-resultado" title="Link permanente para este cabeçalho"></a></h2>
+<p>Nesta aba são sugeridos os itens para suprir os flags que foram marcados na <strong>‘Etapa 4’</strong>. São apresentados:</p>
+<ul class="simple">
+<li><p><strong>Nº do item</strong>.</p></li>
+<li><p><strong>Descrição</strong>.</p></li>
+<li><p><strong>Datas:</strong> sugestão do dia atual para frente.</p></li>
+<li><p><strong>Linha do item:</strong> recomendação que aparecerá na aba <strong>‘Recomendações’</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0414.png"><img alt="../../../_images/0414.png" class="align-center" src="../../../_images/0414.png" style="width: 620.8000000000001px; height: 440.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O filtro de item <strong>‘Pai’</strong> não é apresentado. Isso ocorre porque um mesmo item <strong>‘PAI’</strong> pode ter vários itens <strong>‘Filhos’</strong>, e, na aba de resultado, o item Pai não é exibido, resultando na impossibilidade de aplicar o filtro com base no item Pai.</p>
+<p>Na coluna <strong>‘Descrição’</strong> há 4 linhas (para acessar o detalhe de cada linha, dê dois cliques sobre o valor):</p>
+<a class="reference internal image-reference" href="../../../_images/0514.png"><img alt="../../../_images/0514.png" class="align-center" src="../../../_images/0514.png" style="width: 588.8000000000001px; height: 233.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para explicar as colunas, será usado como exemplo o item <strong>‘PA01_MRP’</strong>, onde será detalhado as informações do mês de janeiro:</p>
+<a class="reference internal image-reference" href="../../../_images/0613.png"><img alt="../../../_images/0613.png" class="align-center" src="../../../_images/0613.png" style="width: 580.0px; height: 236.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ol class="arabic simple">
+<li><p><strong>Inventário inicial:</strong></p></li>
+</ol>
+<p>Estoque do item no momento. Para datas futuras, o inventário inicial será sempre igual ao último inventário final.</p>
+<a class="reference internal image-reference" href="../../../_images/0715.png"><img alt="../../../_images/0715.png" class="align-center" src="../../../_images/0715.png" style="width: 580.8000000000001px; height: 265.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Fornecimento:</strong></p></li>
+</ol>
+<p>Soma da quantidade na data de vencimento da OP e/ou entrega da compra.</p>
+<a class="reference internal image-reference" href="../../../_images/0816.png"><img alt="../../../_images/0816.png" class="align-center" src="../../../_images/0816.png" style="width: 575.2px; height: 261.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Demanda:</strong></p></li>
+</ol>
+<p>Indica a quantidade necessária de suprimento, nas informações detalhadas é mostrada a origem da demanda.</p>
+<a class="reference internal image-reference" href="../../../_images/0912.png"><img alt="../../../_images/0912.png" class="align-center" src="../../../_images/0912.png" style="width: 577.6px; height: 264.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p><strong>Inventário final:</strong></p></li>
+</ol>
+<p>Indica a quantidade disponível em estoque, cálculo inventário inicial + fornecimento - demanda.</p>
+<a class="reference internal image-reference" href="../../../_images/1020.png"><img alt="../../../_images/1020.png" class="align-center" src="../../../_images/1020.png" style="width: 582.4px; height: 266.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Se for dado duplo clique em alguma linha sem dados, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/1111.png"><img alt="../../../_images/1111.png" class="align-center" src="../../../_images/1111.png" style="width: 207.6px; height: 22.8px;" /></a>
+<p><strong>BR One :: Sem dados para exibir.</strong></p>
+</section>
+<section id="aba-recomendacoes">
+<h2>Aba Recomendações<a class="headerlink" href="#aba-recomendacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>Nesta aba o MRP sugere solicitações de compra e ordens de produção. Essas informações são apresentadas em forma de planilha, onde cada linha representa uma recomendação.</p>
+<a class="reference internal image-reference" href="../../../_images/1211.png"><img alt="../../../_images/1211.png" class="align-center" src="../../../_images/1211.png" style="width: 620.0px; height: 440.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Tipo de pedido</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Tipo de pedido’</strong> indica qual documento deverá ser criado, durante o processamento da recomendação. Para itens de compra, é recomendado uma <strong>‘Solicitação de compra’</strong> ou um <strong>‘Pedido de compra’</strong>, a depender da configuração e para um item de produção é recomendado uma <strong>‘Ordem de produção’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/1312.png"><img alt="../../../_images/1312.png" class="align-center" src="../../../_images/1312.png" style="width: 584.0px; height: 235.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo na aba <strong>‘Resultado’</strong> para o PA01_MRP está sendo recomendado um fornecimento de 1.900 peças.</p>
+<a class="reference internal image-reference" href="../../../_images/1412.png"><img alt="../../../_images/1412.png" class="align-center" src="../../../_images/1412.png" style="width: 539.2px; height: 87.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na aba <strong>‘Recomendações’</strong>, o MRP está recomendando a produção de 1.900 peças.</p>
+<a class="reference internal image-reference" href="../../../_images/159.png"><img alt="../../../_images/159.png" class="align-center" src="../../../_images/159.png" style="width: 588.0px; height: 238.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Nº do item</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Nº do item’</strong> indica o número do item, conforme cadastrado em sistema.</p>
+<a class="reference internal image-reference" href="../../../_images/169.png"><img alt="../../../_images/169.png" class="align-center" src="../../../_images/169.png" style="width: 585.6px; height: 237.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Nº do item pai</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Nº do item pai’</strong> será preenchida com o item de nível mais alto.</p>
+<a class="reference internal image-reference" href="../../../_images/179.png"><img alt="../../../_images/179.png" class="align-center" src="../../../_images/179.png" style="width: 584.0px; height: 244.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Descrição</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Descrição’</strong> indica a descrição do item, conforme cadastrado em sistema.</p>
+<a class="reference internal image-reference" href="../../../_images/189.png"><img alt="../../../_images/189.png" class="align-center" src="../../../_images/189.png" style="width: 585.6px; height: 238.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Depósito</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Depósito’</strong> busca o depósito escolhido na fonte da demanda a ser atendida.</p>
+<a class="reference internal image-reference" href="../../../_images/198.png"><img alt="../../../_images/198.png" class="align-center" src="../../../_images/198.png" style="width: 585.6px; height: 237.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Qtd.UM Estoque</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Qtd.UM Estoque’</strong> indica a quantidade de unidade de medida do item utilizada no estoque.</p>
+<a class="reference internal image-reference" href="../../../_images/208.png"><img alt="../../../_images/208.png" class="align-center" src="../../../_images/208.png" style="width: 584.0px; height: 236.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>UM Estoque</strong></p></li>
+</ul>
+<p>A coluna <strong>‘UM Estoque’</strong> indica a unidade de medida utilizada no estoque.</p>
+<a class="reference internal image-reference" href="../../../_images/219.png"><img alt="../../../_images/219.png" class="align-center" src="../../../_images/219.png" style="width: 588.0px; height: 241.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Qtd.Solicitada</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Qtd.Solicitada’</strong> indica a quantidade recomendada pelo MRP conforme demanda encontrada.</p>
+<a class="reference internal image-reference" href="../../../_images/228.png"><img alt="../../../_images/228.png" class="align-center" src="../../../_images/228.png" style="width: 590.4px; height: 239.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Esta coluna permite a alteração da quantidade, caso usuário tente processar uma quantidade eu igual a zero, o add-on exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/237.png"><img alt="../../../_images/237.png" class="align-center" src="../../../_images/237.png" style="width: 393.59999999999997px; height: 15.6px;" /></a>
+<p><strong>BR One :: Quantidade solicitada deve ser maior que zero. (Linha: x)</strong></p>
+<ul class="simple">
+<li><p><strong>Qtd.Processada</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Qtd.Processada’</strong> indica a quantidade processada pelo MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/247.png"><img alt="../../../_images/247.png" class="align-center" src="../../../_images/247.png" style="width: 586.4px; height: 237.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>UM Compra</strong></p></li>
+</ul>
+<p>A coluna <strong>‘UM Compra’</strong> indica a unidade de medida de compra para os itens, essa configuração é recuperada do cadastro do item.</p>
+<a class="reference internal image-reference" href="../../../_images/257.png"><img alt="../../../_images/257.png" class="align-center" src="../../../_images/257.png" style="width: 588.0px; height: 235.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Data liberação</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Data liberação’</strong> é definida conforme o leadtime configurado no cadastro do item.</p>
+<a class="reference internal image-reference" href="../../../_images/267.png"><img alt="../../../_images/267.png" class="align-center" src="../../../_images/267.png" style="width: 583.2px; height: 239.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Data Vencimento</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Data vencimento’</strong> é definida conforme o leadtime configurado no cadastro do item.</p>
+<a class="reference internal image-reference" href="../../../_images/277.png"><img alt="../../../_images/277.png" class="align-center" src="../../../_images/277.png" style="width: 584.0px; height: 240.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Data Processada</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Data Processada’</strong> indica a data no qual a linha (recomendação) foi processada pela MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/287.png"><img alt="../../../_images/287.png" class="align-center" src="../../../_images/287.png" style="width: 588.0px; height: 115.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>LeadTime</strong></p></li>
+</ul>
+<p>A coluna <strong>‘LeadTime’</strong> indica o tempo em dias para disponibilização das quantidades do item em estoque. Para itens de compra seria o prazo de entrega e para os itens de produção, seria o prazo de produção do mesmo.</p>
+<a class="reference internal image-reference" href="../../../_images/296.png"><img alt="../../../_images/296.png" class="align-center" src="../../../_images/296.png" style="width: 583.2px; height: 240.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Exceção</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Exceção’</strong> pode trazer ou não alguma mensagem,  onde é informado o status da linha, exemplo de mensagem que pode vir a aparecer, <strong>‘Vencimento no passado’</strong> que indica que a linha está com a data de vencimento no passado.</p>
+<a class="reference internal image-reference" href="../../../_images/307.png"><img alt="../../../_images/307.png" class="align-center" src="../../../_images/307.png" style="width: 583.2px; height: 239.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Calc. Manual</strong></p></li>
+</ul>
+<p>Quando o flag da coluna <strong>‘Calc. Manual’</strong> está marcado, indica que houve uma alteração manual na recomendação realizada pelo MRP. Ou seja, o usuário realizou alguma alteração de data na aba CRP e salvou as modificações, dessa forma o MRP irá recarregar as recomendações e a linha referente a modificação estará com o flag marcado.</p>
+<a class="reference internal image-reference" href="../../../_images/318.png"><img alt="../../../_images/318.png" class="align-center" src="../../../_images/318.png" style="width: 592.8000000000001px; height: 239.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Projeto</strong></p></li>
+</ul>
+<p>A coluna <strong>‘Projeto’</strong> indica a qual projeto a linha do documento da demanda está atrelado, é recuperada do pedido de venda. Essa regra é levada do item pai para o item filho.</p>
+<a class="reference internal image-reference" href="../../../_images/327.png"><img alt="../../../_images/327.png" class="align-center" src="../../../_images/327.png" style="width: 587.2px; height: 239.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Regra de distr</strong>.</p></li>
+</ul>
+<p>A coluna <strong>‘Regra de distr.’</strong> indica a regra de distribuição informada na linha do documento da demanda. Essa regra é levada do item pai para o item filho.</p>
+<a class="reference internal image-reference" href="../../../_images/336.png"><img alt="../../../_images/336.png" class="align-center" src="../../../_images/336.png" style="width: 583.2px; height: 236.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A aba <strong>‘Recomendações’</strong> possui também os botões <strong>‘Processar recomendações’</strong> e <strong>‘Gravar cenário’</strong>.</p>
+</section>
+<section id="processar-recomendacoes">
+<h2>Processar recomendações<a class="headerlink" href="#processar-recomendacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>Para processar uma recomendação, basta selecionar as linhas na primeira coluna e clicar no botão <strong>‘Processar recomendações’</strong> para processar recomendações ou <strong>‘Processar grupo’</strong> para processar um mesmo item selecionando várias recomendações, criando apenas uma recomendação para cada item.</p>
+<a class="reference internal image-reference" href="../../../_images/346.png"><img alt="../../../_images/346.png" class="align-center" src="../../../_images/346.png" style="width: 200.4px; height: 63.599999999999994px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O processamento de recomendações irá somar as quantidades dos itens que possuírem a mesma data de vencimento e o processo em grupo irá somar as quantidades de todos os itens iguais e considerará a menor data como data de vencimento para o documento.</p>
+<p>O depósito considerado será o depósito padrão do item, o depósito do roteiro considerado na rodada do MRP de acordo com a configuração, para <strong>‘Pedidos’</strong> e <strong>‘Solicitações de compra’</strong>.</p>
+<p>Se o item não possuir um, será considerado então o depósito padrão da base ou filial conectada. Em caso de multifilial, se o depósito padrão do item não estiver vinculado à filial, o depósito padrão da filial será utilizado.</p>
+<p>Recomendações de cálculo manual, se processadas em grupo, serão gerados documentos agrupados pela data de vencimento definida.</p>
+<a class="reference internal image-reference" href="../../../_images/356.png"><img alt="../../../_images/356.png" class="align-center" src="../../../_images/356.png" style="width: 583.2px; height: 240.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/366.png"><img alt="../../../_images/366.png" class="align-center" src="../../../_images/366.png" style="width: 498.0px; height: 153.0px;" /></a>
+<p><strong>BR One :: Recomendações marcadas como Cálculo manual serão agrupadas pela Data de vencimento. Deseja continuar?</strong></p>
+<p>Se confirmada, a operação gerará documentos agrupados pela data de vencimento somando suas quantidades, para recomendações definidas como cálculo manual.</p>
+<p>Para as demais, seguirá com o processo determinado anteriormente, somando também suas quantidades, porém, irá considerar a menor data de vencimento, para que todas as recomendações sejam atendidas.</p>
+<p>Se o processamento for feito com sucesso, as seguintes mensagens aparecerão na status bar:</p>
+<a class="reference internal image-reference" href="../../../_images/376.png"><img alt="../../../_images/376.png" class="align-center" src="../../../_images/376.png" style="width: 374.4px; height: 42.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>As linhas também serão coloridas de acordo com o processamento:</p>
+<ul class="simple">
+<li><p><strong>Verde claro:</strong> processamento feito com sucesso</p></li>
+<li><p><strong>Verde escuro:</strong> processamento de grupo feito com sucesso</p></li>
+<li><p><strong>Vermelho:</strong> erro na recomendação</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/386.png"><img alt="../../../_images/386.png" class="align-center" src="../../../_images/386.png" style="width: 733.8px; height: 317.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quando for feito o processamento por recomendação e forem selecionadas várias linhas, será criada uma recomendação para cada linha selecionada e a coluna <strong>‘Qtd. Processada’</strong> será igual à coluna <strong>‘Qtd. Solicitada’</strong>.</p>
+<p><strong>Exemplo:</strong> para o item <strong>Comp03_MRP</strong> foi feito o processamento por recomendação, selecionando duas linhas com quantidade 900 e 50. Nesse caso, a coluna <strong>‘Qtd. Processada’</strong> de cada linha ficará com o valor da coluna <strong>‘Qtd. Solicitada’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/396.png"><img alt="../../../_images/396.png" class="align-center" src="../../../_images/396.png" style="width: 616.8000000000001px; height: 450.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Sendo assim, foi criada uma solicitação de compra, com as 2 linhas selecionadas no MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/406.png"><img alt="../../../_images/406.png" class="align-center" src="../../../_images/406.png" style="width: 480.8px; height: 243.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O jeito que será processado (agrupado por itens, grupo de itens, etc), será definido na configuração <strong>‘Permitir geração de Pedido de Compras’</strong>.</p>
+<p>Quando for feito o processamento por grupo, como dito acima, será criado uma recomendação para cada item e a coluna <strong>‘Qtd. Processada’</strong> será a soma desse processamento.</p>
+<p><strong>Exemplo:</strong> para o item <strong>Comp03_MRP</strong> foi feito o processamento do grupo, selecionando 2 linhas com quantidade 10 cada.</p>
+<a class="reference internal image-reference" href="../../../_images/417.png"><img alt="../../../_images/417.png" class="align-center" src="../../../_images/417.png" style="width: 616.0px; height: 449.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Será criada apenas uma solicitação para o item <strong>Comp03_MRP</strong> com a quantidade total 20.</p>
+<a class="reference internal image-reference" href="../../../_images/426.png"><img alt="../../../_images/426.png" class="align-center" src="../../../_images/426.png" style="width: 480.0px; height: 220.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Se for processada uma <strong>‘Ordem de produção’</strong>, caso não tenha um calendário válido ou definido para os grupos de recurso, centros de trabalho ou recursos, será retornada a data 01/01/1900 nos campos <strong>‘Data início’</strong> e <strong>‘Data término’</strong> da OP, o que indica que o processo está errado e deve ser corretamente configurado, já que é obrigatório haver a inserção de um calendário válido para o ano corrente.</p>
+<p>Caso um pedido de venda tenha um item que contenha seu método de suprimento como <strong>‘Produzir’</strong>, irá ser solicitada uma ordem de produção pelo MRP, onde após ser processada e gerada com sucesso, na aba ‘Venda’ conterá o pedido vinculado.</p>
+<a class="reference internal image-reference" href="../../../_images/435.png"><img alt="../../../_images/435.png" class="align-center" src="../../../_images/435.png" style="width: 632.0px; height: 560.8000000000001px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Caso seja alterada a quantidade a ser produzida do item nas linhas do MRP, a ordem de produção ainda irá vincular o pedido de venda, mas com a quantidade planejada da OP conforme a quantidade solicitada nas linhas do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/445.png"><img alt="../../../_images/445.png" class="align-center" src="../../../_images/445.png" style="width: 652.8000000000001px; height: 570.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Data de entrega em Atraso</strong></p></li>
+</ul>
+<p>Quando o resultado do cálculo de leadtime fica em atraso, a entrega das fontes de demanda (‘Pedido de venda’, ‘Nota fiscal de entrega futura’, ‘Ordem de produção’, etc) ficará em atraso, resultando em um novo cálculo.</p>
+<p><strong>Exemplo:</strong> Para esse exemplo, será considerado que o calendário de compra e o calendário dos recursos é o mesmo, 8h por dia de segunda a sexta.
+O roteiro do item <strong>PA01_MRP</strong> possui os itens <strong>Comp01_MRP</strong>, <strong>Comp02_MRP</strong> e <strong>SA01_MRP</strong>. Nas operações 10 e 20, há os recursos <strong>FER0A-01</strong> (2 horas) e <strong>MAQ0A-01</strong> (4 horas).</p>
+<a class="reference internal image-reference" href="../../../_images/455.png"><img alt="../../../_images/455.png" class="align-center" src="../../../_images/455.png" style="width: 648.8000000000001px; height: 421.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>SA01_MRP</strong> é um item semi acabado, cujo roteiro possui apenas a operação 10 com o item <strong>Comp03_MRP</strong> e o recurso <strong>MAQ0A-01</strong> (15 horas).</p>
+<a class="reference internal image-reference" href="../../../_images/465.png"><img alt="../../../_images/465.png" class="align-center" src="../../../_images/465.png" style="width: 650.4000000000001px; height: 424.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Apenas o item <strong>Comp03_MRP</strong> tem leadtime de 2 dias. Todos os outros, o leadtime é 0.</p>
+<p>Para simular esse exemplo, foi criado um <strong>‘Pedido de Venda’</strong> para o dia 16/01/2024.</p>
+<a class="reference internal image-reference" href="../../../_images/475.png"><img alt="../../../_images/475.png" class="align-center" src="../../../_images/475.png" style="width: 474.40000000000003px; height: 242.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Como o <strong>Comp03_MRP</strong> faz parte da estrutura do item semi acabado <strong>SA01_MRP</strong>, então a compra dele começará em 17/01/2024, levando o dia da execução + 2 dias (leadtime do item: 2 dias).</p>
+<p>Após, o recurso <strong>MAQ0A-01</strong> da operação 10 do roteiro do semi acabado começará no dia 17/01 e terminará no dia 18/01, pois ele exige 15h de trabalho (8h no dia 17/01 e 7h no dia 18/01). Então, o item <strong>SA01_MRP</strong> levará esse tempo de produção, de 17/01 a 18/01.</p>
+<p>Na operação 10 do <strong>PA01_MRP</strong>, o <strong>Comp01_MRP</strong> será comprado no dia 17/01 e o recurso <strong>FER0A-01</strong>  iniciará dia 18/02.</p>
+<a class="reference internal image-reference" href="../../../_images/485.png"><img alt="../../../_images/485.png" class="align-center" src="../../../_images/485.png" style="width: 1147.2px; height: 235.79999999999998px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Nas configurações de produção, aba <strong>‘MRP’</strong>, o campo <strong>‘Quantidade de dias entre operações’</strong> está com o valor 1, então, as operações 10 e 20 terão 1 dia de diferença para iniciar.</p>
+</section>
+<section id="aba-crp">
+<h2>Aba CRP<a class="headerlink" href="#aba-crp" title="Link permanente para este cabeçalho"></a></h2>
+<p>Nesta aba são mostrados os detalhes dos recursos da OP sugerida. Se necessário, modifique e salve antes de processar a recomendação.</p>
+<a class="reference internal image-reference" href="../../../_images/495.png"><img alt="../../../_images/495.png" class="align-center" src="../../../_images/495.png" style="width: 684.0px; height: 484.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Os botões <strong>‘Expandir’</strong> e <strong>‘Comprimir’</strong> são utilizados para expandir e diminuir o CRP.</p>
+<p>Para ordens de produção que tiverem seus recursos e/ou datas de início e data de término alteradas e salvas, passarão a ser consideras como OP de cálculo manual.</p>
+<a class="reference internal image-reference" href="../../../_images/505.png"><img alt="../../../_images/505.png" class="align-center" src="../../../_images/505.png" style="width: 654.4000000000001px; height: 581.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/515.png"><img alt="../../../_images/515.png" class="align-center" src="../../../_images/515.png" style="width: 653.6px; height: 576.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para visualizar os detalhes do <strong>‘CRP’</strong>, ou seja, o detalhamento de todos os dias de trabalho entre a data de início e a data de término estipuladas, é necessário clicar duas vezes na linha desejada e uma tela com as informações será exibida para consulta.</p>
+<a class="reference internal image-reference" href="../../../_images/524.png"><img alt="../../../_images/524.png" class="align-center" src="../../../_images/524.png" style="width: 704.8000000000001px; height: 533.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Os detalhes do <strong>‘CRP’</strong> não serão visíveis apenas para OPs e recomendações definidas com <strong>‘Cálculo manual’</strong>. Neste caso o add-on irá retornar a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/533.png"><img alt="../../../_images/533.png" class="align-center" src="../../../_images/533.png" style="width: 573.6px; height: 18.0px;" /></a>
+<p><strong>BR One :: Não é possível visualizar detalhes do CRP para recomendação definida com cálculo manual.</strong></p>
+<p>A coluna <strong>‘Tempo’</strong> trará os valores definidos no roteiro/ordem de produção. O valor definido na coluna <strong>‘Tempo fixo’</strong> da OP não será alterado, independentemente da quantidade solicitada:</p>
+<a class="reference internal image-reference" href="../../../_images/544.png"><img alt="../../../_images/544.png" class="align-center" src="../../../_images/544.png" style="width: 657.6px; height: 291.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O valor definido na coluna <strong>‘Tempo variável’</strong> da OP  será multiplicado pela quantidade solicitada, ou seja:</p>
+<p><strong>Tempo = (Tempo variável / Quantidade do roteiro ) * Qtd. Solicitada do MRP</strong></p>
+<a class="reference internal image-reference" href="../../../_images/552.png"><img alt="../../../_images/552.png" class="align-center" src="../../../_images/552.png" style="width: 664.8000000000001px; height: 588.8000000000001px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘CRP’</strong> pode gerar o relatório de <strong>‘Carga Máquina’</strong> que deve ser configurado na <strong>‘Configuração de Produção’</strong> na aba MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/562.png"><img alt="../../../_images/562.png" class="align-center" src="../../../_images/562.png" style="width: 618.4000000000001px; height: 437.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao clicar na opção <strong>‘3 - Carga Máquina’</strong>, uma validação será realizada para verificar se o relatório em <strong>‘Crystal Reports’</strong> foi informado nas configurações. Caso não tenha sido, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/572.png"><img alt="../../../_images/572.png" class="align-center" src="../../../_images/572.png" style="width: 463.2px; height: 21.599999999999998px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Informe o caminho do relatório da tela de Configuração de Produção.</strong></p>
+<p>Caso o arquivo já esteja configurado, o relatório será exibido em tela para o usuário.</p>
+<p>O botão <strong>‘Salvar’</strong> modificações é usado para caso algum recurso ou data de início ou de término sejam modificados.</p>
+<p>Se a data de término informada for um feriado ou não for um dia de trabalho no calendário configurado, a data anterior mais próxima será definida como data de término.</p>
+<p><strong>Exemplo:</strong> se um domingo for definido como data de término, ao ser realizado o cálculo do MRP, se a última sexta não for feriado, ela será definida como data de término.</p>
+<p>A partir do momento que qualquer uma das datas para qualquer linha da operação seja alterada, aquela ordem de produção ou recomendação será considerada como um documento de cálculo manual.</p>
+<p>Portanto, a ordem de produção e a recomendação serão marcadas como cálculo manual.</p>
+<a class="reference internal image-reference" href="../../../_images/582.png"><img alt="../../../_images/582.png" class="align-center" src="../../../_images/582.png" style="width: 619.0px; height: 158.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>Obs:</strong> o botão <strong>‘Gravar cenário’</strong> também está nas etapas 2 a 6, pois o cenário pode ser gravado em qualquer uma delas.</p>
+</section>
+<section id="aba-sugestao-de-transferencia">
+<h2>Aba Sugestão de transferência<a class="headerlink" href="#aba-sugestao-de-transferencia" title="Link permanente para este cabeçalho"></a></h2>
+<a class="reference internal image-reference" href="../../../_images/592.png"><img alt="../../../_images/592.png" class="align-center" src="../../../_images/592.png" style="width: 639.2px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para execuções do MRP filtradas por depósito, será exibida a coluna do depósito da origem da demanda e se existir saldo nos depósitos configurados na prioridade, será exibida uma mensagem alertando para a quantidade disponível para transferência de estoque.</p>
+<a class="reference internal image-reference" href="../../../_images/602.png"><img alt="../../../_images/602.png" class="align-center" src="../../../_images/602.png" style="width: 608.0px; height: 243.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na aba <strong>‘Sugestão de transf.’</strong> serão exibidas as sugestões de transferências de estoque de acordo com a prioridade dos depósitos configurados. Nesta tela, serão exibidas informações como número do item, descrição, depósito de origem e depósito de destino, filial de origem e filial e destino.</p>
+<a class="reference internal image-reference" href="../../../_images/612.png"><img alt="../../../_images/612.png" class="align-center" src="../../../_images/612.png" style="width: 611.2px; height: 242.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="transferencia-de-estoque-entre-filiais">
+<h2>Transferência de estoque entre filiais<a class="headerlink" href="#transferencia-de-estoque-entre-filiais" title="Link permanente para este cabeçalho"></a></h2>
+<p>No <strong>‘Assistente do MRP’</strong> foi incluída a funcionalidade <strong>‘Processar sugestão’</strong>.</p>
+<p>Este botão será responsável por gerar os esboços de transferência de estoque que complementarão o processo de transferência entre filiais.</p>
+<p>Para gerar os esboços, é necessário selecionar as linhas desejadas e clicar no botão <strong>‘Processar sugestão’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/621.png"><img alt="../../../_images/621.png" class="align-center" src="../../../_images/621.png" style="width: 640.0px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Se gerado com sucesso, a linha de referência será pintada de verde, tanto para aba de <strong>‘Sugestão de transf.’</strong>, quanto para aba <strong>‘Recomendações’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/631.png"><img alt="../../../_images/631.png" class="align-center" src="../../../_images/631.png" style="width: 767.0px; height: 108.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/641.png"><img alt="../../../_images/641.png" class="align-center" src="../../../_images/641.png" style="width: 758.0px; height: 107.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Os esboços poderão ser encontrados na tela seguindo o caminho abaixo:</p>
+<p><strong>Menu principal -&gt; Estoque -&gt; Transações do estoque -&gt; Assistente de Geração de Transferência entre filiais</strong></p>
+<a class="reference internal image-reference" href="../../../_images/651.png"><img alt="../../../_images/651.png" class="align-center" src="../../../_images/651.png" style="width: 487.20000000000005px; height: 398.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Após pesquisar os esboços gerados, os mesmos deverão ser acessados pela seta laranja e inseridos manualmente.</p>
+<p>Após a inserção dos esboços, serão gerados, se necessário, os documentos fiscais (‘Nota fiscal de saída’, ‘Nota fiscal de entrada’, ‘Entrada e Saída de mercadorias’) que realizarão a transferência dos saldos em estoque.</p>
+<p>Esses documentos fiscais são obrigatórios e não será permitido fechar os mesmos antes de adicioná-los.</p>
+<p>Ao inserir a nota fiscal de saída, um documento será gerado para transferências entre filiais diferentes.</p>
+<p>O sistema lançará uma saída de mercadoria com o depósito de trânsito configurado para filial e um esboço de nota fiscal de entrada será aberto.</p>
+<p>Ao inserir o documento de entrada, o sistema lançará uma <strong>‘Entrada de mercadoria’</strong> para o depósito de destino informado no MRP.</p>
+<p>Caso seja necessário reverter essa transação, ela deve ser revertida na tela <strong>‘Transf. filiais - Assistente de cancelamento’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/661.png"><img alt="../../../_images/661.png" class="align-center" src="../../../_images/661.png" style="width: 523.0px; height: 370.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Nesse assistente, os documentos deverão ser selecionados e ao processá-los, os mesmos serão revertidos e cancelados.</p>
+<p>Para transferências realizadas entre a mesma filial, será necessário realizar o processo de reversão no próprio documento, transferências entre a mesma filial não serão exibidas no assistente de cancelamento.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Etapa%204.html" class="btn btn-neutral float-left" title="Etapa 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Combina%C3%A7%C3%B5es%20MRP.html" class="btn btn-neutral float-right" title="Combinações MRP" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

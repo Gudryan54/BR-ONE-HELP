@@ -1,0 +1,8 @@
+Versão 4.11.333
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note:: **Melhorias**
+
+- **Funcionalidade de Multidimensões ativa na API**
+
+Na atualização mais recente do BR One versão 333, foi implementada o campo “codigosRegraDistribuicao” que permite o envio de múltiplas regras de distribuição via API, para quando o parâmetro de "Multidimensões" estiver ativo.

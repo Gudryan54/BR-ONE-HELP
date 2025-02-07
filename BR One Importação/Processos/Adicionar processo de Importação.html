@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adicionar Processo de Importação &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Importar Pedidos de Compra" href="Importar%20pedidos.html" />
+    <link rel="prev" title="Pedido de Compra" href="Pedido%20de%20Compra.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Importação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Processo%20de%20importa%C3%A7%C3%A3o.html">Processo de Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abas.html">Processo de Importação - Abas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o%20do%20Processo.html">Inicialização do Processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pedido%20de%20Compra.html">Pedido de Compra</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Adicionar Processo de Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Importar%20pedidos.html">Importar Pedidos de Compra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adiantamento%20de%20Fornecedor.html">Adiantamento de Fornecedor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adiantamento%20despachante.html">Adiantamento Despachante</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rateios%20de%20Despesas%20para%20a%20Invoice%20e%20para%20Nacionaliza%C3%A7%C3%A3o.html">Processo de Rateios de Despesas para a Invoice e para Nacionalização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Invoice.html">Invoice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N.F.%20Nacionaliza%C3%A7%C3%A3o.html">N.F. Nacionalização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Nota%20Fiscal%20de%20Transporte.html">Nota Fiscal de Transporte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recebimento%20de%20Mercadorias.html">Recebimento de Mercadorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Despesas%20Importa%C3%A7%C3%A3o.html">Despesas Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N.F.%20Complementar.html">N.F. Complementar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20Numer%C3%A1rio.html">Fechamento Numerário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concilia%C3%A7%C3%A3o%20de%20importa%C3%A7%C3%A3o.html">Conciliação de importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20de%20importa%C3%A7%C3%A3o.html">Fechamento de importação</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#br-one-capitalizacao">BR One Capitalização</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+      <li class="breadcrumb-item active">Adicionar Processo de Importação</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="adicionar-processo-de-importacao">
+<h1>Adicionar Processo de Importação<a class="headerlink" href="#adicionar-processo-de-importacao" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para começar o processo de importação, devemos adicionar um novo documento. Para isto, preencha os dados obrigatórios do cabeçalho como Fornecedor, Despachante, Moeda e, no caso de Multi-filiais, indicar qual será a filial.  Após preenchimento correto das informações, clique no botão <strong>adicionar</strong> no rodapé para prosseguir com o processo.</p>
+<a class="reference internal image-reference" href="../../_images/1.PNG"><img alt="../../_images/1.PNG" src="../../_images/1.PNG" style="width: 469.6px; height: 440.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Possíveis ocorrências durante o processo</strong></p></li>
+</ul>
+<p>Não será possível adicionar nenhum Processo de importação sem dados. Ao clicar em <em>Adicionar</em> nesse cenário, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.002.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.002.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.002.jpeg" style="width: 172.8px; height: 12.0px;" /></a>
+<p><em>BR One :: O fornecedor não foi informado.</em></p>
+<p>Nenhuma operação estará disponível sem a seleção de um fornecedor e despachante. Se o usuário tentar realizar algum processo sem selecionar um fornecedor e despachante, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.003.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.003.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.003.jpeg" style="width: 251.20000000000002px; height: 12.8px;" /></a>
+<p><em>BR One :: O fornecedor e o despachante devem ser informados.</em></p>
+<p>Se a moeda não for informada, ao tentar realizar algum processo de importação, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.004.png"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.004.png" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.004.png" style="width: 155.20000000000002px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: A moeda não foi informada.</em></p>
+<p>Também não será possível realizar nenhuma ação na tela sem que o formulário esteja adicionado/atualizado. Caso o usuário tente iniciar o processo com o formulário em modo Adicionar/Atualizar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.005.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.005.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.005.jpeg" style="width: 227.20000000000002px; height: 12.8px;" /></a>
+<p><em>BR One :: Insira/atualize o documento antes de continuar.</em></p>
+<p>Caso a filial não seja informada, ao tentar realizar algum processo de importação, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.006.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.006.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.006.jpeg" style="width: 148.0px; height: 12.8px;" /></a>
+<p><em>BR One :: A Filial não foi informada.</em></p>
+<p>Caso o usuário tente iniciar o processo de importação sem as configurações de importação terem sido realizadas, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.007.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.007.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.007.jpeg" style="width: 376.8px; height: 12.0px;" /></a>
+<p><em>BR One :: Para realizar o processo, é necessário antes realizar todas as configurações de importação.</em></p>
+<ul class="simple">
+<li><p><strong>Detalhes de configurações necessárias</strong></p></li>
+</ul>
+<p>O preenchimento do campo <strong>Fornecedor</strong> será realizado apenas com parceiros de negócios do tipo <strong>Fornecedor</strong> e que possuam em seu cadastro o campo <strong>Moeda</strong> igual à <strong>Todas as moedas</strong> e cujo país definido seja diferente de Brasil (será considerado o país do endereço padrão).</p>
+<img alt="../../_images/3.png" src="../../_images/3.png" />
+<p>Para bases Multi-filiais, no campo <em>Filial</em> deve ser selecionada a filial ativa no momento.  Apenas aparecerão as filiais que estão atribuídas ao usuário logado no momento. Se na atribuição de filial do usuário alguma filial não esteja com o flag <strong>Atribuído</strong> marcado, ela não aparecerá para seleção.</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.009.jpeg"><img alt="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.009.jpeg" src="../../_images/Aspose.Words.c6eed0be-a92d-4791-b70e-b4d6d464cf4d.009.jpeg" style="width: 200.8px; height: 44.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2.PNG"><img alt="../../_images/2.PNG" src="../../_images/2.PNG" style="width: 547.2px; height: 379.20000000000005px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Pedido%20de%20Compra.html" class="btn btn-neutral float-left" title="Pedido de Compra" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Importar%20pedidos.html" class="btn btn-neutral float-right" title="Importar Pedidos de Compra" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

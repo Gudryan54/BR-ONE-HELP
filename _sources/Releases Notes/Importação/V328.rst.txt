@@ -1,0 +1,17 @@
+Versão 4.11.328
+~~~~~~~~~~~~~~~~
+
+**Melhorias**
+
+- **Inserção de campos de datas nas despesas no processo de importação**
+
+Com a mais recente atualização do **BR One 328**, inserimos campos de datas na tela "BR One :: Resumo - LCM Despesas Nacionalização", as datas do documento e de lançamento, são apenas informativas, recuperadas da Nacionalização. 
+A data de vencimento deixamos aberta para que o usuário possa inserir a data desejada, com isso dando mais flexibilidade ao processo. Na tela de "Despesas de importação", liberamos a edição das datas, também permitindo que o usuário tenha mais autonomia na manipulação das datas.
+
+.. image :: /_static/Releases\ Notes/Importação/V328/img_42094_01.png
+
+.. image :: /_static/Releases\ Notes/Importação/V328/img_42094_02.png
+
+- **Alteração da mensagem ao tentar gerar INVOICE**
+
+Com a mais recente atualização do **BR One 328**, alteramos a mensagem de validação de não necessidade de lançamento da INVOICE quando o valor dos produtos é zero, para facilitar o entendimento do processo.

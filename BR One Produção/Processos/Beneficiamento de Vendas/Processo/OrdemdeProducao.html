@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordem de Produção &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Assistente de Faturamento e Retorno" href="AssistenteFaturamento.html" />
+    <link rel="prev" title="Nota Fiscal de Entrada" href="NotaFiscaldeEntrada.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Configuracoes.html">Configurações do Beneficiamento de Vendas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/ParceirosdeNegocios.html">Parceiro de Negócios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastrodoItem.html">Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/DefinicaoUM.html">Definições de Unidades de Medidas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastroRoteiro.html">Cadastro de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PedidodeVenda.html">Pedidos de Venda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NotaFiscaldeEntrada.html">Nota Fiscal de Entrada</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Ordem de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AssistenteFaturamento.html">Assistente de Faturamento e Retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AssistenteCancelamento.html">Assistente de Cancelamento de Faturamento</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Ordem de Produção</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ordem-de-producao">
+<h1>Ordem de Produção<a class="headerlink" href="#ordem-de-producao" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na tela de Ordem de Produção será possível identificar se a OP faz parte do processo de beneficiamento pelo campo <strong>Cliente encomendante</strong> no rodapé da OP e também pelos depósitos utilizados nas linhas dos componentes, que quando for beneficiamento de vendas haverá depósitos de terceiros nas linhas dos componentes (terceiro), os mesmos depósitos estarão vinculados ao cadastro de <strong>Parceiro de Negócio &gt; Campo Benef. vendas nas Definições benef. Vendas vinculado</strong> na OP.</p>
+<a class="reference internal image-reference" href="../../../../_images/8.png"><img alt="../../../../_images/8.png" src="../../../../_images/8.png" style="width: 1021.6px; height: 472.8px;" /></a>
+<p>Nas configurações do beneficiamento de vendas quando o parâmetro <strong>Realizar cálculo dos insumos por</strong> está configurado como <strong>Realizado</strong> uma nova coluna estará disponível nas linhas da ordem de produção que é a coluna <strong>Faturado</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP1.png"><img alt="../../../../_images/OP1.png" src="../../../../_images/OP1.png" style="width: 1177.6000000000001px; height: 521.6px;" /></a>
+<p>Como no parâmetro <strong>Realizado</strong> o sistema passa a olhar a estrutura que foi consumida dentro da OP e não mais o Roteiro, os componentes próprios que serão faturados do cliente na <strong>etapa 3</strong> do assistente de faturamento e retorno precisam estar com o campo faturado marcadas, caso contrário estes componentes não serão exibidos na <strong>etapa 3</strong> para faturamento.</p>
+<p>Assim como no roteiro, este campo apenas poderá ser selecionado caso na linha do componente tenha um depósito próprio, caso seja um depósito de terceiro não será permitido a seleção.</p>
+<p>Outra ação necessária de quando o beneficiamento de vendas está como <strong>Realizado</strong> é vincular o pedido de venda na ordem de produção do item pai conforme o exemplo abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/OP1.png"><img alt="../../../../_images/OP1.png" src="../../../../_images/OP1.png" style="width: 1177.6000000000001px; height: 521.6px;" /></a>
+<p>Lembrando que o mesmo pedido pode ser vinculado em mais de uma OP. Como no exemplo acima temos um pedido de <strong>20</strong> e na OP a quantidade alocada é apenas <strong>10</strong>, o restante ainda pode ser vinculado em outras OPs.</p>
+<p>Os depósitos das linhas precisam seguir as regras abaixo:</p>
+<ul class="simple">
+<li><p><strong>Componente de terceiro:</strong> Depósito <strong>Benef. Vendas</strong> do PN vinculado a OP (depósito de terceiro)</p></li>
+<li><p><strong>Semi-acabado:</strong> Depósito <strong>Benef. Vendas</strong> do PN vinculado a OP (depósito de terceiro)</p></li>
+<li><p><strong>Componente próprio: Depósito próprio</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/OP3.png"><img alt="../../../../_images/OP3.png" src="../../../../_images/OP3.png" style="width: 1066.4px; height: 690.4000000000001px;" /></a>
+<p>Quando a opção de reserva de lote está selecionada, uma nova opção aparecerá nas ordens de produção, que é a opção <strong>Pedido de transferência de estoque</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP4.png"><img alt="../../../../_images/OP4.png" src="../../../../_images/OP4.png" style="width: 413.6px; height: 273.6px;" /></a>
+<p>O pedido de transferência de estoques é obrigatório para todas as ordens de produção que são do beneficiamento de vendas, mesmo que a OP contenha apenas componentes que não sejam controlados por lote.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP5.png"><img alt="../../../../_images/OP5.png" src="../../../../_images/OP5.png" style="width: 613.6px; height: 412.0px;" /></a>
+<p>Quando a OP possui componentes controlados por lote, é necessário que esses lotes sejam definidos no pedido de transferência de estoque manualmente, caso contrário ao tentar realizar a saída de insumos o lote não será exibido para a seleção, neste caso é possível abrir o pedido de transferência já criado e apenas alocar os lotes necessários clicando com o botão direito do mouse no campo <strong>Quantidade</strong> e indo na opção <strong>Nºs de série/lote</strong> ou apertar <strong>Crtl + Tab</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP6.png"><img alt="../../../../_images/OP6.png" src="../../../../_images/OP6.png" style="width: 743.2px; height: 462.40000000000003px;" /></a>
+<p>Também é possível criar pedidos de transferência de estoque parcialmente. Quando é o primeiro pedido de transferência de estoques, a tela trará a quantidade planejada para os componentes conforme o exemplo abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/OP7.png"><img alt="../../../../_images/OP7.png" src="../../../../_images/OP7.png" style="width: 965.6px; height: 505.6px;" /></a>
+<p>Esta quantidade pode ser alterada manualmente. No cenário acima as quantidades foram alteradas de <strong>20</strong> para <strong>12</strong> e o pedido de transferência de estoques foi adicionado. Ao abrir tela de pedido de transferência de estoques novamente a quantidade restante aparecerá.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP8.png"><img alt="../../../../_images/OP8.png" src="../../../../_images/OP8.png" style="width: 966.4000000000001px; height: 533.6px;" /></a>
+<p>Todos os componentes aparecerão na tela de pedido de transferência de estoque. Os depósitos apresentados serão:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Componente próprio</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Depósito origem:</strong> Estará vazio para preenchimento manual</p>
+<p><strong>Depósito destino:</strong> Depósito da linha do componente na OP</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Componente de terceiro</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Depósito origem:</strong> Depósito da linha do componente na OP</p>
+<p><strong>Depósito destino:</strong> Depósito de expedição vinculado ao PN</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Semi-acabado</strong></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Depósito origem:</strong> Depósito da linha do componente na OP</p>
+<p><strong>Depósito destino:</strong> Depósito de expedição vinculado ao PN</p>
+<p>Outra configuração importante de quando o beneficiamento está como realizado é o vínculo das OPs de semi-acabados com a OP pai. É necessário que todos os níveis da OP estejam vinculados conforme o exemplo abaixo, caso contrário a trava abaixo irá impedir a liberação da OP:</p>
+<a class="reference internal image-reference" href="../../../../_images/OP9.png"><img alt="../../../../_images/OP9.png" src="../../../../_images/OP9.png" style="width: 558.4px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: A Ordem de Produção nº XXX deve possuir vínculo com um pedido de venda, pois pertence ao processo de Beneficiamento de Vendas.</em></p>
+<a class="reference internal image-reference" href="../../../../_images/OP10.png"><img alt="../../../../_images/OP10.png" src="../../../../_images/OP10.png" style="width: 1117.6000000000001px; height: 560.0px;" /></a>
+<p>No exemplo acima, caso na <strong>OP 315</strong> tivesse mais algum semi-acabado a OP dele deveria estar vinculada na aba <strong>Documentos &gt; Compra/OP da OP 315</strong>.</p>
+<p>Para realizar a saída de insumos, o processo a ser realizado vai depender configurações do beneficiamento, segue as opções abaixo:</p>
+<p><strong>Realizar cálculo dos insumos por: Previsto ou Realizado com a opção de Reserva de lote desmarcada:</strong></p>
+<a class="reference internal image-reference" href="../../../../_images/OP11.png"><img alt="../../../../_images/OP11.png" src="../../../../_images/OP11.png" style="width: 933.6px; height: 307.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Componente de terceiro:</strong> Será feito uma transferência de estoques movendo o item do depósito da linha do item para o depósito de expedição do PN vinculado a OP.</p></li>
+<li><p><strong>Componente próprio:</strong> Será feito a saída de mercadoria utilizando o depósito da linha do item</p></li>
+<li><p><strong>Semi-acabado:</strong> Será feito a saída de mercadoria utilizando o depósito da linha do item.</p></li>
+</ul>
+<p><strong>Realizar cálculo dos insumos por:</strong> Realizado com a opção de Reserva de lote marcada</p>
+<a class="reference internal image-reference" href="../../../../_images/OP12.png"><img alt="../../../../_images/OP12.png" src="../../../../_images/OP12.png" style="width: 413.6px; height: 271.2px;" /></a>
+<ul class="simple">
+<li><p><strong>Componente de terceiro:</strong> Será feito uma transferência de estoques movendo o item do depósito da linha do item para o depósito de expedição do PN vinculado a OP.</p></li>
+<li><p><strong>Componente próprio:</strong> Será feito uma transferência de estoques movendo o item dos depósitos escolhidos no pedido de transferência de estoque <strong>Do depósito</strong> - <strong>Para depósito</strong> e depois fará a saída de mercadoria utilizando o depósito <strong>Para depósito</strong>.</p></li>
+<li><p><strong>Semi-acabado:</strong> Será feito uma transferência de estoques movendo o item do depósito da linha do item para o depósito de expedição do PN vinculado a OP e depois fará uma saída de mercadoria utilizando o depósito de expedição.</p></li>
+</ul>
+<p>Notem que ao visualizar a tela de custo dos componentes temos o custo total de cada componente, mas os únicos que são levados para o custo atual do PA são custos do semi-acabado e do componente próprio, os custos de componentes de terceiros não serão agregados ao PA.</p>
+<a class="reference internal image-reference" href="../../../../_images/OP13.png"><img alt="../../../../_images/OP13.png" src="../../../../_images/OP13.png" style="width: 938.4000000000001px; height: 437.6px;" /></a>
+<p>Quando na estrutura da OP existir apenas componentes de terceiros, ao realizar a entrada de PA será agregado <strong>0,01</strong> de custo por PA, então caso o usuário faça uma entrada de PA com quantidade <strong>5</strong> e os componentes sejam todos de terceiros o PA terá um custo de <strong>0,05</strong>. Isso se faz necessário porque o sistema precisa ter um custo na entrada do documento.</p>
+<p>Quando a opção de <strong>Reserva de lote</strong> está marcada e é realizado a transferência dos componentes com base no pedido de transferência de estoques, o vínculo entre a transferência e o pedido de transferência pode ser visto no <strong>Mapa de relações</strong> conforme abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/OP14.png"><img alt="../../../../_images/OP14.png" src="../../../../_images/OP14.png" style="width: 664.0px; height: 397.6px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/OP15.png"><img alt="../../../../_images/OP15.png" src="../../../../_images/OP15.png" style="width: 1320.0px; height: 665.6px;" /></a>
+<p>Notem que o pedido de transferência está com metade da barra em azul e a outra metade vermelha, isso significa que a transferência de estoques que está vinculada ao pedido corresponde a metade do pedido de transferência, quando o usuário fizer a saída de insumos do restante dos componentes será criada uma nova transferência de estoques, ela também estará vinculada ao pedido de transferência, que será fechado e a barrinha do mesmo ficará toda azul, indicando que todos os itens do pedido já foram transferidos.</p>
+<p>Outro ponto necessário ressaltar quanto ao pedido de transferência de estoques, é que caso haja estorno de saída de insumos/transferência de estoques este valor não retorna em aberto no pedido de transferência, havendo a necessidade de gerar um novo pedido de transferências de estoques com a quantidade estornada. Ex. O pedido de transferência de estoques foi criado, ao realizar a saída de insumos houve a transferência de <strong>100%</strong> dos componentes, desta forma o pedido de transferência será fechado. Caso o usuário posteriormente estorne esta saída de insumos o pedido de transferência não será reaberto, havendo a necessidade de criar um novo pedido de transferência de estoques, senão ao tentar fazer a saída de insumos o usuário receberá a mensagem de que nenhum pedido de transferência de estoques foi encontrado.</p>
+<p>Como a nota fiscal de entrada utilizou o depósito definido em <strong>Receb. Benef. Vendas</strong> é necessário que a OP também utilize este depósito nas linhas dois insumos pois é neste depósito que o componente se encontra.</p>
+<p>Para os componentes de terceiros, ao realizar a entrada de PA não haverá a saída de insumos e sim uma transferência de estoque, onde irá transferir o componente do depósito de terceiro da linha da OP para o depósito <strong>Expedição benef. Vendas</strong> vinculado ao cadastro do cliente ecomendante.</p>
+<a class="reference internal image-reference" href="../../../../_images/9.png"><img alt="../../../../_images/9.png" src="../../../../_images/9.png" style="width: 1059.2px; height: 464.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/104.png"><img alt="../../../../_images/104.png" src="../../../../_images/104.png" style="width: 1075.2px; height: 446.40000000000003px;" /></a>
+<p>Apenas para os componentes próprios vão precisar da saída de insumos. Os que forem baixa por explosão ocorrerão automaticamente na entrada de PA e os que forem baixa manual precisarão ter a baixa realizada pelo usuário.</p>
+<a class="reference internal image-reference" href="../../../../_images/111.png"><img alt="../../../../_images/111.png" src="../../../../_images/111.png" style="width: 672.8000000000001px; height: 170.4px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="NotaFiscaldeEntrada.html" class="btn btn-neutral float-left" title="Nota Fiscal de Entrada" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="AssistenteFaturamento.html" class="btn btn-neutral float-right" title="Assistente de Faturamento e Retorno" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

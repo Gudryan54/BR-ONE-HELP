@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordem de manutenção/metrologia &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Autorização" href="../Forma%C3%A7%C3%A3o%20de%20pre%C3%A7o%20de%20venda/Autoriza%C3%A7%C3%A3o.html" />
+    <link rel="prev" title="Modelo de manutenção/metrologia" href="../../Cadastros/Modelo%20de%20manuten%C3%A7%C3%A3o.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../../Cadastros/Tipos%20de%20apontamento%20ordem%20de%20manuten%C3%A7%C3%A3o.html">Tipos de apontamento ordem de manutenção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Cadastros/Causa%20da%20manuten%C3%A7%C3%A3o.html">Causa da manutenção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Cadastros/Status%20de%20apontamento.html">Status de apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Cadastros/Tipos%20apont%20para%20apont%20ordem%20manuten%C3%A7%C3%A3o.html">Tipos apont. para apont. ordem manutenção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../Cadastros/Modelo%20de%20manuten%C3%A7%C3%A3o.html">Modelo de manutenção/metrologia</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Ordem de manutenção/metrologia</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Ordem de manutenção/metrologia</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ordem-de-manutencao-metrologia">
+<h1>Ordem de manutenção/metrologia<a class="headerlink" href="#ordem-de-manutencao-metrologia" title="Link permanente para este cabeçalho"></a></h1>
+<p>A tela de ordem de manutenção/metrologia pode ser acessada pelo menu:</p>
+<p><strong>Serviço -&gt; Ordem de manutenção/metrologia</strong></p>
+<a class="reference internal image-reference" href="../../../_images/110.png"><img alt="../../../_images/110.png" src="../../../_images/110.png" style="width: 667.2px; height: 415.20000000000005px;" /></a>
+<p>No cabeçalho da tela o usuário informa qual o recurso que passará por uma manutenção ou metrologia.</p>
+<p>O campo <strong>Tipo de apontamento</strong> pode ser cadastrado no menu:</p>
+<p><strong>Administração -&gt; Definição -&gt; Serviço -&gt; Tipos apont. ordem manutenção</strong></p>
+<p>O Tipo de apontamento é um campo obrigatório e caso a opção selecionada tenha o parâmetro <strong>Modelo obrigatório</strong> marcado (conforme a imagem abaixo) o campo <strong>Modelo de manutenção</strong> será a ser obrigatório. O campo Tipo de apontamento vai indicar o motivo pelo qual aquela ordem de manutenção/metrologia está sendo aberta.</p>
+<a class="reference internal image-reference" href="../../../_images/210.png"><img alt="../../../_images/210.png" src="../../../_images/210.png" style="width: 664.0px; height: 413.6px;" /></a>
+<p>O campo <strong>Modelo de manutenção</strong> pode ser cadastrado através do menu:</p>
+<p><strong>Serviço -&gt; Modelo de manutenção/metrologia</strong></p>
+<p>Caso um modelo seja selecionado, o campo <strong>Tipo da Ordem</strong> será preenchido automaticamente conforme o campo <strong>Tipo do modelo</strong> do modelo selecionado.</p>
+<a class="reference internal image-reference" href="../../../_images/310.png"><img alt="../../../_images/310.png" src="../../../_images/310.png" style="width: 664.8000000000001px; height: 318.40000000000003px;" /></a>
+<p>O Modelo de manutenção/metrologia pode ser vinculado a alguma Ordem de manutenção/metrologia quando há alguma orientação para aquela ordem.
+Por exemplo, uma ordem está sendo aberta para que o usuário possa fazer a calibração ou lubrificação de uma máquina e para realizar o procedimento já existe um passo a passo a ser seguido, então estes passos podem ser cadastrados em um modelo de manutenção e futuramente vinculado as ordens para que os técnicos possam seguir as orientações.</p>
+<p>O <strong>“tempo previsto”</strong> cadastrado no modelo também é levado para a ordem e não pode ser alterado pois o campo fica bloqueado.</p>
+<p>Campo <strong>horas consumidas</strong> não é um campo obrigatório para adicionar a Ordem e ela pode ser informada posteriormente.</p>
+<p>O campo <strong>“Tipo”</strong> da ordem vai indicar se a ordem é sobre manutenção ou metrologia do recurso vinculado.
+Caso tenha selecionado um modelo, este campo virá preenchido automaticamente conforme o cadastro do modelo, mas pode ser alterado manualmente.</p>
+<p>Dependendo do tipo da ordem escolhida, os campos pertinentes para a ordem serão ajustados em tela, como no print abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/410.png"><img alt="../../../_images/410.png" src="../../../_images/410.png" style="width: 665.6px; height: 253.60000000000002px;" /></a>
+<p>Caso a ordem seja de <strong>“Manutenção”</strong>, os campos de Solicitante, Operador e Técnico ficarão disponíveis para que o usuário possa identificar o quem solicitou e quem realizou a manutenção no equipamento.</p>
+<p>Caso a ordem seja de <strong>“Metrologia”</strong> o campo Medida ficará disponível para preenchimento da informação, mas caso a ordem tenha um modelo vinculado do tipo metrologia onde o campo Medida está preenchido, esta informação será carregada na ordem.</p>
+<p>Para uma ordem de manutenção do tipo <strong>manutenção</strong> está disponivel os seguintes campos para preenchimento:</p>
+<p><strong>Cadastro do Solicitante:</strong></p>
+<img alt="../../../_images/1611.png" src="../../../_images/1611.png" />
+<p>Para o cadastro de um solicitante qualquer colaborador cadastrado consegue ser adicionado ao campo:</p>
+<img alt="../../../_images/1711.png" src="../../../_images/1711.png" />
+<img alt="../../../_images/1811.png" src="../../../_images/1811.png" />
+<p><strong>Cadastro do Operador:</strong></p>
+<img alt="../../../_images/1910.png" src="../../../_images/1910.png" />
+<p>Para o cadastro de um colaborador com a função de Operador é importante considerar alguns cadastros para definição:</p>
+<p>No campo “departamento” ao selecionar “definir novo” será aberto a tela de “Departamento - Definição”</p>
+<img alt="../../../_images/2010.png" src="../../../_images/2010.png" />
+<img alt="../../../_images/2111.png" src="../../../_images/2111.png" />
+<p>Com isso ao definir a flag “Manutenção” para o colaborador.
+Sendo assim será listado o “Operador” na tela de Ordem de manutenção para o colaborador definido.</p>
+<img alt="../../../_images/2210.png" src="../../../_images/2210.png" />
+<img alt="../../../_images/239.png" src="../../../_images/239.png" />
+<p>Note que ao definir a flag “Manutenção” para o departamento do colaborador é listado, o colaborador é listado e atribuido, para listas de colaboradores da Ordem de manutenção.</p>
+<p><strong>Cadasto de Técnico:</strong></p>
+<p>Para o cadastro de um tecnico deve ser preenchido o campo <strong>“função”</strong> na aba Filiação -&gt; Função.
+Ao selecionar a opção “Técnico” no campo da Ordem de manutenção será listado o colaborador.</p>
+<img alt="../../../_images/249.png" src="../../../_images/249.png" />
+<img alt="../../../_images/259.png" src="../../../_images/259.png" />
+<p>Na lateral direita da tela, os campos de data ficam disponíveis para preenchimento manual, o campo Data da manutenção é obrigatório para adicionar a ordem e o campo Data da próxima manutenção é opcional, mas caso a ordem esteja sendo adicionada sem este campo a mensagem abaixo deixará um alerta para o usuário, porém clicando em Sim a ordem é adicionada mesmo com o campo vazio.</p>
+<a class="reference internal image-reference" href="../../../_images/510.png"><img alt="../../../_images/510.png" src="../../../_images/510.png" style="width: 397.6px; height: 121.60000000000001px;" /></a>
+<p>Quando a ordem é do tipo Manutenção, é possível vincular a causa da manutenção no campo <strong>código da manutenção</strong>. Ao selecionar o código a descrição também é preenchida automaticamente conforme a imagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/610.png"><img alt="../../../_images/610.png" src="../../../_images/610.png" style="width: 767.2px; height: 376.0px;" /></a>
+<p>O código da manutenção pode ser cadastrado pelo caminho: Administração &gt; Definição &gt; Serviço &gt; Causa da manutenção.</p>
+<p>Quando a Ordem é do tipo Metrologia os campos Medida e UM aparecerão em tela, caso um modelo tenha sido selecionado esses campos serão preenchidos conforme o modelo, caso nenhum modelo tenha sido selecionado, apenas o campo Medida fica disponível para preenchimento do usuário.</p>
+<a class="reference internal image-reference" href="../../../_images/72.png"><img alt="../../../_images/72.png" src="../../../_images/72.png" style="width: 666.4000000000001px; height: 272.8px;" /></a>
+<p>O campo Quantidade de peças permanece em tela independente do tipo de ordem e é aberto para o preenchimento do usuário.</p>
+<ul class="simple">
+<li><p><strong>Aba documentos:</strong></p></li>
+</ul>
+<p>A aba documentos é utilizada quando o usuário precisa vincular algum documento referente a ordem de manutenção. Por exemplo, para a manutenção de um recurso foi necessário comprar algumas peças, sendo assim, esta nota de entrada contendo as peças que serão utilizadas pode ser vinculada a esta ordem de manutenção, como no exemplo abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/82.png"><img alt="../../../_images/82.png" src="../../../_images/82.png" style="width: 664.0px; height: 219.20000000000002px;" /></a>
+<p>Os tipos de documentos disponíveis são os tipos &gt; Notas fiscais de entrada e saída, saída de mercadoria e solicitação de compra, sendo que o usuário pode inserir na mesma ordem mais de um tipo de documento.</p>
+<a class="reference internal image-reference" href="../../../_images/92.png"><img alt="../../../_images/92.png" src="../../../_images/92.png" style="width: 284.0px; height: 115.2px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/GIF29.gif"><img alt="../../../_images/GIF29.gif" src="../../../_images/GIF29.gif" style="width: 663.2px; height: 280.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Histórico:</strong></p></li>
+</ul>
+<p>Na aba Histórico é possível inserir qualquer informação pertinente a ordem de manutenção/metrologia. Desta forma ao abrir uma ordem de manutenção/metrologia antiga existirá um histórico do que foi realizado, mas este campo não é obrigatório.</p>
+<a class="reference internal image-reference" href="../../../_images/1023.png"><img alt="../../../_images/1023.png" src="../../../_images/1023.png" style="width: 517.6px; height: 357.6px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Solicitação:</strong></p></li>
+</ul>
+<p>A aba Solicitação é o local onde a prioridade e justificativa da Ordem de manutenção/metrologia são informadas.</p>
+<a class="reference internal image-reference" href="../../../_images/1113.png"><img alt="../../../_images/1113.png" src="../../../_images/1113.png" style="width: 516.8000000000001px; height: 357.6px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Instrução da manutenção:</strong></p></li>
+</ul>
+<p>A aba Instrução da manutenção pode ser preenchida manualmente ou as instruções pode vir de um Modelo de manutenção/Metrologia vinculado. Mesmo que o preenchimento seja realizado a partir de um modelo, a informação presente pode ser alterada manualmente pelo usuário.</p>
+<a class="reference internal image-reference" href="../../../_images/1213.png"><img alt="../../../_images/1213.png" src="../../../_images/1213.png" style="width: 792.0px; height: 392.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Anexos:</strong></p></li>
+</ul>
+<p>Aba anexos é utilizada para vincular algum documento ou imagem pertinente a ordem de manutenção/metrologia. Caso um modelo seja vinculado todos os documentos vinculados na aba Anexos do modelo também estarão disponíveis na Ordem de manutenção. Caso o usuário queira inserir mais algum documento ou remover algum documento também é possível conforme a demonstração abaixo.</p>
+<a class="reference internal image-reference" href="../../../_images/1314.png"><img alt="../../../_images/1314.png" src="../../../_images/1314.png" style="width: 808.0px; height: 454.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/GIF30.gif"><img alt="../../../_images/GIF30.gif" src="../../../_images/GIF30.gif" style="width: 535.2px; height: 378.40000000000003px;" /></a>
+<p>O campo de Observação no rodapé da tela também é opcional.</p>
+<p>O campo de Total documentos no rodapé será preenchido com a soma dos documentos da aba Documentos conforme o exemplo abaixo. Caso não seja vinculado nenhum documento o campo ficará vazio e não poderá ser editado pelo usuário.</p>
+<a class="reference internal image-reference" href="../../../_images/1414.png"><img alt="../../../_images/1414.png" src="../../../_images/1414.png" style="width: 500.8px; height: 355.20000000000005px;" /></a>
+<p>Após finalizada a Ordem de manutenção/metrologia ela pode ser fechada, mas para conseguir fechar será necessário que algum documento esteja vinculado a ordem ou o campo Horas consumidas seja preenchido.</p>
+<a class="reference internal image-reference" href="../../../_images/15.JPG"><img alt="../../../_images/15.JPG" src="../../../_images/15.JPG" style="width: 580.0px; height: 408.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../../Cadastros/Modelo%20de%20manuten%C3%A7%C3%A3o.html" class="btn btn-neutral float-left" title="Modelo de manutenção/metrologia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Forma%C3%A7%C3%A3o%20de%20pre%C3%A7o%20de%20venda/Autoriza%C3%A7%C3%A3o.html" class="btn btn-neutral float-right" title="Autorização" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

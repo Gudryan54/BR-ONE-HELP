@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada de Componentes &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Alteração status recurso" href="Altera%C3%A7%C3%A3o%20status%20recurso.html" />
+    <link rel="prev" title="Saída de Produto Acabado" href="Sa%C3%ADda%20de%20PA.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20Insumos.html">Saída de Insumos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Produ%C3%A7%C3%A3o.html">Apontamento de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estorno%20de%20Apontamento.html">Estornos de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Refugo.html">Apontamento de Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html">Seleção de lote automática por data de vencimento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20PA.html">Saída de Produto Acabado</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Entrada de Componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Altera%C3%A7%C3%A3o%20status%20recurso.html">Alteração status recurso</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Terminal%20de%20apontamento.html">Terminal de Apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parada%20de%20m%C3%BAltiplos%20recursos.html">Parada de múltiplos recursos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Monitor%20de%20recursos.html">Monitor de recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Entrada de Componentes</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="entrada-de-componentes">
+<h1>Entrada de Componentes<a class="headerlink" href="#entrada-de-componentes" title="Link permanente para este cabeçalho"></a></h1>
+<p>Nesta tela é possível realizar a entrada de componentes.</p>
+<p>Para acessar essa tela pode utilizar as opções:</p>
+<ul class="simple">
+<li><p>Através do menu <strong>Produção -&gt; Entrada de Componentes</strong>;</p></li>
+<li><p>Através do Terminal de Apontamentos;</p></li>
+<li><p>Através do botão direito na Ordem de Produção de Desmontagem liberada.</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.002.png" src="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.002.png" />
+<p>Para realizar a entrada de componentes, basta informar o <strong>“Nº ordem de produção”</strong> e a <strong>“Seq. operação”</strong>, e ao preencher as linhas com os componentes dessa operação, a quantidade do(s)item(ns) será carregada.</p>
+<p>O CFL (Choose From List) do campo <strong>“Nº ordem produção”</strong> será carregado da seguinte forma:</p>
+<ul class="simple">
+<li><p>Quando o campo estiver vazio, apenas aparecerão as 100 primeiras OPs para seleção.</p></li>
+<li><p>Quando o campo estiver com *, aparecerão todas as OPs disponíveis para entrada de componentes.</p></li>
+<li><p>Quando houver algum filtro, aparecerão todas as OPs de acordo com o filtro informado.</p></li>
+</ul>
+<p><strong>OBS.:</strong> Somente serão carregadas no CFL, OPs do tipo <strong>Desmontagem</strong>, que possuam o status <strong>“Liberada”</strong>.</p>
+<p>Caso o usuário tente adicionar uma entrada de componentes sem informar uma OP, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img01.png" src="../../../_images/Img01.png" />
+<p><em>BR One :: Informe uma ordem de produção.</em></p>
+<p>Caso o usuário tente adicionar uma entrada de componentes sem informar uma operação, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img02.png" src="../../../_images/Img02.png" />
+<p><em>BR One :: Informe uma operação.</em></p>
+<p>Caso o usuário tente adicionar uma entrada de componentes com linhas faltando o número do item, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img03.png" src="../../../_images/Img03.png" />
+<p><em>BR One :: Informe o número do item.</em></p>
+<p>Caso o usuário tente adicionar uma entrada de componentes com linhas faltando o depósito, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img041.png" src="../../../_images/Img041.png" />
+<p><em>BR One :: Informe o depósito de destino.</em></p>
+<p>Caso o usuário tente adicionar uma entrada de componentes com linhas faltando a quantidade, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img05.png" src="../../../_images/Img05.png" />
+<p><em>BR One :: A quantidade deve ser maior que zero.</em></p>
+<p><em>BR One :: Informe uma data do documento.</em></p>
+<p>É possível também que a ordem de produção tenha seu status alterado enquanto a tela de entrada de componentes estiver aberta:</p>
+<img alt="../../../_images/Img06.png" src="../../../_images/Img06.png" />
+<p><em>BR One :: Ordem de produção deve estar liberada para que seja possível realizar a entrada de componentes.</em></p>
+<p>Existe a possibilidade de realizar o apontamento para um item alternativo previamente cadastrado na tela Estoque &gt; Administração de itens &gt; Itens alternativos ou diretamente através do botão direito no <strong>“Cadastro do item”</strong>, opção <strong>“Itens alternativos”</strong>.</p>
+<p>Para isto, basta que a flag “Permitir edição após liberação” esteja marcada na OP de Desmontagem.</p>
+<p>Se o usuário estiver tentando inserir um item que esteja cancelado na OP, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.010.png" src="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.010.png" />
+<p><em>BR One :: Item selecionado na linha x está cancelado na OP. Selecionar itens alternativos pressionando CTRL + TAB no campo n° do item.</em></p>
+<p>Para inserir um item alternativo, o item pode ou não estar cancelado. Basta criar uma entrada de componentes para o item e, se desejar trocá-lo, pressione CTRL + TAB e o item atual poderá ser trocado por um alternativo a ele.</p>
+<img alt="../../../_images/Img07.png" src="../../../_images/Img07.png" />
+<p>O item será carregado na tela de entrada de componentes:</p>
+<img alt="../../../_images/Img08.png" src="../../../_images/Img08.png" />
+<p>Se o usuário pressionar CTRL + TAB no item que deseja trocar, mas a flag “Permitir edição após liberação” na OP estiver desmarcada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.013.png" src="../../../_images/Aspose.Words.3b7aaf2d-3eae-4028-93b3-b9dcd6d4ba40.013.png" />
+<p><em>BR One :: Não é permitido selecionar itens alternativos pois a OP selecionada não permite edição após a liberação.</em></p>
+<p>A flag <strong>“Selecionar insumos manualmente”</strong> virá desmarcada.</p>
+<p>Quando ela estiver marcada, o usuário irá conseguir informar os insumos que possuem <strong>“Método baixa”</strong> iguala a <strong>“Manual”</strong>, para isso será necessário inserir uma nova linha e selecioná-los manualmente.</p>
+<img alt="../../../_images/Img09.png" src="../../../_images/Img09.png" />
+<p>Se houver itens duplicados na OP, ao selecioná-lo, será aberta uma nova tela para ser escolhido o item. Ao selecionar os insumos manualmente, a quantidade carregada será a quantidade pendente.</p>
+<img alt="../../../_images/Img10.png" src="../../../_images/Img10.png" />
+<img alt="../../../_images/Img11.png" src="../../../_images/Img11.png" />
+<p>Quando a flag estiver desmarcada, os insumos serão carregados normalmente.</p>
+<img alt="../../../_images/Img08.png" src="../../../_images/Img08.png" />
+<p>A flag pode ser marcada ou desmarcada a qualquer momento. Esta tela possui configurações que podem alterar seu comportamento.</p>
+<p>Ao clicar no botão <strong>“Calcular”</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Img12.png" src="../../../_images/Img12.png" />
+<p><em>BR One :: As quantidades dos insumos serão recalculadas de acordo com a quantidade informada. Continuar?</em></p>
+<p>Ao clicar em <strong>“Sim”</strong>, as quantidades dos itens serão recalculadas de acordo com a quantidade de PA.</p>
+<p>Por exemplo, se a quantidade base do componente for 0,006 e no campo <strong>“Quantidade PA”</strong> for digitado 2, a mensagem acima será exibida, e se for clicado em <strong>“Sim”</strong>, a quantidade do item será recalculada com o valor 0,012.</p>
+<p><strong>Cálculo:</strong> 2 * 0,006 = 0,012</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Sa%C3%ADda%20de%20PA.html" class="btn btn-neutral float-left" title="Saída de Produto Acabado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Altera%C3%A7%C3%A3o%20status%20recurso.html" class="btn btn-neutral float-right" title="Alteração status recurso" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

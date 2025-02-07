@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuração de Vínculo de depósitos e utilizações por filial &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Detalhes da Ordem de Produção" href="../../Processos/Ordem%20de%20produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o_Cabecalho.html" />
+    <link rel="prev" title="Configuração para transferência de estoque entre filiais" href="Configura%C3%A7%C3%A3o%20para%20transfer%C3%AAncia%20de%20estoque%20entre%20filiais.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Calend%C3%A1rio.html">Calendário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Centro%20de%20trabalho.html">Centro de Trabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Grupo%20de%20recursos.html">Grupo de recursos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Grupos%20de%20recursos%20alternativos.html">Grupos de recursos alternativos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Marca.html">Marca</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Classifica%C3%A7%C3%A3o.html">Classificação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Recurso.html">Recurso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Status%20de%20recurso.html">Status de recurso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Opera%C3%A7%C3%A3o.html">Operação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Classifica%C3%A7%C3%A3o%20de%20refugo.html">Classificação de Refugo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Configura%C3%A7%C3%A3o%20do%20terminal.html">Configuração do terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Prioriza%C3%A7%C3%A3o%20de%20transfer%C3%AAncia%20de%20estoque.html">Priorização de transferência de estoque</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Roteiro.html">Roteiro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Cadastro%20de%20GGF.html">Cadastro de GGF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Configura%C3%A7%C3%B5es%20do%20beneficiamento.html">Configurações do beneficiamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Contabiliza%C3%A7%C3%A3o%20BR%20One.html">Contabilização BR One</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Deposito%20Posicoes.html">Depósitos - Ativar posições</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#configuracoes-de-producao">Configurações de Produção</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#configuracoes-de-multifiliais">Configurações de Multifiliais</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%A3o%20de%20Transfer%C3%AAncia%20de%20Estoque.html">Configuração de Transferência de Estoque</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%A3o%20de%20Dep%C3%B3sitos%20para%20Refer%C3%AAncia.html">Configuração de depósitos para referência</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%A3o%20para%20transfer%C3%AAncia%20de%20estoque%20entre%20filiais.html">Configuração para transferência de estoque entre filiais</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Configuração de Vínculo de depósitos e utilizações por filial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Configuração de Vínculo de depósitos e utilizações por filial</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracao-de-vinculo-de-depositos-e-utilizacoes-por-filial">
+<h1>Configuração de Vínculo de depósitos e utilizações por filial<a class="headerlink" href="#configuracao-de-vinculo-de-depositos-e-utilizacoes-por-filial" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para bases multifilias, o depósito não será definido na tela <strong>“Utilização”</strong>, e sim na tela <strong>“Vínculo de depósitos e utilizações por filial”</strong>.</p>
+<p>Para acessar a tela é necessário ir no menu:</p>
+<p><strong>Administração &gt; Definição &gt; Estoque &gt; Vínculo de depósitos e utilizações por filial.</strong></p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.002.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.002.png" />
+<p>Nessa tela é possível cadastrar cada filial vinculando a utilização com o depósito. A filial é selecionada no campo <strong>“Filial”</strong> e os vínculos ocorrem nas linhas das colunas <strong>“Utilização”</strong> e <strong>“Depósito”</strong>.</p>
+<p>No campo <strong>“Utilização”</strong>, aparecerão apenas as utilizações cadastradas na <strong>tela “Utilização – Definição”.</strong></p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.003.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.003.png" />
+<p>No campo <strong>“Depósito”</strong>, serão filtrados apenas os depósitos da filial selecionada no campo <strong>“Filial”</strong>, independentemente do tipo.</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.004.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.004.png" />
+<p>Após selecionar a utilização e o depósito que deseja realizar o vínculo, basta atualizar a tela <strong>“Vínculo de depósitos e utilizações por filial”</strong>, desta forma o vínculo para a Filial escolhida estará feito.</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.005.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.005.png" />
+<p>Se no campo <strong>“Filial”</strong> for escolhida uma filial que já possua cadastro, a seguinte mensagem de erro será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.006.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.006.png" />
+<p><em>BR One :: Filial já existente.</em></p>
+<p>Para utilizações que tenham a flag <strong>“Transf. Estoque”</strong> marcada, só será possível selecionar um depósito que seja de <strong>Envio Direto</strong>.</p>
+<p>Caso seja selecionado depósito que não seja de envio direto para uma utilização que tenha a flag <strong>“Transf. Estoque”</strong> marcada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.007.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.007.png" />
+<p><em>BR One :: Utilização de transferência de estoque deve ter depósito de envio direto. Linha: x</em></p>
+<p>Se o usuário tentar inserir a mesma utilização para a mesma filial, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.008.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.008.png" />
+<p><em>BR One :: Não pode existir duas utilizações iguais para a mesma filial.</em></p>
+<p>Se o usuário tentar inserir um cadastro sem ter inserido uma utilização ou tentar escolher um depósito sem utilização, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.009.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.009.png" />
+<p><em>BR One :: Selecione uma utilização.</em></p>
+<p>Se o usuário tentar inserir um cadastro com uma utilização sem depósito, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.010.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.010.png" />
+<p><em>BR One :: Selecione um depósito. Linha: x</em></p>
+<p>Apenas será possível definir um depósito para uma utilização na tela <strong>“Utilização - Configuração”</strong> se a base não for Multi-filial. Se o usuário tentar definir um depósito para a utilização em uma base Multi-filial, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.011.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.011.png" />
+<p><em>BR One :: Para bases multi-filial os depósitos devem ser configurados na tela de “Vínculo de depósitos e utilizações por filial”.</em></p>
+<p>Caso uma utilização cadastrada na tela <strong>“Vínculo de depósitos e utilizações por filial”</strong> não tenha a flag <strong>“Transf. estoque”</strong> marcada e seu depósito não seja de envio direto e o usuário queira checar esse flag na tela <strong>“Utilização - Configuração”</strong> para essa utilização, não será permitido e será exibida uma mensagem de erro:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.012.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.012.png" />
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.013.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.013.png" />
+<p><em>BR One :: A utilização “x” não pode ser marcada como transferência de estoque, pois no vínculo de utilização com filiais, a filial “x” possui esta utilização vinculada com um depósito que não é de envio direto.</em></p>
+<p>Após inserir a utilização e configurá-la nas “Configurações do beneficiamento”, os flags não poderão mais ser desmarcados. Se o usuário tentar desmarcar a flag PN gratuito ou Transf. estoque, as seguintes mensagens de erro serão exibidas:</p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.014.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.014.png" />
+<p><em>BR One :: Utilização “x” está configurada para o processo de beneficiamento de compra de serviço e deve estar com o flag “PN gratuito” marcado.</em></p>
+<img alt="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.015.png" src="../../../_images/Aspose.Words.d4e83007-4ec4-487a-b40e-e65a02467cb9.015.png" />
+<p><em>BR One :: Utilização “x” está configurada para o processo de beneficiamento de compra de serviço e deve estar com o flag transferência de estoque marcado.</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Configura%C3%A7%C3%A3o%20para%20transfer%C3%AAncia%20de%20estoque%20entre%20filiais.html" class="btn btn-neutral float-left" title="Configuração para transferência de estoque entre filiais" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../../Processos/Ordem%20de%20produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o_Cabecalho.html" class="btn btn-neutral float-right" title="Detalhes da Ordem de Produção" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

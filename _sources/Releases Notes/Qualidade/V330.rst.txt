@@ -1,0 +1,11 @@
+Versão 4.11.330
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Correções**
+
+- **Erro ao adicionar ficha de análise manual para operação**
+
+Realizado ajuste para permitir a criação manual da ficha de análise para a operação, evitando a ocorrência da mensagem de validação: “Valor
+inválido no campo (ODBC -1016) [131-183]”.

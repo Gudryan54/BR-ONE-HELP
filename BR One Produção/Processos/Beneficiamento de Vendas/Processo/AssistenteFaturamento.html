@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistente de Faturamento e Retorno &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Assistente de Cancelamento de Faturamento" href="AssistenteCancelamento.html" />
+    <link rel="prev" title="Ordem de Produção" href="OrdemdeProducao.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Configuracoes.html">Configurações do Beneficiamento de Vendas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/ParceirosdeNegocios.html">Parceiro de Negócios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastrodoItem.html">Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/DefinicaoUM.html">Definições de Unidades de Medidas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/CadastroRoteiro.html">Cadastro de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PedidodeVenda.html">Pedidos de Venda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NotaFiscaldeEntrada.html">Nota Fiscal de Entrada</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OrdemdeProducao.html">Ordem de Produção</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Assistente de Faturamento e Retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AssistenteCancelamento.html">Assistente de Cancelamento de Faturamento</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Assistente de Faturamento e Retorno</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="assistente-de-faturamento-e-retorno">
+<h1>Assistente de Faturamento e Retorno<a class="headerlink" href="#assistente-de-faturamento-e-retorno" title="Link permanente para este cabeçalho"></a></h1>
+<p><strong>Produção -&gt; Beneficiamento -&gt; Vendas -&gt; Assistente de faturamento e retorno.</strong></p>
+<p>Após o processo de beneficiamento (<strong>industrialização</strong>), é necessário retornar os componentes ao cliente e faturar tanto o item beneficiado quanto os componentes próprios utilizados no processo. Para isso, o assistente de faturamento e retorno é utilizado. Esse assistente possui três etapas principais, que podem ser resumidas da seguinte forma:</p>
+<ul class="simple">
+<li><p><strong>Etapa 1:</strong> Selecionar os itens dos pedidos de venda para faturamento e definir o tipo de documento que será utilizado para o faturamento e retorno.</p></li>
+<li><p><strong>Etapa 2:</strong> Visualizar os itens de terceiros e notas fiscais de entrada selecionados para retorno.</p></li>
+<li><p><strong>Etapa 3:</strong> Visualizar e selecionar itens próprios e quantidades para faturamento.</p></li>
+</ul>
+<p>Segue abaixo mais detalhes sobre cada etapa do assistente:</p>
+<p><strong>Etapa 1</strong></p>
+<p>No cabeçalho deve ser informado o <strong>Código cliente</strong> utilizado no pedido de venda e a <strong>Filial</strong> para que o pedido de venda possa ser localizado e selecionado na grid.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img01.png"><img alt="../../../../_images/p-img01.png" src="../../../../_images/p-img01.png" style="width: 860.0px; height: 364.8px;" /></a>
+<p>Para a seleção do pedido, é necessário clicar no campo <strong>Pedido de vendas</strong> e apertar o <strong>Tab</strong>, serão listados os pedidos de venda da filial do cabeçalho, que tenham linhas com o status em aberto, que pertençam ao cliente do cabeçalho e que possuam a utilização igual a <strong>Venda industrialização encomenda</strong> ou <strong>Venda industrialização triangular</strong>.</p>
+<p>Note que no exemplo abaixo o mesmo pedido de venda é apresentado em mais de uma linha, mas o número das Ordens de Produção (<strong>OPs</strong>) são diferentes, isso porque a quantidade do pedido de venda foi dividida em <strong>2 OPs</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img002.png"><img alt="../../../../_images/p-img002.png" src="../../../../_images/p-img002.png" style="width: 860.8000000000001px; height: 363.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/p-img03.png"><img alt="../../../../_images/p-img03.png" src="../../../../_images/p-img03.png" style="width: 958.4000000000001px; height: 438.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/p-img04.png"><img alt="../../../../_images/p-img04.png" src="../../../../_images/p-img04.png" style="width: 416.8px; height: 275.2px;" /></a>
+<p>Após a seleção do pedido serão apresentadas algumas informações relacionadas ao(s) pedido(s) de venda a ser faturado. Dentre as informações apresentadas estarão o <strong>item do pedido</strong> (Produto acabado), <strong>Nº Ordem de produção</strong>, <strong>Qtde do pedido</strong>, <strong>Qtde em aberto</strong> (que ainda não houve faturamento) e <strong>Qtde no depósito</strong> (depósito <strong>Benef. Vendas</strong>), que é utilizado na linha do item no pedido de venda, no cabeçalho da OP e entrada de PA).</p>
+<p>É possível selecionar mais de um pedido para ser faturado ao mesmo tempo na <strong>Etapa 1</strong> do assistente, as informações pertinentes a cada pedido estarão disponíveis nas suas linhas.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img05.png"><img alt="../../../../_images/p-img05.png" src="../../../../_images/p-img05.png" style="width: 972.0px; height: 529.6px;" /></a>
+<p>O campo <strong>Qtde a faturar</strong> deve ser informado pelo cliente com a quantidade que será faturada, ela deve ser maior que zero, menor ou igual a quantidade em aberto.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img06.png"><img alt="../../../../_images/p-img06.png" src="../../../../_images/p-img06.png" style="width: 971.2px; height: 529.6px;" /></a>
+<p>Caso tente passar para a <strong>Etapa 2</strong> com a <strong>Qtde a faturar</strong> igual a zero ou maior que a quantidade em aberto, as mensagens abaixo serão exibidas e não será permitido passar para a <strong>Etapa 2</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR7.png"><img alt="../../../../_images/AFR7.png" src="../../../../_images/AFR7.png" style="width: 449.6px; height: 12.8px;" /></a>
+<p><em>BR One :: Não é permitido prosseguir para a etapa 2, pois o campo **Qtde a faturar*</em> deve ser maior que zero na linha 1.*</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR8.png"><img alt="../../../../_images/AFR8.png" src="../../../../_images/AFR8.png" style="width: 460.8px; height: 14.4px;" /></a>
+<p><em>BR One :: Não é permitido prosseguir para a **etapa 2*</em>, pois a <strong>Qtde a faturar</strong> é maior do que a <strong>Qtde em aberto</strong> na linha 1.*</p>
+<p>O campo <strong>Tipo de Faturamento/Retorno</strong> virá preenchido conforme a configuração definida no cadastro do cliente, mas pode ser alterada manualmente antes de passar para a <strong>Etapa 2</strong> do assistente.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img07.png"><img alt="../../../../_images/p-img07.png" src="../../../../_images/p-img07.png" style="width: 861.6px; height: 517.6px;" /></a>
+<p>Também é possível passar para a <strong>Etapa 2</strong> do assistente sem que um pedido seja inserido, para isso não pode ter nenhum pedido nas linhas e a opção <strong>Prosseguir sem seleção de pedido de venda</strong> deve ser marcado no rodapé da tela.</p>
+<a class="reference internal image-reference" href="../../../../_images/p-img08.png"><img alt="../../../../_images/p-img08.png" src="../../../../_images/p-img08.png" style="width: 862.4000000000001px; height: 420.8px;" /></a>
+<p><strong>Etapa 2</strong></p>
+<p>Ao passar para a <strong>Etapa 2</strong> com o(s) pedido(s) de venda selecionado, as informações desse pedido estarão disponíveis para visualização no grid do lado esquerdo da tela conforme a imagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR11.png"><img alt="../../../../_images/AFR11.png" src="../../../../_images/AFR11.png" style="width: 1025.6000000000001px; height: 432.8px;" /></a>
+<img alt="../../../../_images/GIF03.gif" src="../../../../_images/GIF03.gif" />
+<p><strong>IMPORTANTE</strong></p>
+<p>Para que a explosão dos itens de terceiros utilizados nos <strong>Semi-Acabados</strong> ocorra corretamente, é fundamental considerar o parâmetro <strong>Limite de nível do código de baixo nível (LLC)</strong>, que se encontra na aba MRP das configurações de produção. Este parâmetro determina a quantidade de níveis que será realizada a explosão dos roteiros (<strong>Previsto</strong>) e das ordens de produção (<strong>Realizado</strong>), assim listando apenas os itens que estiverem dentro da explosão.</p>
+<p><strong>Exemplo:</strong>
+A estrutura do PA possui dois semi-acabados, e dentro de cada um desses semi-acabados, há mais um semi-acabado. Nesse cenário, o PA é composto por quatro níveis. Ao configurar o parâmetro com o valor 1, o resultado será o seguinte:</p>
+<a class="reference internal image-reference" href="../../../../_images/lcc01.png"><img alt="../../../../_images/lcc01.png" src="../../../../_images/lcc01.png" style="width: 601.6px; height: 338.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/nivel01.png"><img alt="../../../../_images/nivel01.png" src="../../../../_images/nivel01.png" style="width: 828.5px; height: 285.5px;" /></a>
+<p>Podemos observar, que só foi exibido o primeiro nível, que no caso o item PA.</p>
+<p>Agora, se nas configurações estiver como quatro ou maior, será exibido todos os semi-acabado.</p>
+<a class="reference internal image-reference" href="../../../../_images/lcc02.png"><img alt="../../../../_images/lcc02.png" src="../../../../_images/lcc02.png" style="width: 600.0px; height: 339.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/nivel02.png"><img alt="../../../../_images/nivel02.png" src="../../../../_images/nivel02.png" style="width: 714.5px; height: 270.5px;" /></a>
+<p>Para que o lado direito seja exibido é necessário clicar em <strong>Filtrar</strong>, e serão apresentados os materiais de terceiros para retorno baseando-se no Roteiro (<strong>Previsto</strong>) ou Ordem de produção (<strong>Realizado</strong>) do item beneficiado e nas Notas Fiscais de Entrada. Apenas as notas que possuem utilização igual a <strong>Entrada industrialização encomenda</strong>, <strong>Entrada industrialização triangular</strong> e <strong>Entrada cobertura fiscal</strong> serão apresentadas, e a exibição dependerá da utilização do(s) pedido(s) de venda:</p>
+<ul class="simple">
+<li><p><strong>Pedido de venda</strong> selecionado na <strong>Etapa 1</strong> com a utilização <strong>Venda de industrialização encomenda</strong> aparecerão apenas notas na <strong>Etapa 2</strong> com a utilização <strong>Entrada industrialização encomenda</strong>;</p></li>
+<li><p><strong>Pedido de venda</strong> selecionado na <strong>Etapa 1</strong> com a utilização <strong>Venda de industrialização triangular</strong> aparecerão apenas notas na <strong>Etapa 2</strong> com a utilização <strong>Entrada cobertura fiscal</strong>;</p></li>
+<li><p><strong>Etapa 1</strong> com a opção <strong>Prosseguir sem seleção de pedido de venda</strong> selecionada aparecerão as notas com as utilizações: <strong>Entrada industrialização encomenda</strong> e <strong>Entrada cobertura fiscal</strong>.</p></li>
+<li><p>Caso na <strong>Etapa 1</strong> tenha sido selecionado um pedido de venda por exemplo com a utilização <strong>Venda de industrialização triangular</strong> mas na <strong>Etapa 2</strong> o sistema não encontre nenhuma NF de entrada com a utilização <strong>Entrada industrialização triangular</strong> ele mostrará todas as notas encontradas na base com as utilizações <strong>Entrada industrialização triangular</strong> e <strong>Entrada industrialização encomenda</strong>, nenhuma nota estará selecionada e a mensagem abaixo será exibida:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/FATRET2.png"><img alt="../../../../_images/FATRET2.png" src="../../../../_images/FATRET2.png" style="width: 310.40000000000003px; height: 13.600000000000001px;" /></a>
+<p><em>BR One: Não foi encontrada nenhuma nota fiscal de entrada correspondente.</em></p>
+<ul class="simple">
+<li><p>Se a configuração <strong>Permitir retornar NF’s triangular e encomenda</strong> estiver ativada nas configurações do beneficiamento, o filtro de notas por utilização não será aplicado. Nesse caso, serão exibidas as notas fiscais de entrada, tanto com a utilização <strong>Entrada industrialização encomenda</strong> quanto com a utilização <strong>Entrada cobertura fiscal</strong> para realizar o retorno dos itens.</p></li>
+</ul>
+<p>Os itens serão apresentados em ordenação crescente de acordo com o campo <strong>Nº Nota Fiscal</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR12.png"><img alt="../../../../_images/AFR12.png" src="../../../../_images/AFR12.png" style="width: 692.8000000000001px; height: 292.0px;" /></a>
+<p>As notas apresentadas vão exibir e selecionar automaticamente os itens de acordo a explosão do Roteiro ou Ordem de Produção do item do PA vendido. Como a seleção ocorre automaticamente de acordo com a ordenação do campo <strong>Nº Nota Fiscal</strong> não é possível selecionar qual nota fiscal será selecionada.</p>
+<p>Como é possível ter componentes de terceiros nas estruturas de semi-acabados, a coluna <strong>Nº do item pai</strong> será útil para visualizar a qual estrutura aquele componente pertence.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR13.png"><img alt="../../../../_images/AFR13.png" src="../../../../_images/AFR13.png" style="width: 1084.8px; height: 235.20000000000002px;" /></a>
+<p>O campo <strong>Documento</strong> exibirá o <strong>Nº do cabeçalho</strong> da Nota fiscal de entrada.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR14.png"><img alt="../../../../_images/AFR14.png" src="../../../../_images/AFR14.png" style="width: 1083.2px; height: 406.40000000000003px;" /></a>
+<p>Já o campo <strong>Serial</strong> vai exibir o campo <strong>Serial</strong> da Nota fiscal de entrada:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR15.png"><img alt="../../../../_images/AFR15.png" src="../../../../_images/AFR15.png" style="width: 1084.0px; height: 456.8px;" /></a>
+<p>O campo <strong>Data de lançamento</strong> apresentará a mesma data informada no campo <strong>Data de lançamento</strong> da Nota fiscal de entrada.</p>
+<p>Os campos <strong>Nº do item</strong>, <strong>Descrição</strong>, <strong>Qtde NF</strong> e <strong>Nome da UM</strong> apresentarão os dados informados nas linhas dos itens da Nota fiscal de entrada conforme abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR16.png"><img alt="../../../../_images/AFR16.png" src="../../../../_images/AFR16.png" style="width: 776.8000000000001px; height: 323.20000000000005px;" /></a>
+<p>O campo <strong>Qtde Saldo NF</strong> mostrará a quantidade de componentes de terceiros que ainda não houve retorno para o cliente. A imagem abaixo mostra a tela <strong>Controle de estoque de terceiro</strong> (<strong>botão Oper. adicionais &gt; Controle estoque terceiro</strong>) da <strong>NF 449</strong> onde as quantidades para cada componentes na nota de entrada é de <strong>3</strong>, mas já houve devolução de <strong>1</strong> componente de cada linha, restando o saldo de <strong>2</strong> para que possa ser retornado.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR17.png"><img alt="../../../../_images/AFR17.png" src="../../../../_images/AFR17.png" style="width: 1088.0px; height: 248.0px;" /></a>
+<p>Para o campo <strong>Qtde Retorno NF</strong> o seu comportamento será determinado a partir da configuração <strong>Realizar cálculo dos insumos por</strong> definida na tela de <strong>BR :: Configurações do beneficiamento</strong>, quando estiver como <strong>Previsto</strong> terá um comportamento e quando estiver como <strong>Realizado</strong> terá outro comportamento. Cada comportamento será explicado abaixo.</p>
+<ul class="simple">
+<li><p><strong>Realizar cálculo dos insumos por: Previsto</strong></p></li>
+</ul>
+<p>O campo <strong>Qtde Retorno NF</strong> vai exibir a quantidade com base no roteiro do item e multiplicar pela quantidade porém, este campo fica aberto para selecionar a quantidade que será retornada daquele componente para o cliente. Caso o cliente altere a quantidade, ela não poderá ser maior que o campo <strong>Qtde saldo NF.</strong> Essa quantidade fica aberta para que seja alterada pois, pode haver situações em que no processo de beneficiamento utilizou-se de componentes a mais ou a menos do que o esperado</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR18.png"><img alt="../../../../_images/AFR18.png" src="../../../../_images/AFR18.png" style="width: 692.8000000000001px; height: 114.4px;" /></a>
+<p>Notem que quando a configuração <strong>Realizar cálculo dos insumos por</strong> está configurado para previsto a coluna de <strong>Refugo</strong> não é exibida, isso porque a quantidade de refugo virá somada ao campo <strong>Quantidade retorno NF</strong> com base no preenchimento do campo <strong>% de refugo benef. Vendas</strong> da Aba <strong>Dados de produção</strong> do cadastro do item.</p>
+<p>Caso o usuário tente informar no campo <strong>Qtde retorno NF</strong> maior que a quantidade disponível no campo <strong>Qtde saldo NF</strong> a mensagem abaixo impedirá o avanço para a <strong>Etapa 3</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR19.png"><img alt="../../../../_images/AFR19.png" src="../../../../_images/AFR19.png" style="width: 692.8000000000001px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Não é permitido prosseguir para etapa 3, pois o valor do campo **Qtde retorno NF*</em> é maior que o valor do campo <strong>Qtde saldo NF.*</strong></p>
+<ul class="simple">
+<li><p><strong>Realizar cálculo dos insumos por: Realizado</strong></p></li>
+</ul>
+<p>A quantidade exibida no campo <strong>Qtde Retorno NF</strong> quando a configuração está como realizado vai depender se a OP está aberta ou se está fechada, isso porque os cálculos deste campo são diferentes em cada <strong>Status</strong>, segue definição de cada um:</p>
+<ul>
+<li><p><strong>OP Aberta</strong></p>
+<blockquote>
+<div><ul>
+<li><p><strong>Componentes para a OP pai:</strong></p>
+<p><strong>X</strong> = ([Qtd. da linha planejada] / [Qtd. planejado na OP]) * [Qtd a faturar(Etapa1)].</p>
+<p>Será validado se <strong>X</strong> &gt; ([Qtd. apontada do Insumo] - [Qtd. faturada]) retornar a [Qtd. apontada do Insumo] - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde Retorno NF</strong> o valor de <strong>X</strong>.</p>
+</li>
+<li><p><strong>Cálculo para componente da OP Semi-acabados:</strong></p>
+<p><strong>X</strong> = ([Qtd. da linha planejada do SA] / [Qtd. planejada da OP Pai]) * ([Qtd. da linha planejada do componente] / [Qtd. planejada da OP SA]) * [Qtd a faturar(Etapa1)]</p>
+<p>Será validado se <strong>X</strong> &gt; ([Qtd. apontada do Insumo] - [Qtd. faturada]) retornar a [Qtd. apontada do Insumo] - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde Retorno NF</strong> o valor de <strong>X</strong>.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>OP Fechada</strong></p>
+<blockquote>
+<div><ul>
+<li><p><strong>Componentes para a OP pai:</strong></p>
+<p><strong>X</strong> = ([Qtd. apontada do Item] - [Qtd. faturada]) / (([Qtd. Apontada na OP PA] - [Qtd. do PA faturada]) / [Qtd a faturar(Etapa1)])</p>
+<p>Será validado se <strong>X</strong> &gt; ([Qtd. apontada do Item] - [Qtd. faturada]) retornar a [Qtd. apontada do Item] - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde Retorno NF</strong> o valor de <strong>X</strong>.</p>
+</li>
+<li><p><strong>Cálculo para componente da OP Semi-acabados:</strong></p>
+<p><strong>X</strong> = ([Qtd. apontada do Item] - [Qtd. faturada]) / (([Qtd. Apontada na OP PA PAI] - [Qtd. do PA PAI faturada]) / [Qtd a faturar(Etapa1)])</p>
+<p>Será validado se <strong>X</strong> &gt; ([Qtd. apontada do Item] - [Qtd. faturada]) retornar a [Qtd. apontada do Item] - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde Retorno NF</strong> o valor de <strong>X</strong>.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Quando o cálculo dos insumos está como <strong>Realizado</strong>, o campo <strong>% de refugo benef. Vendas</strong> cadastro do item será desconsiderado para calcular refugo para os itens, isso porque no realizado o sistema calcula as quantidades com base no que foi consumido na Ordem de Produção (<strong>OP</strong>), sendo assim é preciso validar se na OP houve apontamento de refugos ou não. Com isso é habilitado uma nova coluna na <strong>Etapa 2</strong> do assistente de faturamento e retorno, a coluna <strong>Qtde refugo</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/FATRET3.png"><img alt="../../../../_images/FATRET3.png" src="../../../../_images/FATRET3.png" style="width: 1084.0px; height: 224.0px;" /></a>
+<p>Os cálculos realizados para identificar a quantidade que será exibida nesta coluna são os cálculos abaixo:</p>
+<ul>
+<li><p><strong>OP Aberta</strong></p>
+<blockquote>
+<div><p>[Qtd. de Refugo do Insumo realizado na OP] - [Qtd. de refugo faturado]</p>
+</div></blockquote>
+</li>
+<li><p><strong>OP Fechada</strong></p>
+<blockquote>
+<div><ul>
+<li><p><strong>Componentes para a OP pai:</strong></p>
+<p><strong>X</strong> = ([Qtd. apontada do Item Refugo] - [Qtd. faturada Refugo]) / (([Qtd. Apontada na OP PA] - [Qtd. do PA faturada]) / [Qtd a faturar(Etapa1)]).</p>
+<p>Será validado se <strong>X</strong> &gt; (Qtd. Apontada do Refugo Item] - [Qtd. faturada]) retornar a [Qtd. Apontada do Refugo Item] - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde refugo</strong> o valor de <strong>X</strong>.</p>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Cálculo para componente da OP Semi-acabados:</strong></p></li>
+</ul>
+<p><strong>X</strong> = ( [Qtd. apontada do Item Refugo] - [Qtd. faturada Refugo])  /  (([Qtd. Apontada na OP PA] - [Qtd. do PA faturada]) / [Qtd a faturar(Etapa1)])</p>
+<p>Será validado se <strong>X</strong>  &gt; (Qtd. Apontada do Refugo Item] - [Qtd. faturada])  retornar a [Qtd. Apontada do Refugo Item]  - [Qtd. faturada].</p>
+<p>Caso não seja, retornará no campo <strong>Qtde refugo</strong> o valor de <strong>X</strong>.</p>
+<p>Caso não seja necessária a seleção de matéria-prima na <strong>Etapa 2</strong>, o campo <strong>Prosseguir sem seleção de matéria prima</strong> pode ser selecionado, porém, caso na <strong>Etapa 1</strong> o parâmetro <strong>Prosseguir sem seleção de pedido de venda</strong> já tiver sido selecionado para avançar para a <strong>Etapa 2</strong> o sistema não permitirá avançar para a <strong>Etapa 3</strong> com a mensagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR20.png"><img alt="../../../../_images/AFR20.png" src="../../../../_images/AFR20.png" style="width: 688.0px; height: 134.4px;" /></a>
+<p><em>BR One :: Não é permitido prosseguir para próxima etapa caso as opções ‘Prosseguir sem seleção de pedido de venda’ e ‘Prosseguir sem seleção de matéria prima’ estejam selecionadas.</em></p>
+<p>Na <strong>Etapa 2</strong> está disponível também o botão <strong>Movimento</strong>, onde apresentará toda a movimentação dos componentes de terceiro que estiverem selecionados em tela.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR21.png"><img alt="../../../../_images/AFR21.png" src="../../../../_images/AFR21.png" style="width: 692.8000000000001px; height: 365.6px;" /></a>
+<p>Após selecionarmos o botão <strong>Movimento</strong> a tela de <strong>Movimentação de itens em beneficiamento de vendas</strong> será apresentada, lembrando que os saldos estão em Unidade de medida de estoque. Os campos disponíveis para informação são os campos abaixo:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR22.png"><img alt="../../../../_images/AFR22.png" src="../../../../_images/AFR22.png" style="width: 759.2px; height: 199.20000000000002px;" /></a>
+<p><strong>Nº do item:</strong> Apresentará o código dos componentes terceiros que compõe o roteiro do PA de Beneficiamento de Vendas.</p>
+<p><strong>Descrição do Item:</strong> Apresentará descrição/nome dos componentes terceiros que compõe o roteiro do PA de Beneficiamento de Vendas.</p>
+<p><strong>Total NF Entrada:</strong> Apresentará a soma da quantidade de todos os documentos de Nota Fiscal de Entrada lançadas para o item, com Utilização igual a <strong>Entrada industrialização encomenda</strong> e <strong>Entrada industrialização triangular</strong> e que não estejam cancelados.</p>
+<p><strong>Total NF Retorno:</strong>  Apresentará a soma da quantidade de todos os documentos de Devolução de Nota Fiscal de Entrada e também Nota Fiscal de Saída lançados para o item, com Utilização igual a <strong>Retorno industrialização encomenda</strong> e <strong>Retorno industrialização triangular</strong> e que não estejam cancelados.</p>
+<p><strong>Total NF Retorno não Ind:</strong>  Apresentará a soma da quantidade de todos os documentos de Devolução de Nota Fiscal de Entrada e também Nota Fiscal de Saída lançados para o item, com Utilização igual a <strong>Retorno material não industrializado</strong> e que não estejam cancelados.</p>
+<p><strong>Total consumido OP:</strong>  Apresentará a soma da quantidade de todos os registros de Saída de Insumos lançados por Ordem de Produção que geraram documento de Saída de Mercadoria ou Transferência de Estoque e que não estejam cancelados/estornados.</p>
+<p><strong>Saldo NFE a retornar:</strong> Apresentará por item, o resultado do seguinte cálculo <strong>Total NF Entrada (-) Total NF Retorno (-) Total NF Retorno não Ind</strong>, isso é, mostrará o saldo da quantidade de itens de terceiros que estão para serem utilizados no processo de industrialização e ainda não foram retornados.</p>
+<p><strong>Saldo a produzir:</strong> Apresentará por item, o resultado do seguinte cálculo <strong>Total NF Entrada (-) Total NF Retorno não Ind. (-) Total consumido em OP</strong>, isso é, o saldo dos componentes que entraram para serem utilizados no processo de industrialização e ainda não foram consumidos na OP.</p>
+<p><strong>Saldo produzido a retornar:</strong> Apresentará por item, o resultado do seguinte cálculo <strong>Total consumido em OP (-) Total NF Retorno</strong>, isso é, mostrará o saldo de componentes que já foram utilizados no processo de industrialização (transferidos para o depósito de Expedição benef. vendas) e ainda não foram retornados para o parceiro de negócios.</p>
+<p><strong>Etapa 3</strong></p>
+<p>Na <strong>Etapa 3</strong> do Assistente de faturamento e retorno serão demonstrados no quadrante <strong>Itens do roteiro selecionados para faturamento de vendas</strong>, que são os materiais próprios utilizados no processo de Beneficiamento de Vendas que podem ser faturados.</p>
+<p>Somente aparecerá itens na <strong>Etapa 3</strong>, caso o item esteja marcado como <strong>Faturado</strong> no roteiro ou na Ordem de Produção, depende da configuração <strong>Realizar cálculo dos insumos por</strong> e houver seleção de pedido de venda na <strong>Etapa 1</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR23.png"><img alt="../../../../_images/AFR23.png" src="../../../../_images/AFR23.png" style="width: 868.8000000000001px; height: 464.8px;" /></a>
+<p>Na <strong>Etapa 3</strong> a coluna <strong>Selecionar</strong> fica disponível caso o usuário queira desmarcar algum item para faturamento. A coluna <strong>Qtde a faturar</strong> também fica liberada para que o usuário possa informar a quantidade de itens a faturar, pois pode ser que no processo de industrialização houve o consumo menor ou maior destes componentes próprios, sendo necessário ajustar a quantidade a faturar do cliente.</p>
+<p>Ao clicar em <strong>Gerar</strong> aparecerá a tela pedindo pra aguardar pois os esboços dos documentos estão sendo gerados.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR24.png"><img alt="../../../../_images/AFR24.png" src="../../../../_images/AFR24.png" style="width: 195.20000000000002px; height: 90.4px;" /></a>
+<p>Após a geração, a tela de <strong>BR One :: Esboços gerados</strong> aparecerá em tela mostrando os esboços que foram gerados para aquela execução do assistente e cliente.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR25.png"><img alt="../../../../_images/AFR25.png" src="../../../../_images/AFR25.png" style="width: 652.8000000000001px; height: 271.2px;" /></a>
+<p>Existem algumas configurações que vão definir quais documentos serão gerados e quais itens serão levados em cada documento. Os itens que podem ou não ser levados para os documentos são: O produto acabado (<strong>item do(s) pedido(s) de venda</strong>), os componentes de terceiro e os componentes próprios. As configurações são as configurações dos campos abaixo:</p>
+<ul class="simple">
+<li><p><strong>Tipo de Faturamento/Retorno</strong></p></li>
+</ul>
+<p>Por padrão este campo no assistente virá conforme o preenchimento da tela <strong>Definições do beneficiamento de vendas</strong>, do cadastro do cliente, mas pode ser alterado em cada execução no assistente.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR26.png"><img alt="../../../../_images/AFR26.png" src="../../../../_images/AFR26.png" style="width: 878.4000000000001px; height: 146.4px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo venda material próprio e Valorização material próprio</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/AFR27.png"><img alt="../../../../_images/AFR27.png" src="../../../../_images/AFR27.png" style="width: 452.8px; height: 246.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/FATRET4.png"><img alt="../../../../_images/FATRET4.png" src="../../../../_images/FATRET4.png" style="width: 1084.8px; height: 184.8px;" /></a>
+<p>Segue abaixo as possibilidades de geração de documentos para cada configuração:</p>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Mesmo documento</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não agrupar materiais no valor do serviço</p></li>
+</ul>
+<p>Será gerado um esboço de NF de Saída (<strong>Industr.</strong>) contendo os componentes de terceiros para serem retornados, o produto acabado e o componente próprio para faturamento. Caso haja refugo, o sistema levará no documento criado uma linha com a quantidade informada no campo <strong>Qtde a faturar</strong> e outra linha com a quantidade informada no campo <strong>Qtde refugo</strong></p>
+<a class="reference internal image-reference" href="../../../../_images/AFR28.png"><img alt="../../../../_images/AFR28.png" src="../../../../_images/AFR28.png" style="width: 652.8000000000001px; height: 339.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Mesmo documento</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Ocultar materiais e agrupar no valor do serviço.</p></li>
+</ul>
+<p>Será gerado esboço NF de Sáida (<strong>Industr.</strong>) contendo o produto acabado para faturamento e os componentes de terceiro para retorno.</p>
+<p>Como a configuração do campo <strong>Valorização material próprio</strong> está informando para ocultar o material próprio mas somar o valor dele no serviço, o preço unitário do produto acabado será composto por: <strong>Preço do produto acabado + soma dos componentes próprios</strong>. Acompanhe o cálculo abaixo:</p>
+<p>Este é o valor do componente próprio na lista de preços:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR29.png"><img alt="../../../../_images/AFR29.png" src="../../../../_images/AFR29.png" style="width: 472.8px; height: 146.4px;" /></a>
+<p>E este é o valor do item no pedido de vendas:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR30.png"><img alt="../../../../_images/AFR30.png" src="../../../../_images/AFR30.png" style="width: 524.0px; height: 232.8px;" /></a>
+<p>Usando como exemplo a configuração do beneficiamento como planejado, como no roteiro do item para cada produto acabado são utilizados 3 componentes <strong>COMP0019</strong>, e no assistente de faturamento e retorno foi selecionado apenas 1 item (<strong>produto acabado</strong>) para retorno, esta é a conta que o sistema realizou para chegar no valor de <strong>R$ 70,00</strong> do documento de Esboço NF de Saída (<strong>Industr.</strong>):</p>
+<ul class="simple">
+<li><p><strong>Componentes:</strong> 3 * 15,00 = 45,00</p></li>
+<li><p><strong>Item do pedido:</strong> 1 * 25,00 = 25,00</p></li>
+<li><p><strong>Total:</strong> 70,00.</p></li>
+</ul>
+<p>Esta lógica também é válida para quando a configuração está como <strong>Realizado</strong>, onde identifica o valor do componente e multiplica pela quantidade de componentes definidos na <strong>Etapa 2</strong>. Caso haja refugo com esta configuração e o cliente queira que o valor do refugo também seja agregado ao valor do serviço é necessário manualmente informar a quantidade de refugo na quantidade encontrada na coluna <strong>Qtde a faturar</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR31.png"><img alt="../../../../_images/AFR31.png" src="../../../../_images/AFR31.png" style="width: 706.4000000000001px; height: 331.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Mesmo documento</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não cobrar valor dos materiais</p></li>
+</ul>
+<p>Será gerado esboço de NF de Saída contendo o produto acabado para ser faturado e os componentes de terceiros para serem retornados. Como o campo <strong>Valorização material próprio</strong> está informado para não cobrar valor dos materiais próprios o mesmo não será levado para o documento de faturamento e não terá o seu valor cobrado do cliente.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR32.png"><img alt="../../../../_images/AFR32.png" src="../../../../_images/AFR32.png" style="width: 718.4000000000001px; height: 323.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Mesmo documento</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não agrupar materiais no valor do serviço</p></li>
+</ul>
+<p>Será gerado um esboço de NF de Saída (<strong>Industr.</strong>) contendo o produto acabado, os componentes de terceiros para retorno e o componente próprio para faturamento.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR33.png"><img alt="../../../../_images/AFR33.png" src="../../../../_images/AFR33.png" style="width: 705.6px; height: 338.40000000000003px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Documentos separados</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não agrupar materiais no valor do serviço</p></li>
+</ul>
+<p>Será gerado Esboço Dev. NF Entrada contendo os componentes de terceiros para retorno e Esboço NF Saída (<strong>Industr.</strong>), contendo o item do pedido de vendas e componente próprio para faturamento.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR34.png"><img alt="../../../../_images/AFR34.png" src="../../../../_images/AFR34.png" style="width: 1082.4px; height: 312.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Documentos separados</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Ocultar materiais e agrupar no valor do serviço</p></li>
+</ul>
+<p>Será gerado Esboço Dev. NF Entrada contendo os componentes de terceiros e Esboço NF Saída (<strong>Industr.</strong>) contendo apenas o item do pedido de vendas. Note que o componente próprio não está no documento de NF de saída, mas o valor do componente é somado ao campo Preço Unitário do item do pedido:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR35.png"><img alt="../../../../_images/AFR35.png" src="../../../../_images/AFR35.png" style="width: 1082.4px; height: 308.0px;" /></a>
+<p>Este é o valor do componente na lista de preços:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR36.png"><img alt="../../../../_images/AFR36.png" src="../../../../_images/AFR36.png" style="width: 472.8px; height: 146.4px;" /></a>
+<p>E este é o valor do item no pedido de vendas:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR37.png"><img alt="../../../../_images/AFR37.png" src="../../../../_images/AFR37.png" style="width: 524.0px; height: 232.8px;" /></a>
+<p>Usando como exemplo a configuração do beneficiamento como planejado, como no roteiro do item para cada produto acabado são utilizados 3 componentes <strong>COMP0019</strong>, e no assistente de faturamento e retorno foi selecionado apenas 1 item (<strong>produto acabado</strong>) para retorno, esta é a conta que o sistema realizou para chegar no valor de <strong>R$ 70,00</strong> do documento de Esboço NF de Saída (<strong>Industr.</strong>):</p>
+<ul class="simple">
+<li><p><strong>Componentes:</strong> 3 * 15,00 = 45,00</p></li>
+<li><p><strong>Item do pedido:</strong> 1 * 25,00 = 25,00</p></li>
+<li><p><strong>Total:</strong> 70,00.</p></li>
+</ul>
+<p>Esta lógica também é válida para quando a configuração está como realizado, onde identifica o valor do componente e multiplica pela quantidade de componentes definidos na <strong>Etapa 2</strong>. Caso haja refugo com esta configuração e o cliente queira que o valor do refugo também seja agregado ao valor do serviço é necessário manualmente informar a quantidade de refugo na quantidade encontrada na coluna <strong>Qtde a faturar</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR38.png"><img alt="../../../../_images/AFR38.png" src="../../../../_images/AFR38.png" style="width: 609.6px; height: 219.20000000000002px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Documentos separados</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Mesmo documento</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não cobrar o valor dos materiais</p></li>
+</ul>
+<p>Será gerado Esboço Dev. NF Entrada contendo os componentes de terceiros e Esboço NF Saída (<strong>Industr.</strong>) contendo apenas o item do pedido de vendas, note que como a configuração está definida para não cobrar o valor dos materiais, o valor dos componentes próprios não será agregado ao item do pedido no esboço de NF Saída (<strong>Industr.</strong>).</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR39.png"><img alt="../../../../_images/AFR39.png" src="../../../../_images/AFR39.png" style="width: 1083.2px; height: 308.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Tipo de faturamento/retorno:</strong> Documentos separados</p></li>
+<li><p><strong>Tipo venda material próprio:</strong> Documentos separados</p></li>
+<li><p><strong>Valorização material próprio:</strong> Não cobrar o valor dos materiais</p></li>
+</ul>
+<p>Será gerado um Esboço Dev. NF Entrada contendo os componentes de terceiros para retorno, um Esboço de NF Saída (<strong>Venda</strong>) contendo o componente próprio para faturamento e um esboço de NF de Saída (<strong>Industr.</strong>) com o produto acabado para faturamento.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR40.png"><img alt="../../../../_images/AFR40.png" src="../../../../_images/AFR40.png" style="width: 1287.2px; height: 364.0px;" /></a>
+<p>Caso ao gerar os esboços o usuário perceba que não é a configuração que ele deseja, é possível fechar os esboços abertos em tela e clicar no botão <strong>Remover esboços</strong>, desta forma os esboços criados serão removidos e o usuário executar o assistente novamente, ajustar as configurações e gerar novos esboços. Não é possível fechar a tela sem adicionar ou remover os esboços pois a mensagem abaixo impedirá o fechamento:</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR41.png"><img alt="../../../../_images/AFR41.png" src="../../../../_images/AFR41.png" style="width: 336.0px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Não é possível fechar o formulário, pois existe esboço gerado não efetivado.</em></p>
+<p>Caso não haja seleção de pedido de venda na <strong>Etapa 1</strong>, e houver seleção de matéria prima na <strong>Etapa 2</strong>, não serão apresentados itens na <strong>Etapa 3</strong> e será gerado um esboço de <strong>NF de Dev. de Entrada</strong>, para que a devolução dos componentes não industrializados seja realizada.</p>
+<a class="reference internal image-reference" href="../../../../_images/AFR42.png"><img alt="../../../../_images/AFR42.png" src="../../../../_images/AFR42.png" style="width: 1065.6000000000001px; height: 374.40000000000003px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="OrdemdeProducao.html" class="btn btn-neutral float-left" title="Ordem de Produção" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="AssistenteCancelamento.html" class="btn btn-neutral float-right" title="Assistente de Cancelamento de Faturamento" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.youtube-button {
+    display: inline-block;
+    background-color: #FF0000; /* Cor do fundo do botão (vermelho do YouTube) */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-weight: bold; /* Negrito para o texto */
+    text-align: center; /* Centralizar o texto */
+    transition: background-color 0.3s ease; /* Transição suave na cor do fundo ao passar o mouse */
+}
+
+.youtube-button:hover {
+    background-color: #cc0000; /* Escurecer o fundo ao passar o mouse */
+    cursor: pointer; /* Mostrar cursor de mão */
+}
+
+.youtube-button img {
+    vertical-align: middle; /* Centraliza o logo em relação ao texto */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurar “appsettings.json” &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Login API" href="Login%20API.html" />
+    <link rel="prev" title="Configurar Endpoints" href="Endpoints.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20API.html#configuracao">Configuração</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Endpoints.html">Configurar Endpoints</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Configurar “appsettings.json”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Login%20API.html">Login API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-producao">Apontamento de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-refugo">Apontamento de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#colaboradores">Colaboradores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#entrada-de-produto-acabado">Entrada de Produto Acabado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#status-dos-recursos">Status dos Recursos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#classificacoes-de-refugo">Classificações de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#saida-de-insumos">Saída de Insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ficha-de-analise">Ficha de Análise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20API.html">BR One API</a></li>
+      <li class="breadcrumb-item active">Configurar “appsettings.json”</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configurar-appsettings-json">
+<h1>Configurar “appsettings.json”<a class="headerlink" href="#configurar-appsettings-json" title="Link permanente para este cabeçalho"></a></h1>
+<p>O arquivo <strong>‘appsettings.json’</strong> em uma aplicação RESTful (ou REST API) geralmente é usado para armazenar configurações e informações de configuração para a aplicação.</p>
+<p>Ele é parte integrante do ambiente ASP.NET Core e é usado para definir várias configurações, como conexões de banco de dados, configurações de log, configurações de autenticação, e outras variáveis de ambiente.</p>
+<p>No BR One API não é diferente, o <strong>‘appsettings.json’</strong> deve ser configurado corretamente para garantir a conformidade da aplicação.</p>
+<p>Segue abaixo exemplo do <strong>‘appsettings.json’</strong> disponível para configuração:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;Logging&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Seq&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:5341/&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;AllowedHosts&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;OpenApiInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BR One API&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;APIs REST para interação com os módulos do BR One através de integrações via requisições web.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Uppertools&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;Email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;contato@uppertools.com.br&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;JwtSettings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;81b4dada80b2f4126ea7244d328c2270&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ExpiracaoSegundos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Emissor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BROne&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ValidoEm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://localhost&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;Kestrel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;EndPoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Http&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:4300/&quot;</span>
+<span class="w">          </span><span class="p">},</span>
+<span class="w">          </span><span class="nt">&quot;Https&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://localhost:4301/&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;FeatureManagement&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;EnableVersionInterceptor&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;ServerCredentials&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HANA&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Driver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HDBODBC&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Server&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hanab1:30015&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;User&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SYSTEM&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EncryptedPassword&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;ServiceLayer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://hanab1:50000/b1s/v1&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;User&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;manager&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1234&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EncryptedPassword&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Segue abaixo detalhe sobre os campos disponíveis no <strong>appsettings.json</strong>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;Logging&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Seq&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configurações para integração com o Seq, uma plataforma de registro e análise de logs.&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O endereço onde o Seq está sendo executado (http://localhost:5341/).&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;AllowedHosts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Este campo indica quais hosts são permitidos para acessar a aplicação. No exemplo, o valor \&quot;*\&quot; indica que qualquer host é permitido.&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;OpenApiInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Título da API (\&quot;BR One API\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Uma descrição breve da API.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Contact&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nome da organização ou pessoa de contato (\&quot;Uppertools\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;Email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Endereço de e-mail de contato (\&quot;contato@uppertools.com.br\&quot;).&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;JwtSettings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Secret&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A chave secreta usada para assinar os tokens JWT.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ExpiracaoSegundos&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">600</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Emissor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O emissor dos tokens JWT (\&quot;BROne\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ValidoEm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O URI válido para o qual os tokens são emitidos (\&quot;https://localhost\&quot;).&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;Kestrel&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configurações para o servidor web Kestrel, que é um servidor web embutido no ASP.NET Core.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EndPoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Http&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Define as configurações para o endpoint HTTP.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O endereço em que o servidor Kestrel estará ouvindo (http://localhost:4300/).&quot;</span>
+<span class="w">          </span><span class="p">},</span>
+<span class="w">          </span><span class="nt">&quot;Https&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Define as configurações para o endpoint HTTPS.&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O endereço em que o servidor Kestrel estará ouvindo em HTTPS (https://localhost:4301/).&quot;</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;FeatureManagement&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configurações para a gestão de funcionalidades (feature flags).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EnableVersionInterceptor&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;ServerCredentials&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configurações de credenciais do servidor de banco de dados.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O tipo de banco de dados (\&quot;HANA\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Driver&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O driver do banco de dados (\&quot;HDBODBC\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Server&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O nome do servidor e a porta separados por dois pontos (\&quot;hanab1:30015\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;User&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O nome de usuário do banco de dados (\&quot;SYSTEM\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A senha do banco de dados (\&quot;1234\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EncryptedPassword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Neste exemplo, não há uma senha criptografada.&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;ServiceLayer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Configurações para a camada de serviço.&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O endereço da camada de serviço (\&quot;https://hanab1:50000/b1s/v1\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;User&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;O nome de usuário para autenticação na camada de serviço (\&quot;manager\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;Password&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A senha para autenticação na camada de serviço (\&quot;1234\&quot;).&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;EncryptedPassword&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Neste exemplo, não há uma senha criptografada.&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Endpoints.html" class="btn btn-neutral float-left" title="Configurar Endpoints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Login%20API.html" class="btn btn-neutral float-right" title="Login API" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

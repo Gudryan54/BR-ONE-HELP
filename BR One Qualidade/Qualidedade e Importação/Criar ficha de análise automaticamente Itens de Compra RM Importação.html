@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar ficha de análise automaticamente no processo de Importação &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Criação de Ficha de Análise automática" href="../Qualidade%20SAP/Cria%C3%A7%C3%A3o%20de%20Ficha%20de%20An%C3%A1lise%20autom%C3%A1tica/Cria%C3%A7%C3%A3o%20de%20Ficha%20de%20An%C3%A1lise%20autom%C3%A1tica.html" />
+    <link rel="prev" title="Relatório de Restrições de Qualidade" href="../Relatorio/Relat%C3%B3rio%20de%20Restri%C3%A7%C3%B5es%20de%20Qualidade.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Qualidade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Qualidade.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Qualidade.html#processos">Processos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Qualidade.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Qualidade.html#qualidade-e-importacao">Qualidade e Importação</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Criar ficha de análise automaticamente no processo de Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../BR%20One%20Qualidade.html#criacao-de-ficha-de-analise-automatica">Criação de Ficha de Análise automática</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Qualidade.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+      <li class="breadcrumb-item active">Criar ficha de análise automaticamente no processo de Importação</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="criar-ficha-de-analise-automaticamente-no-processo-de-importacao">
+<h1>Criar ficha de análise automaticamente no processo de Importação<a class="headerlink" href="#criar-ficha-de-analise-automaticamente-no-processo-de-importacao" title="Link permanente para este cabeçalho"></a></h1>
+<p>A criação automática da ficha de análise para os itens de compra provenientes do processo se <strong>‘Importação’</strong>, ocorre no momento da adição do documento de <strong>‘Recebimento de mercadorias’</strong> existente no processo.</p>
+<img alt="../../_images/0140.png" src="../../_images/0140.png" />
+<p>Para que a criação da ficha ocorra normalmente o parâmetro <strong>‘Criar ficha de análise automaticamente’</strong> junto com o parâmetro <strong>‘Recepção de mercadoria/Nota fiscal de entrada’</strong> devem estar marcados, além do item importado possuir configurado um ou mais modelos de análises.</p>
+<a class="reference internal image-reference" href="../../_images/0234.png"><img alt="../../_images/0234.png" src="../../_images/0234.png" style="width: 379.0px; height: 149.0px;" /></a>
+<p>Ao clicar no botão <strong>‘Recebimento de mercadorias’</strong> do processo de importação será aberto a tela do assistente, onde deverá ser selecionado o documento desejado.</p>
+<a class="reference internal image-reference" href="../../_images/0329.png"><img alt="../../_images/0329.png" src="../../_images/0329.png" style="width: 735.2px; height: 489.6px;" /></a>
+<a class="reference internal image-reference" href="../../_images/0423.png"><img alt="../../_images/0423.png" src="../../_images/0423.png" style="width: 605.0px; height: 712.0px;" /></a>
+<p>Considerando o documento acima, temos os itens <strong>item_lote_10</strong>, <strong>item_nenhum_10</strong>, <strong>item_serie_01</strong>, onde todos possuem modelo de análise.</p>
+<p>Portanto, ao gerar o documento através do assistente, será solicitado pelo add-on o depósito onde os itens serão recebidos, ao definir o depósito e clicar em <strong>‘Ok’</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/0522.png"><img alt="../../_images/0522.png" src="../../_images/0522.png" style="width: 324.0px; height: 105.0px;" /></a>
+<p>Será aberto a tela de <strong>‘Transferência de estoque’</strong>, que virá preenchida com os itens do documento selecionado e com o depósito definido, ao adicionar a transferência será realizado a seleção de lote e série para os itens e as ficha de análise serão criadas automaticamente para todos os itens que possuam <strong>‘Modelo de analise’</strong> vinculado.</p>
+<a class="reference internal image-reference" href="../../_images/0620.png"><img alt="../../_images/0620.png" src="../../_images/0620.png" style="width: 628.0px; height: 450.40000000000003px;" /></a>
+<p>Em nosso exemplo, foi criado 3 fichas de análise, uma ficha para cada item do documento de <strong>‘Recebimento de mercadorias’</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/0720.png"><img alt="../../_images/0720.png" src="../../_images/0720.png" style="width: 662.4000000000001px; height: 423.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../_images/0822.png"><img alt="../../_images/0822.png" src="../../_images/0822.png" style="width: 661.6px; height: 424.0px;" /></a>
+<a class="reference internal image-reference" href="../../_images/0918.png"><img alt="../../_images/0918.png" src="../../_images/0918.png" style="width: 660.0px; height: 424.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Relatorio/Relat%C3%B3rio%20de%20Restri%C3%A7%C3%B5es%20de%20Qualidade.html" class="btn btn-neutral float-left" title="Relatório de Restrições de Qualidade" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Qualidade%20SAP/Cria%C3%A7%C3%A3o%20de%20Ficha%20de%20An%C3%A1lise%20autom%C3%A1tica/Cria%C3%A7%C3%A3o%20de%20Ficha%20de%20An%C3%A1lise%20autom%C3%A1tica.html" class="btn btn-neutral float-right" title="Criação de Ficha de Análise automática" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

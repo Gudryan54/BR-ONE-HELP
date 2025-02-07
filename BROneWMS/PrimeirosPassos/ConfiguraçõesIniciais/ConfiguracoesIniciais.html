@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurações iniciais &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Analise de Log" href="../AnaliseLog/AnaliseLog.html" />
+    <link rel="prev" title="Instalação API WMS" href="../Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20WMS.html#primeiros-passos">Primeiros passos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html">Instalação API WMS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Configurações iniciais</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuracao-de-servidor">Configuração de servidor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cadastro-de-usuario-no-wms">Cadastro de usuário no WMS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuracao-de-armazens">Configuração de Armazéns</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../AnaliseLog/AnaliseLog.html">Analise de Log</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../DicasDeUtiliza%C3%A7%C3%A3o/DicasDeUtiliza%C3%A7%C3%A3o.html">Dicas de utilização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Vers%C3%B5es/Atualiza%C3%A7%C3%A3o/Atualiza%C3%A7%C3%A3o.html">Atualização da API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20WMS.html#detalhes-dos-processos">Detalhes dos processos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20WMS.html#configuracoes-adicionais">Configurações adicionais</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20WMS.html#versao-atual-43">Versão atual: 43</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+      <li class="breadcrumb-item active">Configurações iniciais</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configuracoes-iniciais">
+<h1>Configurações iniciais<a class="headerlink" href="#configuracoes-iniciais" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para que seja possível realizar o primeiro acesso no aplicativo, serão necessárias algumas configurações iniciais.</p>
+<section id="configuracao-de-servidor">
+<h2>Configuração de servidor<a class="headerlink" href="#configuracao-de-servidor" title="Link permanente para este cabeçalho"></a></h2>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../_images/WMS-BotãoConfiguraçãoServidor.png" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao abrir o aplicativo, no canto superior direito, existe um ícone de engrenagem, ao clica-lo, tem-se acesso a tela de configuração de servidor.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../_images/WMS-TelaConfigurações.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<dl class="simple">
+<dt>A tela de configuração é composta pelos seguintes campos:</dt><dd><ul class="simple">
+<li><p><strong>Servidor</strong>: Endereço IPV4 do servidor onde o API do WMS foi configurado.</p></li>
+<li><p><strong>Porta</strong>: Porta logica onde o API do WMS foi configurado via <strong>IIS</strong>.</p></li>
+<li><p><strong>Base de dados</strong>: Nome da base SAP onde as transações serão realizadas.</p></li>
+<li><p><strong>Filial padrão</strong>: Código  da filial onde as transações serão realizadas.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../_images/WMS-TelaConfiguraçõesConcluida.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao inserir todos os dados e testar a conexão, clique em Salvar para que a configuração seja utilizada no momento em que o usuário acessar o aplicativo.</p>
+</section>
+<section id="cadastro-de-usuario-no-wms">
+<h2>Cadastro de usuário no WMS<a class="headerlink" href="#cadastro-de-usuario-no-wms" title="Link permanente para este cabeçalho"></a></h2>
+<img alt="../../../_images/WMS-ColaboradorCadastrado.png" class="align-center" src="../../../_images/WMS-ColaboradorCadastrado.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para criar um usuário no WMS, é necessário que  no SAP o Cadastro de usuário esteja vinculado a um Cadastro do colaborador.
+Esse vínculo pode ser feito no SAP através do menu <strong>Cadastro de colaboradores</strong>, no campo <strong>Código do usuário</strong>.</p>
+<img alt="../../../_images/WMS-ColaboradorCadastradoSenha.png" class="align-center" src="../../../_images/WMS-ColaboradorCadastradoSenha.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para criar uma senha, basta preencher o campo <strong>Senha BR One WMS</strong> com a senha desejada.</p>
+<img alt="../../../_images/WMS-PermissoesUsuarios.png" class="align-center" src="../../../_images/WMS-PermissoesUsuarios.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao finalizar o cadastro de usuário WMS, é importante definir as <a class="reference external" href="https://brone.help.uppertools.com.br/BROne/html/BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios.html">autorizações de utilização</a> do mesmo.</p>
+</section>
+<section id="configuracao-de-armazens">
+<h2>Configuração de Armazéns<a class="headerlink" href="#configuracao-de-armazens" title="Link permanente para este cabeçalho"></a></h2>
+<img alt="../../../_images/WMS-CadastrodoArmazem.png" class="align-center" src="../../../_images/WMS-CadastrodoArmazem.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No SAP Business One, em <strong>Módulos &gt; Administração &gt; Definição &gt; BR One WMS &gt; Cadastro do armazém</strong>, crie o(s) armazém(ens) vinculado(s) a filial desejada.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../_images/WMS-nãoexistearmazémconfigurado.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Não existindo um <strong>Cadastro do Armazém</strong> vinculado a filial, na tentiva de realizar o login será exibida a mensagem do GIF a cima.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../../_images/WMS-Atribui%C3%A7%C3%A3odeFilialAoUsu%C3%A1rio.png" class="align-center" src="../../../_images/WMS-Atribui%C3%A7%C3%A3odeFilialAoUsu%C3%A1rio.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../_images/WMS-FilialNãoAtribuídaAoUsuário.png" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Certifique-se que, após a criação dos Armazéns, os usuários estejam vinculados a pelo menos uma filial, caso contrário, será exibida a mensagem a cima, solicitando a alteraração da filial de acesso.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../../_images/WMS-Usu%C3%A1rioParaRecebimentoDeAlertas.gif" class="align-center" src="../../../_images/WMS-Usu%C3%A1rioParaRecebimentoDeAlertas.gif" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No SAP Business One, em <strong>Módulos &gt; Administração &gt; Definição &gt; BR One WMS &gt; Configurações WMS</strong>, defina nas abas <strong>Geral</strong>, <strong>Recebimento</strong> e <strong>Expedição</strong>, pelo menos um usuário para o recebimento de mensagens/alertas.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../../_images/WMS-ExemploDeAlertaMensagem.gif" class="align-center" src="../../../_images/WMS-ExemploDeAlertaMensagem.gif" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Uma vez definidos os usuários para o recebimento das mensagens/alertas, serão exibidas para os usuários diretamente na <strong>Visão geral de mensagens/alertas</strong>.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../../_images/WMS-MotivosdeAjuste.png" class="align-center" src="../../../_images/WMS-MotivosdeAjuste.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No SAP Business One, em <strong>Módulos &gt; Administração &gt; Definição &gt; BR One WMS &gt; Cadastro de motivo de ajuste</strong>, defina as contas contábeis que serão utilizadas no processo de Ajuste de estoque.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html" class="btn btn-neutral float-left" title="Instalação API WMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../AnaliseLog/AnaliseLog.html" class="btn btn-neutral float-right" title="Analise de Log" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

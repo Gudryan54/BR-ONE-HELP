@@ -1,0 +1,12 @@
+Versão 4.11.327
+~~~~~~~~~~~~~~~~
+
+**Correções** 
+
+- **Solicitação de parâmetro ao visualizar ficha de qualificação**
+
+Realizado ajuste para evitar a solicitação de parâmetro ao visualizar o layout de impressão da ficha de qualificação.
+
+- **Campo "Data de vencimento" não grava atualização**
+
+Realizado ajuste no campo **"Data de vencimento"** na aba **"Qualidade"** do parceiro de negócio, permitindo que, ao realizar uma atualização, o valor seja corretamente salvo.

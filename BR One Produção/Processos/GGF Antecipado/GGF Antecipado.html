@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GGF antecipado &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Fechamento de custo contábil" href="../Fechamento%20de%20Custo%20Contabil/Fechamento%20de%20custo%20cont%C3%A1bil.html" />
+    <link rel="prev" title="Cálculo do custo do Sub-Produto" href="../SubProduto/Calculo%20do%20custo%20do%20Sub-Produto.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">GGF antecipado</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">GGF antecipado</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ggf-antecipado">
+<h1>GGF antecipado<a class="headerlink" href="#ggf-antecipado" title="Link permanente para este cabeçalho"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>A partir da versão 4.11.333 do BR One, “GGF Arbitrado” foi renomeado para “GGF Antecipado”.</p>
+</div>
+<p>O GGF antecipado agrega os custos dos recursos no momento da realização da entrada do Produto Acabado, permitindo obter um custo atualizado antes do fechamento de custo mensal. No fechamento de custo mensal, são realizados os rateios de todas as contas cadastradas no GGF e, com base no que já foi antecipado, são realizados os lançamentos de ajustes necessários.</p>
+<p>Todas as ordens de produção que possuírem grupo de recurso com tempo planejado e um recurso vinculado ao grupo, com a flag <strong>“Utilizar GGF antecipado”</strong> marcada serão calculados o custo hora com base no parâmetro <strong>“Custo múltiplos recursos”</strong> .</p>
+<p>Abaixo será demonstrado um exemplo de roteiro, e a criação da Ordem de Produção com seus apontamentos de produção <strong>“Entrada de PA”</strong>, para simular o cálculo do GGF antecipado</p>
+<p><strong>Cadastro de Roteiro:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img11.JPG"><img alt="../../../_images/img11.JPG" src="../../../_images/img11.JPG" style="width: 1076.0px; height: 464.0px;" /></a>
+<p><strong>Ordem de produção: Quantidade planejada 10</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img21.JPG"><img alt="../../../_images/img21.JPG" src="../../../_images/img21.JPG" style="width: 1076.8px; height: 471.20000000000005px;" /></a>
+<p>Nessa ordem possuem duas operações, na primeira operação contém o grupo de recurso <strong>“máquina”</strong>, que possuem três recursos vinculados.</p>
+<p><strong>Grupo De Recurso: Máquina</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img3.JPG"><img alt="../../../_images/img3.JPG" src="../../../_images/img3.JPG" style="width: 1185.6000000000001px; height: 397.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img4.JPG"><img alt="../../../_images/img4.JPG" src="../../../_images/img4.JPG" style="width: 556.8000000000001px; height: 476.8px;" /></a>
+<p>O custo horas deste grupo de recurso é de <strong>R$ 20,00</strong>.</p>
+<p><strong>Recursos:</strong></p>
+<ul class="simple">
+<li><p>Recurso-01:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img5.JPG"><img alt="../../../_images/img5.JPG" src="../../../_images/img5.JPG" style="width: 353.6px; height: 402.40000000000003px;" /></a>
+<ul class="simple">
+<li><p>Recurso-02:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img6.JPG"><img alt="../../../_images/img6.JPG" src="../../../_images/img6.JPG" style="width: 350.40000000000003px; height: 404.0px;" /></a>
+<ul class="simple">
+<li><p>Recurso-03:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img7.JPG"><img alt="../../../_images/img7.JPG" src="../../../_images/img7.JPG" style="width: 349.6px; height: 403.20000000000005px;" /></a>
+<p>Custo hora dos recursos:</p>
+<ul class="simple">
+<li><p>Rec-01: <strong>R$ 100,00</strong></p></li>
+<li><p>Rec-02: <strong>R$ 50,00</strong></p></li>
+<li><p>Rec-03: <strong>R$ 0,00</strong></p></li>
+</ul>
+<p>Na segunda operação contém o grupo de recurso <strong>“mão de obra”</strong>, que possuem três recursos vinculados.</p>
+<p><strong>Grupo De Recurso: Mão de obra</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img8.JPG"><img alt="../../../_images/img8.JPG" src="../../../_images/img8.JPG" style="width: 1183.2px; height: 398.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img9.JPG"><img alt="../../../_images/img9.JPG" src="../../../_images/img9.JPG" style="width: 545.6px; height: 465.6px;" /></a>
+<p>O custo horas deste grupo de recurso é de <strong>R$ 0,00</strong>.</p>
+<p><strong>Recursos:</strong></p>
+<ul class="simple">
+<li><p>Recurso-1:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img10.JPG"><img alt="../../../_images/img10.JPG" src="../../../_images/img10.JPG" style="width: 355.20000000000005px; height: 408.8px;" /></a>
+<ul class="simple">
+<li><p>Recurso-2:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img111.JPG"><img alt="../../../_images/img111.JPG" src="../../../_images/img111.JPG" style="width: 351.20000000000005px; height: 398.40000000000003px;" /></a>
+<ul class="simple">
+<li><p>Recurso-3:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img12.JPG"><img alt="../../../_images/img12.JPG" src="../../../_images/img12.JPG" style="width: 347.20000000000005px; height: 404.8px;" /></a>
+<p>Custo hora dos recursos:</p>
+<ul class="simple">
+<li><p>Rec-1: <strong>$ 50,00</strong></p></li>
+<li><p>Rec-2: <strong>R$ 15,00</strong></p></li>
+<li><p>Rec-3: <strong>R$ 0,00</strong></p></li>
+</ul>
+<p>O lançamento contábil do GGF antecipado é gerado no momento da entrada do produto acabado (PA) de acordo com a quantidade apontada.</p>
+<p>Nessa ordem de produção a primeira entrada de produto acabado foi de <strong>7 PAs</strong>.</p>
+<p>Para produção de um produto acabado é utilizado o custo de <strong>R$ 34,85 dos componentes</strong>.</p>
+<p>Para recuperação do custo do GGF antecipado é levado em consideração os parâmetros das configurações de produção na <strong>aba Geral</strong></p>
+<p>Iremos simular a entrada de produto acabado com todas as configurações de produção no campo <strong>Custo múltiplos recursos</strong>.</p>
+<p>Para acessar as Configurações de produção é necessário ir no menu:</p>
+<p><strong>Administração -&gt; Definição -&gt; Produção -&gt; Configurações de produção</strong></p>
+<p><strong>Configurações de Produção - Aba Geral:</strong></p>
+<ul class="simple">
+<li><p><strong>Custo múltiplos recursos:</strong> Mínimo</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img13.JPG"><img alt="../../../_images/img13.JPG" src="../../../_images/img13.JPG" style="width: 742.4000000000001px; height: 409.6px;" /></a>
+<p>É recuperado o custo hora de todos os recursos, vinculados em cada grupo de recurso na OP, para encontrar o <strong>menor custo hora</strong>.</p>
+<p>Na <strong>operação 10</strong> temos o grupo de recurso <strong>Maquina</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-01 Custo hora <strong>R$100,00</strong></p></li>
+<li><p>Rec-02 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-03 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 20,00</strong></p>
+<p>Neste caso o menor custo encontrado é <strong>R$20,00</strong></p>
+<p>Para o grupo de recurso <strong>máquina</strong> o tempo planejado é de <strong>360 minutos</strong>, para encontrar o custo total para produzir um PA é utilizado a seguinte formula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> ((Custo do recurso encontrado * tempo planejado em horas) / quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (20,00 * (360 /60)) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (20,00 * 6 )/ 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 12,00</p>
+<p>Na <strong>Operação 20</strong> temos o grupo de recurso <strong>Mão de obra</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-1 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-2 Custo hora <strong>R$15,00</strong></p></li>
+<li><p>Rec-3 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 0,00</strong></p>
+<p>Neste caso o menor custo encontrado é <strong>R$ 0,00</strong></p>
+<p>Para o grupo de recurso mão de obra o tempo planejado é de 45 minutos, para encontrar o custo total para produzir um PA é utilizado a seguinte formula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * Tempo planejado em horas / Quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (0,00 * (450 /60) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (0,00 * 7,5) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 0,00</p>
+<p>Logo o <strong>custo unitário do PA</strong> será:</p>
+<p><strong>Custo unitário=</strong> (Soma do Custo dos Recursos por unidade de PA) + (Soma do custo dos componentes por unidade de PA)</p>
+<p><strong>Custo unitário=</strong> (12,00 + 0,00) + (11,00+ 8,75+15,60)</p>
+<p><strong>Custo unitário=</strong> 12,00 + 34,85</p>
+<p><strong>Custo unitário=</strong> 46,85</p>
+<a class="reference internal image-reference" href="../../../_images/img14.JPG"><img alt="../../../_images/img14.JPG" src="../../../_images/img14.JPG" style="width: 664.8000000000001px; height: 370.40000000000003px;" /></a>
+<p>Para geração do LCM do GGF antecipado é realizado a soma do <strong>Custo dos Recursos por unidade de PA</strong> de cada grupo de recurso encontrado e multiplicado pela quantidade apontada.</p>
+<p><strong>Valor do LCM=</strong> (Soma do Custo dos Recursos por unidade de PA) Quantidade apontada</p>
+<p><strong>Valor do LCM=</strong> (12,00 + 0,00) 7</p>
+<p><strong>Valor do LCM=</strong> 84,00</p>
+<a class="reference internal image-reference" href="../../../_images/img15.JPG"><img alt="../../../_images/img15.JPG" src="../../../_images/img15.JPG" style="width: 978.4000000000001px; height: 87.2px;" /></a>
+<p><strong>LCM:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img16.JPG"><img alt="../../../_images/img16.JPG" src="../../../_images/img16.JPG" style="width: 912.0px; height: 312.0px;" /></a>
+<p><strong>Configurações de Produção - Aba Geral:</strong></p>
+<ul class="simple">
+<li><p><strong>Custo múltiplos recursos:</strong> Médio</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img17.JPG"><img alt="../../../_images/img17.JPG" src="../../../_images/img17.JPG" style="width: 769.6px; height: 422.40000000000003px;" /></a>
+<p>É recuperado o custo hora de todos os recursos, vinculados em cada grupo de recurso na OP, para somar e dividir pela quantidade de recursos e encontrar a <strong>média do custo hora</strong>.</p>
+<p>Na <strong>operação 10</strong> temos o grupo de recurso <strong>Maquina</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-01 Custo hora <strong>R$100,00</strong></p></li>
+<li><p>Rec-02 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-03 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 20,00</strong></p>
+<p>Então será feita a soma <strong>100,00 + 50,00 + 20,00  = 170,00</strong> e será dividido pela quantidade de recursos encontrados, nesse caso <strong>170</strong> será divido por <strong>3</strong>.</p>
+<p><strong>Custo hora</strong> = 170,00 / 3</p>
+<p><strong>Custo hora</strong> = 56,67</p>
+<p>Neste caso a média do custo encontrado é <strong>R$56,67</strong></p>
+<p>Para o grupo de recurso máquina o tempo planejado é de <strong>360 minutos</strong>, para encontrar o <strong>custo total</strong> para produzir um PA é utilizado a seguinte fórmula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * Tempo planejado em horas / Quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (56,67* (360 /60)) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (56,67* 6) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 34,00</p>
+<p>Na <strong>Operação 20</strong> temos o grupo de recurso <strong>Mão de obra</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-1 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-2 Custo hora <strong>R$15,00</strong></p></li>
+<li><p>Rec-3 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 0,00</strong></p>
+<p>Então será feita a soma <strong>50,00 + 15,00 + 0,00 = 65,00</strong> e será dividido pela quantidade de recursos encontrados, nesse caso <strong>65</strong> será divido por <strong>3</strong>.</p>
+<p><strong>Custo hora=</strong> 65,00 / 3</p>
+<p><strong>Custo hora=</strong> 21,67</p>
+<p>Neste caso a média do custo encontrado é <strong>R$21,67</strong></p>
+<p>Para o grupo de recurso mão de obra o tempo planejado é de <strong>45 minutos</strong>, para encontrar o <strong>custo total</strong> para produzir um PA é utilizado a seguinte fórmula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * Tempo planejado em horas / Quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (21,67 * (450/60)) / 10)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (21,67* 7,5)/ 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 16,25</p>
+<p>Logo o <strong>custo unitário do PA</strong> será:</p>
+<p><strong>Custo unitário=</strong> (Soma do Custo dos Recursos por unidade de PA) + (Soma do custo dos componentes por unidade de PA)</p>
+<p><strong>Custo unitário=</strong> (34,00 + 16,25) + (11,00 + 8,75 + 15,60)</p>
+<p><strong>Custo unitário=</strong> 50,25+ 34,85</p>
+<p><strong>Custo unitário=</strong> 85,10</p>
+<a class="reference internal image-reference" href="../../../_images/img18.JPG"><img alt="../../../_images/img18.JPG" src="../../../_images/img18.JPG" style="width: 514.4px; height: 286.40000000000003px;" /></a>
+<p>Para geração do LCM do GGF antecipado é realizado a soma do <strong>Custo dos Recursos por unidade de PA</strong> de cada grupo de recurso encontrado e multiplicado pela quantidade apontada.</p>
+<p><strong>Valor do LCM=</strong> (Soma do Custo dos Recursos por unidade de PA) Quantidade apontada</p>
+<p><strong>Valor do LCM=</strong> (34,002+ 16,25) 7</p>
+<p><strong>Valor do LCM=</strong> 351,75</p>
+<a class="reference internal image-reference" href="../../../_images/img19.JPG"><img alt="../../../_images/img19.JPG" src="../../../_images/img19.JPG" style="width: 1088.8px; height: 104.0px;" /></a>
+<p><strong>LCM:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img20.JPG"><img alt="../../../_images/img20.JPG" src="../../../_images/img20.JPG" style="width: 1075.2px; height: 368.0px;" /></a>
+<p><strong>Configurações de Produção - Aba Geral:</strong></p>
+<ul class="simple">
+<li><p><strong>Custo múltiplos recursos:</strong> Máximo</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img211.JPG"><img alt="../../../_images/img211.JPG" src="../../../_images/img211.JPG" style="width: 757.6px; height: 420.0px;" /></a>
+<p>É recuperado o custo hora de todos os recursos, vinculados em cada grupo de recurso na OP, para encontrar o <strong>maior custo hora</strong>.</p>
+<p>Na <strong>operação 10</strong> temos o grupo de recurso <strong>Maquina</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-01 Custo hora <strong>R$100,00</strong></p></li>
+<li><p>Rec-02 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-03 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 20,00</strong></p>
+<p>Neste caso o maior custo encontrado é <strong>R$100,00</strong></p>
+<p>Para o grupo de recurso máquina o tempo planejado é de <strong>360 minutos</strong>, para encontrar o <strong>custo total</strong> para produzir um PA é utilizado a seguinte fórmula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * Tempo planejado em horas / Quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (100,00 * (360 /60)) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (100,00 * 6) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 60,00</p>
+<p>Na <strong>Operação 20</strong> temos o grupo de recurso <strong>Mão de obra</strong>, foram encontrados os custos dos três recursos:</p>
+<ul class="simple">
+<li><p>Rec-1 Custo hora <strong>R$50,00</strong></p></li>
+<li><p>Rec-2 Custo hora <strong>R$15,00</strong></p></li>
+<li><p>Rec-3 Custo hora <strong>R$ 0,00</strong></p></li>
+</ul>
+<p><strong>IMPORTANTE</strong></p>
+<p>Para recursos com o custo 0 (zero) o sistema irá substituir o custo pelo custo do grupo de recuso, neste caso o custo hora do grupo é: <strong>R$ 0,00</strong></p>
+<p>Neste caso o maior custo encontrado é <strong>R$ 50,00</strong></p>
+<p>Para o grupo de recurso mão de obra o tempo planejado é de <strong>45 minutos</strong>, para encontrar o <strong>custo total</strong> para produzir um PA é utilizado a seguinte fórmula:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * Tempo planejado em horas / Quantidade planejada do produto acabado)</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (50,00 * (450/60) )/ 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (50,00 * 7,5) / 10</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> 37,50</p>
+<p>Logo o <strong>custo unitário do PA</strong> será:</p>
+<p><strong>Custo unitário=</strong> (Soma do Custo dos Recursos por unidade de PA) + (Soma do custo dos componentes por unidade de PA)</p>
+<p><strong>Custo unitário=</strong> (60,00 + 37,50) + (11,00 + 8,75 + 15,60)</p>
+<p><strong>Custo unitário=</strong> 97,50 + 34,85</p>
+<p><strong>Custo unitário=</strong> 132,35</p>
+<a class="reference internal image-reference" href="../../../_images/img22.JPG"><img alt="../../../_images/img22.JPG" src="../../../_images/img22.JPG" style="width: 768.0px; height: 428.0px;" /></a>
+<p>Para geração do LCM do GGF antecipado é realizado a soma do <strong>Custo dos Recursos por unidade de PA</strong> de cada grupo de recurso encontrado e multiplicado pela quantidade apontada.</p>
+<p><strong>Valor do LCM=</strong> (Soma do Custo dos Recursos por unidade de PA) Quantidade apontada</p>
+<p><strong>Valor do LCM=</strong> (60,00 +37,50) 7</p>
+<p><strong>Valor do LCM=</strong> 682,50</p>
+<a class="reference internal image-reference" href="../../../_images/img23.JPG"><img alt="../../../_images/img23.JPG" src="../../../_images/img23.JPG" style="width: 1116.8px; height: 100.0px;" /></a>
+<p><strong>LCM:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img24.JPG"><img alt="../../../_images/img24.JPG" src="../../../_images/img24.JPG" style="width: 1131.2px; height: 383.20000000000005px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../SubProduto/Calculo%20do%20custo%20do%20Sub-Produto.html" class="btn btn-neutral float-left" title="Cálculo do custo do Sub-Produto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Fechamento%20de%20Custo%20Contabil/Fechamento%20de%20custo%20cont%C3%A1bil.html" class="btn btn-neutral float-right" title="Fechamento de custo contábil" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

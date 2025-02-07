@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada de Sub-Produto &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Cálculo do custo do Sub-Produto" href="Calculo%20do%20custo%20do%20Sub-Produto.html" />
+    <link rel="prev" title="Ordem de Produção" href="Sub-Produto%20Ordem%20de%20Produ%C3%A7%C3%A3o.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Sub-Produto%20Roteiro.html">Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sub-Produto%20Ordem%20de%20Produ%C3%A7%C3%A3o.html">Ordem de Produção</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Entrada de Sub-Produto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Calculo%20do%20custo%20do%20Sub-Produto.html">Cálculo do custo do Sub-Produto</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Entrada de Sub-Produto</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="entrada-de-sub-produto">
+<h1>Entrada de Sub-Produto<a class="headerlink" href="#entrada-de-sub-produto" title="Link permanente para este cabeçalho"></a></h1>
+<p>Em uma ordem de produção com status igual a <strong>“Liberada”</strong> será possível efetuar a entrada de produto acabado clicando com o botão direito na tela e selecionando a opção <strong>“Entrada de produto acabado”</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img0626.png"><img alt="../../../_images/img0626.png" src="../../../_images/img0626.png" style="width: 656.8000000000001px; height: 428.8px;" /></a>
+<p>Se não for marcada a flag <strong>“Refugo”</strong>, ao clicar em <strong>“Adicionar”</strong>, será aberto a tela de <strong>“Entrada de sub-produto”</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img0138.png"><img alt="../../../_images/img0138.png" src="../../../_images/img0138.png" style="width: 749.6px; height: 516.8000000000001px;" /></a>
+<p>Nessa tela poderá ser definido a quantidade de cada sub-produto que entrará ao efetuar a entrada do produto acabado. Por padrão, as linhas virão com a quantidade zero (0,00), e o usuário poderá informar a quantidade desejada.</p>
+<a class="reference internal image-reference" href="../../../_images/img0237.png"><img alt="../../../_images/img0237.png" src="../../../_images/img0237.png" style="width: 576.0px; height: 308.0px;" /></a>
+<p>Caso a quantidade informada seja um valor negativo, o sistema validará e retornará a seguinte mensagem em vermelho no rodapé:</p>
+<a class="reference internal image-reference" href="../../../_images/img0332.png"><img alt="../../../_images/img0332.png" src="../../../_images/img0332.png" style="width: 303.2px; height: 15.200000000000001px;" /></a>
+<p><em>BR One :: Na coluna ‘Quantidade’, entre um número inteiro maior que zero.</em></p>
+<p>Ao clicar em <strong>“Adicionar”</strong>, será exibido a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img0724.png"><img alt="../../../_images/img0724.png" src="../../../_images/img0724.png" style="width: 401.6px; height: 125.60000000000001px;" /></a>
+<p><em>BR One :: A(s) quantidade(s) informada(s) será(ão) gravada(s). Deseja continuar?</em></p>
+<p>Ao clicar em <strong>“Sim”</strong> o sistema voltará para a tela de entrada de produto acabado. Na tela de <strong>“Entrada de PA”</strong>, o sistema fará a entrada do item pai da ordem em um documento de entrada de mercadoria.</p>
+<p>Se na tela de <strong>“Entrada de sub-produto”</strong> foi informado uma quantidade maior que zero, o sistema fará a entrada dos sub-produtos, caso contrário, (se a quantidade estiver com zero ou vazio) não haverá entrada de sub-produto.</p>
+<a class="reference internal image-reference" href="../../../_images/img0427.png"><img alt="../../../_images/img0427.png" src="../../../_images/img0427.png" style="width: 749.6px; height: 360.8px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img0526.png"><img alt="../../../_images/img0526.png" src="../../../_images/img0526.png" style="width: 449.6px; height: 360.0px;" /></a>
+<p>Caso a flag <strong>“Refugo”</strong> seja marcada, somente os itens de baixa por explosão serão dados baixa no estoque.</p>
+<p><strong>Geração de lote automático para sub-produto</strong></p>
+<p>Se os itens de sub-produto forem administrados por lote, a numeração do lote será gerada automaticamente conforme a configurações da tela de <strong>“Configurações de produção”</strong> na aba <strong>“Lote/Série”</strong> na seção <strong>“Lote de Sub-produto”</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/0818.png"><img alt="../../../_images/0818.png" src="../../../_images/0818.png" style="width: 596.8000000000001px; height: 332.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Gerar lote automaticamente</strong></p></li>
+</ul>
+<p>O campo <strong>“Gerar lote automaticamente”</strong> define se o lote nunca será gerado, se a configuração do item deve ser validada ou se sempre será gerado, para determinar o que ocorrerá, há 2 opções selecionáveis:</p>
+<a class="reference internal image-reference" href="../../../_images/0914.png"><img alt="../../../_images/0914.png" src="../../../_images/0914.png" style="width: 291.2px; height: 46.400000000000006px;" /></a>
+<p><strong>Validar config. item:</strong></p>
+<p>Quando essa opção estiver marcada, será validado o campo <strong>“Gerar lote automático”</strong> do cadastro do sub-produto da ordem de produção.</p>
+<a class="reference internal image-reference" href="../../../_images/1024.png"><img alt="../../../_images/1024.png" src="../../../_images/1024.png" style="width: 558.4px; height: 527.2px;" /></a>
+<p>Há 3 tipos de opções para o campo:</p>
+<a class="reference internal image-reference" href="../../../_images/1114.png"><img alt="../../../_images/1114.png" src="../../../_images/1114.png" style="width: 238.4px; height: 56.800000000000004px;" /></a>
+<ul class="simple">
+<li><p><strong>Não:</strong> Se esta opção estiver selecionada, não será gerado a lote automática.</p></li>
+<li><p><strong>Sempre:</strong> Com essa opção, sempre será gerado o número de lote automaticamente.</p></li>
+<li><p><strong>Validar depósito:</strong> Com essa opção marcada, o depósito da OP será validado, verificando se ele possui a flag <strong>“BR One Produção - Gerar lote automaticamente”</strong> marcada, caso esteja, a lote será gerada automaticamente.</p></li>
+</ul>
+<p>Se não, a lote deverá ser gerada manualmente.</p>
+<a class="reference internal image-reference" href="../../../_images/1214.png"><img alt="../../../_images/1214.png" src="../../../_images/1214.png" style="width: 555.2px; height: 407.20000000000005px;" /></a>
+<p><strong>Sempre:</strong> Com essa opção marcada para o sub-produto, sempre será gerado o número de lote automaticamente.</p>
+<ul class="simple">
+<li><p><strong>Gerar lote</strong></p></li>
+</ul>
+<p>Neste parâmetro é possível determinar o momento da geração automática do número de lote, que pode ser pela <strong>“Ordem de produção”</strong> ou na <strong>“Entrada de PA”</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/1315.png"><img alt="../../../_images/1315.png" src="../../../_images/1315.png" style="width: 598.4px; height: 333.6px;" /></a>
+<p>Existem duas opções de configuração para o parâmetro <strong>“Gerar lote”</strong> do sub-produto:</p>
+<a class="reference internal image-reference" href="../../../_images/1415.png"><img alt="../../../_images/1415.png" src="../../../_images/1415.png" style="width: 596.8000000000001px; height: 88.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Ordem de Produção</strong></p></li>
+</ul>
+<p>Todos os lotes gerados para entrada de PAs dos sub-produtos terão a mesma numeração de acordo com as configurações.</p>
+<ul class="simple">
+<li><p><strong>Entrada de PA</strong></p></li>
+</ul>
+<p>Cada entrada realizada no processo irá gerar uma nova numeração de lote do sub-produto de acordo com as configurações.</p>
+<ul class="simple">
+<li><p><strong>Utilizar nº da OP</strong></p></li>
+</ul>
+<p>No sub-produto também é possível utilizar o número da ordem de produção na geração automática do número de lote, para isto, o parâmetro <strong>“Utilizar nº da OP”</strong>, deve estar marcado.</p>
+<a class="reference internal image-reference" href="../../../_images/1511.png"><img alt="../../../_images/1511.png" src="../../../_images/1511.png" style="width: 598.4px; height: 336.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Prefixo do lote</strong></p></li>
+</ul>
+<p>Esse campo é opcional, podendo ou não ser preenchido. Nele pode ser colocado o prefixo do lote do sub-produto que será gerado.</p>
+<p>Quando o campo <strong>“Gerar lote”</strong> estiver como <strong>“Ordem de produção”</strong>, o lote será criado com o <strong>prefixo + nº da OP</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/1612.png"><img alt="../../../_images/1612.png" src="../../../_images/1612.png" style="width: 599.2px; height: 334.40000000000003px;" /></a>
+<ul class="simple">
+<li><p><strong>Sufixo de lote</strong></p></li>
+</ul>
+<p>Esse parâmetro é opcional, quando marcado, ele permite configurar um sufixo para o número de lote do sub-produto gerado automaticamente.</p>
+<a class="reference internal image-reference" href="../../../_images/1712.png"><img alt="../../../_images/1712.png" src="../../../_images/1712.png" style="width: 596.8000000000001px; height: 336.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Qtde. Sequencial</strong></p></li>
+</ul>
+<p>Esse parâmetro define a quantidade de caracteres que serão utilizados para montar o sequencial do lote.</p>
+<a class="reference internal image-reference" href="../../../_images/1812.png"><img alt="../../../_images/1812.png" src="../../../_images/1812.png" style="width: 596.8000000000001px; height: 334.40000000000003px;" /></a>
+<p>A quantidade de caracteres não pode ser menor que 1 e nem maior que 5. Caso o valor informado não atenda esses requisitos, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/1911.png"><img alt="../../../_images/1911.png" src="../../../_images/1911.png" style="width: 417.6px; height: 9.600000000000001px;" /></a>
+<p><em>BR One :: A quantidade no campo “Qtde. sequencial” da aba “Lote/Série” do Sub-Produto deve ser maior que 0.</em></p>
+<a class="reference internal image-reference" href="../../../_images/2011.png"><img alt="../../../_images/2011.png" src="../../../_images/2011.png" style="width: 421.6px; height: 10.4px;" /></a>
+<p><em>BR One :: O valor do campo “Qtde. sequencial” da aba “Lote/Série” do Sub-Produto deve ser menor ou igual a 5.</em></p>
+<p>Também foi criada uma validação para a quantidade de caracteres, apenas se a criação for pelo processo de Ordem de Produção.</p>
+<p>A quantidade mínima de caracteres que podem ser informados é 4, então, qualquer valor entre 1 e 3 não poderá ser utilizado como quantidade de caracteres válida, conforme mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/2112.png"><img alt="../../../_images/2112.png" src="../../../_images/2112.png" style="width: 705.6px; height: 10.4px;" /></a>
+<p><em>BR One :: Se a geração de lote for por Ordem de Produção na aba “Lote/Série” do Sub-Produto e o campo “Qtde. sequencial” possuir valor, o mesmo não pode ser menor que 4 e maior que 5.</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Sub-Produto%20Ordem%20de%20Produ%C3%A7%C3%A3o.html" class="btn btn-neutral float-left" title="Ordem de Produção" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Calculo%20do%20custo%20do%20Sub-Produto.html" class="btn btn-neutral float-right" title="Cálculo do custo do Sub-Produto" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

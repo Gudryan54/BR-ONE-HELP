@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada de PA com desvio na OP de Retrabalho &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Ordem de Produção" href="../Ordem%20de%20Produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o%20Introdu%C3%A7%C3%A3o.html" />
+    <link rel="prev" title="Adiciona Entrada de Produto Acabado" href="Adiciona%20Entrada%20de%20Produto%20Acabado.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#configuracao">Configuração</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-producao">Apontamento de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-refugo">Apontamento de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#colaboradores">Colaboradores</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20API.html#entrada-de-produto-acabado">Entrada de Produto Acabado</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Adiciona%20Entrada%20de%20Produto%20Acabado.html">Adiciona Entrada de Produto Acabado</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Entrada de PA com desvio na OP de Retrabalho</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#status-dos-recursos">Status dos Recursos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#classificacoes-de-refugo">Classificações de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#saida-de-insumos">Saída de Insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ficha-de-analise">Ficha de Análise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20API.html">BR One API</a></li>
+      <li class="breadcrumb-item active">Entrada de PA com desvio na OP de Retrabalho</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="entrada-de-pa-com-desvio-na-op-de-retrabalho">
+<h1>Entrada de PA com desvio na OP de Retrabalho<a class="headerlink" href="#entrada-de-pa-com-desvio-na-op-de-retrabalho" title="Link permanente para este cabeçalho"></a></h1>
+<p>O parâmetro <strong>% desvio da quantidade planejada da OP de retrabalho</strong> quando marcado possibilita configurar uma porcentagem de desvio para a entrada de PA nas OPs de Retrabalho. Onde ao realizar a entrada de PA pela API com a configuração do desvio ativa, foi necessário realizar alguns ajustes nos campos do JSON da entrada.</p>
+<a class="reference internal image-reference" href="../../_images/01.png"><img alt="../../_images/01.png" class="align-center" src="../../_images/01.png" style="width: 755.0px; height: 430.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>OP de Retrabalho com desvio configurado, PA administrado por lote, sem troca de lote:</strong></p></li>
+</ul>
+<p>Onde para uma entrada que possua quantidade planejada e quantidade sobressalente (desvio configurado), os arrays “lotes” e “lotesTransferenciaEstoque” possuem respectivamente a seguinte função:</p>
+<ul class="simple">
+<li><p><strong>Array “lotes”:</strong></p></li>
+</ul>
+<p>Indica o número de lote das quantidades sobressalentes, que no add-on é adicionado através de uma entrada de mercadoria e consequentemente o número de lote será utilizado na transferência de estoque gerada no processo.</p>
+<ul class="simple">
+<li><p><strong>Array “lotesTransferenciaEstoque”:</strong></p></li>
+</ul>
+<p>Indica o número de lote que será utilizado na transferência de estoque para os itens referentes a quantidade planejada da OP, ou seja, deve ser utilizado o número de lote informado na liberação da OP de Retrabalho.</p>
+<p>Segue abaixo um exemplo de JSON, que deve ser enviado para realizar a entrada de PA da OP de Retrabalho (Exemplo de OP com 10 peças planejadas e desvio de 100%):</p>
+<p><strong>Entrada de PA de apenas quantidades planejadas:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotesTransferenciaEstoque&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Entrada de PA de quantidades planejadas e sobressalentes:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span>
+<span class="w">   </span><span class="nt">&quot;lotesTransferenciaEstoque&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Entrada de PA de apenas quantidades sobressalentes:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Importante observar que para esse caso as quantidades dos arrays, são somados e devem ser igual a quantidade informada no campo “quantidade”.</p>
+<ul class="simple">
+<li><p><strong>OP de Retrabalho com desvio configurado, PA administrado por lote, com troca de lote:</strong></p></li>
+</ul>
+<p>Onde para uma entrada que possua quantidade planejada e quantidade sobressalente (desvio configurado), os arrays “lotes” e “lotesTransferenciaEstoque” possuem respectivamente a seguinte função:</p>
+<ul class="simple">
+<li><p><strong>Array “lotes”:</strong></p></li>
+</ul>
+<p>Indica o número de lote das quantidades que serão utilizados na saída de insumos para a realização da troca de lote.</p>
+<ul class="simple">
+<li><p><strong>Array “lotesTransferenciaEstoque”:</strong></p></li>
+</ul>
+<p>Indica o número de lote da entrada de mercadoria e o número de lote que será utilizado na transferência de estoque.</p>
+<p>Segue abaixo um exemplo de JSON, que deve ser enviado para realizar a entrada de PA da OP de Retrabalho (Exemplo de OP com 10 peças planejadas e desvio de 100%):</p>
+<p><strong>Entrada de PA de apenas quantidades planejadas:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span>
+<span class="w">   </span><span class="nt">&quot;lotesTransferenciaEstoque&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L02&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Entrada de PA de quantidades planejadas e sobressalentes:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">],</span>
+<span class="w">   </span><span class="nt">&quot;lotesTransferenciaEstoque&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L02&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Entrada de PA de apenas quantidades sobressalentes:</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">   </span><span class="nt">&quot;docNumOrdemProducao&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;dataDocumento&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-11-01&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;codigoDeposito&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;trocaLoteEntradaRetrabalho&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">   </span><span class="nt">&quot;lotes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">         </span><span class="nt">&quot;lote&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;L01&quot;</span><span class="p">,</span>
+<span class="w">         </span><span class="nt">&quot;quantidade&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">   </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Adiciona%20Entrada%20de%20Produto%20Acabado.html" class="btn btn-neutral float-left" title="Adiciona Entrada de Produto Acabado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Ordem%20de%20Produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o%20Introdu%C3%A7%C3%A3o.html" class="btn btn-neutral float-right" title="Ordem de Produção" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

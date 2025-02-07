@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formação de Preço de Vendas &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Copiar de - NF Entrada" href="Copiar%20de%20-%20NF%20Entrada.html" />
+    <link rel="prev" title="Config. simulador de resultado" href="Config.%20simulador%20de%20resultado.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Autoriza%C3%A7%C3%A3o.html">Autorização</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Config.%20simulador%20de%20resultado.html">Config. simulador de resultado</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Formação de Preço de Vendas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20NF%20Entrada.html">Copiar de - NF Entrada</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Lista%20de%20pre%C3%A7os.html">Copiar de - Lista de preços</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Processo%20de%20importa%C3%A7%C3%A3o.html">Copiar de - Processo de importação</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Roteiro%20de%20produ%C3%A7%C3%A3o.html">Copiar de - Roteiro de produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Arredondamento.html">Arredondamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Calcular.html">Operações - Calcular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Detalhes%20itens.html">Operações - Detalhes itens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Gravar%20lista.html">Operações - Gravar lista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Detalhamento%20dos%20campos.html">Detalhamento dos campos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Corrigir%20valores%20nulos%20e%20n%C3%A3o%20calculados.html">Corrigir valores nulos e não calculados</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Formação de Preço de Vendas</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="formacao-de-preco-de-vendas">
+<h1>Formação de Preço de Vendas<a class="headerlink" href="#formacao-de-preco-de-vendas" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para acessar a tela <strong>Formação de preços de vendas</strong> é necessário ir  no menu:</p>
+<p><strong>Vendas -&gt; Formação de preços de vendas</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.018.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.018.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.018.jpeg" style="width: 208.0px; height: 74.4px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.019.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.019.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.019.jpeg" style="width: 427.20000000000005px; height: 452.0px;" /></a>
+<p>É necessário que esteja liberado uma das seguintes funcionalidades para ter acesso à tela: “Formação de preços de vendas - Padrão”, “BR One Produção” ou “BR One Importação”. Caso o usuário não possua nenhuma dessas funcionalidades e clique no menu indicado, o processo será bloqueado e será exibida a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.020.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.020.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.020.jpeg" style="width: 392.8px; height: 112.80000000000001px;" /></a>
+<p><em>BR One :: Para liberação deste processo é necessário a utilização de uma das funcionalidades descritas: Formação de preços de vendas - Padrão, BR One Produção e BR One Importação.</em></p>
+<p>No formulário aberto, primeiramente deve ser marcado o flag <strong>Aplicar taxa de câmbio</strong> caso ele seja necessário. Ele não poderá ser marcado após o documento ser copiado. Se o usuário tentar marcar o flag após copiar um documento, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.021.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.021.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.021.jpeg" style="width: 277.6px; height: 12.8px;" /></a>
+<p><em>BR One :: Campo não pode ser alterado depois da importação dos itens.</em></p>
+<p>O campo <em>Custo total</em> é formado através de uma série de cálculos do próprio módulo de formação do preço de venda e não reflete o mesmo valor do custo de estoque no cadastro do item, pois o custo do estoque no cadastro do item é custo MÉDIO.</p>
+<p>Quando o tipo de cálculo for <em>Margem</em>, a soma das alíquotas não pode ser igual ou ultrapassar os 100%. Caso seja, ao tentar adicionar/atualizar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.022.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.022.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.022.jpeg" style="width: 360.0px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Campo total não pode ser maior ou igual a 100% para este tipo de cálculo (Margem).</em></p>
+<p>Quando o campo <em>Padrão de Markup</em> estiver vazio e o usuário tente calcular, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.023.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.023.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.023.jpeg" style="width: 419.20000000000005px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Quando não for selecionado um padrão de markup, deve ser selecionado a Direção e o Formato.</em></p>
+<p><strong>Funcionalidade “Copiar de”</strong></p>
+<p>Deve ser realizada a cópia de documentos através do botão <strong>Copiar de</strong>. Os documentos podem ser copiados a partir de uma NF Entrada, Lista de preços, Processo de importação ou de um Roteiro de produção.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.024.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.024.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.024.jpeg" style="width: 464.0px; height: 448.8px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Config.%20simulador%20de%20resultado.html" class="btn btn-neutral float-left" title="Config. simulador de resultado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Copiar%20de%20-%20NF%20Entrada.html" class="btn btn-neutral float-right" title="Copiar de - NF Entrada" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

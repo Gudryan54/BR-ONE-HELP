@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistente de criação de ficha de análise &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Cancelamento da ficha de análise" href="../Cancelamento%20de%20Ficha%20de%20An%C3%A1lise/Cancelamento%20da%20ficha%20de%20an%C3%A1lise.html" />
+    <link rel="prev" title="Criar ficha de análise automaticamente na Nota Fiscal de Entrada" href="../Cria%C3%A7%C3%A3o%20de%20ficha%20de%20analise%20autom%C3%A1tica%20-%20Compra/Criar%20ficha%20de%20an%C3%A1lise%20automaticamente%20Itens%20de%20Compra%20NF.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#ficha-de-analise">Ficha de Análise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#criacao-de-ficha-de-analise-automatica-producao">Criação de ficha de análise automática - Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#criacao-de-ficha-de-analise-automatica-compra">Criação de ficha de análise automática - Compra</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#assistente-de-criacao-de-ficha-de-analise">Assistente de Criação de Ficha de Análise</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Assistente de criação de ficha de análise</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#cancelamento-da-ficha-de-analise">Cancelamento da Ficha de Análise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#skip-lote">Skip Lote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html#qualificacao-de-fornecedores-iqf">Qualificação de Fornecedores - IQF</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+      <li class="breadcrumb-item active">Assistente de criação de ficha de análise</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="assistente-de-criacao-de-ficha-de-analise">
+<h1>Assistente de criação de ficha de análise<a class="headerlink" href="#assistente-de-criacao-de-ficha-de-analise" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para realizar a criação de forma manual deve seguir o seguinte modelo:</p>
+<p>O Campo <strong>“Criar ficha de análise automaticamente”</strong> deve estar desmarcada para que o documento seja levado para a assitente de criação de ficha de análise.</p>
+<img alt="../../../../_images/0146.png" src="../../../../_images/0146.png" />
+<p>Para acessar a tela de <strong>Assistente de criação de ficha de análise</strong>, é necessatio ir ao menu:</p>
+<p><strong>Qualidade -&gt; Assistente de criação de ficha de análise</strong></p>
+<img alt="../../../../_images/348.png" src="../../../../_images/348.png" />
+<p>Além de poder criar ficha de análise manualmente com base em documentos de origem por meio da tela de fichas de análise, também é possível utilizar o assistente de criação ficha de análise para essa criação. A principal função do assistente é auxiliar o usuário a criar fichas de análise para os documentos que não tiveram a ficha criada automaticamente. A sua utilização traz alguns benefícios como poder criar fichas de análise para vários itens do mesmo documento ou até mesmo criar fichas ao mesmo tempo para vários documentos.</p>
+<p>No cabeçalho do assistente é apresentado os campos de filtro que são utilizados para a localização da informação necessária para a geração da ficha. Os documentos disponíveis para a seleção são os mesmos disponíveis da tela de ficha de análise.</p>
+<img alt="../../../../_images/358.png" src="../../../../_images/358.png" />
+<ul class="simple">
+<li><p><strong>Recebimento de mercadoria/Nota fiscal de entrada</strong></p></li>
+</ul>
+<p>Quando as fichas a serem criadas terão como base documentos de compra, apenas os filtros utilizados para localizar estes documentos estarão habilitados como busca por Serial do documento, data de lançamento ou ambos.</p>
+<img alt="../../../../_images/368.png" src="../../../../_images/368.png" />
+<p>Quando já existir ficha criada para aquele documento e item ele não aparecerá no assistente, observe o exemplo abaixo onde do recebimento de mercadoria 198 o item ITEM0010 já possui ficha criada, sendo assim ele não aparece no assistente e ao cancelar a ficha criada e filtrar novamente ele ficará disponível também para a geração da ficha de análise.</p>
+<img alt="../../../../_images/GIF50.gif" src="../../../../_images/GIF50.gif" />
+<p>Quando houver duas linhas com o mesmo item e lote no mesmo documento de compras, ele aparecerá em apenas uma linha e a quantidade total do lote no assistente para a geração da ficha de análise, mesmo que a configuração “<em>Agrupar linhas por Item/Lotes em fichas automáticas para compras</em>” estiver desmarcada conforme a imagem abaixo.</p>
+<img alt="../../../../_images/377.png" src="../../../../_images/377.png" />
+<ul class="simple">
+<li><p><strong>Ordem de Produção / Entrada de PA</strong></p></li>
+</ul>
+<p>Quando as fichas a serem criadas forem com base em uma ordem de produção ou entrada de PA, somente os filtros referentes a OP e data de lançamento estarão habilitadas.</p>
+<img alt="../../../../_images/387.png" src="../../../../_images/387.png" />
+<p>Nas linhas do grid do assistente de criação de ficha de análise serão apresentadas informações referentes aos resultados encontrados dos filtros.</p>
+<img alt="../../../../_images/397.png" src="../../../../_images/397.png" />
+<p>Após a validação das informações é necessário selecionar as linhas que terão as fichas criadas e clicar em Adicionar, para que essas fichas sejam geradas. Segue simulação abaixo:</p>
+<p>Quando houver duas linhas com o mesmo item e lote no mesmo documento de compras, ele aparecerá em apenas uma linha e a quantidade total do lote no assistente para a geração da ficha de análise, mesmo que a configuração “<em>Agrupar linhas por Item/Lotes em fichas automáticas para compras</em>” estiver desmarcada conforme a imagem abaixo.</p>
+<img alt="../../../../_images/GIF511.gif" src="../../../../_images/GIF511.gif" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Cria%C3%A7%C3%A3o%20de%20ficha%20de%20analise%20autom%C3%A1tica%20-%20Compra/Criar%20ficha%20de%20an%C3%A1lise%20automaticamente%20Itens%20de%20Compra%20NF.html" class="btn btn-neutral float-left" title="Criar ficha de análise automaticamente na Nota Fiscal de Entrada" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Cancelamento%20de%20Ficha%20de%20An%C3%A1lise/Cancelamento%20da%20ficha%20de%20an%C3%A1lise.html" class="btn btn-neutral float-right" title="Cancelamento da ficha de análise" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

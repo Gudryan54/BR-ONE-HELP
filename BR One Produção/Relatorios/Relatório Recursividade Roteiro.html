@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relátorio de Recursividade de Roteiro &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Relátorio de Recursividade de OPs" href="Relat%C3%B3rio%20de%20recursividade%20de%20OPs.html" />
+    <link rel="prev" title="Relatório de Explosão" href="Relat%C3%B3rio%20Explos%C3%A3o.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Apontamento%20na%20OP.html">Relatório de Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Verificar%20Qtde%20disponiveis%20na%20OP.html">Verificar quantidade dos itens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Implos%C3%A3o.html">Relatório de Implosão</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Explos%C3%A3o.html">Relatório de Explosão</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Relátorio de Recursividade de Roteiro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20de%20recursividade%20de%20OPs.html">Relátorio de Recursividade de OPs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Invent%C3%A1rio%20no%20relat%C3%B3rio%20do%20dep%C3%B3sito.html">Relatório Inventário no relatório do depósito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Dispon%C3%ADvel%20para%20promessa.html">Relatório Disponível para promessa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Relat%C3%B3rio%20Saldo%20de%20Dep%C3%B3sito.html">Relatório Saldo de depósito</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Relátorio de Recursividade de Roteiro</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="relatorio-de-recursividade-de-roteiro">
+<h1>Relátorio de Recursividade de Roteiro<a class="headerlink" href="#relatorio-de-recursividade-de-roteiro" title="Link permanente para este cabeçalho"></a></h1>
+<p>A recursividade no SAP Business One refere-se à capacidade de um objeto ou processo se referir a si mesmo repetidamente para realizar uma determinada tarefa. Em outras palavras, é quando um objeto ou função chama a si mesmo durante a execução.</p>
+<p>Por exemplo, considere uma estrutura de produto em uma indústria, onde um Produto Acabado (PA) pode ser composto por vários Semi Acabados (SA), e esses Semi Acabados, por sua vez, podem ser compostos por outros Semi Acabados ou até mesmo por Matérias-Primas.</p>
+<p>Visando facilitar a identificação e análise dessas estruturas foi implementado a funcionalidade <strong>“BR One Produção: Verificação de roteiros recursivos”</strong>, que pode ser encontrado no caminho abaixo:</p>
+<p><strong>Ajuda -&gt; Suporte Desk -&gt; Restaurar -&gt; BR One -&gt; BR One Produção: Verificação de roteiros recursivos</strong></p>
+<a class="reference internal image-reference" href="../../_images/img0143.png"><img alt="../../_images/img0143.png" src="../../_images/img0143.png" style="width: 708.0px; height: 408.0px;" /></a>
+<p>Este processo realiza uma verificação no roteiro padrão dos itens, e ao encontrar uma recursividade para o mesmo, ela para a busca para este componente e passa para o próximo. Desta forma sempre será mostrado nos resultados apenas a primeira recursividade encontrada para um componente.</p>
+<p>No exemplo abaixo o produto acabado <strong>PA020</strong> possui um roteiro padrão onde há dois semi acabados, o <strong>SA005</strong> e o <strong>SA006</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/img0242.png"><img alt="../../_images/img0242.png" src="../../_images/img0242.png" style="width: 656.8000000000001px; height: 324.8px;" /></a>
+<p>Ambos os <strong>SA’s</strong> do roteiro anterior, possuem roteiro padrão e neste há como componente o próprio <strong>PA020</strong>, ocasionando assim a recursividade.</p>
+<a class="reference internal image-reference" href="../../_images/img0337.png"><img alt="../../_images/img0337.png" src="../../_images/img0337.png" style="width: 656.0px; height: 327.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../_images/img0429.png"><img alt="../../_images/img0429.png" src="../../_images/img0429.png" style="width: 655.2px; height: 325.6px;" /></a>
+<p>Desta forma se executarmos a funcionalidade “<strong>BR One Produção: Verificação de roteiros recursivos</strong>” teremos o seguinte retorno:</p>
+<a class="reference internal image-reference" href="../../_images/img0528.png"><img alt="../../_images/img0528.png" src="../../_images/img0528.png" style="width: 416.0px; height: 275.2px;" /></a>
+<p>Conforme exemplo acima, o <strong>PA020</strong> possui recursividade com o <strong>SA005</strong> e o <strong>SA006</strong>, porém, é retornado em tela apenas a primeira recursividade encontrada para o componente. Neste caso o addon encontrou primeiro e retornou apenas a recursividade do <strong>PA020</strong> com o <strong>SA005</strong>, ao encontrar ela, o addon para a busca e parte para a análise do próximo item, retornando assim a recursividade do <strong>PA021</strong> com o <strong>SA007</strong>.</p>
+<p>Para corrigir uma recursividade, o usuário deve remover do roteiro padrão de um dos  componentes do item que está recursivo, em nosso exemplo foi removido o <strong>PA020</strong> do roteiro padrão do <strong>SA005</strong>.</p>
+<img alt="../../_images/img0627.png" src="../../_images/img0627.png" />
+<p>Com a remoção da recursividade entre o <strong>PA020</strong> e <strong>SA005</strong> o addon irá retornar a outra recursividade encontrada para o <strong>PA</strong>, em nosso exemplo é esperado que seja retornado a recursividade entre o <strong>SA006</strong> e o <strong>PA020</strong>.</p>
+<p>Ao executar novamente a funcionalidade “<strong>BR One Produção: Verificação de roteiros recursivos</strong>”, temos o seguinte retorno:</p>
+<a class="reference internal image-reference" href="../../_images/img0726.png"><img alt="../../_images/img0726.png" src="../../_images/img0726.png" style="width: 416.8px; height: 276.0px;" /></a>
+<p>Observa-se que agora o addon encontrou a segunda recursividade existente para o <strong>PA020</strong>, neste caso ele para a execução para este componente e passa para outro, encontrando assim novamente a recursividade entre o <strong>PA020</strong> e o <strong>SA006</strong>.</p>
+<p>Se removermos a recursividade do roteiro padrão do componente <strong>SA006</strong> com o <strong>PA020</strong> e executarmos novamente a funcionalidade “<strong>BR One Produção: Verificação de roteiros recursivos</strong>”, temos o seguinte retorno:</p>
+<a class="reference internal image-reference" href="../../_images/img0822.png"><img alt="../../_images/img0822.png" src="../../_images/img0822.png" style="width: 416.8px; height: 274.40000000000003px;" /></a>
+<p>E caso removamos a recursividade entre o <strong>SA007</strong> e o <strong>PA021</strong>, ao executarmos a funcionalidade “<strong>BR One Produção: Verificação de roteiros recursivos</strong>”, não será encontrado nenhum resultado de recursividade de componente para a base utilizada e o addon retornará a mensagem abaixo:</p>
+<a class="reference internal image-reference" href="../../_images/img0920.png"><img alt="../../_images/img0920.png" src="../../_images/img0920.png" style="width: 401.6px; height: 124.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Relat%C3%B3rio%20Explos%C3%A3o.html" class="btn btn-neutral float-left" title="Relatório de Explosão" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Relat%C3%B3rio%20de%20recursividade%20de%20OPs.html" class="btn btn-neutral float-right" title="Relátorio de Recursividade de OPs" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

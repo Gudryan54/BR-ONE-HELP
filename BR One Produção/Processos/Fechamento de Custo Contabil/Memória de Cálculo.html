@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memória de Cálculo &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Estrutura dos Produtos com custo antecipado" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html" />
+    <link rel="prev" title="Movimentos do Fechamento de Custo" href="Movimentos%20do%20Fechamento%20de%20Custo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20custo%20cont%C3%A1bil.html">Fechamento de custo contábil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html">Fechamento de custo em Segundo Plano</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Movimentos%20do%20Fechamento%20de%20Custo.html">Movimentos do Fechamento de Custo</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Memória de Cálculo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html">Estrutura dos Produtos com custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html">Estrutura dos Produtos sem custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20c%C3%A1lculo%20Subindo%20custos%20de%20Heran%C3%A7a.html">Memória de cálculo: Subindo custos de Herança</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Memória de Cálculo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="memoria-de-calculo">
+<h1>Memória de Cálculo<a class="headerlink" href="#memoria-de-calculo" title="Link permanente para este cabeçalho"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para uma melhor visualização das imagens, abra-as em outra guia.</p>
+</div>
+<p>A memória de cálculo de itens no fechamento de custo contábil envolve a rastreabilidade das movimentações e alocação dos custos dos itens e recursos (arbitrado) utilizados na produção de um produto acabado (PA) dentro de um período de tempo específico.</p>
+<p>Para a realização da memória de cálculo é imprescindível utilizarmos as informações retornadas pelo “Relatório de verificação de estoque” onde, deve-se atentar as seguintes informações:</p>
+<ul class="simple">
+<li><p>Data do sistema (dentro do mês de fechamento)</p></li>
+<li><p>Depósito</p></li>
+<li><p>Documento</p></li>
+<li><p>Quantidade</p></li>
+<li><p>Valor transação</p></li>
+<li><p>Quantidade acumulada</p></li>
+<li><p>Valor acumulado</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0110.png"><img alt="../../../_images/0110.png" class="align-center" src="../../../_images/0110.png" style="width: 697.5px; height: 48.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Com essas informações podemos calcular os seguintes valores:</p>
+<ul class="simple">
+<li><p>Custo adicional:</p></li>
+<li><p>Novo valor transação</p></li>
+<li><p>Novo valor acumulado</p></li>
+<li><p>Diferença da transação</p></li>
+</ul>
+<p>Fórmulas de Custo adicional:</p>
+<a class="reference internal image-reference" href="../../../_images/0210.png"><img alt="../../../_images/0210.png" class="align-center" src="../../../_images/0210.png" style="width: 648.1999999999999px; height: 116.19999999999999px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Fórmulas de ‘Novo valor transação’:</p>
+<a class="reference internal image-reference" href="../../../_images/0310.png"><img alt="../../../_images/0310.png" class="align-center" src="../../../_images/0310.png" style="width: 723.8px; height: 130.9px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Fórmulas ‘Novo valor acumulado’:</p>
+<a class="reference internal image-reference" href="../../../_images/044.png"><img alt="../../../_images/044.png" class="align-center" src="../../../_images/044.png" style="width: 648.9px; height: 112.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Fórmulas ‘Diferença da Transação’:</p>
+<a class="reference internal image-reference" href="../../../_images/051.png"><img alt="../../../_images/051.png" class="align-center" src="../../../_images/051.png" style="width: 623.6999999999999px; height: 99.39999999999999px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Utilizando as informações citadas acima, vamos realizar a memória de cálculo para dois itens semi-acabado, um utilizando o custo do arbitrado e o outro não.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Movimentos%20do%20Fechamento%20de%20Custo.html" class="btn btn-neutral float-left" title="Movimentos do Fechamento de Custo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html" class="btn btn-neutral float-right" title="Estrutura dos Produtos com custo antecipado" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

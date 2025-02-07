@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combinações MRP &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Tipos de apontamento ordem de manutenção" href="../../Cadastros/Tipos%20de%20apontamento%20ordem%20de%20manuten%C3%A7%C3%A3o.html" />
+    <link rel="prev" title="Etapa 5" href="Etapa%205.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20MRP.html">Configurações MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html">Configurações do Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20Roteiro%20MRP.html">Configurações do Cadastro do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Previs%C3%A3o%20de%20consumo.html">Previsão por consumo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20MRP.html">Assistente de MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%201.html">Etapa 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%202.html">Etapa 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%203.html">Etapa 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%204.html">Etapa 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%205.html">Etapa 5</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Combinações MRP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Combinações MRP</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="combinacoes-mrp">
+<h1>Combinações MRP<a class="headerlink" href="#combinacoes-mrp" title="Link permanente para este cabeçalho"></a></h1>
+<p>É possível realizar diversas combinações entre todas as configurações e parâmetros existentes no MRP, segue abaixo alguns exemplos práticos dessas combinações.</p>
+<section id="combinacoes-de-quantidade">
+<h2>Combinações de quantidade<a class="headerlink" href="#combinacoes-de-quantidade" title="Link permanente para este cabeçalho"></a></h2>
+<p>Segue abaixo exemplos de combinações que alteram as quantidades das recomendações realizadas pelo MRP.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong> e <strong>‘Lote máximo’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, assim como uma configuração de lote máximo de 80 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/0114.png"><img alt="../../../_images/0114.png" class="align-center" src="../../../_images/0114.png" style="width: 625.5px; height: 270.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/0212.png"><img alt="../../../_images/0212.png" class="align-center" src="../../../_images/0212.png" style="width: 738.9px; height: 244.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças e uma configuração de quantidade mínima do pedido de 22 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/0312.png"><img alt="../../../_images/0312.png" class="align-center" src="../../../_images/0312.png" style="width: 678.6px; height: 342.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/045.png"><img alt="../../../_images/045.png" class="align-center" src="../../../_images/045.png" style="width: 627.0px; height: 163.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/053.png"><img alt="../../../_images/053.png" class="align-center" src="../../../_images/053.png" style="width: 614.4000000000001px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/065.png"><img alt="../../../_images/065.png" class="align-center" src="../../../_images/065.png" style="width: 706.0px; height: 96.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 2 Ordens de Produção, que respeitam a configuração de lote máximo (80 peças) e de múltiplo (8 peças) onde as linhas 6 e 7 são referentes a demanda de previsão de venda (100 peças), que devido as combinações de configuração, totalizam 104 peças.</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/075.png"><img alt="../../../_images/075.png" class="align-center" src="../../../_images/075.png" style="width: 705.0px; height: 95.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 2 solicitações de compra, que respeitam a configuração de lote máximo (80 peças), e de múltiplo (2 peças), onde as linhas 2 e 3 são recomendações referentes a demanda de 100 peças do <strong>‘PA01_MRP’</strong>, devido as combinações de configuração, a quantidade recomendada de compra é de 104 peças.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo + Quantidade mínima do pedido</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong>, <strong>‘Lote máximo’</strong> e <strong>‘Quantidade mínima do pedido’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, assim como uma configuração de lote máximo de 80 peças e uma configuração de quantidade mínima do pedido de 24 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/087.png"><img alt="../../../_images/087.png" class="align-center" src="../../../_images/087.png" style="width: 724.5px; height: 270.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/095.png"><img alt="../../../_images/095.png" class="align-center" src="../../../_images/095.png" style="width: 738.9px; height: 244.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças e uma configuração de quantidade mínima do pedido de 28 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/1013.png"><img alt="../../../_images/1013.png" class="align-center" src="../../../_images/1013.png" style="width: 634.5px; height: 342.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/114.png"><img alt="../../../_images/114.png" class="align-center" src="../../../_images/114.png" style="width: 627.0px; height: 163.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/125.png"><img alt="../../../_images/125.png" class="align-center" src="../../../_images/125.png" style="width: 612.0px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/136.png"><img alt="../../../_images/136.png" class="align-center" src="../../../_images/136.png" style="width: 679.0px; height: 105.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 2 Ordens de Produção, que respeitam a configuração de lote máximo (80 peças), de múltiplo (8 peças) e quantidade mínima do pedido (24 peças), onde as linhas 6 e 7 são referentes a demanda de previsão de venda (100 peças), que devido as combinações de configuração, totalizam 104 peças.</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/146.png"><img alt="../../../_images/146.png" class="align-center" src="../../../_images/146.png" style="width: 686.0px; height: 99.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 2 solicitações de compra, que respeitam a configuração de lote máximo (80 peças), de múltiplo (2 peças) e a quantidade mínima do pedido (28 peças), onde as linhas 2 e 3 são recomendações referentes a demanda de 100 peças do <strong>‘PA01_MRP’</strong>, devido as combinações de configuração, a quantidade recomendada de compra é de 108 peças, onde as 4 peças a mais para o componente em relação ao PA é referente a configuração de quantidade mínima de pedido do mesmo, que é superior ao do PA.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo + Quantidade mínima do pedido + Estoque mínimo</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong>, <strong>‘Lote máximo’</strong> e <strong>‘Quantidade mínima do pedido’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, assim como uma configuração de lote máximo de 80 peças e uma configuração de quantidade mínima do pedido de 24 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/154.png"><img alt="../../../_images/154.png" class="align-center" src="../../../_images/154.png" style="width: 724.5px; height: 270.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/164.png"><img alt="../../../_images/164.png" class="align-center" src="../../../_images/164.png" style="width: 738.9px; height: 244.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Além de também possuir cadastrado um estoque mínimo de 16 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/174.png"><img alt="../../../_images/174.png" class="align-center" src="../../../_images/174.png" style="width: 734.4px; height: 368.1px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças e uma configuração de quantidade mínima do pedido de 22 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/184.png"><img alt="../../../_images/184.png" class="align-center" src="../../../_images/184.png" style="width: 678.6px; height: 342.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>E também possui cadastrado um estoque mínimo de 28 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/193.png"><img alt="../../../_images/193.png" class="align-center" src="../../../_images/193.png" style="width: 683.1px; height: 380.7px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/203.png"><img alt="../../../_images/203.png" class="align-center" src="../../../_images/203.png" style="width: 627.0px; height: 163.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/214.png"><img alt="../../../_images/214.png" class="align-center" src="../../../_images/214.png" style="width: 720.0px; height: 438.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/223.png"><img alt="../../../_images/223.png" class="align-center" src="../../../_images/223.png" style="width: 808.0px; height: 148.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 3 Ordens de Produção, que respeitam a configuração de lote máximo (80 peças), de múltiplo (8 peças) e quantidade mínima do pedido (24 peças), das três linhas recomendadas, nota-se que as linhas 14 e 15 são referentes a demanda de previsão de venda (100 peças), onde devido as combinações de configuração, totalizam 104 peças.</p>
+<p>A terceira recomendação, a linha 12, é referente a quantidade configurada de estoque mínimo (16 peças), entretanto o MRP recomenda 24 peças devido a configuração de quantidade mínima do pedido (24 peças).</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/232.png"><img alt="../../../_images/232.png" class="align-center" src="../../../_images/232.png" style="width: 716.0px; height: 141.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 4 solicitações de compra, que respeitam a configuração de lote máximo (80 peças), de múltiplo (2 peças) e a quantidade mínima do pedido (22 peças), as linhas 6 e 7 são recomendações referentes a demanda de 100 peças do <strong>‘PA01_MRP’</strong>, devido as combinações de configuração, a quantidade total é 104 peças.</p>
+<p>A a linha 2, é referente a quantidade configurada de estoque mínimo do PA, ou seja, o MRP recomendou a produção do estoque mínimo do PA e recomendou a compra dos componentes deste PA.</p>
+<p>A linha 4 é referente a quantidade configurada de estoque mínimo do próprio componente.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo + Quantidade mínima do pedido + Estoque máximo</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong>, <strong>‘Lote máximo’</strong>, <strong>‘Quantidade mínima do pedido’</strong> e <strong>‘Estoque máximo’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, assim como uma configuração de lote máximo de 80 peças e uma configuração de quantidade mínima do pedido de 24 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/242.png"><img alt="../../../_images/242.png" class="align-center" src="../../../_images/242.png" style="width: 724.5px; height: 270.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/252.png"><img alt="../../../_images/252.png" class="align-center" src="../../../_images/252.png" style="width: 738.9px; height: 244.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Além de também possuir cadastrado um estoque máximo de 50 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/262.png"><img alt="../../../_images/262.png" class="align-center" src="../../../_images/262.png" style="width: 693.0px; height: 391.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças e uma configuração de quantidade mínima do pedido de 22 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/272.png"><img alt="../../../_images/272.png" class="align-center" src="../../../_images/272.png" style="width: 678.6px; height: 342.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>E também possui cadastrado um estoque máximo de 40 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/282.png"><img alt="../../../_images/282.png" class="align-center" src="../../../_images/282.png" style="width: 740.7px; height: 391.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 150 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/292.png"><img alt="../../../_images/292.png" class="align-center" src="../../../_images/292.png" style="width: 633.0px; height: 163.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/303.png"><img alt="../../../_images/303.png" class="align-center" src="../../../_images/303.png" style="width: 652.8000000000001px; height: 433.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/314.png"><img alt="../../../_images/314.png" class="align-center" src="../../../_images/314.png" style="width: 683.0px; height: 140.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 3 Ordens de Produção, que respeitam a configuração de lote máximo (80 peças), de múltiplo (8 peças) e quantidade mínima do pedido (24 peças), das três linhas recomendadas, nota-se que as linhas 98 e 99 são referentes a demanda de previsão de venda (150 peças), onde devido as combinações de configuração, totalizam 152 peças.</p>
+<p>A terceira recomendação, a linha 102, é referente a quantidade configurada de estoque máximo (50 peças), entretanto o MRP recomenda apenas 48 peças devido a configuração de múltiplos (8 peças), porém, na linha 99 que é uma recomendação referente a previsão, “sobraram” 2 peças devido as configurações do item, com isso somando a “sobra” da linha 99 mais a recomendação da linha 102, temos as 50 peças referentes ao estoque máximo.</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/323.png"><img alt="../../../_images/323.png" class="align-center" src="../../../_images/323.png" style="width: 697.0px; height: 141.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 4 solicitações de compra, que respeitam a configuração de lote máximo (80 peças), de múltiplo (2 peças) e a quantidade mínima do pedido (22 peças), as linhas 31 e 32 são recomendações referentes a demanda de 150 peças do <strong>‘PA01_MRP’</strong>, devido as combinações de configuração, a quantidade total é 152 peças.</p>
+<p>A linha 34, é referente a quantidade configurada de estoque máximo do PA, ou seja, o MRP recomendou a produção do estoque máximo do PA e recomendou a compra dos componentes deste PA, pegando esta linha de recomendação e a “sobra” da linha 32, totalizam 50 peças.</p>
+<p>A linha 37 é referente a quantidade configurada de estoque máximo do próprio componente.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo + % refugo</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong>, <strong>‘Lote máximo’</strong>, e <strong>‘% refugo’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, um lote máximo de 96 peças e <strong>‘% refugo’</strong> de 10% :</p>
+<a class="reference internal image-reference" href="../../../_images/332.png"><img alt="../../../_images/332.png" class="align-center" src="../../../_images/332.png" style="width: 628.2px; height: 272.7px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/342.png"><img alt="../../../_images/342.png" class="align-center" src="../../../_images/342.png" style="width: 816.0px; height: 134.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças.</p>
+<a class="reference internal image-reference" href="../../../_images/352.png"><img alt="../../../_images/352.png" class="align-center" src="../../../_images/352.png" style="width: 626.4px; height: 336.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Obs.: Não há configuração de porcentagem de refugo para itens de compra.</p>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/362.png"><img alt="../../../_images/362.png" class="align-center" src="../../../_images/362.png" style="width: 564.3000000000001px; height: 146.70000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/372.png"><img alt="../../../_images/372.png" class="align-center" src="../../../_images/372.png" style="width: 731.2px; height: 435.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/382.png"><img alt="../../../_images/382.png" class="align-center" src="../../../_images/382.png" style="width: 743.0px; height: 95.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 2 Ordens de Produção, que respeitam a configuração de lote máximo (96 peças), de múltiplo (8 peças) e a <strong>‘% de refugo’</strong> (10%), na linha 65 está sendo considerado essa configuração que realiza um acréscimo na quantidade recomendada pelo MRP, totalizando assim 112 peças. As duas peças que “passaram” da quantidade de <strong>‘% refugo’</strong> ocorreu devido ao múltiplo de 8 peças.</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/392.png"><img alt="../../../_images/392.png" class="align-center" src="../../../_images/392.png" style="width: 831.0px; height: 94.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 2 solicitações de compra para atender a demanda do PA,  onde foi respeitado as configurações de lote máximo (80 peças), de múltiplo (2 peças) e a quantidade mínima do pedido (22 peças), além de considerar a % de refugo (10%) existente no roteiro do PA, totalizando assim 112 peças.</p>
+<ul class="simple">
+<li><p><strong>Solicitar múltiplos + Lote Máximo + Quantidade mínima do pedido + % refugo</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Solicitar múltiplos’</strong>, <strong>‘Lote máximo’</strong>, <strong>‘Quantidade mínima do pedido’</strong> e <strong>‘% refugo’</strong>.</p>
+<p>O item de produção <strong>‘PA01_MRP’</strong> possui uma configuração de múltiplo de 8 peças, assim como uma configuração de quantidade mínima do pedido de 24 peças, um lote máximo de 80 peças e <strong>‘% refugo’</strong> de 10% :</p>
+<a class="reference internal image-reference" href="../../../_images/402.png"><img alt="../../../_images/402.png" class="align-center" src="../../../_images/402.png" style="width: 724.5px; height: 270.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/413.png"><img alt="../../../_images/413.png" class="align-center" src="../../../_images/413.png" style="width: 739.8000000000001px; height: 154.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Em seu roteiro há também o item de compra <strong>‘Comp01_MRP’</strong>, que possui um múltiplo de 2 peças,  um lote máximo configurado de 80 peças e uma configuração de quantidade mínima do pedido de 22 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/423.png"><img alt="../../../_images/423.png" class="align-center" src="../../../_images/423.png" style="width: 678.6px; height: 342.90000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Obs.: Não há configuração de porcentagem de refugo para itens de compra.</p>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/432.png"><img alt="../../../_images/432.png" class="align-center" src="../../../_images/432.png" style="width: 564.3000000000001px; height: 146.70000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, o add-on trará as seguintes recomendações:</p>
+<a class="reference internal image-reference" href="../../../_images/442.png"><img alt="../../../_images/442.png" class="align-center" src="../../../_images/442.png" style="width: 728.0px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP:</p>
+<p><strong>Para o item de produção PA01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/452.png"><img alt="../../../_images/452.png" class="align-center" src="../../../_images/452.png" style="width: 742.0px; height: 98.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou a criação de 2 Ordens de Produção, que respeitam a configuração de lote máximo (80 peças), de múltiplo (8 peças) e quantidade mínima do pedido (24 peças), além de considerar a % de refugo (10%), na linha 65 está sendo considerado essa configuração que realiza um acréscimo na quantidade recomendada pelo MRP, totalizando assim 112 peças. As duas peças que “passaram” da quantidade de <strong>‘% refugo’</strong> ocorreu devido ao múltiplo de 8 peças.</p>
+<p><strong>Para o item de compra Comp01_MRP:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/462.png"><img alt="../../../_images/462.png" class="align-center" src="../../../_images/462.png" style="width: 747.0px; height: 98.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O MRP recomendou 2 solicitações de compra para atender a demanda do PA,  onde foi respeitado as configurações de lote máximo (80 peças), de múltiplo (2 peças) e a quantidade mínima do pedido (22 peças), além de considerar a % de refugo (10%) existente no roteiro do PA, totalizando assim 112 peças.</p>
+</section>
+<section id="combinacoes-de-leadtime">
+<h2>Combinações de leadtime<a class="headerlink" href="#combinacoes-de-leadtime" title="Link permanente para este cabeçalho"></a></h2>
+<ul class="simple">
+<li><p><strong>Leadtime + dias entre operações + calendário dias úteis</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Leadtime’</strong>, <strong>‘Quantidade de dias entre as operações’</strong> e utilizando um calendário de dias úteis.</p>
+<p>O leadtime preferencial do PA está configurado como <strong>‘Sequencia de operações’</strong>.</p>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/472.png"><img alt="../../../_images/472.png" class="align-center" src="../../../_images/472.png" style="width: 562.5px; height: 134.1px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui o roteiro abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/482.png"><img alt="../../../_images/482.png" class="align-center" src="../../../_images/482.png" style="width: 657.6px; height: 427.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Destacado estão as quantidades por recurso e o tempo variável por item em minutos, logo para se produzir uma unidade do <strong>‘PA01_MRP’</strong>, a operação 10 leva 6 minutos enquanto a operação 20 leva 3,6 minutos.</p>
+<p>A configuração de <strong>‘Quantidade de dias entre operações’</strong> está configurada conforme print abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/492.png"><img alt="../../../_images/492.png" class="align-center" src="../../../_images/492.png" style="width: 757.0px; height: 151.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, ao rodar o MRP temos o cenário abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/502.png"><img alt="../../../_images/502.png" class="align-center" src="../../../_images/502.png" style="width: 728.0px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Onde a operação 10 tem inicio no dia 26/02/2024 e termina no dia 27/02/2024, totalizando um leadtime de 2 dias.</p>
+<p>Esse leadtime é diretamente influenciado pelo calendário utilizado, neste exemplo é utilizado um calendário de apenas dias úteis, com 8 horas diárias de trabalho, dessa forma o MRP realiza o seguinte cálculo para definir o prazo da operação 10:</p>
+<p><strong>600 min / 60 min = 10 horas</strong></p>
+<p>Como o calendário possui apenas 8 horas de trabalho diário, o MRP calcula as 2 horas restantes para o dia seguinte, totalizando assim 2 dias de leadtime para essa operação.</p>
+<p>Como a configuração de <strong>‘Quantidade de dias entre operações’</strong> está configurada com o valor 3, portanto ele calcula 3 dias para iniciar a operação 20, iniciando e finalizando a mesma no dia 01/03/2024.</p>
+<p><strong>360 min /60 min = 6 horas</strong></p>
+<p>Conforme cálculo realizado pelo MRP, o prazo para finalizar a operação 20 é de 6 horas, com isso, se enquadra no tempo de trabalho estipulado no calendário, calculando assim um leadtime de 1 dia.</p>
+<ul class="simple">
+<li><p><strong>Leadtime fixo + dias entre operações + calendário dias úteis + parâmetro considerar fixo independente do calculado</strong></p></li>
+</ul>
+<p>Segue abaixo exemplo de recomendação de MRP onde há combinação entre as configurações <strong>‘Leadtime’</strong>, <strong>‘Quantidade de dias entre as operações’</strong>, <strong>‘Considerar Lead Time fixo independente do calculado’</strong> e utilizando um calendário de dias úteis.</p>
+<p>O leadtime preferencial do PA está configurado como <strong>‘Fixo em dias’</strong>.</p>
+<p>O <strong>‘PA01_MRP’</strong> possui uma previsão de vendas de 100 peças:</p>
+<a class="reference internal image-reference" href="../../../_images/512.png"><img alt="../../../_images/512.png" class="align-center" src="../../../_images/512.png" style="width: 625.0px; height: 149.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O <strong>‘PA01_MRP’</strong> possui o roteiro abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/521.png"><img alt="../../../_images/521.png" class="align-center" src="../../../_images/521.png" style="width: 657.6px; height: 427.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Destacado estão as quantidades por recurso e o tempo variável por item em minutos, logo para se produzir uma unidade do <strong>‘PA01_MRP’</strong>, a operação 10 leva 6 minutos enquanto a operação 20 leva 3,6 minutos.</p>
+<p>Existe também configurado as configurações abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/541.png"><img alt="../../../_images/541.png" class="align-center" src="../../../_images/541.png" style="width: 677.7px; height: 382.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Portanto, ao rodar o MRP temos o cenário abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/55.png"><img alt="../../../_images/55.png" class="align-center" src="../../../_images/55.png" style="width: 614.4000000000001px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Como a configuração de leadtime preferencial está como <strong>‘Fixo em dias’</strong> e o parâmetro <strong>‘Considerar Lead Time fixo independente do calculado’</strong> está marcado, o MRP recomenda como leadtime exatamente o que está configurado no campo leadtime do PA.</p>
+<a class="reference internal image-reference" href="../../../_images/56.png"><img alt="../../../_images/56.png" class="align-center" src="../../../_images/56.png" style="width: 581.6px; height: 317.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="combinacoes-de-documentos">
+<h2>Combinações de documentos<a class="headerlink" href="#combinacoes-de-documentos" title="Link permanente para este cabeçalho"></a></h2>
+<p>É possível realizar combinações entre os tipos de documentos, segue abaixo alguns exemplos de combinações:</p>
+<ul class="simple">
+<li><p><strong>Demanda + fornecimento</strong></p></li>
+</ul>
+<p>Combinação de demanda e fornecimento, segue exemplo, onde temos um pedido de venda de quantidade de 1.000 peças, e uma ordem de produção no sistema de 300 peças.</p>
+<p>Pedido de venda:</p>
+<a class="reference internal image-reference" href="../../../_images/57.png"><img alt="../../../_images/57.png" class="align-center" src="../../../_images/57.png" style="width: 477.6px; height: 228.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ordem de produção:</p>
+<a class="reference internal image-reference" href="../../../_images/58.png"><img alt="../../../_images/58.png" class="align-center" src="../../../_images/58.png" style="width: 624.0px; height: 251.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na tela do Assistente de MRP vamos selecionar as fontes de demanda <strong>‘Pedido de venda’</strong> e <strong>‘Ordem de produção’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/59.png"><img alt="../../../_images/59.png" class="align-center" src="../../../_images/59.png" style="width: 618.4000000000001px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, os documentos das fontes de demanda selecionados que estejam dentro do horizonte de planejamento e dos depósitos configurados, serão recomendados, em nosso exemplo o MRP irá recomendar a quantidade faltante referente ao pedido de venda, pois como a demanda <strong>‘Ordem de produção’</strong> está marcada, o mesmo está considerando a quantidade da OP 749, segue resultado:</p>
+<a class="reference internal image-reference" href="../../../_images/60.png"><img alt="../../../_images/60.png" class="align-center" src="../../../_images/60.png" style="width: 613.6px; height: 432.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Demanda + estoque</strong></p></li>
+</ul>
+<p>Combinação de demanda e estoque, segue exemplo, onde temos uma previsão de venda de quantidade de 100 peças, e 50 peças em estoque.</p>
+<p>Previsão de venda:</p>
+<a class="reference internal image-reference" href="../../../_images/611.png"><img alt="../../../_images/611.png" class="align-center" src="../../../_images/611.png" style="width: 506.40000000000003px; height: 132.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quantidade em estoque:</p>
+<a class="reference internal image-reference" href="../../../_images/62.png"><img alt="../../../_images/62.png" class="align-center" src="../../../_images/62.png" style="width: 670.4000000000001px; height: 321.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na tela do Assistente de MRP vamos selecionar apenas a previsão criada <strong>‘Prev-2024’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/63.png"><img alt="../../../_images/63.png" class="align-center" src="../../../_images/63.png" style="width: 614.4000000000001px; height: 432.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, será considerado a previsão selecionada e as quantidades disponíveis em estoque, em nosso exemplo o MRP irá recomendar a quantidade faltante referente a previsão, recomendando assim uma <strong>‘Ordem de produção’</strong> para o PA e uma solicitação de compra para o componente, segue resultado:</p>
+<a class="reference internal image-reference" href="../../../_images/64.png"><img alt="../../../_images/64.png" class="align-center" src="../../../_images/64.png" style="width: 616.0px; height: 434.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Demanda + fornecimento + estoque</strong></p></li>
+</ul>
+<p>Combinação de demanda, fornecimento e estoque, para este exemplo vamos analisar o componente <strong>‘Comp02_MRP’</strong>, onde temos um pedido de venda de 100 peças para o <strong>‘PA02_MRP’</strong>, um pedido de compra de 50 peças e um estoque de 20 peças para o <strong>‘Comp02_MRP’</strong>.</p>
+<p>Pedido de venda:</p>
+<a class="reference internal image-reference" href="../../../_images/65.png"><img alt="../../../_images/65.png" class="align-center" src="../../../_images/65.png" style="width: 480.0px; height: 225.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Pedido de compra:</p>
+<a class="reference internal image-reference" href="../../../_images/66.png"><img alt="../../../_images/66.png" class="align-center" src="../../../_images/66.png" style="width: 483.20000000000005px; height: 220.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Quantidade em estoque:</p>
+<a class="reference internal image-reference" href="../../../_images/67.png"><img alt="../../../_images/67.png" class="align-center" src="../../../_images/67.png" style="width: 566.4px; height: 336.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Segue abaixo o roteiro do <strong>‘PA02_MRP’</strong>, onde para cada item produzido, é utilizado 1 unidade do componente <strong>‘Comp02_MRP’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/68.png"><img alt="../../../_images/68.png" class="align-center" src="../../../_images/68.png" style="width: 652.0px; height: 424.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na tela do Assistente de MRP vamos selecionar as fontes de demanda <strong>‘Pedido de compra’</strong> e <strong>‘Pedido de venda’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/69.png"><img alt="../../../_images/69.png" class="align-center" src="../../../_images/69.png" style="width: 614.4000000000001px; height: 435.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o MRP, será considerado os documentos de demanda selecionados, junto a suas quantidades disponíveis em estoque:</p>
+<a class="reference internal image-reference" href="../../../_images/70.png"><img alt="../../../_images/70.png" class="align-center" src="../../../_images/70.png" style="width: 616.8000000000001px; height: 436.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao analisar as recomendações do MRP, vemos que para o <strong>‘PA02_MRP’</strong>, foi recomendada a produção de 100 peças (linha 17), para atender ao pedido de venda de número 100.</p>
+<p>Já para o componente <strong>‘Comp02_MRP’</strong>, o MRP considera a quantidade disponível em estoque (20 peças) e o pedido de compra de número 146 (50 peças), logo é recomendado a solicitação de compra de apenas 30 peças (linha 8) para atender a demanda do pedido de venda de número 100.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Etapa%205.html" class="btn btn-neutral float-left" title="Etapa 5" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../../Cadastros/Tipos%20de%20apontamento%20ordem%20de%20manuten%C3%A7%C3%A3o.html" class="btn btn-neutral float-right" title="Tipos de apontamento ordem de manutenção" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

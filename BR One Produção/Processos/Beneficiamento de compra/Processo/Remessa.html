@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processo de Remessa &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Cancelamento da remessa" href="Cancelamento%20remessa.html" />
+    <link rel="prev" title="Boas práticas de saldo com itens de terceiro" href="Boas%20pr%C3%A1ticas%20de%20saldo%20com%20itens%20de%20terceiro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Utiliza%C3%A7%C3%B5es.html">Configuração de utilização</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Componentes.html">Configurações dos itens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Parceiro%20de%20Negocios.html">Configuração Parceiro de negócio (Fornecedor)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Roteiro.html">Configuração do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Boas%20pr%C3%A1ticas%20de%20saldo%20com%20itens%20de%20terceiro.html">Boas práticas de saldo com itens de terceiro</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Processo de Remessa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Cancelamento%20remessa.html">Cancelamento da remessa</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Pedido%20de%20compra%20adicional.html">Gerar pedido de compra adicional</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Retorno.html">Processo de Retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20Cancelamento%20de%20retorno.html">Assistente de cancelamento de retorno</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de produto acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mat%C3%A9ria%20Prima%20Fornecedor.html">Matéria Prima do Fornecedor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Processo de Remessa</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="processo-de-remessa">
+<h1>Processo de Remessa<a class="headerlink" href="#processo-de-remessa" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para iniciar o processo é necessário a criação de uma ordem de produção.</p>
+<p>No cabeçalho da OP o depósito é obrigatório ser de terceiro.</p>
+<p>Com a OP liberada, temos três opções para enviar a remessa:</p>
+<ul class="simple">
+<li><p><strong>Enviar para assistente de remessa</strong>;</p></li>
+<li><p><strong>Gerar NF de remessa</strong>;</p></li>
+<li><p><strong>Vincular Remessa Avulsa</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/img0125.png"><img alt="../../../../_images/img0125.png" src="../../../../_images/img0125.png" style="width: 854.4000000000001px; height: 320.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Enviar para assistente de remessa</strong></p></li>
+</ul>
+<p>Botão direito na Ordem de produção, selecionar a opção <strong>Enviar para assistente de remessa</strong>, o sistema abrirá uma tela, apenas para informativo do processo.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0224.png"><img alt="../../../../_images/img0224.png" src="../../../../_images/img0224.png" style="width: 259.2px; height: 138.4px;" /></a>
+<p>Na sequência abrirá uma nova tela <strong>BR One :: Assistente de remessa</strong> para seleção dos componentes e suas respectivas quantidades.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0320.png"><img alt="../../../../_images/img0320.png" src="../../../../_images/img0320.png" style="width: 417.6px; height: 292.0px;" /></a>
+<p>Para acessar a tela é necessario ir ao menu:</p>
+<p><strong>Produção -&gt; Beneficiamento -&gt; Compras -&gt; Assistente de remessa</strong></p>
+<p>Quando uma <strong>Ordem de Produção</strong> possuir mais de um item de serviço, todos eles serão listados no assistente de remessa. Ao selecionar um item de serviço o BR One selecionará automaticamente as demais linhas correspondentes da mesma <strong>Ordem de Produção</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0416.png"><img alt="../../../../_images/img0416.png" src="../../../../_images/img0416.png" style="width: 780.8000000000001px; height: 395.20000000000005px;" /></a>
+<p>Ao gerar os documentos através do assistente de remessa o sistema mostrará uma mensagem informando que irá atualizar os depósitos da ordem de produção para o padrão cadastrado no fornecedor.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0515.png"><img alt="../../../../_images/img0515.png" src="../../../../_images/img0515.png" style="width: 563.2px; height: 182.4px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/img0616.png"><img alt="../../../../_images/img0616.png" src="../../../../_images/img0616.png" style="width: 401.6px; height: 148.0px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/img0714.png"><img alt="../../../../_images/img0714.png" src="../../../../_images/img0714.png" style="width: 401.6px; height: 124.80000000000001px;" /></a>
+<p>Documentos gerados, estão detalhados abaixo no tópico <strong>Documentos gerados para remessa</strong>.</p>
+<ul class="simple">
+<li><p><strong>Gerar NF de remessa</strong></p></li>
+</ul>
+<p>Pela opção de <strong>Gerar NF de remessa</strong>, o add-on abrirá uma tela <strong>BR One :: Seleção de componentes para remessa</strong> para que possa ser informado a quantidade que será enviada para o fornecedor. Caso tenha mais de um item serviço, todos serão levados para <strong>Pedido de compra.</strong></p>
+<a class="reference internal image-reference" href="../../../../_images/img0812.png"><img alt="../../../../_images/img0812.png" src="../../../../_images/img0812.png" style="width: 461.6px; height: 287.2px;" /></a>
+<p>Documentos gerados, estão detalhados abaixo no tópico <strong>Documentos gerados para remessa</strong>.</p>
+<ul class="simple">
+<li><p><strong>Assistente de remessa avulsa</strong></p></li>
+</ul>
+<p>Na tela <strong>BR One :: Assistente de remessa avulsa</strong> devemos selecionar o fornecedor que participará do processo de beneficiamento.
+Na tela <strong>Lista de Parceiros de negócios</strong>, só serão exibidos os parceiros de negócios conforme <strong>Configuração Cadastro Parceiro de Negócio (Fornecedor)</strong>.</p>
+<p>Após selecionar o fornecedor, deve selecionar uma filial e os componentes estocáveis, que fazem parte do beneficiamento de compra com a quantidade desejada e gerar a remessa. Após gerar deve ser vinculado na <strong>Ordem de Produção</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img0912.png"><img alt="../../../../_images/img0912.png" src="../../../../_images/img0912.png" style="width: 576.0px; height: 386.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/img1010.png"><img alt="../../../../_images/img1010.png" src="../../../../_images/img1010.png" style="width: 576.8000000000001px; height: 387.20000000000005px;" /></a>
+<p>Documentos gerados, estão detalhados abaixo no tópico <strong>Documentos gerados para remessa</strong>.</p>
+<ul class="simple">
+<li><p><strong>Vincular remessa avulsa</strong></p></li>
+</ul>
+<p>Para realizar um vínculo de remessa, é primordial gerar uma remessa pela tela <strong>“BR One :: Assistente de remessa avulsa”</strong> e após a remessa gerada é só realizar o vínculo na Ordem de Produção, com o botão direito do mouse, opção <strong>Vincular remessa avulsa</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1111.png"><img alt="../../../../_images/img1111.png" src="../../../../_images/img1111.png" style="width: 808.8000000000001px; height: 320.8px;" /></a>
+<p>Uma nova tela aparecerá para selecionar <strong>Devolução de Mercadoria</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong>, conforme sua configuração na tela de configuração de beneficiamento.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1210.png"><img alt="../../../../_images/img1210.png" src="../../../../_images/img1210.png" style="width: 440.0px; height: 240.0px;" /></a>
+<p>Deve informar as linhas do documento da remessa.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1310.png"><img alt="../../../../_images/img1310.png" src="../../../../_images/img1310.png" style="width: 623.2px; height: 275.2px;" /></a>
+<p>Após as linhas inseridas deve preencher o campo <strong>Qtde. alocada</strong> na aba <strong>Documentos -&gt; Compras/OP</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img1411.png"><img alt="../../../../_images/img1411.png" src="../../../../_images/img1411.png" style="width: 809.6px; height: 320.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Documentos gerados para remessa</strong></p></li>
+</ul>
+<p>Ao gerar a remessa através da opção <strong>Enviar para assistente de remessa</strong> e <strong>Gerar NF de remessa</strong> é adicionado o documento de <strong>Pedido de Compra</strong> para os itens de serviço do roteiro, com a utilização recuperada da tela <strong>BR One :: Configuração de beneficiamento</strong>, do campo <strong>Utilização de Serviço</strong>.</p>
+<p>O campo <strong>Depósito</strong> do pedido de compra é o mesmo depósito informado na linha do componente de serviço da <strong>Ordem de produção</strong>.</p>
+<a class="reference internal image-reference" href="../../../../_images/img158.png"><img alt="../../../../_images/img158.png" src="../../../../_images/img158.png" style="width: 672.8000000000001px; height: 404.0px;" /></a>
+<p>Na tela de <strong>BR One :: configurações de beneficiamento</strong> o parâmetro <strong>Gerar NF de entrada e dev.de NF de entrada</strong>, vai definir qual documento será usado para a remessa e o retorno, segue abaixo as opções:</p>
+<ul class="simple">
+<li><p><strong>Desmarcado:</strong> Remessa usará documento de <strong>Devolução de mercadoria</strong> e no retorno usará documento de <strong>Recebimento de mercadorias</strong>.</p></li>
+<li><p><strong>Marcado:</strong> Remessa usará documento de <strong>Dev.Nota Fiscal de Entrada</strong> e no retorno usará documento de <strong>Nota Fiscal de Entrada</strong>.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/img167.png"><img alt="../../../../_images/img167.png" src="../../../../_images/img167.png" style="width: 316.8px; height: 178.4px;" /></a>
+<p>O esboço de <strong>Devolução de Mercadoria</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong> é gerado com os <strong>componentes estocáveis</strong> selecionados e quantidade informada na tela de <strong>BR One :: Seleção de componentes para remeessa</strong>, na remessa <strong>Código de imposto</strong> deve estar preenchido e esta informação vem da tela de <strong>Determinação do código de imposto</strong>, a utilização é recuperada do parâmetro <strong>Utilização de Materiais (REMESSA)</strong> da tela de <strong>BR One :: configurações de beneficiamento</strong> e o deposito é de envio direto. Antes de adicionar o documento, é necessário confirmar o preenchimento de todos os campos.</p>
+<p>Ao adicionar o documento de remessa, será validado o parâmetro <strong>Gerar transferência de estoque por DI</strong> na tela <strong>BR One :: configurações de beneficiamento</strong>.</p>
+<p>Caso esteja marcado, o sistema irá gerar e adicionar a transferência de estoque automaticamente por DI, caso esteja desmarcado o sistema abrirá a tela do <strong>Pedido de transferência de estoque/Transferência de estoque</strong> para que o usuário adicione o documento.</p>
+<p>Caso ocorra algum erro ou inconsistência na geração do <strong>pedido/transferência</strong>, dentro do documento de <strong>Devolução de Mercadoria/Dev.Nota Fiscal de Entrada</strong> será possível reprocessar através do botão <strong>Operações</strong> &gt; <strong>RTRF - Reprocessar</strong></p>
+<a class="reference internal image-reference" href="../../../../_images/img177.png"><img alt="../../../../_images/img177.png" src="../../../../_images/img177.png" style="width: 572.8000000000001px; height: 96.80000000000001px;" /></a>
+<ul class="simple">
+<li><p><strong>Pedido de transferência/ Transferência de estoque</strong></p></li>
+</ul>
+<p>Após adicionar a <strong>Devolução de mercadoria</strong> ou <strong>Dev. Nota Fiscal de Entrada</strong>, o sistema abrirá automaticamente um <strong>Pedido de transferência de estoque</strong> ou uma <strong>Transferência de estoque</strong>, dependendo da configuração <strong>Tipo de Documento</strong>.</p>
+<p>Essa transferência é realizada do depósito padrão do item para o deposito definido como padrão do fornecedor.</p>
+<a class="reference internal image-reference" href="../../../../_images/img188.png"><img alt="../../../../_images/img188.png" src="../../../../_images/img188.png" style="width: 776.3px; height: 88.89999999999999px;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/img197.png"><img alt="../../../../_images/img197.png" src="../../../../_images/img197.png" style="width: 820.4px; height: 264.59999999999997px;" /></a>
+<p>Importante salientar que caso a <strong>Transferência de Estoque</strong> da <strong>Devolução de mercadoria</strong> não esteja adicionada, a remessa não irá ficar disponível na tela de retorno de remessa.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Boas%20pr%C3%A1ticas%20de%20saldo%20com%20itens%20de%20terceiro.html" class="btn btn-neutral float-left" title="Boas práticas de saldo com itens de terceiro" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Cancelamento%20remessa.html" class="btn btn-neutral float-right" title="Cancelamento da remessa" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+Versão 4.11.326
+~~~~~~~~~~~~~~~~
+
+**Melhorias** 
+
+- **Campo filial na ficha de análise**
+
+Com a mais recente atualização do **BR One 326**, foi implementada uma melhoria na **Ficha de Análise**. Agora, há um novo campo chamado
+**Filial**, que será responsável por exibir a filial onde a ficha de análise foi criada.
+
+.. image :: /_static/Releases\ Notes/Qualidade/V326/img38006.png

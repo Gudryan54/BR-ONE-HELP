@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal de Apontamento &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Parada de múltiplos recursos" href="Parada%20de%20m%C3%BAltiplos%20recursos.html" />
+    <link rel="prev" title="Alteração status recurso" href="Altera%C3%A7%C3%A3o%20status%20recurso.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20Insumos.html">Saída de Insumos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Produ%C3%A7%C3%A3o.html">Apontamento de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estorno%20de%20Apontamento.html">Estornos de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Refugo.html">Apontamento de Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html">Seleção de lote automática por data de vencimento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20PA.html">Saída de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20Componentes.html">Entrada de Componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Altera%C3%A7%C3%A3o%20status%20recurso.html">Alteração status recurso</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Terminal de Apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parada%20de%20m%C3%BAltiplos%20recursos.html">Parada de múltiplos recursos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Monitor%20de%20recursos.html">Monitor de recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Terminal de Apontamento</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="terminal-de-apontamento">
+<h1>Terminal de Apontamento<a class="headerlink" href="#terminal-de-apontamento" title="Link permanente para este cabeçalho"></a></h1>
+<p>O Terminal de apontamento é utilizado no chão de fabrica para realizações dos apontamentos, podendo ser utilizado pela tela ou codigo de barras.</p>
+<p>Para acessar a tela de Terminal de Apontamento é necessário ir  no menu:</p>
+<p><strong>Produção -&gt; Apontamentos -&gt; Terminal de Apontamento</strong></p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.001.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.001.png" />
+<p>Para acessar as funcionalidades do terminal, é obrigatório realizar o login.</p>
+<p>Esse processo de login é feito utilizando os dados previamente inseridos na tela de <strong>“Cadastro de Colaboradores”</strong>.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.002.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.002.png" />
+<p>Caso um usuário não cadastrado tente efetuar o login, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.003.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.003.png" />
+<p><em>BR One :: Não é possível efetuar login, usuário não encontrado.</em></p>
+<p>Para iniciar uma sessão, basta inserir o número do crachá no terminal, será pedida uma senha.</p>
+<p>Caso os dados inseridos sejam inválidos,  a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.004.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.004.png" />
+<p><em>BR One :: Crachá ou senha inválida</em></p>
+<p>Após iniciar uma sessão, o contador irá começar a funcionar.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.005.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.005.png" />
+<p>Caso o contador chegue a zero, será preciso iniciar uma nova sessão no terminal para poder continuar usando-o.</p>
+<p>Sempre que houver alguma interação com o terminal, o contador irá ficar completo de novo.</p>
+<p>O tempo de sessão do terminal é definido em <strong>“Configurações gerais”</strong>, na aba <strong>“Serviços”</strong>.</p>
+<img alt="../../../_images/image_2023_07_27T18_56_59_150Z.png" src="../../../_images/image_2023_07_27T18_56_59_150Z.png" />
+<p>-<strong>Iniciar produção</strong></p>
+<p>Nesta tela, você pode iniciar um recurso no processo de produção.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.006.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.006.png" />
+<p>Para iniciar a produção, basta fornecer o número da ordem de produção (OP) e a sequência da operação. As operações externas não serão listadas. Em seguida, será exibida uma lista de recursos disponíveis. Você poderá selecionar um recurso específico ou marcar a opção para “<strong>Iniciar todos os recursos”</strong> da lista em <em>configurações de produção, na aba Apont</em>. prod. Além disso, é possível informar a quantidade desejada de cada recurso no campo ‘Quantidade do recurso’.</p>
+<p>No campo de status, serão exibidos apenas os status que pertencerem à categoria “Produção” ou “Retrabalho”.</p>
+<p>Será realizada algumas validações para iniciar o processo de iniciar produção, sendo elas:</p>
+<p>Caso tente iniciar produção sem especificar um Ordem de produção (OP), a seguinte mensagem de erro será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.007.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.007.png" />
+<p><em>BR One :: Informe uma ordem de produção.</em></p>
+<p>Caso tente iniciar produção sem especificar uma operação, a seguinte mensagem de erro será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.008.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.008.png" />
+<p><em>BR one :: Informe uma operação.</em></p>
+<p>Caso tente iniciar produção sem especificar um status, a seguinte mensagem de erro será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.009.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.009.png" />
+<p><em>BR One :: Selecione pelo menos um recurso.</em></p>
+<p>Se a opção <strong>“Permitir edição após liberação”</strong> estiver marcada na ordem de produção (OP) e o grupo de recursos contiver grupos de recursos alternativos, na grade será exibido o grupo de recursos principal juntamente com seus grupos alternativos.</p>
+<p>Na tela de Configuração de produção, existe a opção <strong>“Quant. de peças na oper. atual não pode ser maior que quant. de peças boas na oper. anterior”</strong> que verifica se as operações estão sendo iniciadas na ordem correta. Apenas é permitido iniciar as operações sequencialmente, ou seja, se a OP (Ordem de Produção) tiver 5 operações: 10, 20, 30, 40 e 50, a primeira operação a ser iniciada será a 10, em seguida a 20 e assim por diante. Caso o usuário tente iniciar uma operação sem ter iniciado a operação anterior, será exibida a seguinte mensagem de erro:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.010.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.010.png" />
+<p><em>BR One :: Não foi realizado apontamentos para a operação anterior a esta.</em></p>
+<p>-<strong>Parar produção</strong></p>
+<p>Nesta tela, você pode parar um recurso no processo de produção.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.011.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.011.png" />
+<p>Para interromper a produção, basta fornecer a quantidade de peças boas produzidas, a quantidade de peças refugadas e o status do recurso. Em seguida, selecione qual recurso deseja encerrar.</p>
+<p>É possível interromper todos os recursos de uma determinada operação, selecionando uma linha que corresponda à operação e marcando a opção <strong>“Parar todos os recursos da operação”</strong>.</p>
+<p>No campo de status, só é possível selecionar os status que pertençam às categorias “Fora de turno”, “Parada não planejada”, “Parada planejada I” e “Parada planejada II”.</p>
+<p>Caso tente parar a produção sem informar a classificação do refugo, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.012.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.012.png" />
+<p><em>BR One :: Informe uma classificação para o refugo.</em></p>
+<p>Caso tente parar a produção sem informar o status, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.013.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.013.png" />
+<p><em>BR One :: Informe um valor para o campo ‘Status’.</em></p>
+<p>Caso tente parar a produção sem selecionar ao menos um recurso, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.014.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.014.png" />
+<p><em>BR One :: Selecione ao menos um recurso para ser encerrado.</em></p>
+<p>Caso tente selecionar a flag para <strong>“Parar todos os recursos da operação”</strong>, sem ter selecionado uma linha para o processo saber qual operação deve ser considerada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.015.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.015.png" />
+<p><em>BR One :: Selecione uma linha.</em></p>
+<p>-<strong>Alteração status recurso</strong></p>
+<p>O funcionamento dessa tela está detalhado no tópico de <strong>Apontamentos -&gt; Alteração status recurso</strong> deste documento.</p>
+<p>-<strong>Pedido de transf. de estoque</strong></p>
+<p>Nesta tela, você pode realizar um pedido de transferência de estoque.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.016.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.016.png" />
+<p>Para realizar um pedido de transferência de estoque, é necessário especificar o depósito de origem no cabeçalho. Nas linhas do pedido, é importante indicar o item a ser transferido, o depósito de destino e a quantidade desejada.</p>
+<p>Além disso, existe a opção de selecionar os itens de uma Ordem de Produção (OP) utilizando a função <strong>“Copiar de”</strong> no rodapé da tela. Isso permite agilizar o processo ao aproveitar os itens já especificados em um OP existente.</p>
+<p>Caso tente adicionar um pedido de transferência de estoque sem especificar o depósito de origem, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.017.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.017.png" />
+<p><em>BR One :: Informe o depósito de origem</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque sem linhas, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.018.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.018.png" />
+<p><em>BR One :: Insira pelo menos uma linha</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem o número do item, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.019.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.019.png" />
+<p><em>BR One :: Informe o número do item</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem o depósito de destino, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.020.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.020.png" />
+<p><em>BR One :: Informe o depósito de destino.</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem a quantidade, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.021.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.021.png" />
+<p><em>BR One :: A quantidade deve ser maior que zero</em></p>
+<p>A quantidade que será carregada nas linhas do formulário de pedido de transferência de estoque do BR One é a quantidade da linha da OP subtraída das quantidades informadas nas solicitações e transferências de estoque para aquela OP, até que a quantidade das transações ultrapasse a quantidade da linha. Quando isso ocorrer, a quantidade carregada nas linhas do formulário será igual a um.</p>
+<p><strong>Observação:</strong> Quando um pedido de transferência é copiado para uma transferência, faturada parcialmente e essa transferência é cancelada, a quantidade cancelada é somada a quantidade em aberto para geração de novas transações, pois o processo nativo do B1 não soma a quantidade cancelada no pedido de transferência.</p>
+<p><strong>Exemplo:</strong></p>
+<ul class="simple">
+<li><p>Linha da OP: 50 unidades</p></li>
+<li><p>Pedido de transferência de estoque: 5 unidades em aberto</p></li>
+<li><p>Transferência de estoque copiado da Pedido de transf. de estoque: 3 unidades</p></li>
+<li><p>Pedido de transf. de estoque: 2 unidades em aberto</p></li>
+<li><p>Transferência de estoque Cancelada: -3 unidades</p></li>
+<li><p>Pedido de transf. de estoque: 2 unidades em aberto</p></li>
+<li><p>Linha da OP: 48 unidades</p></li>
+</ul>
+<p>-<strong>Transferência de estoque</strong></p>
+<p>Essa opção de transferência de estoque pode não ser exibida caso o usuário possua a licença <strong>“Indirect User Access”</strong> sem outra licença que permita utilizar telas nativas do SAP.</p>
+<p>Nesta tela, você pode realizar uma transferência de estoque.</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.022.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.022.png" />
+<p>Para realizar uma transferência de estoque, é necessário especificar o depósito de origem no cabeçalho. Nas linhas do pedido, é importante indicar o item a ser transferido, o depósito de destino e a quantidade desejada.</p>
+<p>Além disso, existe a opção de selecionar os itens de uma Ordem de Produção (OP) utilizando a função <strong>“Copiar de”</strong> no rodapé da tela. Isso permite agilizar o processo ao aproveitar os itens já especificados em um OP existente.</p>
+<p>Caso tente adicionar um pedido de transferência de estoque sem especificar o depósito de origem, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.017.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.017.png" />
+<p><em>BR One :: Informe o depósito de origem</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque sem linhas, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.018.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.018.png" />
+<p><em>BR One :: Insira pelo menos uma linha</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem o número do item, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.019.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.019.png" />
+<p><em>BR One :: Informe o número do item</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem o depósito de destino, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.020.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.020.png" />
+<p><em>BR One :: Informe o depósito de destino.</em></p>
+<p>Caso tente adicionar um pedido de transferência de estoque com alguma linha sem a quantidade, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.021.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.021.png" />
+<p><em>BR One :: A quantidade deve ser maior que zero</em></p>
+<p>A quantidade que será carregada nas linhas do formulário de pedido de transferência de estoque do BR One é a quantidade da linha da OP subtraída das quantidades informadas nas solicitações e transferências de estoque para aquela OP, até que a quantidade das transações ultrapasse a quantidade da linha. Quando isso ocorrer, a quantidade carregada nas linhas do formulário será igual a um.</p>
+<p><strong>Observação:</strong> Quando um pedido de transferência é copiado para uma transferência, faturada parcialmente e essa transferência é cancelada, a quantidade cancelada é somada a quantidade em aberto para geração de novas transações, pois o processo nativo do B1 não soma a quantidade cancelada no pedido de transferência.</p>
+<p><strong>Exemplo:</strong></p>
+<ul class="simple">
+<li><p>Linha da OP: 50 unidades</p></li>
+<li><p>Transferência de estoque: 5 unidades</p></li>
+<li><p>Transferência de estoque Cancelada: -5 unidades</p></li>
+<li><p>Linha da OP: 50 unidades</p></li>
+</ul>
+<p>-<strong>Entrada de produto acabado</strong></p>
+<p>O funcionamento dessa tela está detalhado no tópico de <strong>Apontamentos -&gt; Entrada de produto acabado</strong> deste documento..</p>
+<p><strong>Saída de insumos</strong></p>
+<p>O funcionamento dessa tela está detalhado no tópico de <strong>Apontamentos -&gt; Saída de insumos</strong> deste documento.</p>
+<p><strong>Saída de produto acabado</strong></p>
+<p>O funcionamento dessa tela está detalhado no tópico de <strong>Apontamentos -&gt; Saída de produto acabado</strong> deste documento.</p>
+<p><strong>Entrada de componentes</strong></p>
+<p>O funcionamento dessa tela está detalhado no tópico de <strong>Apontamentos -&gt; Entrada de componentes</strong> deste documento.</p>
+<p>-<strong>Sair</strong></p>
+<p>Ao clicar no botão <strong>“Sair”</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.023.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.023.png" />
+<p><em>BR One :: Será efetuado logoff do terminal de apontamento. Continuar?</em></p>
+<p>Ao clicar em <strong>“Sim”</strong>, será feito logoff do usuário conectado. Ao clicar em <strong>“Não”</strong>, o usuário continuará conectado.</p>
+<p>Caso o usuário clique em Sair sem estar conectado, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.024.png" src="../../../_images/Aspose.Words.be5e13a7-82c5-42e8-b2c6-64e9566c4180.024.png" />
+<p><em>BR One :: Nenhum usuário conectado.</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Altera%C3%A7%C3%A3o%20status%20recurso.html" class="btn btn-neutral float-left" title="Alteração status recurso" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Parada%20de%20m%C3%BAltiplos%20recursos.html" class="btn btn-neutral float-right" title="Parada de múltiplos recursos" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

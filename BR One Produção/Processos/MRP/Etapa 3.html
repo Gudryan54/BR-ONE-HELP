@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etapa 3 &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Etapa 4" href="Etapa%204.html" />
+    <link rel="prev" title="Etapa 2" href="Etapa%202.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20MRP.html">Configurações MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html">Configurações do Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20Roteiro%20MRP.html">Configurações do Cadastro do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Previs%C3%A3o%20de%20consumo.html">Previsão por consumo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20MRP.html">Assistente de MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%201.html">Etapa 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%202.html">Etapa 2</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Etapa 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%204.html">Etapa 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%205.html">Etapa 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Combina%C3%A7%C3%B5es%20MRP.html">Combinações MRP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Etapa 3</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="etapa-3">
+<h1>Etapa 3<a class="headerlink" href="#etapa-3" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na <strong>‘Etapa 3’</strong>, os depósitos poderão ser marcados ou desmarcados, de acordo com a necessidade do usuário. E poderão ser executados por:</p>
+<ul class="simple">
+<li><p>Empresa</p></li>
+<li><p>Depósito</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0120.png"><img alt="../../../_images/0120.png" class="align-center" src="../../../_images/0120.png" style="width: 486.0px; height: 63.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ambas as execuções <strong>‘Por Empresa’</strong> e <strong>‘Por Depósito’</strong> poderão selecionar as fontes de dados:</p>
+<ul class="simple">
+<li><p><strong>Com estoque existente:</strong> Verifica o saldo inicial dos depósitos selecionados.</p></li>
+<li><p><strong>Com demanda:</strong> Verifica apenas os documentos de demanda para os depósitos selecionados (Pedido de venda, Nota fiscal de entrega futura e Previsão de Venda).</p></li>
+<li><p><strong>Com fornecimento:</strong> Verifica apenas os documentos de fornecimento para os depósitos selecionados (Solicitação de compra, pedido de compra, Nota fiscal de recebimento futuro e Ordem de produção).</p></li>
+<li><p><strong>Depósito:</strong> indica o depósito que o MRP irá utilizar nos cálculos.</p></li>
+<li><p><strong>Descrição:</strong> indica a descrição do depósito selecionado.</p></li>
+</ul>
+<section id="executar-por-empresa">
+<h2>Executar por ‘Empresa’<a class="headerlink" href="#executar-por-empresa" title="Link permanente para este cabeçalho"></a></h2>
+<p>Será analisado o estoque, as demandas e os suprimentos por empresa, ou seja, será analisada a soma dos depósitos de acordo com a empresa, e com isso, as recomendações serão realizadas sempre para o seu depósito em questão, e caso o depósito padrão não esteja correspondente à filial logada, é verificado na tela de <strong>‘Configurações de depósitos para referência’</strong>, e caso não tenha a configuração, é recuperado o depósito padrão da filial logada para recomendação de estoque mínimo.</p>
+<a class="reference internal image-reference" href="../../../_images/0218.png"><img alt="../../../_images/0218.png" class="align-center" src="../../../_images/0218.png" style="width: 626.4000000000001px; height: 451.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="executar-por-deposito">
+<h2>Executar por ‘Depósito’<a class="headerlink" href="#executar-por-deposito" title="Link permanente para este cabeçalho"></a></h2>
+<p>Será analisado o estoque, as demandas e os suprimentos por depósito unitário, ou seja, será analisado individualmente cada depósito, e com isso, as recomendações serão realizadas sempre para o seu depósito em questão.</p>
+<a class="reference internal image-reference" href="../../../_images/0318.png"><img alt="../../../_images/0318.png" class="align-center" src="../../../_images/0318.png" style="width: 625.6px; height: 452.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="considerar-posicoes-no-deposito">
+<h2>Considerar posições no depósito:<a class="headerlink" href="#considerar-posicoes-no-deposito" title="Link permanente para este cabeçalho"></a></h2>
+<p>O parâmetro <strong>‘Considerar posições no depósito’</strong>, quando marcado, obriga o MRP a considerar as quantidades dos depósitos por posição.</p>
+<p>Ao habilitar o parâmetro ‘Considerar posições no depósito’, é adicionado a coluna <strong>‘posição no depósito’</strong> que indica o nome da posição para todos os depósitos que possuem posições configuradas.</p>
+<a class="reference internal image-reference" href="../../../_images/0412.png"><img alt="../../../_images/0412.png" class="align-center" src="../../../_images/0412.png" style="width: 764.8000000000001px; height: 502.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Etapa%202.html" class="btn btn-neutral float-left" title="Etapa 2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Etapa%204.html" class="btn btn-neutral float-right" title="Etapa 4" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

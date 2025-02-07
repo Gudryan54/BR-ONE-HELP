@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conferência de embarque &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Inventário" href="../../Invent%C3%A1rio/Invent%C3%A1rio.html" />
+    <link rel="prev" title="Fila de separação" href="../FilaDeSepara%C3%A7%C3%A3o/FilaDeSepara%C3%A7%C3%A3o.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20WMS.html#primeiros-passos">Primeiros passos</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20WMS.html#detalhes-dos-processos">Detalhes dos processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../M%C3%B3duloseMenus/M%C3%B3duloseMenus.html">Módulos e menus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Produ%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o.html">Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Recebimento/Recebimento.html">Recebimento</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../Expedi%C3%A7%C3%A3o.html">Expedição</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../FilaDeSepara%C3%A7%C3%A3o/FilaDeSepara%C3%A7%C3%A3o.html">Fila de separação</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Conferência de embarque</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../Invent%C3%A1rio/Invent%C3%A1rio.html">Inventário</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20WMS.html#configuracoes-adicionais">Configurações adicionais</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20WMS.html#versao-atual-43">Versão atual: 43</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+          <li class="breadcrumb-item"><a href="../Expedi%C3%A7%C3%A3o.html">Expedição</a></li>
+      <li class="breadcrumb-item active">Conferência de embarque</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="conferencia-de-embarque">
+<h1>Conferência de embarque<a class="headerlink" href="#conferencia-de-embarque" title="Link permanente para este cabeçalho"></a></h1>
+<div style="text-align: center;">
+  <img src="../../../../_images/WMS-AcessoConferênciaEmbarque.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao acessar o menu Conferência de embarque, todas as Notas Fiscais de Saída criadas no SAP serão listadas.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../../_images/WMS-AcessandoDocConferênciaEmbarq.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Você pode acessar os documentos listados selecionando manualmente, realizando a leitura via código de barras do serial do documento ou digitando o serial no campo de pesquisa.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../../_images/WMS-SeleçãodeitemConfEmbarq.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Após acessar o documento, os itens serão listados. Selecione o item manualmente ou bipando o código do item/código de barras.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../../_images/WMS-LeituraConfEmbarq.gif" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<p>Uma vez selecionado o item, serão exibidos todos os lotes/séries definidos no documento. Faça a conferência manualmente ou bipando via código de barras o lote/série.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div style="text-align: center;">
+  <img src="../../../../_images/WMS-ConclusãoConfEmbarq.png" style="width: 300px;" />
+</div><div class="line-block">
+<div class="line"></div>
+</div>
+<img alt="../../../../_images/WMS-NFSa%C3%ADdaConfEmbarq.png" class="align-center" src="../../../../_images/WMS-NFSa%C3%ADdaConfEmbarq.png" />
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Concluindo a conferência de embarque no aplicativo, na Nota Fiscal de Saída, os campos ‘WMS – Confirmação embarque?’ e ‘Status expedição’ serão alterados para ‘Sim’ e ‘Embarcado’ respectivamente.</p>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p>A conclusão da conferência de embarque será concluída somente após a confirmação de todos os itens e lotes/séries; caso contrário, não será possível finalizar a conferência de embarque até que todos lotes/séries sejam confirmados.</p>
+</div>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Configurações do WMS quando ativas, podem adicionar comportamentos no menu Conferência de embarque, clique <strong>aqui</strong> e saiba mais sobre as configurações.</p>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../FilaDeSepara%C3%A7%C3%A3o/FilaDeSepara%C3%A7%C3%A3o.html" class="btn btn-neutral float-left" title="Fila de separação" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../../Invent%C3%A1rio/Invent%C3%A1rio.html" class="btn btn-neutral float-right" title="Inventário" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

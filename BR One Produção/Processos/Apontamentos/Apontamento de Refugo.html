@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apontamento de Refugo &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Seleção de lote automática por data de vencimento" href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html" />
+    <link rel="prev" title="Estornos de Produção" href="Estorno%20de%20Apontamento.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20PA.html">Entrada de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20Insumos.html">Saída de Insumos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Produ%C3%A7%C3%A3o.html">Apontamento de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estorno%20de%20Apontamento.html">Estornos de Produção</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Apontamento de Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html">Seleção de lote automática por data de vencimento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20PA.html">Saída de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20Componentes.html">Entrada de Componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Altera%C3%A7%C3%A3o%20status%20recurso.html">Alteração status recurso</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Terminal%20de%20apontamento.html">Terminal de Apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parada%20de%20m%C3%BAltiplos%20recursos.html">Parada de múltiplos recursos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Monitor%20de%20recursos.html">Monitor de recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Apontamento de Refugo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="apontamento-de-refugo">
+<h1>Apontamento de Refugo<a class="headerlink" href="#apontamento-de-refugo" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para realização do apontamento de refugo, é necessário ter autorização de  Apontamento de refugo, assim apenas os usuários com permissão conseguiram cadastrar esse apontamento, para impedir usuários não autorizados a realizarem o processo.</p>
+<p>Quando um usuário sem autorização tentar abrir a tela <strong>“BR One :: Apontamento de refugo”</strong> ou estornar um apontamento, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.002.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.002.png" />
+<p><em>BR One :: Usuário sem permissão para executar esta ação</em></p>
+<p>Para acessar a tela <strong>“BR One :: Apontamento de Refugo”</strong> é necessário ir no menu:</p>
+<p><strong>Produção -&gt; Apontamento de Refugo</strong></p>
+<p>Assim como na tela <strong>“BR One :: Entrada de produto acabado”</strong>, deve ser informado o <strong>“Nº ordem produção”</strong> e a <strong>“Quantidade”</strong> a ser apontada.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.007.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.007.png" />
+<p><strong>Validações da tela:</strong></p>
+<ul class="simple">
+<li><p>Os campos <strong>“Nº ordem produção”</strong>, <strong>“Quantidade”</strong> e <strong>“Classificação de refugo”</strong> são obrigatórios;</p></li>
+<li><p>A quantidade informada não poderá ser igual ou menor que 0;</p></li>
+<li><p>A quantidade não pode ser maior que o campo <strong>“Total apontado”</strong>;</p></li>
+</ul>
+<p>Caso caia em alguma validação acima, a mensagem referente à validação será exibida:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.008.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.008.png" />
+<p><em>BR One :: Informe uma ordem de produção.</em></p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.009.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.009.png" />
+<p><em>BR One :: Informe uma quantidade maior que zero.</em></p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.010.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.010.png" />
+<p><em>BR One :: Informe uma quantidade menor ou igual que a quantidade disponível: 2,5</em></p>
+<p>Apenas estarão disponíveis para seleção as OPs que estiverem liberadas e que tenham entrada de produto acabado realizada. No campo <strong>“Classificação de refugo”</strong> serão exibidos os refugos cadastrados na tela <strong>“BR One :: Classificação de refugo”</strong>.</p>
+<p>Para itens administrados por lote em OPs de Retrabalho, é necessário definir manualmente o lote que será utilizado no processo. Para isso, deve-se apertar o botões “CTRL+TAB” quando o campo de quantidade estiver selecionado, dessa forma a tela de seleção de lote será exibida e o usuário poderá definir o lote que utilizará no processo.</p>
+<p>Após preencher todos os campos necessários e clicar em Adicionar. Caso o apontamento seja inserido com sucesso, as seguintes mensagens serão exibidas:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.012.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.012.png" />
+<p><em>BR One :: Aguarde…</em></p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.013.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.013.png" />
+<p><em>BR One :: Operação realizada com sucesso.</em></p>
+<p>Para determinar quais componentes da OP participarão do processo de entrada por explosão, foi criada a flag <strong>“Estornar item no apontamento de refugo”</strong> que se encontra na aba <strong>“Estoque”</strong> do cadastro do item (Estoque &gt; Dados do cadastro do item).</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.003.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.003.png" />
+<p>Caso ao realizar o apontamento de refugo nenhum componente da OP esteja com esse flag marcado, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.004.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.004.png" />
+<p><em>BR One :: Não existem componentes configurados para serem estornados para o estoque. Continuar?</em></p>
+<p>Caso seja clicado em <strong>“Sim”</strong>, será feita a saída para o item pai e nenhuma entrada para os componentes.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.005.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.005.png" />
+<p>Se for clicado em <strong>“Não”</strong>, o apontamento de refugo não será realizado, dando oportunidade para o usuário configurar os componentes.</p>
+<p>Ao clicar em <strong>“Não”</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.006.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.006.png" />
+<p><em>BR One :: Erro ao gerar estorno para o item x. Ação foi cancelada pelo usuário.</em></p>
+<p>Ao inserir o apontamento, será feita uma saída de mercadorias do item pai da OP (estornando a entrada de PA) e uma entrada de mercadoria com os componentes que tenham a flag <strong>“Estornar item no apontamento de refugo”</strong> marcada e que o método de baixa seja “Baixa por explosão” (reinserindo no estoque a baixa por explosão).</p>
+<p><strong>Exemplo:</strong></p>
+<p>A OP tem uma quantidade planejada de 8 peças, onde foi realizado uma entrada de PA de 3 itens do item pai <strong>“pa nenhum”</strong> e uma baixa por explosão de 3 itens do componente <strong>“item_nenhum_01”</strong>.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.014.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.014.png" />
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.015.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.015.png" />
+<p>Na tela de aportamento de refugo, ao selecionar a OP, os campos <strong>“Qtde. total (boas)”</strong>, <strong>“Qtde. total refugo”</strong> e <strong>“Saldo restante”</strong> serão carregados:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.016.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.016.png" />
+<p>O campo <strong>“Qtde. total (boas)”</strong> é a soma dos itens apontados como produto acabado (peças boas), ou seja, o total de entradas de PA realizadas para a OP.</p>
+<p>O campo <strong>“Qtde. total refugo”</strong> é a quantidade já apontada como refugo.</p>
+<p>O campo <strong>“Saldo restante”</strong> é a quantidade que ainda pode ser apontada como refugo, ou seja, <strong>“Qtde. total (boas) - Qtde. total refugo”</strong>.</p>
+<p>Utilizando a imagem acima como exemplo, foi realizada uma entrada de PA de 3, um apontamento de refugo de 0 e o saldo restante de 3 (3 - 0).</p>
+<p>Como exemplo de apontamento, será feito um apontamento de 1. Ao adicionar o apontamento, será feito o estorno da entrada de PA (saída de mercadorias) e uma entrada do componente que teve baixa por explosão.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.017.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.017.png" />
+<p>Obs.: Neste exemplo, caso o componente <strong>“item_nenhum”</strong> estivesse com o flag <strong>“Estornar item no apontamento de refugo”</strong> desmarcado, não seria realizado o lançamento da entrada de mercadoria nº 1308 da imagem acima.</p>
+<p>Ao realizar o apontamento de refugo para itens do cabeçalho da OP que sejam de lote (saída), se houver apenas 1 lote para o item, será feito o refugo sem precisar selecionar o lote.</p>
+<p>Caso o item tenha mais de 1 lote, a tela de seleção de lote será aberta. Se for para componentes da OP que sejam de lote (entrada), a escolha do lote será feita pela ordem <strong>“Último que saiu é o primeiro a entrar”</strong> (essa regra vale apenas para saídas com vínculo com a OP utilizada).</p>
+<p>Ao realizar o apontamento de refugo será considerado o saldo do lote que tiver sido feito entrada de PA e não o saldo total do item.</p>
+<p><strong>Exemplo:</strong></p>
+<p>A ordem de produção 988 tem como item pai o “PA_LOTE_01” com quantidade planejada de 50 peças, onde ele não possui nenhuma peça em estoque.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.018.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.018.png" />
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.019.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.019.png" />
+<p>Ao realizar a entrada de PA de 25 peças, será criado o número de lote <strong>L01</strong>.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.020.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.020.png" />
+<p>E ao carregar a OP no apontamento de refugo, o saldo restante será a quantidade que foi entrada no processo de entrada de PA, ou seja, 25 peças.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.021.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.021.png" />
+<p>Mas, se por acaso essa quantidade for transferida ou utilizada em outro processo, o saldo restante do refugo será a quantidade em estoque referente ao número de lote L01. No exemplo, será realizada uma transferência de estoque do 01 para o 01-DP02 de 5 peças.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.022.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.022.png" />
+<p>Então, ao carregar a OP novamente na tela “BR One :: Apontamento de refugo”, o saldo restante será de 20 peças, pois ele considera o estoque do lote.</p>
+<p>Se houvesse uma entrada para um lote x de 100 unidades para esse item, ainda estaria disponível apenas 20, pois o lote L01 possui apenas 20.</p>
+<p>O saldo restante apenas será alterado caso haja uma entrada para o lote L01.</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.023.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.023.png" />
+<p>Ao apontarmos um refugo de 10 peças na OP 988, a aba custos será atualizada. No campo <strong>“Quantidade refugo”</strong> da OP estará a quantidade apontada como refugo, podendo consultar os detalhes através do botão […].</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.024.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.024.png" />
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.025.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.025.png" />
+<p>No campo detalhes dos custos de componentes e custo atual do PA também será possível visualizar o apontamento:</p>
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.026.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.026.png" />
+<img alt="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.027.png" src="../../../_images/Aspose.Words.c982062b-4f90-49ac-8587-de3effdadd8d.027.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Estorno%20de%20Apontamento.html" class="btn btn-neutral float-left" title="Estornos de Produção" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html" class="btn btn-neutral float-right" title="Seleção de lote automática por data de vencimento" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

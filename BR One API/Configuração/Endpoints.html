@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurar Endpoints &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Configurar “appsettings.json”" href="appsettings.html" />
+    <link rel="prev" title="BR One API" href="../../BR%20One%20API.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20API.html#configuracao">Configuração</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Configurar Endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="appsettings.html">Configurar “appsettings.json”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Login%20API.html">Login API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-producao">Apontamento de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#apontamento-de-refugo">Apontamento de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#colaboradores">Colaboradores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#entrada-de-produto-acabado">Entrada de Produto Acabado</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#status-dos-recursos">Status dos Recursos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#classificacoes-de-refugo">Classificações de Refugo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#saida-de-insumos">Saída de Insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20API.html#ficha-de-analise">Ficha de Análise</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20API.html">BR One API</a></li>
+      <li class="breadcrumb-item active">Configurar Endpoints</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="configurar-endpoints">
+<h1>Configurar Endpoints<a class="headerlink" href="#configurar-endpoints" title="Link permanente para este cabeçalho"></a></h1>
+<p>Este documento explica os passos necessários para realizar a
+configuração dos endpoints da API com a base que será utiliza na API.</p>
+<p><strong>1. Extração dos Endpoints da API</strong></p>
+<p>Antes de iniciar a configuração, é necessário baixar e extrair os
+endpoints compatíveis com o tipo de banco de dados utilizado pela sua
+empresa.</p>
+<p><strong>2. Importação dos Endpoints no Extension Manager</strong></p>
+<p>Após a extração dos arquivos, é necessário importar os endpoints no SAP
+Business One utilizando o Extension Manager.</p>
+<p><strong>Passos:</strong></p>
+<ol class="arabic simple">
+<li><p>Dentro do Extension Manager, acesse a aba <strong>Extensions</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image1.png"><img alt="../../_images/image1.png" class="align-center" src="../../_images/image1.png" style="width: 785.4px; height: 228.6px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Utilize o botão <strong>Importar</strong>, e na sequência o botão <strong>Browse</strong> para
+buscar o endpoint desejado:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image2.png"><img alt="../../_images/image2.png" class="align-center" src="../../_images/image2.png" style="width: 619.8px; height: 370.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Selecione o arquivo de endpoint desejado e clique em <strong>Upload</strong>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" class="align-center" src="../../_images/image3.png" style="width: 643.3px; height: 392.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>O upload do endpoint será realizado, nesse momento, basta clicar em
+<strong>Next</strong> e <strong>Finish:</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image4.png"><img alt="../../_images/image4.png" class="align-center" src="../../_images/image4.png" style="width: 614.4000000000001px; height: 392.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/image5.png"><img alt="../../_images/image5.png" class="align-center" src="../../_images/image5.png" style="width: 593.6px; height: 376.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/image6.png"><img alt="../../_images/image6.png" class="align-center" src="../../_images/image6.png" style="width: 585.6px; height: 376.8px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Confirme a importação do endpoint na aba e verifique se o foi
+adicionado com sucesso na lista de extensões.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image7.png"><img alt="../../_images/image7.png" class="align-center" src="../../_images/image7.png" style="width: 621.5999999999999px; height: 213.5px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>3. Vínculo dos Endpoints da API</strong></p>
+<p>Para que os endpoints funcionem corretamente, é necessário vinculá-los
+às bases de dados desejadas.</p>
+<p><strong>Passos:</strong></p>
+<ol class="arabic simple">
+<li><p>No Extension Manager do SAP, acesse a aba <strong>Company Assignment:</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image8.png"><img alt="../../_images/image8.png" class="align-center" src="../../_images/image8.png" style="width: 766.8px; height: 352.2px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Selecione a base que deseja utilizar no vínculo do endpoint e clique
+em <strong>Assign:</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image9.png"><img alt="../../_images/image9.png" class="align-center" src="../../_images/image9.png" style="width: 541.8px; height: 354.59999999999997px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Escolha o endpoint que deseja vincular a base selecionada e clique em
+<strong>Next:</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image10.png"><img alt="../../_images/image10.png" class="align-center" src="../../_images/image10.png" style="width: 514.5px; height: 331.09999999999997px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Avance as telas utilizando o botão <strong>Next</strong> e para finalizar clique
+em <strong>Finish:</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image11.png"><img alt="../../_images/image11.png" class="align-center" src="../../_images/image11.png" style="width: 518.0px; height: 338.09999999999997px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/image12.png"><img alt="../../_images/image12.png" class="align-center" src="../../_images/image12.png" style="width: 516.6px; height: 330.4px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/image13.png"><img alt="../../_images/image13.png" class="align-center" src="../../_images/image13.png" style="width: 518.0px; height: 333.2px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Após finalizar o vínculo, o mesmo será exibido na grade de extensões
+vinculadas na base:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/image14.png"><img alt="../../_images/image14.png" class="align-center" src="../../_images/image14.png" style="width: 657.15px; height: 191.1px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Teste o endpoint vinculado para garantir para garantir o correto
+funcionamento.</p></li>
+</ol>
+<p><strong>Remoção de endpoint da base ou do Extension Manager</strong></p>
+<p>É possível desvincular o endpoint de uma base, para isso, deve-se
+acessar a aba <strong>Company Assignment</strong>, selecionar a base desejada e na
+lista das extensões vinculadas, selecionar o endpoint desejado e clicar
+em <strong>Unassign</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/image15.png"><img alt="../../_images/image15.png" class="align-center" src="../../_images/image15.png" style="width: 716.4px; height: 189.0px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>É possível remover o endpoint do <strong>Extension Manager</strong>, para isso,
+deve-se acessar a aba <strong>Extensions</strong>, selecionar o endpoint desejado e
+clicar em <strong>Remove</strong>.</p>
+<a class="reference internal image-reference" href="../../_images/image16.png"><img alt="../../_images/image16.png" class="align-center" src="../../_images/image16.png" style="width: 527.8px; height: 256.2px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../../BR%20One%20API.html" class="btn btn-neutral float-left" title="BR One API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="appsettings.html" class="btn btn-neutral float-right" title="Configurar “appsettings.json”" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saída de insumos para itens de baixo custo &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Simulador de Custos" href="../Simulador%20de%20custo/Simulador%20de%20Custos.html" />
+    <link rel="prev" title="Atualização de Custo/Hora" href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20Roteiro.html">Manutenção de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20de%20OPs.html">Manutenção de OPs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20exclus%C3%A3o%20e%20cancelamento%20de%20componentes.html">Assistente de exclusão e cancelamento de componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html">Atualização de grupo de recursos dos roteiros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html">Atualização de Custo/Hora</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Saída de insumos para itens de baixo custo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Saída de insumos para itens de baixo custo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="saida-de-insumos-para-itens-de-baixo-custo">
+<h1>Saída de insumos para itens de baixo custo<a class="headerlink" href="#saida-de-insumos-para-itens-de-baixo-custo" title="Link permanente para este cabeçalho"></a></h1>
+<p>Essa tela tem relação direta com a configuração <em>Realizar saída dos insumos com baixa manual ao fechar OP</em>.</p>
+<p>Para os itens que não tenha sido possível realizar a saída pelo baixo custo, a saída poderá ser realizada em momento posterior, pois no assistente é possível visualizar os insumos que ainda não foram realizados as baixas manuais no momento do fechamento da OP.</p>
+<p>Para acessar a tela de Saída de insumos para itens de baixo custo é necessário ir no menu:</p>
+<p><strong>Produção -&gt; Manutenção -&gt; Saída de insumos para itens de baixo custo</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.001.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.001.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.001.png" style="width: 876.8000000000001px; height: 536.8000000000001px;" /></a>
+<p>Há 3 opções de filtros:</p>
+<p>-<strong>Nº do item:</strong> traz apenas o item selecionado;
+-<strong>Depósito:</strong> traz apenas itens com o depósito selecionado;
+-<strong>Apenas custo maior que zero:</strong> traz apenas itens cujo custo seja maior que 0.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.002.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.002.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.002.png" style="width: 770.4000000000001px; height: 475.20000000000005px;" /></a>
+<p>Para realizar a saída para os itens, ele deve ser selecionado e o usuário deve clicar em <em>Processar</em>. Se o item selecionado tiver o custo igual a 0, a saída não será realizada e a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.003.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.003.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.003.png" style="width: 262.40000000000003px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Nenhuma linha com custo maior que zero foi selecionada.</em></p>
+<p>Caso o item tenha custo maior que 0, ao processar, o resultado do processamento será exibido na tela <em>Resultados do processo</em>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.004.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.004.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.004.png" style="width: 772.8000000000001px; height: 484.0px;" /></a>
+<p>Ao dar duplo clique no começo da linha do item, a tela de detalhes do item será aberta, informando a data de fechamento da OP, o nº da OP, Nº item PA, Nº item, Descrição e Qtd. pendente.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.005.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.005.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.005.png" style="width: 771.2px; height: 156.8px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.006.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.006.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.006.png" style="width: 757.6px; height: 318.40000000000003px;" /></a>
+<p>No momento que o usuário selecionar a linha do insumo ao qual ele deseja processar, o sistema verificará se o valor de <strong>Custo</strong> na linha selecionada atende às regras do SAP para a realização da Saída de mercadorias:</p>
+<p>Caso <strong>não</strong> atenda, os seguintes passos deverão ocorrer:</p>
+<p>Na imagem abaixo foi selecionada uma linha em que o Custo é de <strong>0,004737</strong>. Para este caso, não será possível realizar uma Saída de mercadorias, pois o sistema só consegue realizá-la caso o valor de custo seja maior ou igual à 0,005.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.007.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.007.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.007.png" style="width: 874.4000000000001px; height: 534.4px;" /></a>
+<p>A seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.008.jpeg"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.008.jpeg" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.008.jpeg" style="width: 512.0px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Não é possível processar o insumo x’, custo atual de x é menor que o custo necessário de x.</em></p>
+<p>Caso <strong>atenda</strong>, a Saída de mercadorias será realizada com sucesso e será apontada na tela Resultados do processo todas as linhas que foram processadas e seus respectivos documentos na coluna <em>Nº doc</em>:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.009.png"><img alt="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.009.png" src="../../../_images/Aspose.Words.871478d4-b299-4856-b817-eff8e03d4a99.009.png" style="width: 879.2px; height: 474.40000000000003px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html" class="btn btn-neutral float-left" title="Atualização de Custo/Hora" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Simulador%20de%20custo/Simulador%20de%20Custos.html" class="btn btn-neutral float-right" title="Simulador de Custos" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

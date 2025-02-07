@@ -1,0 +1,17 @@
+Versão 4.11.330
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Melhoria**
+
+- **Tratativa para a flag "Usar taxa de câmbio do documento durante a cópia para o doc. de destino" para as despesas adicionais SAP**
+
+Na atualização mais recente do **BR One 330**, estamos aprimorando o processo de importação para garantir mais precisão e controle. Com a nova atualização, 
+o parâmetro **“Usar taxa de câmbio do documento durante a cópia para o doc. de destino”** foi ajustado para que as despesas adicionais mantenham seus valores corretos, 
+evitando alterações indesejadas. Essa melhoria traz mais segurança e eficiência na gestão de documentos e despesas no processo de importação.
+
+- **Erro ao tentar gerar LCM das despesas de importação**
+
+Na atualização mais recente do **BR One 330**, estamos aprimorando o processo de importação para garantir mais precisão e controle. Nesta versão do **BR One**, 
+implementamos um ajuste na geração do LCM de despesas de nacionalização, que agora recupera de forma assertiva a conta contábil referente aos impostos do processo que serão pagos pela própria empresa.

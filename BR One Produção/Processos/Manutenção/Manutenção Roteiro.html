@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manutenção de Roteiro &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Manutenção de OPs" href="Manuten%C3%A7%C3%A3o%20de%20OPs.html" />
+    <link rel="prev" title="Make to Order" href="../MaketoOrder/Make%20to%20Order.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Manutenção de Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Manuten%C3%A7%C3%A3o%20de%20OPs.html">Manutenção de OPs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20exclus%C3%A3o%20e%20cancelamento%20de%20componentes.html">Assistente de exclusão e cancelamento de componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20grupo%20de%20recursos%20dos%20roteiros.html">Atualização de grupo de recursos dos roteiros</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o%20de%20Custo%20Hora.html">Atualização de Custo/Hora</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20insumos%20para%20itens%20de%20baixo%20custo.html">Saída de insumos para itens de baixo custo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Manutenção de Roteiro</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="manutencao-de-roteiro">
+<h1>Manutenção de Roteiro<a class="headerlink" href="#manutencao-de-roteiro" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para utilizar a funcionalidade de manutenção de roteiro é necessário ter autorização.</p>
+<p>Localizada na tela Autorizações:</p>
+<p><strong>Administração -&gt; Inicialização do sistema -&gt; Autorizações -&gt; Autorizações gerais</strong>, no caminho <strong>Autorização do usuário -&gt; BR One Autorizações -&gt; BR One Produção -&gt; Manutenção de roteiros</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img0129.png"><img alt="../../../_images/img0129.png" src="../../../_images/img0129.png" style="width: 686.4000000000001px; height: 460.0px;" /></a>
+<p>Se o usuário não tiver a autorização e tentar abrir a tela de manutenção, será exibida a seguinte tela:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.003.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.003.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.003.png" style="width: 481.6px; height: 163.20000000000002px;" /></a>
+<p>Para que esta autorização funcione, é necessário que a opção <strong>“Desativar verificação de autorização do DI API”</strong>, localizada em: <strong>Geral &gt; Desativar verificação de autorização do DI API</strong>, esteja configurada <strong>sem autorização</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.004.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.004.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.004.png" style="width: 481.6px; height: 20.0px;" /></a>
+<p>Para acessar a tela de <strong>“BR One :: Manutenção de Roteiro”</strong> é necessário ir pelo menu:</p>
+<p><strong>Produção -&gt; Manutenção -&gt; Manutenção de Roteiro</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img0229.png"><img alt="../../../_images/img0229.png" src="../../../_images/img0229.png" style="width: 814.4000000000001px; height: 445.6px;" /></a>
+<p>O campo <strong>Tipo de manutenção</strong> possui as seguintes opções:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.007.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.007.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.007.png" style="width: 408.8px; height: 176.0px;" /></a>
+<p>É necessário selecionar uma opção. Caso nenhuma seja selecionada e o usuário clicar em <strong>Filtrar</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img0324.png" src="../../../_images/img0324.png" />
+<p><em>BR One :: O campo ‘Tipo da manutenção’ deve ser preenchido.</em></p>
+<p>Ao clicar em <strong>Filtrar</strong> para qualquer <strong>Tipo de manutenção</strong>, todas as linhas pertencentes ao roteiro serão exibidas. Da mesma forma, ao aplicar o filtro <strong>Roteiro De/Até</strong>, todos os roteiros serão apresentados.</p>
+<img alt="../../../_images/img0420.png" src="../../../_images/img0420.png" />
+<p>Com duplo clique na coluna <strong>Selecionado</strong>, todas as linhas serão marcadas ou desmarcadas.</p>
+<p>As seguintes colunas (quando exibidas) permitem ordenação, caso seja dado um duplo clique nelas:</p>
+<ul class="simple">
+<li><p>Roteiro</p></li>
+<li><p>Descrição roteiro</p></li>
+<li><p>Item roteiro</p></li>
+<li><p>Descrição item roteiro</p></li>
+<li><p>Componente</p></li>
+<li><p>Descrição componente</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0519.png"><img alt="../../../_images/img0519.png" src="../../../_images/img0519.png" style="width: 1091.0px; height: 49.0px;" /></a>
+<p>No campo <strong>Operação</strong> não serão exibidas operações do tipo <strong>externa</strong>.</p>
+<p>Quando estiver processando cada um dos tipos de manutenção, serão exibidas as telas abaixo, recuperando os roteiros e atualizando cada roteiro:</p>
+<img alt="../../../_images/img0620.png" src="../../../_images/img0620.png" />
+<p><em>Recuperando linha roteiro [x/x]</em></p>
+<img alt="../../../_images/img0718.png" src="../../../_images/img0718.png" />
+<p><em>Atualizando roteiro [x/x]</em></p>
+<ul class="simple">
+<li><p><strong>Alterar componente</strong></p></li>
+</ul>
+<img alt="../../../_images/img0815.png" src="../../../_images/img0815.png" />
+<p>Para alterar um componente do roteiro, ele deve ser informado no campo <strong>Componente</strong> antes de filtrar.
+Caso não seja informado, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img0915.png" src="../../../_images/img0915.png" />
+<p><em>BR One :: Para alteração de componentes dos roteiros é obrigatório utilizar o filtro de componentes.</em></p>
+<p>Apenas serão exibidos os <strong>componentes</strong> que estiverem nas linhas dos roteiros, e que não fazem parte de uma operação <strong>externa</strong>.</p>
+<p>Quando selecionar um <strong>componente</strong> e filtrar, na área de <strong>“Novo componente”</strong>, o campo <strong>Forma de cálculo</strong> será preenchido automaticamente com o tipo de cálculo associado a esse componente.
+É importante notar que o componente que será alterado deve ser do mesmo tipo.</p>
+<img alt="../../../_images/img1014.png" src="../../../_images/img1014.png" />
+<p>No CFL do <strong>Novo componente</strong> apenas serão carregados os itens que possuam a mesma <strong>Forma de cálculo</strong> e que sejam itens de <strong>estoque</strong>.</p>
+<p>Ao clicar em <strong>Processar</strong> e não tiver nenhuma linha selecionada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img1115.png" src="../../../_images/img1115.png" />
+<p><em>BR One :: Nenhuma linha selecionada.</em></p>
+<p>Ao clicar em <strong>Processar</strong> e não tiver nenhum item informado no campo <strong>Novo componente</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img1214.png" src="../../../_images/img1214.png" />
+<p><em>BR One :: O campo “Novo componente” deve ser preenchido.</em></p>
+<p>No exemplo abaixo, será trocado o componente <strong>MP.0001*</strong> que é do fator peso para o componente <strong>COMP.0004</strong>, que também é <strong>Fator peso do PA</strong>.</p>
+<img alt="../../../_images/img1314.png" src="../../../_images/img1314.png" />
+<img alt="../../../_images/img1415.png" src="../../../_images/img1415.png" />
+<p>Ao clicar em <strong>Processar</strong>, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img1512.png" src="../../../_images/img1512.png" />
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em <strong>Sim</strong>, as linhas selecionadas serão processadas e o log será aberto:</p>
+<img alt="../../../_images/img1610.png" src="../../../_images/img1610.png" />
+<p>O componente <strong>MP.0001*</strong> foi substituido por <strong>COMP.0004</strong>, e suas quantidades permaneceram as mesmas.</p>
+<img alt="../../../_images/img179.png" src="../../../_images/img179.png" />
+<p>Quando o parâmetro <strong>Cálculo automático de componente (Peso/Fator PA)</strong> das configurações de produção estiver desmarcado, apenas será exibido o campo de <strong>Novo componente</strong> para ser alterado.</p>
+<img alt="../../../_images/img1810.png" src="../../../_images/img1810.png" />
+<ul class="simple">
+<li><p><strong>Excluir componente</strong></p></li>
+</ul>
+<img alt="../../../_images/img199.png" src="../../../_images/img199.png" />
+<p>Para excluir um componente do roteiro, deve ser informado no campo <strong>Componente</strong> antes de filtrar. Caso não seja informado, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img208.png" src="../../../_images/img208.png" />
+<p><em>BR One :: Para exclusão de componentes dos roteiros é obrigatório utilizar o filtro de componentes.</em></p>
+<p>Após informar o <strong>Componente</strong>, basta selecionar as linhas que deseja excluir e clicar em <strong>Processar</strong>.</p>
+<img alt="../../../_images/img217.png" src="../../../_images/img217.png" />
+<p>No exemplo acima, será excluída a linha do componente <strong>COMP.0003</strong> do roteiro.</p>
+<img alt="../../../_images/img227.png" src="../../../_images/img227.png" />
+<p>Ao clicar em <strong>Processar</strong> e não tiver nenhuma linha selecionada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img237.png" src="../../../_images/img237.png" />
+<p><em>BR One :: Nenhuma linha selecionada.</em></p>
+<p>Caso tenha sido selecionada ao menos uma linha, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/img1512.png" src="../../../_images/img1512.png" />
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em <strong>Sim</strong>, as linhas selecionadas serão processadas e o log será aberto:</p>
+<a class="reference internal image-reference" href="../../../_images/img247.png"><img alt="../../../_images/img247.png" src="../../../_images/img247.png" style="width: 656.0px; height: 274.40000000000003px;" /></a>
+<p>O componente <strong>COMP.0003</strong> foi excluído do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/img258.png"><img alt="../../../_images/img258.png" src="../../../_images/img258.png" style="width: 656.0px; height: 324.8px;" /></a>
+<p>Quando o parâmetro <strong>Cálculo automático de componente (Peso/Fator PA)</strong> das configurações de produção estiver desmarcado, o campo <strong>Forma de cálculo</strong> não será exibido.</p>
+<img alt="../../../_images/img267.png" src="../../../_images/img267.png" />
+<ul class="simple">
+<li><p><strong>Incluir componente</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/Img00001.png"><img alt="../../../_images/Img00001.png" src="../../../_images/Img00001.png" style="width: 420.8px; height: 360.0px;" /></a>
+<p>Quando o tipo for <strong>Incluir componente</strong>, serão exibidos novos campos no lado direito, que serão utilizados para informar o novo componente.</p>
+<p>Ao clicar em <strong>Filtrar</strong> sem ter informado nenhuma operação, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img286.png"><img alt="../../../_images/img286.png" src="../../../_images/img286.png" style="width: 378.40000000000003px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Para Aleteração de componentes nos roteiros é obrigatório utilizar o filtro de operação.</em></p>
+<p>Caso o usuário tente filtrar sem que o novo componente tenha sido informado, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img1214.png"><img alt="../../../_images/img1214.png" src="../../../_images/img1214.png" style="width: 248.0px; height: 10.4px;" /></a>
+<p><em>BR One :: O campo “Novo componente” deve ser preenchido.</em></p>
+<p>Após escolher uma <strong>operação</strong>, um <strong>novo componente</strong> e <strong>filtrar</strong>, poderá ser informada a quantidade, quantidade fixa e depósito.</p>
+<p>Caso o usuário tente inserir uma quantidade menor ou igual a 0, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/IMG123.png"><img alt="../../../_images/IMG123.png" src="../../../_images/IMG123.png" style="width: 312.40000000000003px; height: 14.0px;" /></a>
+<p><em>BR One :: O campo “Quantidade” deve ser maior que zero.</em></p>
+<p>Caso o usuário tente inserir uma quantidade menor ou igual a 0 no campo Quantidade fixa, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.040.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.040.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.040.png" style="width: 477.6px; height: 24.0px;" /></a>
+<p><em>BR One :: O campo “Quantidade fixa” deve ser maior ou igual a zero.</em></p>
+<p>Se todos os campos estiverem corretos, ao aplicar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.041.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.041.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.041.png" style="width: 371.20000000000005px; height: 27.200000000000003px;" /></a>
+<p><em>BR One :: Valores aplicados nas linhas selecionadas.</em></p>
+<p>Caso não tenha sido filtrado antes de aplicar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.042.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.042.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.042.png" style="width: 321.6px; height: 20.8px;" /></a>
+<p><em>BR One :: Nenhum registro para ser alterado.</em></p>
+<p>Caso seja clicado em Aplicar e não tenha nenhuma linha selecionada, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img1115.png"><img alt="../../../_images/img1115.png" src="../../../_images/img1115.png" style="width: 164.0px; height: 12.0px;" /></a>
+<p><em>BR One :: Nenhuma linha selecionada.</em></p>
+<p>Caso o depósito selecionado seja de uma filial diferente da filial da linha selecionada, ao aplicar, a seguinte mensagem será exibida e o campo de depósito ficará em branco:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.044.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.044.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.044.png" style="width: 481.6px; height: 144.0px;" /></a>
+<p><em>BR One :: A coluna “Depósito” das linhas que possuírem filial diferente do depósito selecionado não serão preenchidas.</em></p>
+<p>Caso nas linhas, ao processar, a quantidade da linha selecionada seja menor ou igual a zero, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.045.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.045.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.045.png" style="width: 481.6px; height: 16.0px;" /></a>
+<p><em>BR One :: O valor da coluna “Quantidade” deve ser maior que zero. [Roteiro: “x”]</em></p>
+<p>Caso o campo quantidade fixa das linhas selecionadas esteja com um valor negativo, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.046.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.046.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.046.png" style="width: 481.6px; height: 14.4px;" /></a>
+<p><em>BR One :: O valor da coluna “Quantidade fixa” deve ser maior ou igual a zero. [Roteiro: “x”]</em></p>
+<p>No campo Depósito, serão exibidos apenas os depósitos da mesma filial da linha e que não sejam de envio direto. Caso o campo depósito das linhas selecionadas esteja vazio, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.047.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.047.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.047.png" style="width: 481.6px; height: 19.200000000000003px;" /></a>
+<p><em>BR One :: A coluna “Depósito” deve ser preenchida. [Roteiro: “x”]</em></p>
+<p>Caso o componente a ser incluído já exista na mesma operação do roteiro, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.048.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.048.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.048.png" style="width: 481.6px; height: 16.0px;" /></a>
+<p><em>BR One :: O componente “x” já existe na operação “x”. [Roteiro “x”]</em></p>
+<p>O método de baixa preenchido no roteiro para os componentes será recuperado no cadastro do item.</p>
+<p>Quando o novo componente tiver a forma de cálculo Fator peso do PA, o campo Fator peso substituirá o campo Quantidade base, que será utilizado para cálculos do tipo Manual e Fator divisor.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.049.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.049.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.049.png" style="width: 481.6px; height: 110.4px;" /></a>
+<p>Caso o novo componente tenha fator peso, e ao processar, a coluna Fator peso não tenha sido preenchida, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.050.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.050.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.050.png" style="width: 481.6px; height: 21.6px;" /></a>
+<p><em>BR One :: O valor da coluna “Fator peso” deve ser maior que zero. [Roteiro: “x”]</em></p>
+<p>Caso o novo componente tenha fator A/B/C, ou seja manual, ao processar, a coluna Quantidade base não tenha sido preenchida, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.051.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.051.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.051.png" style="width: 481.6px; height: 20.0px;" /></a>
+<p><em>BR One :: O valor da coluna “Quantidade base” deve ser maior que zero. [Roteiro: “x”]</em></p>
+<p>No exemplo abaixo, será incluído o item A3 no roteiro A1-01, operação 10 –Trefilação, com o fator peso, quantidade fixa e depósito informados:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.052.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.052.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.052.png" style="width: 481.6px; height: 128.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.053.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.053.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.053.png" style="width: 481.6px; height: 283.2px;" /></a>
+<p>Ao processar, caso tenha sido selecionada ao menos uma linha, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.054.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.054.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.054.png" style="width: 481.6px; height: 148.8px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, as linhas selecionadas serão processadas e o log será aberto:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.055.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.055.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.055.png" style="width: 481.6px; height: 202.4px;" /></a>
+<p>Ao ser incluído na linha, os cálculos do fator serão feitos automaticamente.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.056.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.056.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.056.png" style="width: 481.6px; height: 202.4px;" /></a>
+<p>Confira os detalhes dos cálculos nos tópicos Cálculo manual, Cálculo Peso e Cálculo Fator A/B/C . <strong>EXEMPLO- ESCREVER—</strong></p>
+<p>Quando a configuração de cálculo automático não estiver ativa, o processo será o mesmo, porém, o campo Forma de cálculo e os campos referentes ao cálculo automático não serão exibidos:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.057.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.057.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.057.png" style="width: 481.6px; height: 78.4px;" /></a>
+<p>-<strong>Alterar quantidade componente</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.058.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.058.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.058.png" style="width: 481.6px; height: 246.4px;" /></a>
+<p>Quando o tipo for Alterar quantidade componente, serão exibidos novos campos no lado direito, que serão utilizados para atualizar as quantidades e depósito das linhas. Apenas poderão ser selecionados depósitos que não sejam de envio direto.</p>
+<p>Caso seja clicado em Filtrar sem ter informado nenhum componente, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.059.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.059.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.059.png" style="width: 481.6px; height: 15.200000000000001px;" /></a>
+<p><em>BR One :: Para alteração de quantidade de componentes dos roteiros é obrigatório utilizar o filtro de componentes.</em></p>
+<p>Ao filtrar, serão carregados todos os roteiros que tiverem o item na linha, e nos campos Quantidade base ou Fator peso, Quantidade fixa e Depósito serão carregados de acordo com os valores que estiverem no roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.060.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.060.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.060.png" style="width: 481.6px; height: 100.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.061.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.061.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.061.png" style="width: 481.6px; height: 156.0px;" /></a>
+<p>De acordo com a forma de cálculo do componente, serão exibidos os campos referentes à forma de cálculo, como Fator peso para forma de cálculo do tipo Fator peso do PA e Quantidade base para forma de cálculo do tipo Fator divisor A/B/C.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.062.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.062.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.062.png" style="width: 481.6px; height: 110.4px;" /></a>
+<p>Após escolher um componente e filtrar, poderá ser informado novos valores para os campos quantidade, quantidade fixa e depósito.</p>
+<p>Caso o usuário tente inserir uma quantidade menor ou igual a 0, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.063.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.063.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.063.png" style="width: 415.20000000000005px; height: 23.200000000000003px;" /></a>
+<p><em>BR One :: O campo “Quantidade” deve ser maior que zero.</em></p>
+<p>Caso o usuário tente inserir uma quantidade menor ou igual a 0 no campo Quantidade fixa, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.064.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.064.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.064.png" style="width: 472.0px; height: 22.400000000000002px;" /></a>
+<p><em>BR One :: O campo “Quantidade fixa” deve ser maior ou igual a zero.</em></p>
+<p>Caso não tenha sido filtrado antes de aplicar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.065.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.065.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.065.png" style="width: 324.8px; height: 25.6px;" /></a>
+<p><em>BR One :: Nenhum registro para ser alterado.</em></p>
+<p>Caso seja clicado em Aplicar e não tenha nenhuma linha selecionada, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.066.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.066.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.066.png" style="width: 291.2px; height: 22.400000000000002px;" /></a>
+<p><em>BR One :: Nenhuma linha selecionada.</em></p>
+<p>Caso o depósito selecionado seja de uma filial diferente da filial da linha selecionada, ao aplicar, a seguinte mensagem será exibida e o campo de depósito ficará em branco:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.067.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.067.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.067.png" style="width: 481.6px; height: 144.0px;" /></a>
+<p><em>BR One :: A coluna “Depósito” das linhas que possuírem filial diferente do depósito selecionado não serão preenchidas.</em></p>
+<p>Caso nas linhas, ao processar, a quantidade da linha selecionada seja menor ou igual a zero, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.068.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.068.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.068.png" style="width: 481.6px; height: 15.200000000000001px;" /></a>
+<p><em>BR One :: O valor da coluna “Quantidade” deve ser maior que zero. [Roteiro: “x”]</em></p>
+<p>Caso o campo quantidade fixa das linhas selecionadas esteja com um valor negativo, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.069.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.069.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.069.png" style="width: 481.6px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: O valor da coluna “Quantidade fixa” deve ser maior ou igual a zero. [Roteiro: “x”]</em></p>
+<p>No campo Depósito, serão exibidos apenas os depósitos da mesma filial da linha e que não sejam de envio direto. Caso o campo depósito das linhas selecionadas esteja vazio, a seguinte mensagem será exibida:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.070.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.070.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.070.png" style="width: 481.6px; height: 18.400000000000002px;" /></a>
+</div></blockquote>
+<p><em>BR One :: A coluna “Depósito” deve ser preenchida. [Roteiro: “x”]</em></p>
+<p>No exemplo abaixo, serão alteradas as quantidades do item A4 no roteiro A2-01.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.071.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.071.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.071.png" style="width: 481.6px; height: 101.60000000000001px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.072.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.072.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.072.png" style="width: 481.6px; height: 137.6px;" /></a>
+<p>Ao processar, caso tenha sido selecionada ao menos uma linha, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.073.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.073.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.073.png" style="width: 481.6px; height: 142.4px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, as linhas selecionadas serão processadas e o log será aberto:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.074.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.074.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.074.png" style="width: 481.6px; height: 200.0px;" /></a>
+<p>Ao ser incluído na linha, as quantidades serão alteradas e os cálculos do fator serão feitos automaticamente.</p>
+<p>Confira os detalhes dos cálculos nos tópicos Cálculo manual, Cálculo Peso e Cálculo Fator A/B/C.</p>
+<p>Quando a configuração de cálculo automático não estiver ativa, o processo será o mesmo, porém, o campo Forma de cálculo e os campos referentes ao cálculo automático não serão exibidos:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.075.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.075.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.075.png" style="width: 481.6px; height: 146.4px;" /></a>
+<p>-<strong>Alterar fator peso componente</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.076.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.076.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.076.png" style="width: 481.6px; height: 252.0px;" /></a>
+<p>Quando o tipo for Alterar fator peso componente, serão exibidos novos campos no lado direito, que serão utilizados para atualizar o fator peso, quantidade fixa e depósito dos componentes que possuem a quantidade calculada pelo Peso do PA (“Forma de cálculo no roteiro” = “Fator Peso do PA”). Apenas poderão ser selecionados depósitos que não sejam de envio direto.</p>
+<p>Ao clicar no botão Filtrar, serão recuperados todos os componentes que são calculados pelo “Fator Peso do PA” para todos os roteiros que estejam no filtro de roteiros “De/Para”, ou no filtro por grupo de item.</p>
+<p><strong>Exemplo:</strong> para a linha selecionada, os campos Fator peso e Quantidade fixa serão alterador para 2,50.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.077.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.077.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.077.png" style="width: 481.6px; height: 119.2px;" /></a>
+<p>Ao clicar em Processar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.078.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.078.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.078.png" style="width: 481.6px; height: 141.6px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e as quantidades serão alteradas.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.079.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.079.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.079.png" style="width: 481.6px; height: 200.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.080.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.080.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.080.png" style="width: 481.6px; height: 152.0px;" /></a>
+<p>-<strong>Alterar peso item roteiro</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.081.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.081.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.081.png" style="width: 481.6px; height: 256.0px;" /></a>
+<p>Quando o tipo for Alterar peso item roteiro, serão exibidos novos campos no lado direito, que serão utilizados para atualizar o fator peso, quantidade fixa e depósito dos componentes que possuem a quantidade calculada pelo Peso do PA (“Forma de cálculo no roteiro” = “Fator Peso do PA”). Apenas poderão ser selecionados depósitos que não sejam de envio direto.
+<strong>Exemplo:</strong> para a linha selecionada, o campo Peso roteiro será alterado para 25,52.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.082.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.082.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.082.png" style="width: 481.6px; height: 111.2px;" /></a>
+<p>Ao clicar em Processar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.083.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.083.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.083.png" style="width: 481.6px; height: 146.4px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e o peso será alterado no cadastro do item e na linha do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.084.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.084.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.084.png" style="width: 481.6px; height: 201.60000000000002px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.085.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.085.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.085.png" style="width: 481.6px; height: 167.20000000000002px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.086.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.086.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.086.png" style="width: 481.6px; height: 340.8px;" /></a>
+<p>-<strong>Alterar fator divisor A item roteiro</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.087.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.087.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.087.png" style="width: 481.6px; height: 247.20000000000002px;" /></a>
+<p>Quando o tipo for Alterar fator divisor A item roteiro, Os componentes que possuem o cálculo de quantidade pelos “Fatores Divisores do PA (A/B/C)” (“Forma de cálculo no roteiro” = “Fator Divisor A/B/C do PA”), terão suas quantidades alteradas.</p>
+<p>Para alterar o fator divisor, nenhum filtro é necessário. Ao clicar no botão Filtrarserão recuperados todos os itens que possuem um roteiro padrão vinculado.</p>
+<p><strong>Exemplo:</strong> para a linha selecionada, o campo Fator divisor A será alterado para 12,32.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.088.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.088.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.088.png" style="width: 481.6px; height: 105.60000000000001px;" /></a>
+<p>Ao clicar em Processar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.089.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.089.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.089.png" style="width: 481.6px; height: 144.8px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e o peso será alterado no cadastro do item e na linha do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.090.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.090.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.090.png" style="width: 481.6px; height: 197.60000000000002px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.091.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.091.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.091.png" style="width: 481.6px; height: 168.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Alterar fator divisor B item roteiro</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.092.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.092.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.092.png" style="width: 864.8000000000001px; height: 455.20000000000005px;" /></a>
+<p>Quando o tipo for Alterar fator divisor A item roteiro, Os componentes que possuem o cálculo de quantidade pelos “Fatores Divisores do PA (A/B/C)” (“Forma de cálculo no roteiro” = “Fator Divisor A/B/C do PA”, terão suas quantidades alteradas.</p>
+<p>Para alterar o fator divisor, nenhum filtro é necessário. Ao clicar no botão Filtrarserão recuperados todos os itens que possuem um roteiro padrão vinculado.</p>
+<p><strong>Exemplo:</strong> para a linha selecionada, o campo Fator divisor A será alterado para 12,32.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.093.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.093.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.093.png" style="width: 481.6px; height: 106.4px;" /></a>
+<p>Ao clicar em Processar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.094.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.094.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.094.png" style="width: 481.6px; height: 145.6px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e o peso será alterado no cadastro do item e na linha do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.095.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.095.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.095.png" style="width: 481.6px; height: 198.4px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.096.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.096.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.096.png" style="width: 481.6px; height: 163.20000000000002px;" /></a>
+<ul class="simple">
+<li><p><strong>Alterar fator divisor C item roteiro</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.097.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.097.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.097.png" style="width: 481.6px; height: 254.4px;" /></a>
+<p>Quando o tipo for Alterar fator divisor A item roteiro, Os componentes que possuem o cálculo de quantidade pelos “Fatores Divisores do PA (A/B/C)” (“Forma de cálculo no roteiro” = “Fator Divisor A/B/C do PA”, terão suas quantidades alteradas.</p>
+<p>Para alterar o fator divisor, nenhum filtro é necessário. Ao clicar no botão Filtrarserão recuperados todos os itens que possuem um roteiro padrão vinculado.</p>
+<p><strong>Exemplo:</strong> para a linha selecionada, o campo Fator divisor A será alterado para 12,32.</p>
+<a class="reference internal image-reference" href="../../../_images/TB1000.png"><img alt="../../../_images/TB1000.png" src="../../../_images/TB1000.png" style="width: 481.6px; height: 103.2px;" /></a>
+<p>Ao clicar em Processar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.099.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.099.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.099.png" style="width: 481.6px; height: 146.4px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e o peso será alterado no cadastro do item e na linha do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.100.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.100.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.100.png" style="width: 481.6px; height: 146.4px;" /></a>
+<p><em>BR One :: O processo é irreversível. Continuar?</em></p>
+<p>Ao clicar em Sim, o processamento será feito e o peso será alterado no cadastro do item e na linha do roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.101.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.101.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.101.png" style="width: 481.6px; height: 200.8px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.102.png"><img alt="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.102.png" src="../../../_images/Aspose.Words.2393f4a7-c6a4-4525-bbea-463182dadf7a.102.png" style="width: 481.6px; height: 166.4px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../MaketoOrder/Make%20to%20Order.html" class="btn btn-neutral float-left" title="Make to Order" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Manuten%C3%A7%C3%A3o%20de%20OPs.html" class="btn btn-neutral float-right" title="Manutenção de OPs" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

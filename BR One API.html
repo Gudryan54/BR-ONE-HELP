@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BR One API &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="next" title="Configurar Endpoints" href="BR%20One%20API/Configura%C3%A7%C3%A3o/Endpoints.html" />
+    <link rel="prev" title="Previsões" href="BR%20One%20Franquias/Estoque/Previs%C3%B5es.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">BR One API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuracao">Configuração</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/Endpoints.html">Configurar Endpoints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/appsettings.html">Configurar “appsettings.json”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/Login%20API.html">Login API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#apontamento-de-producao">Apontamento de Produção</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Apontamentos%20de%20produ%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Busca de apontamentos de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Adiciona%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Adiciona um apontamento de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20somente%20ordens%20de%20produ%C3%A7%C3%A3o%20que%20podem%20receber%20apontamentos.html">Busca somente ordens de produção que podem receber apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20opera%C3%A7%C3%B5es%20que%20possam%20receber%20apontamentos.html">Busca de operações que possam receber apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20apontamentos%20conforme%20par%C3%A2metros%20especificados.html">Busca de apontamentos conforme parâmetros especificados</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20detalhes%20do%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Busca Detalhes do apontamento de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Atualiza%C3%A7%C3%A3o%20de%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Atualização de um apontamento de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Exclus%C3%A3o%20de%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Exclusão de um apontamento de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Conclus%C3%A3o%20dos%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Conclusão dos apontamentos de produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Exclus%C3%A3o%20de%20linhas%20dos%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Exclusão de linhas dos apontamentos de produção</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#apontamento-de-refugo">Apontamento de Refugo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Refugo/Adiciona%20apontamento%20de%20refugo.html">Adiciona apontamento de refugo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#colaboradores">Colaboradores</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Colaboradores/Busca%20de%20Colaboradores.html">Busca de colaboradores</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#entrada-de-produto-acabado">Entrada de Produto Acabado</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Entrada%20de%20Produto%20Acabado/Adiciona%20Entrada%20de%20Produto%20Acabado.html">Adiciona Entrada de Produto Acabado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Entrada%20de%20Produto%20Acabado/Entrada%20de%20PA%20com%20Desvio.html">Entrada de PA com desvio na OP de Retrabalho</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ordem-de-producao">Ordem de Produção</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o%20Introdu%C3%A7%C3%A3o.html">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Busca%20OP%20com%20pagina%C3%A7%C3%A3o.html">Busca Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Fecha%20OP.html">Fechar Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Libera%20OP.html">Liberar Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Atualiza%20OP.html">Atualização de Ordens de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Adiciona%20OP.html">Adiciona uma Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Adiciona%20linha%20de%20conteudo%20na%20OP.html">Adiciona uma linha no GRID da Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Exclui%20linha%20de%20conteudo%20na%20OP.html">Exclui uma linha de conteúdo na Ordem de Produção</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#status-dos-recursos">Status dos Recursos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Status%20dos%20Recursos/Busca%20Status%20dos%20Recursos.html">Busca Status dos Recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#classificacoes-de-refugo">Classificações de Refugo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Classifica%C3%A7%C3%A3o%20de%20Refugo/Busca%20Classifica%C3%A7%C3%B5es%20de%20Refugo.html">Busca Classificações de Refugo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#saida-de-insumos">Saída de Insumos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Saida%20de%20insumos/Adiciona%20Sa%C3%ADda%20de%20insumos.html">Adiciona Saída de Insumos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Saida%20de%20insumos/Adiciona%20Sa%C3%ADda%20de%20Insumos%20com%20Itens%20Alternativos.html">Adiciona Saída de Insumos com Itens Alternativos</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ficha-de-analise">Ficha de Análise</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Busca%20de%20Fichas%20de%20An%C3%A1lise%20usando%20o%20N%C2%BA%20An%C3%A1lise.html">Busca de Fichas de Análise usando o Nº Análise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Busca%20de%20Fichas%20de%20An%C3%A1lise%20usando%20o%20DocNum.html">Busca de Fichas de Análise usando o DocNum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização da Ficha de Análise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20do%20Status%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização do Status da Ficha de Análise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20da%20quantidade%20do%20Palete%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização da quantidade do Palete da Ficha de Análise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BR One API</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="br-one-api">
+<h1>BR One API<a class="headerlink" href="#br-one-api" title="Link permanente para este cabeçalho"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="configuracao">
+<h2>Configuração<a class="headerlink" href="#configuracao" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/Endpoints.html">Configurar Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/appsettings.html">Configurar “appsettings.json”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Configura%C3%A7%C3%A3o/Login%20API.html">Login API</a></li>
+</ul>
+</div>
+</section>
+<section id="apontamento-de-producao">
+<h2>Apontamento de Produção<a class="headerlink" href="#apontamento-de-producao" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Apontamentos%20de%20produ%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Busca de apontamentos de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Adiciona%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Adiciona um apontamento de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20somente%20ordens%20de%20produ%C3%A7%C3%A3o%20que%20podem%20receber%20apontamentos.html">Busca somente ordens de produção que podem receber apontamentos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20opera%C3%A7%C3%B5es%20que%20possam%20receber%20apontamentos.html">Busca de operações que possam receber apontamentos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20de%20apontamentos%20conforme%20par%C3%A2metros%20especificados.html">Busca de apontamentos conforme parâmetros especificados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Busca%20detalhes%20do%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Busca Detalhes do apontamento de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Atualiza%C3%A7%C3%A3o%20de%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Atualização de um apontamento de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Exclus%C3%A3o%20de%20um%20apontamento%20de%20produ%C3%A7%C3%A3o.html">Exclusão de um apontamento de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Conclus%C3%A3o%20dos%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Conclusão dos apontamentos de produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Produ%C3%A7%C3%A3o/Exclus%C3%A3o%20de%20linhas%20dos%20apontamentos%20de%20produ%C3%A7%C3%A3o.html">Exclusão de linhas dos apontamentos de produção</a></li>
+</ul>
+</div>
+</section>
+<section id="apontamento-de-refugo">
+<h2>Apontamento de Refugo<a class="headerlink" href="#apontamento-de-refugo" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Apontamento%20de%20Refugo/Adiciona%20apontamento%20de%20refugo.html">Adiciona apontamento de refugo</a></li>
+</ul>
+</div>
+</section>
+<section id="colaboradores">
+<h2>Colaboradores<a class="headerlink" href="#colaboradores" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Colaboradores/Busca%20de%20Colaboradores.html">Busca de colaboradores</a></li>
+</ul>
+</div>
+</section>
+<section id="entrada-de-produto-acabado">
+<h2>Entrada de Produto Acabado<a class="headerlink" href="#entrada-de-produto-acabado" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Entrada%20de%20Produto%20Acabado/Adiciona%20Entrada%20de%20Produto%20Acabado.html">Adiciona Entrada de Produto Acabado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Entrada%20de%20Produto%20Acabado/Entrada%20de%20PA%20com%20Desvio.html">Entrada de PA com desvio na OP de Retrabalho</a></li>
+</ul>
+</div>
+</section>
+<section id="ordem-de-producao">
+<h2>Ordem de Produção<a class="headerlink" href="#ordem-de-producao" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Ordem%20de%20Produ%C3%A7%C3%A3o%20Introdu%C3%A7%C3%A3o.html">Ordem de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Busca%20OP%20com%20pagina%C3%A7%C3%A3o.html">Busca Ordens de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Fecha%20OP.html">Fechar Ordens de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Libera%20OP.html">Liberar Ordens de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Atualiza%20OP.html">Atualização de Ordens de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Adiciona%20OP.html">Adiciona uma Ordem de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Adiciona%20linha%20de%20conteudo%20na%20OP.html">Adiciona uma linha no GRID da Ordem de Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ordem%20de%20Produ%C3%A7%C3%A3o/Exclui%20linha%20de%20conteudo%20na%20OP.html">Exclui uma linha de conteúdo na Ordem de Produção</a></li>
+</ul>
+</div>
+</section>
+<section id="status-dos-recursos">
+<h2>Status dos Recursos<a class="headerlink" href="#status-dos-recursos" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Status%20dos%20Recursos/Busca%20Status%20dos%20Recursos.html">Busca Status dos Recursos</a></li>
+</ul>
+</div>
+</section>
+<section id="classificacoes-de-refugo">
+<h2>Classificações de Refugo<a class="headerlink" href="#classificacoes-de-refugo" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Classifica%C3%A7%C3%A3o%20de%20Refugo/Busca%20Classifica%C3%A7%C3%B5es%20de%20Refugo.html">Busca Classificações de Refugo</a></li>
+</ul>
+</div>
+</section>
+<section id="saida-de-insumos">
+<h2>Saída de Insumos<a class="headerlink" href="#saida-de-insumos" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Saida%20de%20insumos/Adiciona%20Sa%C3%ADda%20de%20insumos.html">Adiciona Saída de Insumos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Saida%20de%20insumos/Adiciona%20Sa%C3%ADda%20de%20Insumos%20com%20Itens%20Alternativos.html">Adiciona Saída de Insumos com Itens Alternativos</a></li>
+</ul>
+</div>
+</section>
+<section id="ficha-de-analise">
+<h2>Ficha de Análise<a class="headerlink" href="#ficha-de-analise" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Busca%20de%20Fichas%20de%20An%C3%A1lise%20usando%20o%20N%C2%BA%20An%C3%A1lise.html">Busca de Fichas de Análise usando o Nº Análise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Busca%20de%20Fichas%20de%20An%C3%A1lise%20usando%20o%20DocNum.html">Busca de Fichas de Análise usando o DocNum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização da Ficha de Análise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20do%20Status%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização do Status da Ficha de Análise</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API/Ficha%20de%20Analise/Atualiza%C3%A7%C3%A3o%20da%20quantidade%20do%20Palete%20da%20Ficha%20de%20An%C3%A1lise.html">Atualização da quantidade do Palete da Ficha de Análise</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="BR%20One%20Franquias/Estoque/Previs%C3%B5es.html" class="btn btn-neutral float-left" title="Previsões" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="BR%20One%20API/Configura%C3%A7%C3%A3o/Endpoints.html" class="btn btn-neutral float-right" title="Configurar Endpoints" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

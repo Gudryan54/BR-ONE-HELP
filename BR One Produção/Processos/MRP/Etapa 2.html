@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etapa 2 &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Etapa 3" href="Etapa%203.html" />
+    <link rel="prev" title="Etapa 1" href="Etapa%201.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20MRP.html">Configurações MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20do%20Cadastro%20do%20item%20-%20MRP.html">Configurações do Cadastro do Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Configura%C3%A7%C3%B5es%20Roteiro%20MRP.html">Configurações do Cadastro do Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Previs%C3%A3o%20de%20consumo.html">Previsão por consumo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20MRP.html">Assistente de MRP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%201.html">Etapa 1</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Etapa 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%203.html">Etapa 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%204.html">Etapa 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Etapa%205.html">Etapa 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Combina%C3%A7%C3%B5es%20MRP.html">Combinações MRP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Etapa 2</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="etapa-2">
+<h1>Etapa 2<a class="headerlink" href="#etapa-2" title="Link permanente para este cabeçalho"></a></h1>
+<p>Na <strong>Etapa 2</strong> são configurados o horizonte de planejamento e as preferências de exibição da execução do MRP.</p>
+<section id="data-inicial">
+<h2>Data inicial<a class="headerlink" href="#data-inicial" title="Link permanente para este cabeçalho"></a></h2>
+<p>A <strong>‘Data inicial’</strong> representa o ponto inicial a partir do qual o sistema começa a calcular as necessidades de materiais. Todas as fontes de demanda e fornecimento que possuírem as datas de entrega para antes dessa data são consideradas históricas e não são incluídas nos cálculos do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/0119.png"><img alt="../../../_images/0119.png" class="align-center" src="../../../_images/0119.png" style="width: 617.6px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A <strong>‘Data inicial’</strong> deve ser menor ou igual a data atual, caso seja informado uma data maior do que a data atual, o add-on irá retornar a seguinte validação:</p>
+<a class="reference internal image-reference" href="../../../_images/0217.png"><img alt="../../../_images/0217.png" class="align-center" src="../../../_images/0217.png" style="width: 351.59999999999997px; height: 18.0px;" /></a>
+<p><strong>BR One :: Data inicial deve ser menor ou igual a data atual.</strong></p>
+<p>Ao definir a <strong>‘Data inicial’</strong> com a data de 27/12/2023 e selecionar uma fonte de demanda, ao executar o MRP, será retornado apenas as demandas que estejam com a data de entrega dentro período escolhido. Em nosso exemplo, temos o pedido de venda 98, que teve sua demanda calculada e recomendada pelo MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/0317.png"><img alt="../../../_images/0317.png" class="align-center" src="../../../_images/0317.png" style="width: 626.4000000000001px; height: 655.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Caso a data do pedido de venda 98, fosse anterior a data informada no campo <strong>‘Data inicial’</strong>, essa demanda não seria recomendada no MRP, pois o mesmo está fora do horizonte de planejamento selecionado.</p>
+<a class="reference internal image-reference" href="../../../_images/0410.png"><img alt="../../../_images/0410.png" class="align-center" src="../../../_images/0410.png" style="width: 625.6px; height: 665.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="data-final">
+<h2>Data final<a class="headerlink" href="#data-final" title="Link permanente para este cabeçalho"></a></h2>
+<p>A <strong>‘Data final’</strong> define a última data considerada no cálculo do MRP. Todas as fontes de demanda e fornecimento que possuírem as datas superiores à essa data não são incluídas nos cálculos do MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/0512.png"><img alt="../../../_images/0512.png" class="align-center" src="../../../_images/0512.png" style="width: 620.0px; height: 438.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A <strong>‘Data final’</strong> não pode ser superior a 36 meses da data de execução, caso seja informado uma data superior, o add-on irá validar e exibirá a mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/0611.png"><img alt="../../../_images/0611.png" class="align-center" src="../../../_images/0611.png" style="width: 518.4px; height: 18.0px;" /></a>
+<p><strong>BR One :: A diferença máxima entre data de execução e data final permitida é de 36 meses.</strong></p>
+<p>Ao definir a <strong>‘Data final’</strong> com a data de 30/01/2024, selecionar as fontes de demanda e fornecimento, e executar o MRP, será retornado apenas as demandas que estejam com a data de entrega dentro período escolhido. Em nosso exemplo, temos o pedido de venda 98, que teve sua demanda calculada e recomendada pelo MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/0713.png"><img alt="../../../_images/0713.png" class="align-center" src="../../../_images/0713.png" style="width: 629.6px; height: 662.4000000000001px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Caso a data do pedido de venda 98, seja maior que a <strong>‘Data final’</strong>, essa demanda não será recomendada no MRP, pois a mesma está fora do horizonte de planejamento selecionado.</p>
+<a class="reference internal image-reference" href="../../../_images/0814.png"><img alt="../../../_images/0814.png" class="align-center" src="../../../_images/0814.png" style="width: 626.4000000000001px; height: 662.4000000000001px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="visualizar-dados-em-periodo-de">
+<h2>Visualizar dados em período de:<a class="headerlink" href="#visualizar-dados-em-periodo-de" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este parâmetro permite escolher a forma de visualizar os dados, é possível escolher entre três opções:</p>
+<ul class="simple">
+<li><p>Dias</p></li>
+<li><p>Semanas</p></li>
+<li><p>Meses</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0910.png"><img alt="../../../_images/0910.png" class="align-center" src="../../../_images/0910.png" style="width: 437.0px; height: 73.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A escolha das parametrizações acima, altera a forma como os dados calculados pelo MRP serão demonstrados na aba <strong>‘Resultado’</strong> da tela do <strong>‘Assistente de MRP’</strong>, segue abaixo exemplo de cada uma das exibições:</p>
+<p>Visualizar dados em período de: <strong>DIAS</strong></p>
+<a class="reference internal image-reference" href="../../../_images/1018.png"><img alt="../../../_images/1018.png" class="align-center" src="../../../_images/1018.png" style="width: 791.4px; height: 432.59999999999997px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Visualizar dados em período de: <strong>SEMANAS</strong></p>
+<a class="reference internal image-reference" href="../../../_images/119.png"><img alt="../../../_images/119.png" class="align-center" src="../../../_images/119.png" style="width: 793.8px; height: 433.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Visualizar dados em período de: <strong>MESES</strong></p>
+<a class="reference internal image-reference" href="../../../_images/129.png"><img alt="../../../_images/129.png" class="align-center" src="../../../_images/129.png" style="width: 795.6px; height: 435.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="comprimento-do-horizonte">
+<h2>Comprimento do Horizonte:<a class="headerlink" href="#comprimento-do-horizonte" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este campo demonstra o comprimento do horizonte conforme o tipo de visualização escolhida no parâmetro <strong>‘Visualizar dados em período de’</strong>, onde o mesmo pode ser definido como:</p>
+<ul class="simple">
+<li><p>Dias</p></li>
+<li><p>Semanas</p></li>
+<li><p>Meses</p></li>
+</ul>
+<p>Segue abaixo exemplo de cada uma das exibições, conforme configuração escolhida:</p>
+<p>Comprimento do horizonte: <strong>DIAS</strong></p>
+<a class="reference internal image-reference" href="../../../_images/1310.png"><img alt="../../../_images/1310.png" class="align-center" src="../../../_images/1310.png" style="width: 476.8px; height: 215.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Comprimento do horizonte: <strong>SEMANAS</strong></p>
+<a class="reference internal image-reference" href="../../../_images/1410.png"><img alt="../../../_images/1410.png" class="align-center" src="../../../_images/1410.png" style="width: 421.6px; height: 216.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Comprimento do horizonte: <strong>MESES</strong></p>
+<a class="reference internal image-reference" href="../../../_images/157.png"><img alt="../../../_images/157.png" class="align-center" src="../../../_images/157.png" style="width: 433.6px; height: 214.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="exibir-itens-sem-necessidade">
+<h2>Exibir itens sem necessidade:<a class="headerlink" href="#exibir-itens-sem-necessidade" title="Link permanente para este cabeçalho"></a></h2>
+<p>A flag <strong>‘Exibir itens sem necessidade’</strong> tem como objetivo exibir os itens que não possuem necessidade de fornecimento, isto é, itens em estoque que atendem à demanda. Caso selecionado, esses itens aparecerão na aba <strong>‘Resultado’</strong> somente.</p>
+<a class="reference internal image-reference" href="../../../_images/167.png"><img alt="../../../_images/167.png" class="align-center" src="../../../_images/167.png" style="width: 581.6999999999999px; height: 393.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/177.png"><img alt="../../../_images/177.png" class="align-center" src="../../../_images/177.png" style="width: 581.0px; height: 393.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="filtrar-recomendacoes">
+<h2>Filtrar recomendações:<a class="headerlink" href="#filtrar-recomendacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>No parâmetro ‘Filtrar recomendações’, o add-on permite realizar os filtros de três formas:</p>
+<a class="reference internal image-reference" href="../../../_images/187.png"><img alt="../../../_images/187.png" class="align-center" src="../../../_images/187.png" style="width: 430.0px; height: 64.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Exibir todas</strong></p></li>
+</ul>
+<p>Tanto as recomendações de <strong>‘Solicitação de compra’</strong> como a <strong>‘Ordem de produção’</strong> aparecerão;</p>
+<a class="reference internal image-reference" href="../../../_images/196.png"><img alt="../../../_images/196.png" class="align-center" src="../../../_images/196.png" style="width: 620.8000000000001px; height: 436.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Documentos de compra:</strong></p></li>
+</ul>
+<p>Traz apenas os itens que são sugeridos nas solicitações de compra. Se a flag <strong>‘Exibir itens sem necessidade’</strong> estiver marcada, traz também os itens sem necessidade cujo método de planejamento seja <strong>‘Comprar’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/206.png"><img alt="../../../_images/206.png" class="align-center" src="../../../_images/206.png" style="width: 616.8000000000001px; height: 436.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Ordem de produção:</strong></p></li>
+</ul>
+<p>Traz apenas os itens que são sugeridos nas ordens de produção. Se a flag <strong>‘Exibir itens sem necessidade’</strong> estiver marcada, traz também os itens sem necessidade cujo método de planejamento seja <strong>‘Produzir’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/217.png"><img alt="../../../_images/217.png" class="align-center" src="../../../_images/217.png" style="width: 622.4000000000001px; height: 435.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="grupo-de-itens">
+<h2>Grupo de itens:<a class="headerlink" href="#grupo-de-itens" title="Link permanente para este cabeçalho"></a></h2>
+<p>O parâmetro <strong>‘Grupo de itens’</strong>, permite realizar o filtro de acordo com o grupo de itens selecionado. Com isso o MRP irá considerar em suas recomendações apenas os itens que fazer parte do <strong>‘Grupo de itens’</strong> selecionado.</p>
+<a class="reference internal image-reference" href="../../../_images/226.png"><img alt="../../../_images/226.png" class="align-center" src="../../../_images/226.png" style="width: 346.40000000000003px; height: 140.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="fabricantes">
+<h2>Fabricantes:<a class="headerlink" href="#fabricantes" title="Link permanente para este cabeçalho"></a></h2>
+<p>O parâmetro <strong>‘Fabricante’</strong>, permite realizar o filtro de acordo com o fabricante selecionado. Ao clicar no botão <strong>‘[…]’</strong>, a tela <strong>‘Fabricante’</strong> será aberta e nela poderão ser selecionados os fabricantes para filtrar os resultados para os itens de compra e produção.</p>
+<a class="reference internal image-reference" href="../../../_images/235.png"><img alt="../../../_images/235.png" class="align-center" src="../../../_images/235.png" style="width: 582.0px; height: 410.25px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Considerando o exemplo acima, existem dois fabricantes cadastrados que podem ser selecionados, levando em conta o pedido de venda número 100, há dois itens que possuem fabricantes diferentes, conforme demonstra imagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/245.png"><img alt="../../../_images/245.png" class="align-center" src="../../../_images/245.png" style="width: 667.5px; height: 406.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao rodar o MRP sem filtrar nenhum fabricante, o MRP irá considerar em seus cálculos todos os itens que possuam demanda, conforme imagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/255.png"><img alt="../../../_images/255.png" class="align-center" src="../../../_images/255.png" style="width: 579.0px; height: 407.25px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Entretanto, caso seja filtrado um fabricante, o MRP irá recomendar apenas os itens que possuam esse fabricante cadastrado:</p>
+<a class="reference internal image-reference" href="../../../_images/265.png"><img alt="../../../_images/265.png" class="align-center" src="../../../_images/265.png" style="width: 582.75px; height: 411.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/275.png"><img alt="../../../_images/275.png" class="align-center" src="../../../_images/275.png" style="width: 585.75px; height: 420.75px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="fornecedores">
+<h2>Fornecedores:<a class="headerlink" href="#fornecedores" title="Link permanente para este cabeçalho"></a></h2>
+<p>O parâmetro <strong>‘Fornecedores’</strong>, permite realizar o filtro de acordo com os fornecedores selecionados. Ao clicar no botão <strong>‘[…]’</strong>, a tela <strong>‘Fornecedores’</strong> será aberta e nela poderão ser selecionados fornecedores para filtrar os resultados para os itens de compra.</p>
+<a class="reference internal image-reference" href="../../../_images/285.png"><img alt="../../../_images/285.png" class="align-center" src="../../../_images/285.png" style="width: 626.4000000000001px; height: 451.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao filtrar os fornecedores desejados, o MRP irá calcular e recomendar apenas os itens que possuam o campo <strong>‘Fornecedor preferencial’</strong> ou da tela <strong>‘Fornecedores preferidos’</strong> da tela de <strong>‘Cadastro do item’</strong> igual ao selecionado na etapa 2 do Assistente de MRP.</p>
+<a class="reference internal image-reference" href="../../../_images/294.png"><img alt="../../../_images/294.png" class="align-center" src="../../../_images/294.png" style="width: 718.5px; height: 383.5px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O item <strong>‘Comp01_MRP’</strong>, não possui nenhum fornecedor preferencial ou preferido cadastrado.</p>
+<a class="reference internal image-reference" href="../../../_images/305.png"><img alt="../../../_images/305.png" class="align-center" src="../../../_images/305.png" style="width: 564.0px; height: 285.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao executar o Assistente de MRP determinando alguns fornecedores no filtro de <strong>‘Fornecedores’</strong>, o resultado do MRP não irá trazer nenhuma recomendação de compra para o item <strong>‘Comp01_MRP’</strong>, mesmo ele fazendo parte do roteiro dos itens a serem produzidos.</p>
+<a class="reference internal image-reference" href="../../../_images/316.png"><img alt="../../../_images/316.png" class="align-center" src="../../../_images/316.png" style="width: 645.6px; height: 459.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/325.png"><img alt="../../../_images/325.png" class="align-center" src="../../../_images/325.png" style="width: 626.4000000000001px; height: 448.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="data-de-vencimento">
+<h2>Data de vencimento:<a class="headerlink" href="#data-de-vencimento" title="Link permanente para este cabeçalho"></a></h2>
+<p>No parâmetro <strong>‘Data de vencimento’</strong>, quando marcado, pode ser escolhido um período de datas para filtrar por data de vencimento dos documentos.</p>
+<a class="reference internal image-reference" href="../../../_images/334.png"><img alt="../../../_images/334.png" class="align-center" src="../../../_images/334.png" style="width: 523.1999999999999px; height: 28.799999999999997px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="data-de-liberacao">
+<h2>Data de liberação:<a class="headerlink" href="#data-de-liberacao" title="Link permanente para este cabeçalho"></a></h2>
+<p>No parâmetro <strong>‘Data de liberação’</strong>, quando marcado, pode ser escolhido um período de datas para filtrar por data de liberação dos documentos.</p>
+<a class="reference internal image-reference" href="../../../_images/344.png"><img alt="../../../_images/344.png" class="align-center" src="../../../_images/344.png" style="width: 525.6px; height: 25.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="ordenar-recomendacoes">
+<h2>Ordenar recomendações:<a class="headerlink" href="#ordenar-recomendacoes" title="Link permanente para este cabeçalho"></a></h2>
+<p>O parâmetro <strong>‘Ordenar recomendações’</strong> tem a função de ordenar os itens da aba <strong>‘Recomendações’</strong>, após a execução do MRP. As recomendações podem ser ordenadas conforme abaixo, onde todas as ordenações são agrupadas pelo <strong>‘Tipo de pedido’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/354.png"><img alt="../../../_images/354.png" class="align-center" src="../../../_images/354.png" style="width: 444.0px; height: 141.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘Nº do item’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/364.png"><img alt="../../../_images/364.png" class="align-center" src="../../../_images/364.png" style="width: 688.8000000000001px; height: 248.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘Data de vencimento’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/374.png"><img alt="../../../_images/374.png" class="align-center" src="../../../_images/374.png" style="width: 707.2px; height: 251.20000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘Data de liberação’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/384.png"><img alt="../../../_images/384.png" class="align-center" src="../../../_images/384.png" style="width: 674.4000000000001px; height: 248.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘Nº do item pai’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/394.png"><img alt="../../../_images/394.png" class="align-center" src="../../../_images/394.png" style="width: 684.0px; height: 250.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘LeadTime’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/404.png"><img alt="../../../_images/404.png" class="align-center" src="../../../_images/404.png" style="width: 689.6px; height: 252.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Exemplo de ordenação por <strong>‘Exceção’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/415.png"><img alt="../../../_images/415.png" class="align-center" src="../../../_images/415.png" style="width: 692.0px; height: 252.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Etapa%201.html" class="btn btn-neutral float-left" title="Etapa 1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Etapa%203.html" class="btn btn-neutral float-right" title="Etapa 3" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

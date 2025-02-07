@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BR One WMS &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="next" title="Instalação API WMS" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html" />
+    <link rel="prev" title="Autorização de Importação" href="BR%20One%20Importa%C3%A7%C3%A3o/Autoriza%C3%A7%C3%A3o/Autoriza%C3%A7%C3%A3oimp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">BR One WMS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#primeiros-passos">Primeiros passos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html">Instalação API WMS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Configura%C3%A7%C3%B5esIniciais/ConfiguracoesIniciais.html">Configurações iniciais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/PrimeirosPassos/AnaliseLog/AnaliseLog.html">Analise de Log</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/PrimeirosPassos/DicasDeUtiliza%C3%A7%C3%A3o/DicasDeUtiliza%C3%A7%C3%A3o.html">Dicas de utilização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Vers%C3%B5es/Atualiza%C3%A7%C3%A3o/Atualiza%C3%A7%C3%A3o.html">Atualização da API</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#detalhes-dos-processos">Detalhes dos processos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/M%C3%B3duloseMenus/M%C3%B3duloseMenus.html">Módulos e menus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Produ%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o.html">Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Recebimento/Recebimento.html">Recebimento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html">Expedição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Invent%C3%A1rio.html">Inventário</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracoes-adicionais">Configurações adicionais</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/Configura%C3%A7%C3%B5esWMS.html">Configurações WMS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios.html">Autorizações de usuários</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Impress%C3%A3oEtiquetas/Impress%C3%A3oEtiquetas.html">Impressão de etiquetas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Sugest%C3%A3oDestino/Sugest%C3%A3oDestino.html">Sugestão de destino</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#versao-atual-43">Versão atual: 43</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">BR One WMS</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="br-one-wms">
+<h1>BR One WMS<a class="headerlink" href="#br-one-wms" title="Link permanente para este cabeçalho"></a></h1>
+<img alt="_images/novo_logo_br_one_final_WMS-Final.jpg" src="_images/novo_logo_br_one_final_WMS-Final.jpg" />
+<p>O WMS (Warehouse Management Systems), são sistemas tecnológicos projetados para extrairem máxima eficiência e controle, nas operações de armazenamento e gerenciamento de estoque. Desempenham um papel fundamental nos processos de supply chain (cadeia de suprimentos) e logísticos, reduzindo custos e aumentando a precisão e visibilidade dos estoques.</p>
+<p>Combinando o conhecimento da Uppertools, adquirido em anos de experiência no desenvolvimento de soluções complementares para o SAP Business One, e os sistemas do WMS, o BR One WMS vem para integrar e agregar com o ecossistema e processos do SAP Business One.</p>
+<p>Esta documentação, tem como objetivo exibir os processos, configurações e dicas de utilização da solução BR One WMS.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<ul class="simple">
+<li><p>O BR One WMS está homologado em coletores Zebra, nos modelos MC33 e TC21, a partir do android 5.0.</p></li>
+<li><p>A atual versão do WMS (40) equivale a <strong>release 326</strong> do BR One.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<section id="primeiros-passos">
+<h2>Primeiros passos<a class="headerlink" href="#primeiros-passos" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html">Instalação API WMS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html#pre-requisitos">Pré requisitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html#deploy-da-api-no-diretorio">Deploy da API no diretório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html#deploy-da-api-no-iis">Deploy da API no IIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html#deploy-dos-endpoints-customizados">Deploy dos Endpoints Customizados</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Configura%C3%A7%C3%B5esIniciais/ConfiguracoesIniciais.html">Configurações iniciais</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Configura%C3%A7%C3%B5esIniciais/ConfiguracoesIniciais.html#configuracao-de-servidor">Configuração de servidor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Configura%C3%A7%C3%B5esIniciais/ConfiguracoesIniciais.html#cadastro-de-usuario-no-wms">Cadastro de usuário no WMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/PrimeirosPassos/Configura%C3%A7%C3%B5esIniciais/ConfiguracoesIniciais.html#configuracao-de-armazens">Configuração de Armazéns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/PrimeirosPassos/AnaliseLog/AnaliseLog.html">Analise de Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/PrimeirosPassos/DicasDeUtiliza%C3%A7%C3%A3o/DicasDeUtiliza%C3%A7%C3%A3o.html">Dicas de utilização</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/Vers%C3%B5es/Atualiza%C3%A7%C3%A3o/Atualiza%C3%A7%C3%A3o.html">Atualização da API</a></li>
+</ul>
+</div>
+</section>
+<section id="detalhes-dos-processos">
+<h2>Detalhes dos processos<a class="headerlink" href="#detalhes-dos-processos" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/M%C3%B3duloseMenus/M%C3%B3duloseMenus.html">Módulos e menus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Produ%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o.html">Produção</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Produ%C3%A7%C3%A3o/EntradaPA/EntradaPA.html">Entrada de produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Produ%C3%A7%C3%A3o/Sa%C3%ADdaInsumos/Sa%C3%ADdaInsumos.html">Saída de insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Produ%C3%A7%C3%A3o/TransferirProdu%C3%A7%C3%A3o/TransferirProdu%C3%A7%C3%A3o.html">Transferir para produção</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Recebimento/Recebimento.html">Recebimento</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Recebimento/Confer%C3%AAncia/Confer%C3%AAncia.html">Conferência</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html">Expedição</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Expedi%C3%A7%C3%A3o/FilaDeSepara%C3%A7%C3%A3o/FilaDeSepara%C3%A7%C3%A3o.html">Fila de separação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Expedi%C3%A7%C3%A3o/Confer%C3%AAnciaEmbarque/Confer%C3%AAnciaEmbarque.html">Conferência de embarque</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Invent%C3%A1rio.html">Inventário</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/PedirTransfEstoque/PedirTransfEstoque.html">Pedir transferência de estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/TransferirEstoque/TransferirEstoque.html">Transferir estoque</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/TransferirEstoque/TransferirEstoque.html#nova-transferencia">Nova transferência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/TransferirEstoque/TransferirEstoque.html#nova-transferencia-por-embalagem">Nova transferência por embalagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/TransferirEstoque/TransferirEstoque.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Pacotes/Pacotes.html">Pacotes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Pacotes/Pacotes.html#pacote-avulso">Pacote avulso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Pacotes/Pacotes.html#pacote-iguais">Pacote iguais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Pacotes/Pacotes.html#pacote-diferentes">Pacote diferentes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/Pacotes/Pacotes.html#utilizando-os-pacotes">Utilizando os pacotes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/ContagemInvent%C3%A1rio/ContagemInvent%C3%A1rio.html">Contagem de inventário</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/ContagemInvent%C3%A1rio/ContagemInvent%C3%A1rio.html#contagem-avulsa">Contagem avulsa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/ContagemInvent%C3%A1rio/ContagemInvent%C3%A1rio.html#contagem-por-item">Contagem por item</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/AjusteEstoque/AjusteEstoque.html">Ajuste de estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/DetalhesdosProcessos/Invent%C3%A1rio/ConferenciaDeMovimenta%C3%A7%C3%A3o/ConferenciaDeMovimenta%C3%A7%C3%A3o.html">Conferência de movimentação</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="configuracoes-adicionais">
+<h2>Configurações adicionais<a class="headerlink" href="#configuracoes-adicionais" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/Configura%C3%A7%C3%B5esWMS.html">Configurações WMS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html">Aba Geral</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-forma-de-exibir-unidade-de-medida">Parâmetro Forma de exibir unidade de medida</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-fluxo-de-apontamento">Parâmetro Fluxo de apontamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-sugerir-primeiro-deposito-posicao-selecionado">Parâmetro Sugerir primeiro depósito/posição selecionado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-apontar-quantidade-ao-ler-codigo-de-barras">Parâmetro Apontar quantidade ao ler código de barras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-receber-mensagem-de-logs-no-aplicativo">Parâmetro Receber mensagem de logs no aplicativo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-bloquear-casas-decimais-wms-no-cadastro-do-item">Parâmetro Bloquear casas decimais (WMS) no Cadastro do item</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaGeral/AbaGeral.html#parametro-ocultar-lote-selecao">Parâmetro Ocultar Lote/Seleção</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaRecebimento/AbaRecebimento.html">Aba Recebimento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaRecebimento/AbaRecebimento.html#parametro-utilizar-conferencia-as-cegas">Parâmetro Utilizar conferência às cegas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaRecebimento/AbaRecebimento.html#parametro-obrigar-data-de-vencimento">Parâmetro Obrigar data de vencimento</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html">Aba Expedição</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-ordem-de-saida-do-lote-serie">Parâmetro Ordem de saída do Lote/Série</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-documento-gerado">Parâmetro Documento gerado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-liberar-expedicao-no-pedido">Parâmetro Liberar expedição no pedido</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-considerar-quantidade-disponivel-na-liberacao">Parâmetro Considerar quantidade disponível na liberação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-ordem-de-saida-obrigatoria">Parâmetro Ordem de saída obrigatória</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-preencher-campos-carregamento">Parâmetro Preencher campos carregamento</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-nao-permitir-geracao-de-documento-com-divergencia-na-expedicao">Parâmetro Não permitir geração de documento com divergência na expedição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-realizar-separacao-gerando-volumes">Parâmetro Realizar separação gerando volumes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-realizar-a-conferencia-de-embarque-por-volume">Parâmetro Realizar a conferência de embarque por volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-desconsiderar-posicao-na-fila-de-separacao-no-cadastro-da-posicao-no-deposito">Parâmetro Desconsiderar posição na fila de separação no Cadastro da posição no depósito</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-acessar-apenas-primeiro-registro">Parâmetro acessar apenas primeiro registro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-conferencia-de-embarque-no-esboco">Parâmetro Conferência de embarque no esboço</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaExpedi%C3%A7%C3%A3o/AbaExpedi%C3%A7%C3%A3o.html#parametro-apontar-quantidade-na-conferencia-de-embarque">Parâmetro Apontar quantidade na conferência de embarque</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaInvent%C3%A1rio/AbaInvent%C3%A1rio.html">Aba Inventário</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaInvent%C3%A1rio/AbaInvent%C3%A1rio.html#parametro-contagem-as-cegas">Parâmetro Contagem às cegas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaInvent%C3%A1rio/AbaInvent%C3%A1rio.html#parametro-sugerir-apenas-posicoes-vazias">Parâmetro Sugerir apenas posições vazias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Configura%C3%A7%C3%B5esWMS/AbaInvent%C3%A1rio/AbaInvent%C3%A1rio.html#parametro-depositos-de-contagem-em-grupo-de-armazenamento">Parâmetro Depósitos de contagem em Grupo de armazenamento</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios.html">Autorizações de usuários</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Administra%C3%A7%C3%A3o/Administra%C3%A7%C3%A3o.html">Administração</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Administra%C3%A7%C3%A3o/Administra%C3%A7%C3%A3o.html#autorizacao-configuracoes-wms">Autorização Configurações WMS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Administra%C3%A7%C3%A3o/Administra%C3%A7%C3%A3o.html#autorizacao-cadastro-do-armazem">Autorização Cadastro do armazém</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Administra%C3%A7%C3%A3o/Administra%C3%A7%C3%A3o.html#autorizacao-usuarios-alerta-de-logs">Autorização Usuários - alerta de logs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Administra%C3%A7%C3%A3o/Administra%C3%A7%C3%A3o.html#autorizacao-grupo-de-armazenamento">Autorização Grupo de armazenamento</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Recebimento/Recebimento.html">Recebimento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Recebimento/Recebimento.html#autorizacao-usuarios-alerta-de-divergencia">Autorização Usuários - alerta de divergência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Recebimento/Recebimento.html#autorizacao-visualiza-quantidade-quando-conferencia-as-cegas-estiver-ativa">Autorização Visualiza quantidade quando conferência as cegas estiver ativa</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Recebimento/Recebimento.html#autorizacao-realizar-recebimento-quando-houver-divergencia">Autorização Realizar recebimento quando houver divergência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Recebimento/Recebimento.html#autorizacao-permitir-acesso-ao-menu">Autorização Permitir acesso ao menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html">Expedição</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html#autorizacao-gerar-documento-fiscal-na-expedicao">Autorização Gerar documento fiscal na expedição</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html#autorizacao-gerar-expedicao-com-divergencia">Autorização Gerar expedição com divergência</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html#autorizacao-permissao-para-selecionar-lote-na-expedicao-sem-o-leitor">Autorização Permissão para selecionar lote na expedição sem o leitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html#autorizacoes-permitir-acesso-ao-menu">Autorizações Permitir acesso ao menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Expedi%C3%A7%C3%A3o/Expedi%C3%A7%C3%A3o.html#autorizacao-permitir-confirmar-separacao-com-divergencia-no-aplicativo">Autorização Permitir confirmar separação com divergência no aplicativo</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Invent%C3%A1rio/Invent%C3%A1rio.html">Inventário</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Invent%C3%A1rio/Invent%C3%A1rio.html#autorizacoes-permitir-acesso-ao-menu">Autorizações Permitir acesso ao menu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Produ%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o.html">Produção</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Autoriza%C3%A7%C3%B5esUsu%C3%A1rios/Produ%C3%A7%C3%A3o/Produ%C3%A7%C3%A3o.html#autorizacoes-permitir-acesso-ao-menu">Autorizações Permitir acesso ao menu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Impress%C3%A3oEtiquetas/Impress%C3%A3oEtiquetas.html">Impressão de etiquetas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Sugest%C3%A3oDestino/Sugest%C3%A3oDestino.html">Sugestão de destino</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Sugest%C3%A3oDestino/Sugest%C3%A3oDestino.html#configurando-sugestao-de-destino">Configurando sugestão de destino</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BROneWMS/Configura%C3%A7%C3%B5esAdicionais/Sugest%C3%A3oDestino/Sugest%C3%A3oDestino.html#sugestao-de-destino-na-pratica">Sugestão de destino na prática</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="versao-atual-43">
+<h2>Versão atual: 43<a class="headerlink" href="#versao-atual-43" title="Link permanente para este cabeçalho"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="BR%20One%20Importa%C3%A7%C3%A3o/Autoriza%C3%A7%C3%A3o/Autoriza%C3%A7%C3%A3oimp.html" class="btn btn-neutral float-left" title="Autorização de Importação" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="BROneWMS/PrimeirosPassos/Instala%C3%A7%C3%A3oAPI/Instala%C3%A7%C3%A3oAPI.html" class="btn btn-neutral float-right" title="Instalação API WMS" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

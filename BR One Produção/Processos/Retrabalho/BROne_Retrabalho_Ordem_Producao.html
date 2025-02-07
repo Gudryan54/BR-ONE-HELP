@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordem de produção &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Retorno de PA" href="BROne_Retrabalho_Retorno_PA.html" />
+    <link rel="prev" title="Configurações de produção" href="BROne_Retrabalho_Configuracao.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Configuracao.html">Configurações de produção</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Ordem de produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Retorno_PA.html">Retorno de PA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Entrada_PA.html">Entrada de PA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Refugo.html">Entrada de PA Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Estorno_Producao.html">Estorno de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Transferencia_Estoque.html">Transferência de estoque da entrada de PA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Ordem de produção</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ordem-de-producao">
+<h1>Ordem de produção<a class="headerlink" href="#ordem-de-producao" title="Link permanente para este cabeçalho"></a></h1>
+<p>No campo tipo, selecione a opção <strong>Retrabalho</strong></p>
+<p>O Nº do produto da OP. de retrabalho pode ser controlado por <strong>Nenhum</strong>, <strong>Lote</strong> ou <strong>Série</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img0134.png"><img alt="../../../_images/img0134.png" src="../../../_images/img0134.png" style="width: 684.8000000000001px; height: 320.8px;" /></a>
+<ul class="simple">
+<li><p><strong>PA administrado por nenhum</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0233.png"><img alt="../../../_images/img0233.png" src="../../../_images/img0233.png" style="width: 626.4000000000001px; height: 436.0px;" /></a>
+<ul class="simple">
+<li><p><strong>PA administrado por lote</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0328.png"><img alt="../../../_images/img0328.png" src="../../../_images/img0328.png" style="width: 655.2px; height: 403.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>PA administrado por série</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/a-img01.png"><img alt="../../../_images/a-img01.png" src="../../../_images/a-img01.png" style="width: 624.0px; height: 392.0px;" /></a>
+<p>Na ordem de retrabalho, o campo <strong>Depósito</strong> será preenchido automaticamente com o depósito definido nas <strong>Configurações de produção</strong>. Esse campo não poderá ser editado.</p>
+<a class="reference internal image-reference" href="../../../_images/img0523.png"><img alt="../../../_images/img0523.png" src="../../../_images/img0523.png" style="width: 653.6px; height: 120.0px;" /></a>
+<p>Caso tente adicionar uma ordem de retrabalho sem o devido depósito configurado em configurações de produção, a seguinte será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img0624.png"><img alt="../../../_images/img0624.png" src="../../../_images/img0624.png" style="width: 588.8000000000001px; height: 11.200000000000001px;" /></a>
+<p><em>BR One :: Erro ao recuperar o depósito de retrabalho. Retorno: O depósito de retrabalho deve ser definido na tela ‘Configurações de produção’, aba ‘O.P.’.</em></p>
+<p>Ao tentar liberar a Ordem de Produção de retrabalho e a quantidade planejada da OP for maior do que a quantidade disponível em estoque no depósito padrão do item.</p>
+<a class="reference internal image-reference" href="../../../_images/img0722.png"><img alt="../../../_images/img0722.png" src="../../../_images/img0722.png" style="width: 655.2px; height: 440.0px;" /></a>
+<p>A seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img0819.png"><img alt="../../../_images/img0819.png" src="../../../_images/img0819.png" style="width: 332.0px; height: 12.0px;" /></a>
+<p><em>BR One :: A quantidade planejada deve ser menor ou igual a quantidade em estoque.</em></p>
+<p>Ao inserir uma Ordem de produção (OP) de retrabalho, o roteiro não é carregado e automaticamente as linhas dele também não. Com isso, podemos adicionar uma Ordem de produção (OP) de retrabalho sem linhas.</p>
+<a class="reference internal image-reference" href="../../../_images/img0918.png"><img alt="../../../_images/img0918.png" src="../../../_images/img0918.png" style="width: 640.0px; height: 320.8px;" /></a>
+<p>Após inserir uma Ordem de Produção (OP) sem um roteiro definido, é possível posteriormente selecionar um roteiro específico para essa OP. No entanto, uma vez que a OP foi atualizada com um roteiro, não será mais possível editar ou remover esse roteiro.</p>
+<p>Nas configurações de produção, se a opção <strong>Utilizar GGF Arbitrado</strong> estiver marcada e o campo <strong>Conta GGF arbitrado</strong> estiver preenchido, ao tentar adicionar uma Ordem de Produção (OP) de retrabalho que não possui componente, mas inclui uma máquina ou ferramenta, será necessário que o recurso ou o grupo de recurso associado a esta máquina/ferramenta tenha o campo <strong>Custo hora</strong> preenchido. Caso contrário, uma mensagem de validação será exibida, informando sobre a necessidade de preencher esse campo.</p>
+<a class="reference internal image-reference" href="../../../_images/img1019.png"><img alt="../../../_images/img1019.png" src="../../../_images/img1019.png" style="width: 400.8px; height: 123.2px;" /></a>
+<p>Caso nas configurações de GGF não estejam marcadas, ao tentar adicionar sem componente, exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1120.png"><img alt="../../../_images/img1120.png" src="../../../_images/img1120.png" style="width: 402.40000000000003px; height: 123.2px;" /></a>
+<p>Caso as configurações de GGF não estejam marcadas e possuir pelo menos um componente no roteiro, a OP de retrabalho é adicionada normalmente.</p>
+<p>Caso tente liberar uma OP. de retrabalho sem roteiro, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img1219.png"><img alt="../../../_images/img1219.png" src="../../../_images/img1219.png" style="width: 464.8px; height: 12.0px;" /></a>
+<p><em>BR One :: Não é permitido liberar uma OP de retrabalho sem que haja ao menos um documento cadastrado na aba geral.</em></p>
+<p>Na aba <strong>Documentos</strong>, ao clicar no botão <strong>Incluir documento</strong> e selecionar “<strong>Tipo de documento</strong> como <strong>Ordem de produção</strong>, será aberta uma tela na qual serão listadas as ordens de produção do tipo padrão e retrabalho que podem ser adicionais.</p>
+<a class="reference internal image-reference" href="../../../_images/img1318.png"><img alt="../../../_images/img1318.png" src="../../../_images/img1318.png" style="width: 649.6px; height: 394.40000000000003px;" /></a>
+<p>Para selecionar uma Ordem de Produção (OP) do tipo <strong>Retrabalho</strong>, é necessário que ela possua uma entrada de PA (Produto Acabado) ou uma reavaliação de estoque. Caso contrário, uma mensagem de erro será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img1419.png"><img alt="../../../_images/img1419.png" src="../../../_images/img1419.png" style="width: 387.20000000000005px; height: 12.0px;" /></a>
+<p><em>BR One :: Não existe entrada de PA nem reavaliação de estoque para a OP de retrabalho vinculada.</em></p>
+<p>Após vincular um documento, é possível liberar a Ordem de Produção (OP) selecionando a opção <strong>Liberada</strong> no campo <strong>Status</strong>. Será aberto a tela de pedido de transferência de estoque ou transferência de estoque, conforme opção selecionada em <strong>Configurações de produção &gt; aba O.P &gt; Ao liberar OP retrabalho</strong> gerar:</p>
+<ul class="simple">
+<li><p><strong>Pedido de transferência do estoque</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img1516.png"><img alt="../../../_images/img1516.png" src="../../../_images/img1516.png" style="width: 400.8px; height: 124.80000000000001px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img1613.png"><img alt="../../../_images/img1613.png" src="../../../_images/img1613.png" style="width: 464.8px; height: 419.20000000000005px;" /></a>
+<p>Se você escolher a opção <strong>Pedido de transferência de estoque</strong>, uma tela correspondente será aberta, onde você poderá adicionar o pedido. Após adicionar o pedido, basta clicar em <strong>Copiar para</strong> e selecionar a opção <strong>Transferência do estoque</strong>. Em seguida, é importante efetivar a transferência do estoque para que ela seja concluída com sucesso.</p>
+<ul class="simple">
+<li><p><strong>Transferência de estoque</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img1712.png"><img alt="../../../_images/img1712.png" src="../../../_images/img1712.png" style="width: 400.8px; height: 123.2px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img1813.png"><img alt="../../../_images/img1813.png" src="../../../_images/img1813.png" style="width: 476.0px; height: 440.0px;" /></a>
+<p>Ao selecionar a opção <strong>Transferência de estoque</strong>, uma tela correspondente será aberta, permitindo que você adicione para efetivar a transferência. Se o Produto Acabado (PA) é administrado por lote/série, ao clicar em <strong>Adicionar</strong>, uma nova tela será exibida para que você possa selecionar o lote/série desejado.</p>
+<ul class="simple">
+<li><p><strong>Lote</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img1912.png"><img alt="../../../_images/img1912.png" src="../../../_images/img1912.png" style="width: 584.8000000000001px; height: 367.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Série</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/a-img02.png"><img alt="../../../_images/a-img02.png" src="../../../_images/a-img02.png" style="width: 550.4px; height: 382.40000000000003px;" /></a>
+<p>Após selecionar o lote/série, você poderá adicionar e efetivar a transferência de estoque. No caso de PA administrado por nenhum não terá a necessidade de seleção de lote/série, o processo seguirá normalmente, sem essa etapa adicional.</p>
+<p>Para itens que não são controlados por lote/série, a tela de <strong>Seleção do Número de Lote/Série</strong> não será aberta.</p>
+<p>Após efetivar a transferência, a Ordem de Produção (OP) terá seu status alterado para <strong>Liberado</strong> e o número da transferência será exibido no campo do cabeçalho.</p>
+<a class="reference internal image-reference" href="../../../_images/img2011.png"><img alt="../../../_images/img2011.png" src="../../../_images/img2011.png" style="width: 649.6px; height: 121.60000000000001px;" /></a>
+<p>Caso o status da Ordem de produção (OP) de retrabalho seja alterado novamente para <strong>Planejada</strong> ou tente <strong>Cancelar</strong> a Ordem de produção (OP), exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img2110.png"><img alt="../../../_images/img2110.png" src="../../../_images/img2110.png" style="width: 401.6px; height: 124.0px;" /></a>
+<p><em>BR One :: Será cancelada a transferência de estoque gerada no processo de liberação da OP de retrabalho. Continuar?</em></p>
+<p>Ao clicar em <strong>Sim</strong> a transferência é cancelada, o status voltará para <strong>Planejada</strong> ou <strong>Cancelada</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img229.png"><img alt="../../../_images/img229.png" src="../../../_images/img229.png" style="width: 649.6px; height: 120.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img239.png"><img alt="../../../_images/img239.png" src="../../../_images/img239.png" style="width: 648.8000000000001px; height: 118.4px;" /></a>
+<ul class="simple">
+<li><p><strong>Fechar ordem de produção</strong></p></li>
+</ul>
+<p>Ao fechar a OP de Retrabalho, são realizados diversas validações que garantem a conformidade do processo.</p>
+<p>Porém, em casos muito específicos, podem ocorrer erros que impedem o fechamento da mesma, entre eles temos:</p>
+<p>A validação abaixo ocorre sempre que soma dos campos <strong>Quantidade concluída</strong> e <strong>Quantidade refugo</strong> não é igual a zero ou igual a <strong>Quantidade planejada</strong> da OP</p>
+<a class="reference internal image-reference" href="../../../_images/img2510.png"><img alt="../../../_images/img2510.png" src="../../../_images/img2510.png" style="width: 455.40000000000003px; height: 141.3px;" /></a>
+<p><strong>BR One :: Não é possível fechar a OP pois a soma dos campos ‘Quantidade concluída’ e ‘Quantidade refugo’ não é igual a zero ou igual a ‘Quantidade planejada’ da OP.</strong></p>
+<p>A validação abaixo ocorre sempre que não há quantidade do lote liberado na OP disponível no depósito de retrabalho:</p>
+<a class="reference internal image-reference" href="../../../_images/img249.png"><img alt="../../../_images/img249.png" src="../../../_images/img249.png" style="width: 450.90000000000003px; height: 138.6px;" /></a>
+<p><strong>BR One :: Erro ao efetuar o cancelamento da transferência de estoque. Retorno: Lote xxx quantidade atual de linha 1 no depósito 01-RET inferior à quantidade de documento original. Cancelamento impossível.</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="BROne_Retrabalho_Configuracao.html" class="btn btn-neutral float-left" title="Configurações de produção" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="BROne_Retrabalho_Retorno_PA.html" class="btn btn-neutral float-right" title="Retorno de PA" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

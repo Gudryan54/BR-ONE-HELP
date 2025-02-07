@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RE10 - Relatório de Estoque Geral &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Diferença de Stat/Rendimentos" href="Diferen%C3%A7a%20de%20Stat.html" />
+    <link rel="prev" title="Tela Aplicativo McDonald’s" href="Tela.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tela.html">Tela Aplicativo McDonald’s</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">RE10 - Relatório de Estoque Geral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diferen%C3%A7a%20de%20Stat.html">Diferença de Stat/Rendimentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Calculo%20do%20Real.html">Calculo do Real</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Emiss%C3%A3o%20de%20CMV.html">Emissão de CMV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ledger%20de%20compras.html">Ledger de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Folha%20de%20Invent%C3%A1rio.html">Folha de Inventário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rendimento%20de%20%C3%93leo.html">Rendimento de Óleo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Indiretos.html">Indiretos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Obejtivo%20x%20Real.html">Objetivo x Real (Desperdício Completo, Incompleto, Break, Condimentos, Stat e Rendimentos)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">RE10 - Relatório de Estoque Geral</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="re10-relatorio-de-estoque-geral">
+<h1>RE10 - Relatório de Estoque Geral<a class="headerlink" href="#re10-relatorio-de-estoque-geral" title="Link permanente para este cabeçalho"></a></h1>
+<p>O RE10 (Relatório do Estoque Geral) traz uma visão abrangente dos itens disponíveis no estoque, os itens Master.
+Nele, podemos consultar quantidade dos itens, além do custo unitário e total presente no inventário de acordo com a data escolhida podendo selecionar separação por depósito ou selecionar todos os depósitos disponíveis para uma visão mais ampla.</p>
+<p>Ao selecionar o relatório RE10 abrirá na tela as opções de filtragens para a geração do relatório. Nessa tela, selecione as opções de acordo com a imagem abaixo.</p>
+<img alt="../../_images/0038.png" src="../../_images/0038.png" />
+<p>Após definido as opções de filtragem, clique em “Gerar Relatório”.
+As informações serão apresentadas de acordo com os grupos de itens selecionados de forma macro, apresentando custo total por grupo de item (1) e custo total geral (2) somando os valores apresentados em cada grupo de item.
+Caso necessite de uma análise detalhada, ou seja, item a item, clique sobre o grupo para expandir o resultado.</p>
+<img alt="../../_images/0046.png" src="../../_images/0046.png" />
+<p>Ao clicar na seta, de acordo com a imagem acima, o grupo de item será expandido permitindo a visualização item a item.
+Sendo apresentado as seguintes informações:</p>
+<ul class="simple">
+<li><p><strong>Código SAP:</strong> Código registrado no SAP de acordo com as integrações de cadastros, sendo os itens Master recebidos por meio de API da Arcos Dourados;</p></li>
+<li><p><strong>Item:</strong> Descrição do Item como está configurado no SAP;</p></li>
+<li><p><strong>UM:</strong> Unidade de medida padrão do estoque para o item, sendo: Unidade, Quilograma ou Litro;</p></li>
+<li><p><strong>Código Depósito:</strong> Código do depósito cadastrado no SAP vinculado a loja/quiosque selecionado;</p></li>
+<li><p><strong>Quantidade:</strong> Quantidade em estoque de acordo com o filtro de data informado;</p></li>
+<li><p><strong>Custo Unitário:</strong> Custo unitário do item;</p></li>
+<li><p><strong>Custo Total:</strong> Custo total para o item; e</p></li>
+<li><p><strong>Total:</strong> Informação com o total do grupo selecionado.</p></li>
+</ul>
+<img alt="../../_images/0056.png" src="../../_images/0056.png" />
+<p>Para gerar o arquivo em PDF, basta clicar em “Imprimir PDF”.
+O arquivo será gerado com todas as informações disponíveis para o RE10 de forma completa.
+Veja um exemplo na imagem abaixo.</p>
+<img alt="../../_images/0066.png" src="../../_images/0066.png" />
+<p>A composição do RE10 está de acordo com o que foi transacionado no SAP Business One.
+Sua estrutura está diretamente ligada a todos os processos executados no SAP e loja que afetam o inventário, sendo: <strong>Recebimento de Nota Fiscal de Entrada, Contagens, Motivos de Saída, Transferência e Empréstimos e vendas (com a geração de forma automática da NF de saída e baixa de estoque).</strong>
+Essas transações compõe as informações em <strong>Quantidade, Custo Unitário, Custo Total e Total.</strong></p>
+<p>Caso seja necessário a consulta de um item específico encontrado no RE10 com uma possível inconsistência, entre no SAP Business One e pesquise o item em questão para análise.</p>
+<p>Veja no exemplo a consulta no RE10 do item Master.001, Pão de Regular.</p>
+<p>Pelo aplicativo gerado relatório onde foi apresentado a quantidade de 660 unidades de carne de regular no depósito BAT.01, pelo custo unitário R$0,66, sendo custo total de R$432,30 (quantidade x custo unitário), considerando a posição em 30/04/2024.</p>
+<img alt="../../_images/0074.png" src="../../_images/0074.png" />
+<p>Entre em cadastro de item no SAP e pesquise pelo Master.001.</p>
+<p>Ao consultar o item é possível ver as seguintes informações do RE10, sendo: <strong>Código SAP (1), Unidade de Medida (2) e Código do Depósito (3)</strong>.
+Note que a quantidade que está no depósito dessa tela não é o mesmo do dia 30/04/2024, mas sim o total em estoque no momento da consulta.</p>
+<img alt="../../_images/0083.png" src="../../_images/0083.png" />
+<p>A quantidade está relacionada a todos os lançamentos efetuados no estoque como citado anteriormente.
+Importante lembrar que lançamentos retroativos, pendências de recebimento de mercadorias, lançamentos (contagem, motivos de saída, transferências para quiosques e empréstimos entre lojas) em aberto podem interferir no resultado.
+É importante para que se tenha uma informação confiável, validar se todos esses processos estão finalizados/fechados para que se tenha uma posição de estoque condizente com o real.</p>
+<p>O <strong>custo do item</strong> é de acordo com os recebimentos das Notas Fiscais de entrada pela loja, considerando a divisão da quantidade pelo valor total.</p>
+<p><em>(Valor NF – Crédito de Impostos Incusos no preço + Impostos fora do preço) / Quantidade de itens = Custo Médio Unitário</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Tela.html" class="btn btn-neutral float-left" title="Tela Aplicativo McDonald’s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Diferen%C3%A7a%20de%20Stat.html" class="btn btn-neutral float-right" title="Diferença de Stat/Rendimentos" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

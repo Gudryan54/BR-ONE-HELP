@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transferência entre filiais - Manual &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+    <link rel="next" title="Transf. filiais - Relatório de NF de Entrada pendentes" href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html" />
+    <link rel="prev" title="Transferência entre filiais - MRP" href="Transfer%C3%AAncia%20de%20estoque%20pelo%20MRP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Filiais.html">Configurações de Filiais</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Configura%C3%A7%C3%B5es/Configura%C3%A7%C3%B5es%20de%20transfer%C3%AAncia%20entre%20filiais.html">Configurações de transferência entre filiais</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Transfer%C3%AAncia%20de%20estoque%20pelo%20MRP.html">Transferência entre filiais - MRP</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Transferência entre filiais - Manual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html">Transf. filiais - Relatório de NF de Entrada pendentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Cancelamento%20durante%20o%20processo.html">Cancelamento durante o processo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Assistente%20de%20cancelamento.html">Assistente de cancelamento</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Transferência entre filiais - Manual</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="transferencia-entre-filiais-manual">
+<h1>Transferência entre filiais - Manual<a class="headerlink" href="#transferencia-entre-filiais-manual" title="Link permanente para este cabeçalho"></a></h1>
+<p>O processo de Transferência entre filiais podem ser gerados manualmente através da tela Transferência de estoque.</p>
+<p>Para acessar a tela é necessário ir  no menu:</p>
+<p><strong>Estoque -&gt; Transações de estoque -&gt; Transferência de estoque</strong></p>
+<p>Na transferência de estoque devem ser informados:</p>
+<ul class="simple">
+<li><p><strong>Parceiro de negócio</strong></p></li>
+</ul>
+<p>Deve ser informado o Parceiro de negócio do tipo <strong>Cliente</strong> informado na filial de destino.</p>
+<p><strong>Lembrete:</strong> Para o funcionamento correto do processo, nas configurações de <strong>Filiais - Definição</strong> é preciso estar parametrizados os PN’s a serem utilizados no processo.</p>
+<ul class="simple">
+<li><p><strong>Filial</strong></p></li>
+</ul>
+<p>Ao informar o depósito <strong>“Do depósito”</strong>, manualmente, ele preenchera a filial automaticamente padrão de acordo com o depósito informado.</p>
+<ul class="simple">
+<li><p><strong>Depósitos</strong></p></li>
+</ul>
+<p>No processo manual é preciso informar os depósitos manualmente:</p>
+<p><strong>Do Depósito:</strong> Tem que ser informado um depósito da Filial Origem.</p>
+<p><strong>Para Depósito:</strong> Tem que ser informado o <strong>Depósito em trânsito</strong> , configurado na tela <strong>Filiais – Definição</strong> referente a filial de origem.</p>
+<ul class="simple">
+<li><p><strong>Item</strong></p></li>
+</ul>
+<p>Nas linhas do documento deve ser informado os itens que serão transferidos.</p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.020.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.020.png" />
+<p>A Transferência de estoque gera o <strong>Lançamento Contábil Manual</strong>:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de estoque</p></li>
+<li><p><strong>Débito:</strong> Conta de estoque</p></li>
+</ul>
+<p>Após adicionar a <strong>transferência de estoque</strong>, o add-on gera um esboço de <strong>Nota Fiscal de Saída</strong></p>
+<p><strong>Nota fiscal de saída</strong></p>
+<p>É aberto o esboço na tela, com as informações preenchidas de acordo com as configurações e transferencia de estoque:</p>
+<ul class="simple">
+<li><p><strong>Parceiro de negócio:</strong> O Cliente informado é o que está definido nas configurações da tela <strong>Filiais – Definição</strong> , na coluna <strong>Cliente da filial</strong> da filial que será destino.</p></li>
+<li><p><strong>Filial</strong>: A filial informada é a origem.</p></li>
+<li><p><strong>Item</strong>: Carregado os itens da <strong>transferência de estoque</strong></p></li>
+<li><p><strong>Depósito</strong>: O deposito preenchido é das configurações <strong>Filiais – Definição</strong> de <strong>Envio direto</strong> da filial origem.</p></li>
+<li><p><strong>Utilização</strong>: É informado a utilização configurada na tela <strong>Configurações de transferência entre filiais</strong>.</p></li>
+<li><p><strong>Quantidade</strong>: A quantidade é a mesma informada na <strong>transferência de estoque</strong>.</p></li>
+<li><p><strong>Observações:</strong> É preenchido pelo add-on uma observação informando que o documento é referente ao processo de transferência entre filiais, e o Nº transferência de estoque**.**</p></li>
+</ul>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.021.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.021.png" />
+<p>A NF de saída gera o <strong>lançamento contábil manual</strong>:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de Receita</p></li>
+<li><p><strong>Débito:</strong> Na conta para saída gratuita</p></li>
+</ul>
+<p>Após adicionar a <strong>Nota Fiscal de Saída</strong>, o add-on gera um esboço de <strong>NF de entrada</strong>.</p>
+<p><strong>NF de entrada</strong></p>
+<p>Para adição da NF de Entrada diversos parametros são levados em consideração:</p>
+<p><strong>1.</strong> Caso o parâmetro <strong>“Abrir esboço NF de Entrada gerado automaticamente”</strong> esteja marcada.</p>
+<p>Nesse processo o add-on valida o parâmetro “Abrir esboço NF de entrada gerado automaticamente”, se está marcado na tela <strong>BR One :: Configurações de transferência entre filiais</strong>.</p>
+<ul class="simple">
+<li><p><strong>Abre o NF de entrada - Esboço</strong></p></li>
+</ul>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.022.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.022.png" />
+<p>A NF de entrada gera um <strong>lançamento contábil manual</strong>:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de entrada gratuita</p></li>
+<li><p><strong>Débito:</strong> Conta de despesas</p></li>
+</ul>
+<p>Ao adicionar a NF de entrada, o sistema automaticamente gera uma <strong>saída de mercadoria</strong> e uma <strong>entrada de mercadoria</strong> por DI.</p>
+<p><strong>2.</strong> Caso o parâmetro <strong>“Abrir esboço NF de Entrada gerado automaticamente”</strong> esteja desmarcada.</p>
+<p>Caso o parâmetro esteja desmarcado na tela <strong>BR One :: Configurações entre filiais</strong> , ao adicionar a <strong>Nota Fiscal de Saída - Esboço</strong> será necessário buscar o esboço da NF de entrada na tela <strong>Transf. Filiais – Relatório de NF de Entrada pendentes</strong>.</p>
+<p>Ao adicionar  <strong>Nota Fiscal de entrada – Esboço</strong> , o sistema automaticamente gera uma <strong>saída de mercadoria</strong> e uma <strong>entrada de mercadoria</strong> por DI.</p>
+<p><strong>3.</strong> Processo com “Adicionar NF de entrada automaticamente – sem chave de acesso vinculada”, marcada.</p>
+<p>Com esse parâmetro marcado na tela <strong>“BR One :: Configuração transferência entre filiais”</strong> , ao adicionar <strong>Nota Fiscal de Saída – Esboço</strong>  o add-on irá gerar Nota Fiscal de Entrada por DI com os campos preenchidos automaticamente:</p>
+<ul class="simple">
+<li><p>Nº NF</p></li>
+<li><p>Serial</p></li>
+<li><p>Serie</p></li>
+<li><p>Subsérie</p></li>
+<li><p>Modelo</p></li>
+</ul>
+<p>E irá gerar a  <strong>saída de mercadoria</strong> e <strong>entrada de mercadoria</strong> por DI.</p>
+<p>É possível buscar a Nota Fiscal de Entrada, através:</p>
+<p><strong>Compras – C/P -&gt; Nota Fiscal de Entrada</strong></p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.023.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.023.png" />
+<p><strong>4.</strong> Processo com “Adicionar NF de entrada automaticamente – com chave de acesso vinculada”, marcada</p>
+<p>Com esse parâmetro marcado na tela <strong>“BR One :: Configuração transferência entre filiais”</strong>, ao adicionar <strong>Nota Fiscal de Saída – Esboço</strong> , o add-on não gerar NF de Entrada.</p>
+<p>Para adição dessa Nota Fiscal de Entrada é necessário que a Nota Fiscal de Saída esteja com a chave de acesso preenchida de acordo com o Add-on fiscal.</p>
+<p>Com a chave de acesso preenchido é necessário na Nota Fiscal de Saída ir na opção <strong>Operações adicionais -&gt; Gerar NF de Entrada</strong></p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.024.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.024.png" />
+<p>Ao selecionar a opção o add-on irá gerar NF de Entrada por DI com os campos preenchidos automaticamente:
+- Nº NF</p>
+<ul class="simple">
+<li><p>Serial</p></li>
+<li><p>Serie</p></li>
+<li><p>Subsérie</p></li>
+<li><p>Modelo</p></li>
+<li><p>Chave de acesso</p></li>
+</ul>
+<p>E irá gerar a  <strong>saída de mercadoria</strong> e <strong>entrada de mercadoria</strong> por DI.</p>
+<p>É possível buscar a Nota Fiscal de Entrada, através:</p>
+<p><strong>Compras – C/P -&gt; Nota Fiscal de Entrada</strong></p>
+<p><strong>Saída de mercadoria</strong></p>
+<p>A Saída de mercadoria é inserida na filial de origem com o deposito em transito utilizado na transferência de estoque.</p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.025.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.025.png" />
+<p>A saída de mercadoria gera <strong>lançamento contábil manual</strong>:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de estoque</p></li>
+<li><p><strong>Débito:</strong> “Conta de saída” definida no depósito em trânsito da filial origem</p></li>
+</ul>
+<p><strong>Entrada de mercadoria</strong></p>
+<p>A entrada de mercadoria é inserida na filial de destino, o depósito é preenchido de acordo com a definição do parâmetro <strong>Utilizar depósito padrão do item</strong>.</p>
+<p>Entrada de mercadoria com o parâmetro <strong>marcado</strong>:</p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.026.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.026.png" />
+<p>O depósito da entrada de mercadoria será recuperado no cadastro do item na aba estoque definido como depósito padrão, caso o depósito padrão do item não seja correspondente a filial destino, o Add-on irá recuperar o depósito conforme <strong>configuração de depósito para referência</strong>.</p>
+<p>Se não existir um deposito padrão no cadastro do item é recuperado o deposito padrão da filial definido no cadastro das Filiais.</p>
+<p>Entrada com o parâmetro <strong>desmarcado</strong>:</p>
+<img alt="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.027.png" src="../../../../_images/Aspose.Words.0843b7bd-0047-4dce-8b53-352fa2e84686.027.png" />
+<p>O deposito da entrada de mercadoria será recuperado na tela de <strong>configuração de depósito para referência</strong>, com base no depósito utilizado na <strong>transferência de estoque</strong> do campo <strong>“DO depósito”</strong>.</p>
+<p>Se não existir o cadastro do depósito na tela é recuperado o deposito padrão da filial definido no cadastro das Filiais.</p>
+<p>A Entrada de mercadoria gera um lançamento contábil manual:</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> “Conta de entrada” definida no depósito em informado na demanda.</p></li>
+<li><p><strong>Débito:</strong> Conta de estoque</p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Transfer%C3%AAncia%20de%20estoque%20pelo%20MRP.html" class="btn btn-neutral float-left" title="Transferência entre filiais - MRP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Relat%C3%B3rio%20de%20NF%20de%20Entrada%20pendentes.html" class="btn btn-neutral float-right" title="Transf. filiais - Relatório de NF de Entrada pendentes" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

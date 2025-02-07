@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emissão de CMV &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Ledger de Compras" href="Ledger%20de%20compras.html" />
+    <link rel="prev" title="Calculo do Real" href="Calculo%20do%20Real.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tela.html">Tela Aplicativo McDonald’s</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Estoque%20geral.html">RE10 - Relatório de Estoque Geral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Diferen%C3%A7a%20de%20Stat.html">Diferença de Stat/Rendimentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Calculo%20do%20Real.html">Calculo do Real</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Emissão de CMV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ledger%20de%20compras.html">Ledger de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Folha%20de%20Invent%C3%A1rio.html">Folha de Inventário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Rendimento%20de%20%C3%93leo.html">Rendimento de Óleo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Indiretos.html">Indiretos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Obejtivo%20x%20Real.html">Objetivo x Real (Desperdício Completo, Incompleto, Break, Condimentos, Stat e Rendimentos)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Emissão de CMV</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="emissao-de-cmv">
+<h1>Emissão de CMV<a class="headerlink" href="#emissao-de-cmv" title="Link permanente para este cabeçalho"></a></h1>
+<p>O quarto relatório presente no aplicativo é o de Emissão de CMV (Custo de Mercadorias Vendidas), é identificado todas as transações de estoque do produto para que a empresa encontre o seu lucro bruto, ou seja, quanto recebeu pela venda após a dedução dos custos de compra.</p>
+<img alt="../../_images/0018.png" src="../../_images/0018.png" />
+<p>A imagem abaixo representa a tela que será aberta após a seleção de filtros anteriormente, contendo todos os valores necessários utilizados para a análise de CMV, contendo: <strong>Grupo de itens</strong> (podendo abrir a seleção para visualizar o CMV para o grupo) (1), <strong>Custo Final Sem Frete</strong> (2) (caso não selecione frete incluso no preço, neste campo parecerá o Custo Final), % <strong>sobre venda líquida</strong> (3), <strong>venda bruta **(4) considerando o período selecionado, os Impostos (5) que compõe os itens vendidos, o resultado da venda líquida (6) considerando a subtração dos impostos da venda bruta, a **margem bruta</strong>  (7) e <strong>giro de estoque (8)</strong>, calculadas de acordo com as fórmulas abaixo.</p>
+<img alt="../../_images/0028.png" src="../../_images/0028.png" />
+<img alt="../../_images/0037.png" src="../../_images/0037.png" />
+<img alt="../../_images/0045.png" src="../../_images/0045.png" />
+<p>Ao clicar em “Imprimir PDF” será gerado um arquivo em PDF para impressão contendo as mesmas informações do aplicativo, assim como demonstra na imagem abaixo.</p>
+<img alt="../../_images/0055.png" src="../../_images/0055.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Calculo%20do%20Real.html" class="btn btn-neutral float-left" title="Calculo do Real" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Ledger%20de%20compras.html" class="btn btn-neutral float-right" title="Ledger de Compras" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

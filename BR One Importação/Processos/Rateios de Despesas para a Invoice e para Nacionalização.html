@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processo de Rateios de Despesas para a Invoice e para Nacionalização &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Invoice" href="Invoice.html" />
+    <link rel="prev" title="Adiantamento Despachante" href="Adiantamento%20despachante.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Importação</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../introdu%C3%A7%C3%A3o.html">Introdução</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Processo%20de%20importa%C3%A7%C3%A3o.html">Processo de Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Abas.html">Processo de Importação - Abas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Introdu%C3%A7%C3%A3o%20do%20Processo.html">Inicialização do Processo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Pedido%20de%20Compra.html">Pedido de Compra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adicionar%20processo%20de%20Importa%C3%A7%C3%A3o.html">Adicionar Processo de Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Importar%20pedidos.html">Importar Pedidos de Compra</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adiantamento%20de%20Fornecedor.html">Adiantamento de Fornecedor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Adiantamento%20despachante.html">Adiantamento Despachante</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Processo de Rateios de Despesas para a Invoice e para Nacionalização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Invoice.html">Invoice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N.F.%20Nacionaliza%C3%A7%C3%A3o.html">N.F. Nacionalização</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Nota%20Fiscal%20de%20Transporte.html">Nota Fiscal de Transporte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Recebimento%20de%20Mercadorias.html">Recebimento de Mercadorias</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Despesas%20Importa%C3%A7%C3%A3o.html">Despesas Importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="N.F.%20Complementar.html">N.F. Complementar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20Numer%C3%A1rio.html">Fechamento Numerário</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Concilia%C3%A7%C3%A3o%20de%20importa%C3%A7%C3%A3o.html">Conciliação de importação</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Fechamento%20de%20importa%C3%A7%C3%A3o.html">Fechamento de importação</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#br-one-capitalizacao">BR One Capitalização</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+      <li class="breadcrumb-item active">Processo de Rateios de Despesas para a Invoice e para Nacionalização</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="processo-de-rateios-de-despesas-para-a-invoice-e-para-nacionalizacao">
+<h1>Processo de Rateios de Despesas para a Invoice e para Nacionalização<a class="headerlink" href="#processo-de-rateios-de-despesas-para-a-invoice-e-para-nacionalizacao" title="Link permanente para este cabeçalho"></a></h1>
+<p>Antes de adicionar a Invoice e realizar a Nacionalização, o usuário poderá informar as despesas adicionais envolvidas no processo de importação na aba <strong>Despesas</strong>. Esses valores precisarão ser rateados para integrarem o valor do item ou dos custos adicionais e com impostos no momento de gerar a Invoice e a Nacionalização. O processo de rateio de despesa para Invoice deve ser feito antes de gerar a Invoice, e, portanto, antes do momento de nacionalização. No momento de inserir as despesas de nacionalização, deve ser feito antes de adicionar a Nota Fiscal.</p>
+<p>Dentro da aba de <strong>Despesas</strong> existem duas divisões, respectivamente para os processos de Nacionalização ou de Invoice:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.001.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.001.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.001.png" style="width: 487.20000000000005px; height: 54.400000000000006px;" /></a>
+<p>O rateio de Invoice deve ser realizado <strong>antes</strong> do de NF Nacionalização, pois todas as despesas lançadas como Invoice serão inclusas no preço dos itens.</p>
+<p>Deve-se observar que caso uma despesa configurada como Despesa I, II ou III no cadastro de despesas adicionais esteja também configurada como despesa de Invoice, essa <strong>não irá mais ter a característica de Despesa I, II ou III</strong> e terá seu valor incluso no preço do item.</p>
+<p>Se o usuário realizar o rateio de Invoice e/ou rateio de Nacionalização e após isso alterar os valores das despesas de Invoice, esses rateios já feitos serão desconsiderados, pois os valores não estarão condizentes com o informado pelo usuário, e este deve obrigatoriamente realizá-los novamente.</p>
+<p>A finalidade dos rateios é incluir o valor das despesas adicionais nos documentos de Invoice e NF Nacionalização, assim sendo, quando esses documentos já estiverem finalizados, não se poderá mais executar o processo de rateio.</p>
+<ul class="simple">
+<li><p><strong>Possíveis ocorrências durante o processo</strong></p></li>
+</ul>
+<p>Caso o usuário tente realizar o rateio de NF Nacionalização antes de realizar o rateio de Invoice e <strong>existam valores lançados nas despesas de Invoice*,</strong> será exibida a mensagem de erro:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.002.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.002.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.002.jpeg" style="width: 318.40000000000003px; height: 12.8px;" /></a>
+<p><em>BR One :: Realize o processo de **Rateio de Invoice*</em> antes de realizar este processo.*</p>
+<p>Se o documento de Invoice já estiver lançado e o usuário tentar executar o rateio, será exibida a mensagem de erro:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.003.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.003.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.003.jpeg" style="width: 424.8px; height: 12.8px;" /></a>
+<p><em>BR One :: Existe um documento de Invoice gerado para este processo. Não é possível alterar os valores rateados.</em></p>
+<p>Se o documento de N.F. Nacionalização já estiver finalizado e o usuário tente realizar o rateio de Nacionalização, será exibida a mensagem de erro:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.004.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.004.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.004.jpeg" style="width: 401.6px; height: 12.0px;" /></a>
+<p><em>BR One :: O processo de **N.F. Nacionalização*</em> já foi concluído. Não é possível alterar os valores rateados.*</p>
+<ul class="simple">
+<li><p><strong>Detalhes dos cálculos dos rateios</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/14.png"><img alt="../../_images/14.png" src="../../_images/14.png" style="width: 872.95px; height: 211.9px;" /></a>
+<p>Na aba de <strong>NF. Nacionalização</strong> dentro da aba <strong>Despesas</strong> deve ser informada a taxa de câmbio para a realização do rateio. Caso o usuário não informe a taxa e clique no botão <strong>Rateio</strong>, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.006.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.006.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.006.jpeg" style="width: 365.6px; height: 12.8px;" /></a>
+<p><em>BR One :: Para realizar o rateio é necessário informar a taxa de conversão da moeda estrangeira.</em></p>
+<p>Todas as despesas adicionais cadastradas, com o flag Despesas de Importação marcado, o Método de distribuição diferente de <strong>Nenhum</strong> e com o campo <strong>Etapa do processo</strong> igual a <strong>N.F. Nacionalização</strong> serão carregadas na coluna <strong>Nome da despesa.</strong> Na coluna <strong>Valor (MC),</strong> o usuário deverá inserir o valor das despesas. Essas despesas serão rateadas de acordo com o método de distribuição, gravadas na aba <strong>Itens</strong> nos seus devidos campos e inseridas no preço do item ou como despesas adicionais da linha 1,2 ou 3 do documento para a geração da NF posterior. As despesas só poderão ser lançadas em moeda corrente.</p>
+<p>De acordo com as despesas adicionais cadastradas como <strong>Despesa adicional 1, Despesa adicional 2</strong> e <strong>Despesa adicional 3</strong>, o Add-on saberá em quais linhas da NF de nacionalização a despesa será atribuída. Para essas despesas que tiverem a coluna <strong>Despesas adicionais da coluna</strong> preenchidas, o rateio será feito de acordo com o Método de distribuição selecionado para a despesa e informado o resultado nas colunas <strong>Despesa 1</strong>, <strong>Despesa 2</strong> e <strong>Despesa 3</strong> da aba <strong>Itens</strong>.</p>
+<p>Para as despesas que não tenham valor na coluna <strong>Despesas adicionais da coluna</strong>, será feito o rateio de acordo com o Método de distribuição, acumulando o valor das despesas para cada item, e ao final, será possível visualizá-lo na coluna <strong>Despesas para custo do item (MC)</strong> na aba <strong>Itens.</strong></p>
+<p>Após informar o valor das despesas, basta fazer o rateio clicando no botão <strong>Rateio.</strong> Se não houver nenhum erro ao fazer o rateio, as seguintes mensagens serão exibidas:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.007.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.007.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.007.jpeg" style="width: 260.0px; height: 16.0px;" /></a>
+<p><em>BR One :: Realizando o cálculo das despesas adicionais. Aguarde…</em></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.008.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.008.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.008.jpeg" style="width: 333.6px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Rateio das despesas adicionais de N.F. Nacionalização realizado com sucesso.</em></p>
+<a class="reference internal image-reference" href="../../_images/ProcessodeRateiosdeDespesasparaaInvoiceeparaNacionalização.PNG"><img alt="../../_images/ProcessodeRateiosdeDespesasparaaInvoiceeparaNacionaliza%C3%A7%C3%A3o.PNG" src="../../_images/ProcessodeRateiosdeDespesasparaaInvoiceeparaNacionaliza%C3%A7%C3%A3o.PNG" style="width: 937.9999999999999px; height: 228.89999999999998px;" /></a>
+<p>Todas as despesas adicionais cadastradas, com o flag Despesas de Importação marcado,  o Método de distribuição diferente de <strong>Nenhum</strong> e com o campo <strong>Etapa do processo</strong> igual a <strong>Invoice</strong> serão carregadas na coluna <strong>Nome da despesa</strong> da aba <strong>Invoice</strong> dentro da aba <strong>Despesa</strong>. O usuário deverá inserir o valor da despesa, que será computado em mesma moeda que o documento de importação, isto é, em moeda estrangeira. Estas despesas serão rateadas de acordo com seu método de distribuição e exibidas na aba <strong>Itens</strong> na coluna <strong>Despesas de Invoice.</strong></p>
+<p>Para conferir o rateio, vá até a aba <strong>Itens</strong> e os campos terão sido calculados.</p>
+<a class="reference internal image-reference" href="../../_images/ProcessodeRateiosdeDespesasparaanvoiceeparaNacionalização.PNG"><img alt="../../_images/ProcessodeRateiosdeDespesasparaanvoiceeparaNacionaliza%C3%A7%C3%A3o.PNG" src="../../_images/ProcessodeRateiosdeDespesasparaanvoiceeparaNacionaliza%C3%A7%C3%A3o.PNG" style="width: 969.0px; height: 236.25px;" /></a>
+<p>Obs.: Caso sejam adicionadas novas despesas adicionais (Tanto de Invoice quanto de NF. Nacionalização) no cadastro de despesas adicionais, é possível atualizar as despesas de um processo de importação que ainda não tenha gerado NF Nacionalização. Para isso, é preciso clicar no botão <strong>Atualizar despesas*</strong> da aba Despesas. Isso fará com que as novas despesas sejam carregadas nas abas correspondentes de Nacionalização ou Invoice (dentro da aba Despesas), e caso alguma despesa que antes era <strong>Invoice</strong> passou a ser <strong>NF Nacionalização</strong>, essa será recarregada na aba correta.</p>
+<p>Os métodos de distribuição existentes são os seguintes:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.011.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.011.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.011.jpeg" style="width: 160.8px; height: 106.4px;" /></a>
+<ul class="simple">
+<li><p><strong>Nenhum</strong>: O valor da despesa não é distribuído pelas linhas do documento.</p></li>
+<li><p><strong>Quantidade</strong>: Distribui o valor da despesa pelas linhas do documento, de modo proporcional à quantidade de cada linha.</p>
+<ul>
+<li><p><strong>Fórmula</strong>: (Quantidade Unitária * 100% / Soma (Quantidade Unitária)) * Despesa</p></li>
+</ul>
+</li>
+<li><p><strong>Volume</strong>: Distribui o valor da despesa entre as linhas do documento, de modo proporcional ao volume dos itens em cada linha.</p>
+<ul>
+<li><p><strong>Fórmula:</strong> (Volume da linha *100% / Soma (Volume da linha)) * Despesa</p></li>
+</ul>
+</li>
+<li><p><strong>Peso</strong>: Distribui o valor da despesa entre as linhas do documento, de modo proporcional ao peso dos itens em cada linha.</p>
+<ul>
+<li><p><strong>Fórmula:</strong> (Peso da Linha * 100% / Soma (Peso da linha)) * Despesa</p></li>
+</ul>
+</li>
+<li><p><strong>Igual a</strong>: Distribui o valor da despesa igualmente entre as linhas do documento. Por exemplo, o valor da despesa é dividido pelo número de linhas e distribuído da forma correspondente, independentemente da quantidade e do total de cada linha.</p>
+<ul>
+<li><p><strong>Fórmula:</strong> Despesa / Total das linhas</p></li>
+</ul>
+</li>
+<li><p><strong>Total da linha</strong>: Distribui o valor da despesa pelas linhas do documento, de modo proporcional ao valor total de cada linha. Por exemplo, existem três linhas com um valor total de R$ 500, R$ 300, e R$ 200, respectivamente, e o valor da despesa é R$ 100. O valor da despesa é distribuído da seguinte maneira: R$ 50 para a primeira linha, R$ 30 para a segunda e R$ 20 para a terceira.</p>
+<ul>
+<li><p><strong>Fórmula:</strong> (Valor Total da linha (MC) * 100% / Soma (Valor Total das linhas (MC))) * Despesa</p></li>
+</ul>
+</li>
+</ul>
+<p>Para os tipos de rateio <strong>Volume</strong> e <strong>Peso,</strong> é necessário que a coluna respectiva esteja preenchida na aba <strong>Itens.</strong> Caso não esteja, ao tentar fazer o rateio, as seguintes mensagens serão exibidas (cada uma para um tipo):</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.012.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.012.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.012.jpeg" style="width: 414.40000000000003px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Na aba de itens para todas as linhas deve ser informado valor maior que zero para o campo Volume.</em></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.013.jpeg"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.013.jpeg" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.013.jpeg" style="width: 400.8px; height: 14.4px;" /></a>
+<p><em>BR One :: Na aba de itens para todas as linhas deve ser informado valor maior que zero para o campo Peso.</em></p>
+<p>O primeiro cálculo realizado é das Despesa Excluídas da Base Rateio, pois não são realizadas por nível, ou seja, a base sempre será o selecionado na linha sem níveis anteriores.</p>
+<p><strong>Despesas excluídas são:</strong></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.014.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.014.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.014.png" style="width: 461.6px; height: 61.6px;" /></a>
+<p><strong>Itens importados:</strong></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.015.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.015.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.015.png" style="width: 334.40000000000003px; height: 90.4px;" /></a>
+<p><strong>Rateio das despesas excluídas 01 e 02</strong></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.016.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.016.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.016.png" style="width: 470.40000000000003px; height: 116.80000000000001px;" /></a>
+<p><strong>Na coluna será exibida a soma dessas despesas por linha:</strong></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.017.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.017.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.017.png" style="width: 468.8px; height: 80.0px;" /></a>
+<p>As colunas Rateio Nível 1 até o Nível 5 serão calculados da seguinte forma:</p>
+<p><strong>Despesas de Nacionalização</strong></p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.018.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.018.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.018.png" style="width: 464.8px; height: 148.0px;" /></a>
+<p>Ao selecionar a opção de <strong>RATEIO</strong> na aba Despesas -&gt; NF Nacionalização, os valores do rateio serão exibidos na aba Itens nas colunas de cada <strong>Nível</strong>.</p>
+<p>O cálculo do rateio se baseia em um valor no qual foi configurado no método de distribuição, fazendo o cálculo com regra de 3. Quando é utilizado o método por <strong>TOTAL DA LINHA</strong> tem uma nova opção para ser utilizado sem algumas despesas no valor para rateio, e sempre será agregado o valor do nível anterior para esse rateio.</p>
+<p>Abaixo os cálculos realizados de acordo com a lista de despesas anterior.</p>
+<ul class="simple">
+<li><p><strong>O cálculo do Nível 1 será:</strong></p>
+<ul>
+<li><p><strong>D001</strong> – Rateio por peso não é afetado.</p></li>
+<li><p><strong>D002</strong> – Rateio por Total linha, valida se pega com o sem as despesas excluídas, nesse caso não está marcado o parâmetro, recupera a coluna de Total MC + Níveis anteriores.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.019.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.019.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.019.png" style="width: 468.0px; height: 140.0px;" /></a>
+<ul class="simple">
+<li><p><strong>O cálculo do Nível 2 será:</strong></p>
+<ul>
+<li><p><strong>D003</strong> – Rateio por Total linha, valida se pega com o sem as despesas excluídas, nesse caso está marcado o parâmetro, recupera a coluna de Total MC – Despesas Excluídas + Níveis anteriores.</p></li>
+<li><p><strong>D004</strong> – Rateio por Total linha, valida se pega com o sem as despesas excluídas, nesse caso está marcado o parâmetro, recupera a coluna de Total MC – Despesas Excluídas + Níveis anteriores.</p></li>
+</ul>
+</li>
+</ul>
+<img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.020.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.020.png" />
+<p><strong>O cálculo do Nível 3 será:</strong></p>
+<p>Não tem nenhuma despesa configurada para esse nível então a coluna será preenchida com o valor 0.</p>
+<ul class="simple">
+<li><p><strong>O cálculo do Nível 4 será:</strong></p>
+<ul>
+<li><p><strong>D005</strong> – Rateio por peso não é afetado.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.021.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.021.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.021.png" style="width: 448.8px; height: 144.0px;" /></a>
+<ul class="simple">
+<li><p><strong>O cálculo do Nível 5 será:</strong></p>
+<ul>
+<li><p><strong>D006</strong> – Rateio por Total linha, valida se pega com o sem as despesas excluídas, nesse caso não está marcado o parâmetro, recupera a coluna de Total MC + Níveis anteriores.</p></li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.022.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.022.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.022.png" style="width: 447.20000000000005px; height: 138.4px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Despesas:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/11.PNG"><img alt="../../_images/11.PNG" src="../../_images/11.PNG" style="width: 864.0px; height: 372.8px;" /></a>
+<ul class="simple">
+<li><p><strong>Aba Itens:</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/12.PNG"><img alt="../../_images/12.PNG" src="../../_images/12.PNG" style="width: 860.8000000000001px; height: 376.8px;" /></a>
+<p>Os cálculos para geração da Nacionalização continuam o mesmo:</p>
+<p><strong>Preço Unitário:</strong> (Despesas de custos / Qtde) + Preço Unitário MC (aba Itens)</p>
+<p><strong>Preço Unitário:</strong> (90 / 6) + 50 = 65,00</p>
+<a class="reference internal image-reference" href="../../_images/13.PNG"><img alt="../../_images/13.PNG" src="../../_images/13.PNG" style="width: 824.0px; height: 364.0px;" /></a>
+<p><strong>Despesa Custo (MC)=</strong></p>
+<p>Nível 1 + Nível 2 + Nível 3 + Nível 4 + Nível 5 – Desp. Ad1 – Desp. Ad.2 – Desp. Ad. 3</p>
+<p>35 + 50 + 5 +10 – 10 – 0 - 0 = 90</p>
+<p><strong>Valor total Final (MC)=</strong></p>
+<p>(Preço Unit. (MC) * Quantidade) + (Despesa Custo (MC) + Despesa 1 + Despesa 2 + Despesa 3)</p>
+<p>(50,00 * 6) + (90,00 + 10,00 + 0 + 0) = 400,00</p>
+<p><strong>Valor Unit Final (MC)=</strong></p>
+<p>Valor total Final (MC) / Quantidade</p>
+<p>400 / 6 = 66,66</p>
+<p><strong>Fator custo=</strong></p>
+<p>Valor total Final (MC) / Valor total (MC)</p>
+<p>400 / 300 = 1,33</p>
+<a class="reference internal image-reference" href="../../_images/14.PNG"><img alt="../../_images/14.PNG" src="../../_images/14.PNG" style="width: 902.4000000000001px; height: 395.20000000000005px;" /></a>
+<p>As abas de <strong>Invoice</strong> e <strong>NF Nacionalização</strong> da aba de <strong>Despesas</strong> serão bloqueadas para edição conforme as etapas de Invoice e NF Nacionalização forem finalizadas.  Caso o usuário tenha inserido uma Invoice com sucesso, a aba <strong>Invoice</strong> de <strong>Despesas</strong> será exibida da seguinte forma:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.027.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.027.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.027.png" style="width: 485.6px; height: 238.4px;" /></a>
+<p>E caso a NF Nacionalização esteja completa, a aba <strong>NF Nacionalização</strong> também será exibida bloqueada conforme a imagem:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.028.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.028.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.028.png" style="width: 487.20000000000005px; height: 235.20000000000002px;" /></a>
+<p>Estes bloqueios são feitos para garantir a consistência das informações que estão apresentadas nestas telas com as utilizadas no momento de adição dos documentos de Invoice e/ou NF Nacionalização. Caso o método de distribuição de uma despesa que tenha o flag <strong>Considera para rateio CIF</strong> marcado (em Despesas adicionais) seja alterado, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.029.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.029.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.029.png" style="width: 387.20000000000005px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Não é possível modificar o ‘Método de distribuição’ de uma despesa configurada como CIF.</em></p>
+<p>Ao pressionar o botão <strong>Rateio</strong> (aba <strong>NF. Nacionalização*), será realizado o processo normal para as despesas que não possuem o flag **Considera para rateio CIF</strong>, e após a identificação dos valores, será realizado o rateio e a soma nos valores já identificados, com os valores das despesas que possuem o flag <strong>Considera para rateio CIF</strong>.</p>
+<p>O cálculo a ser feito quando o flag <strong>Considera para rateio CIF</strong> estiver marcado é o seguinte:</p>
+<p>((Valor Total (MC) linha + Despesas Custo (MC)) * 100% / (Soma da coluna Valor Total (MC) + Soma da coluna Despesas Custo (MC))) * Valor da despesa que tem o flag marcado</p>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.030.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.030.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.030.png" style="width: 324.0px; height: 65.60000000000001px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.031.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.031.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.031.png" style="width: 489.6px; height: 94.4px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.032.png"><img alt="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.032.png" src="../../_images/Aspose.Words.81a79450-3869-4900-bb39-96aeed9a0411.032.png" style="width: 390.40000000000003px; height: 70.4px;" /></a>
+<p><em>((193,747980 +0) * 100% / (297,152800 + 0)) * 100</em></p>
+<p><em>65,20</em></p>
+<p><em>((103,404820 +0) * 100% / (297,152800 + 0)) * 100</em></p>
+<p><em>34,79</em></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Adiantamento%20despachante.html" class="btn btn-neutral float-left" title="Adiantamento Despachante" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Invoice.html" class="btn btn-neutral float-right" title="Invoice" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

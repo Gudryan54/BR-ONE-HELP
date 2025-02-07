@@ -1,0 +1,34 @@
+Versão 4.11.320
+~~~~~~~~~~~~~~~~
+
+**Correções** 
+
+- **Erro ao realizar o fechamento de importação**
+
+Realizado ajuste para corrigir o erro **"BR One :: Erro configurando CFL para o item UPM_Edt002. Retorno: Referência de objeto não definida para
+uma instância de um objeto."**, ao tentar fechar o processo de importação.
+
+- **Ao adicionar NF de capitalização, os campos de NF e Capitalização não são preenchidos**
+
+Realizado ajuste para preencher os campos **“Nota Fiscal de Entrada”** e **“Capitalização”** do cadastro do ativo, após inserir uma Nota Fiscal
+de capitalização.
+
+- **Fechamento de importação fazendo LCM incorreto**
+
+Realizado ajuste no LCM para quando é encontrado saldo na coluna débito, onde estava sendo realizado Débito na conta de Conta transitória de
+estoque e Crédito na conta de Fechamento contábil, mas o correto é realizar o lançamento contrário: Crédito na conta de Conta transitória
+de estoque e Débito na conta de Fechamento contábil.
+
+- **Quantidade recebida não está sendo atualizada**
+
+Agora as quantidades recebidas estão sendo atualizadas corretamente, mesmo que os recebimentos tenham base nas notas de transporte criadas.
+
+- **Campo 'Receb. de mercadoria' sendo preenchido com quantidade Total ainda faltando itens a receber**
+
+Realizado ajuste no campo "Receb. de mercadoria" para que, em casos nos quais o recebimento total da mercadoria não ocorra, o status seja
+atualizado para "Parcial" até que a totalidade seja recebida.
+
+- **Solicitação a conta 'Conta de conciliação financeira'**
+
+Realizado ajuste para evitar a validação "BR One :: Para adicionar um novo processo de importação, o campo 'Conta de Conciliação Financeira'
+nas 'Configurações de Importação' deve estar preenchido", mesmo quando a conta já estiver devidamente preenchida nas configurações de importação.

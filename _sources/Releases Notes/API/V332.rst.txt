@@ -1,0 +1,14 @@
+Versão 4.11.332
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Melhoria**
+
+
+- **Bloquear apontamento com recurso inativo - API**
+
+Na atualização mais recente do **BR One versão 332**, foi implementada uma melhoria na **API do BR One**. Agora, ao tentar realizar um
+apontamento de produção utilizando um recurso com **status inativo**, o processo será bloqueado, impedindo a inclusão do apontamento para esse
+recurso.
+

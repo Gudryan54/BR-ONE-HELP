@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada de PA &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Entrada de PA Refugo" href="BROne_Retrabalho_Refugo.html" />
+    <link rel="prev" title="Retorno de PA" href="BROne_Retrabalho_Retorno_PA.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Configuracao.html">Configurações de produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Ordem_Producao.html">Ordem de produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Retorno_PA.html">Retorno de PA</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Entrada de PA</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Refugo.html">Entrada de PA Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Estorno_Producao.html">Estorno de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BROne_Retrabalho_Transferencia_Estoque.html">Transferência de estoque da entrada de PA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Entrada de PA</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="entrada-de-pa">
+<h1>Entrada de PA<a class="headerlink" href="#entrada-de-pa" title="Link permanente para este cabeçalho"></a></h1>
+<p>Ao realizar a entrada de Produto acabado (PA), algumas validações serão realizadas:</p>
+<a class="reference internal image-reference" href="../../../_images/img0132.png"><img alt="../../../_images/img0132.png" class="align-center" src="../../../_images/img0132.png" style="width: 435.0px; height: 253.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O campo <strong>“Custo unitário”</strong> não pode ser igual a zero. Caso seja, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img0231.png"><img alt="../../../_images/img0231.png" class="align-center" src="../../../_images/img0231.png" style="width: 270.0px; height: 14.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: O custo unitário dever maior que zero.</strong></p>
+<p>A quantidade da entrada de PA deve ser menor ou igual a quantidade planejada da Ordem de produção (PA), caso contrário, exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img0326.png"><img alt="../../../_images/img0326.png" class="align-center" src="../../../_images/img0326.png" style="width: 611.0px; height: 15.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Não é permitido apontar uma quantidade de produto acabado maior que a quantidade planejada na OP de retrabalho.</strong></p>
+<p>Caso a quantidade informada na tela de entrada de produto acabado (PA) seja menor que a quantidade planejada da Ordem de produção (OP) mas já existir entradas anteriores, o sistema validará sobre a quantidade restante:</p>
+<a class="reference internal image-reference" href="../../../_images/img0422.png"><img alt="../../../_images/img0422.png" class="align-center" src="../../../_images/img0422.png" style="width: 585.0px; height: 14.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One ::Não é possível adicionar a Entrada de PA, pois ultrapassa a Quantidade planejada da OP. Quantidade faltante: 1.</strong></p>
+<p>Caso a Ordem de produção (OP) não possua nenhum componente com baixa por explosão e o PA administrado por lote, exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img0521.png"><img alt="../../../_images/img0521.png" class="align-center" src="../../../_images/img0521.png" style="width: 654.0px; height: 12.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Não é possível realizar uma Entrada de PA sem antes realizar uma Saída de Insumos ou um Apontamento de Produção para a OP.</strong></p>
+<p>Caso a Ordem de produção (OP) não possua nenhum componente com baixa por explosão e o PA não é administrado por lote, exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img0622.png"><img alt="../../../_images/img0622.png" class="align-center" src="../../../_images/img0622.png" style="width: 575.0px; height: 13.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: É necessário realizar pelo menos uma saída de insumos para essa OP antes de executar a reavaliação de estoque.</strong></p>
+<ul class="simple">
+<li><p><strong>Entrada de PA para Item administrado por lote ou série</strong></p></li>
+</ul>
+<p>Ao clicar em <strong>Adicionar</strong> e com o parâmetro <strong>Obriga trocar os lotes/séries do produto retrabalhado</strong> desmarcada, e considerando que o Produto Acabado (PA) que está sendo trabalhado naquele momento é administrado por lote/série, será aberta a seguinte tela:</p>
+<ul class="simple">
+<li><p><strong>Lote</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0720.png"><img alt="../../../_images/img0720.png" class="align-center" src="../../../_images/img0720.png" style="width: 501.0px; height: 154.0px;" /></a>
+<ul class="simple">
+<li><p><strong>Série</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/a-img03.png"><img alt="../../../_images/a-img03.png" class="align-center" src="../../../_images/a-img03.png" style="width: 500.0px; height: 156.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Antes de abrir a tela de <strong>Entrada de mercadoria</strong>,  as seguintes condições devem ser atendidas: A entrada de Produto acabado (PA) não seja do tipo refugo, o parâmetro <strong>Obriga trocar os lotes/séries do produto retrabalhado</strong> está marcado ou a resposta na tela anterior é <strong>Sim</strong>, o item é administrado por lote/série, e a soma das quantidades alocadas nas Ordens de produção (OPs) vinculadas é maior ou igual a quantidade na entrada de produto acabado (PA), e a quantidade da entrada de PA é menor que a soma dos lotes/séries disponíveis.</p>
+<ul class="simple">
+<li><p><strong>Lote</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0817.png"><img alt="../../../_images/img0817.png" class="align-center" src="../../../_images/img0817.png" style="width: 656.0px; height: 355.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Série</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/a-img04.png"><img alt="../../../_images/a-img04.png" class="align-center" src="../../../_images/a-img04.png" style="width: 657.6px; height: 435.20000000000005px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Na tela <strong>BR One :: Seleção do nº de lote/série</strong>, deve ser escolhido o lote/série que será utilizado na saída de mercadorias que será criada ao inserir a <strong>Entrada de mercadoria</strong>. Esse lote/série escolhido será o lote/série entrado na entrada de PA da OP vinculada à OP de retrabalho.</p>
+<p>Após selecionar o lote ou série, basta clicar em <strong>Adicionar</strong> na tela <strong>BR One :: Entrada de PA</strong>, que a tela <strong>Entrada de mercadoria</strong> será aberta:</p>
+<a class="reference internal image-reference" href="../../../_images/img0917.png"><img alt="../../../_images/img0917.png" class="align-center" src="../../../_images/img0917.png" style="width: 615.0px; height: 450.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Essa tela não poderá ser fechada ou cancelada antes de adicionar a entrada. Caso o usuário tente fechar ou cancelar, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img1018.png"><img alt="../../../_images/img1018.png" class="align-center" src="../../../_images/img1018.png" style="width: 374.0px; height: 14.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Não é possível fechar a tela sem inserir a entrada de mercadoria.</strong></p>
+<p>Ao clicar em <strong>Adicionar</strong>, a tela de definição de lotes/séries será aberta:</p>
+<a class="reference internal image-reference" href="../../../_images/img1119.png"><img alt="../../../_images/img1119.png" class="align-center" src="../../../_images/img1119.png" style="width: 513.0px; height: 385.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Nessa tela, será criado o lote/série que será utilizado na entrada de mercadoria. Caso a configuração de gerar lote/série automaticamente esteja ativa, basta clicar no botão <strong>Carregar lote</strong> para o lote/série ser carregado.</p>
+<p>Após criar o lote/série, clique em <strong>OK</strong> e insira a <strong>Entrada de mercadoria</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img1218.png"><img alt="../../../_images/img1218.png" class="align-center" src="../../../_images/img1218.png" style="width: 960.8000000000001px; height: 312.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Será criada uma <strong>Entrada de mercadoria</strong> com o item da Entrada de PA e, com esse mesmo item, será criada também uma <strong>Saída de mercadorias</strong> para os componentes com baixa por explosão e uma saída para o item pai da OP.</p>
+<a class="reference internal image-reference" href="../../../_images/img1317.png"><img alt="../../../_images/img1317.png" class="align-center" src="../../../_images/img1317.png" style="width: 960.8000000000001px; height: 310.40000000000003px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Entrada de PA para item não administrado por lote/série</strong></p></li>
+</ul>
+<p>Para item que não é administrado por lote/série, pode ser consultado o seu processo de entrada de PA diretamente no tópico de <strong>Transferência de estoque</strong>.</p>
+<p>Se o usuário tentar fazer uma entrada de PA com quantidade maior que a planejada na OP, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img0326.png"><img alt="../../../_images/img0326.png" class="align-center" src="../../../_images/img0326.png" style="width: 611.0px; height: 15.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Não é permitido apontar uma quantidade de produto acabado maior que a quantidade planejada na OP de retrabalho.</strong></p>
+<p>Caso o usuário tente inserir uma entrada de PA sem realizar uma saída de insumos para a OP, a seguinte mensagem será exibida:</p>
+<p><em>BR One :: É necessário realizar pelo menos uma saída de insumos para essa OP antes de executar a reavaliação de estoque</em>.</p>
+<a class="reference internal image-reference" href="../../../_images/img0622.png"><img alt="../../../_images/img0622.png" class="align-center" src="../../../_images/img0622.png" style="width: 575.0px; height: 13.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Entrada de PA na OP de Retrabalho com quantidade sobressalente</strong></p></li>
+</ul>
+<p>Para realizar uma entrada de PA com uma quantidade sobressalente para uma OP de Retrabalho, o parâmetro <strong>% desvio da quantidade planejada da OP de retrabalho</strong> deve estar marcado e com um desvio configurado.</p>
+<a class="reference internal image-reference" href="../../../_images/img1418.png"><img alt="../../../_images/img1418.png" class="align-center" src="../../../_images/img1418.png" style="width: 759.0px; height: 426.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Com o parâmetro devidamente configurado, ao realizar a entrada de PA com as quantidades sobressalentes (desvio), o add-on irá realizar uma entrada de mercadoria para todas as quantidades que não foram planejadas na OP.</p>
+<p><strong>Exemplo:</strong></p>
+<p>Em uma OP, onde a quantidade planejada são <strong>10 peças</strong>, e o parâmetro está configurado como <strong>50%</strong>, é possível realizar uma entrada de <strong>15 peças</strong>, onde <strong>10 são planejadas</strong>, portanto, seguem o fluxo normal do BR One, e <strong>5 peças</strong> são sobressalentes, onde o add-on irá gerar uma entrada de mercadoria para essa quantidade.</p>
+<p>No exemplo da OP abaixo, foi feita uma entrada de PA de <strong>15 peças</strong>, e o add-on teve justamente o comportamento indicado acima.</p>
+<ul class="simple">
+<li><p>10 peças planejadas, geraram uma reavaliação de estoque (pois não houve troca de lote).</p></li>
+<li><p>05 peças sobressalentes, geraram uma entrada de mercadoria.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img1515.png"><img alt="../../../_images/img1515.png" class="align-center" src="../../../_images/img1515.png" style="width: 784.0px; height: 478.79999999999995px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>Obs.:</strong> Não houve alteração no processo de saída de insumos, se a OP possui componentes com baixa por explosão, as entradas de quantidades sobressalentes irão abater a quantidade conforme configurado na OP, se os componentes são de baixa manual, a saída deve ocorrer manualmente.</p>
+<p>Independentemente de quantas entradas sejam realizadas, o add-on irá identificar o que é quantidade sobressalente e irá realizar uma entrada de mercadoria para essa quantidade.</p>
+<p>A fim de facilitar a identificação das entradas de PA de quantidade sobressalentes, todas as entradas de mercadoria, que forem provenientes do desvio configurado, terão uma mensagem específica no campo <strong>Observações</strong>, <strong>Observação do diário</strong> e estarão preenchidas como <strong>Não</strong> no campo <strong>Qtde. Planejada OP Retrabalho</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img1612.png"><img alt="../../../_images/img1612.png" class="align-center" src="../../../_images/img1612.png" style="width: 560.0px; height: 443.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<ul class="simple">
+<li><p><strong>Entrada de PA na OP de Retrabalho sem componentes</strong></p></li>
+</ul>
+<p>Para realizar uma entrada de PA sem componentes para uma OP de Retrabalho, é necessário que o parâmetro <strong>Utilizar GGF arbitrado</strong> esteja ativo, e que os recursos tenham um tempo planejado na OP e um custo hora em seu cadastro.</p>
+<p>Caso usuário tente adicionar uma OP de Retrabalho sem componentes e o recurso não possua cadastrado nenhum custo hora, o add-on irá retornar a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1711.png"><img alt="../../../_images/img1711.png" class="align-center" src="../../../_images/img1711.png" style="width: 502.0px; height: 152.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Insira um custo hora no recurso ou no grupo do recurso para continuar.</strong></p>
+<p>Caso usuário tente adicionar uma OP de Retrabalho sem componentes e o recurso não tenha tempo planejado, o add-on irá retornar a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1812.png"><img alt="../../../_images/img1812.png" class="align-center" src="../../../_images/img1812.png" style="width: 499.0px; height: 154.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: A coluna ‘Tempo planejado’ da linha com custo hora deve ser maior que zero.</strong></p>
+<p>Caso usuário tente realizar a entrada de PA para OPs de retrabalho que não possuem componentes no grid, utilizando o add-on, e essa OP não possui tempo planejado, deve ser retornado a seguinte mensagem em vermelho no rodapé:</p>
+<a class="reference internal image-reference" href="../../../_images/img1911.png"><img alt="../../../_images/img1911.png" class="align-center" src="../../../_images/img1911.png" style="width: 733.0px; height: 21.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>BR One :: Não é possível realizar a Entrada de PA na OP de Retrabalho, pois o GGF arbitrado não está ativo ou não há tempo planejado nos recursos da OP.’</strong></p>
+<p>Com todas as configurações corretas, a entrada de PA na OP de Retrabalho sem componentes, deve ser realizada normalmente,</p>
+<a class="reference internal image-reference" href="../../../_images/img2010.png"><img alt="../../../_images/img2010.png" class="align-center" src="../../../_images/img2010.png" style="width: 640.0px; height: 452.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Observa-se que o custo unitário do PA, será referente ao custo do <strong>GGF</strong> gerado na entrada.</p>
+<a class="reference internal image-reference" href="../../../_images/img219.png"><img alt="../../../_images/img219.png" class="align-center" src="../../../_images/img219.png" style="width: 642.0px; height: 410.4px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="BROne_Retrabalho_Retorno_PA.html" class="btn btn-neutral float-left" title="Retorno de PA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="BROne_Retrabalho_Refugo.html" class="btn btn-neutral float-right" title="Entrada de PA Refugo" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

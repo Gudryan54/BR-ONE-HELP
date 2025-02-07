@@ -1,0 +1,11 @@
+Versão 4.11.329
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Correções**
+
+- **Especificação inativa sendo exibida na ficha de análise**
+
+Realizado ajuste no processo de criação da ficha de análise. Agora, quando o modelo de análise contém uma linha de especificações com a
+coluna "Inativo" marcada, essa linha não será exibida após a criação da ficha de análise.

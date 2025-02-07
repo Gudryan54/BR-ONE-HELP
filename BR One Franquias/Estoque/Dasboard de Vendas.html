@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Vendas &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+        <script src="../../_static/translations.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../search.html" />
+    <link rel="next" title="Dashboard Comparativo" href="Dashboard%20Comparativo.html" />
+    <link rel="prev" title="Medições" href="Medi%C3%A7%C3%B5es.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../BR%20One%20Franquias.html">BR One Franquias</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Escopo.html">Escopo BR One Franquias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#relatorio">Relatório</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#compras">Compras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#caixa-e-cofre">Caixa e cofre</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#estoque">Estoque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#tarefas-de-turno">Tarefas de Turno</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#checklist">Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#medicoes">Medições</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../BR%20One%20Franquias.html#dasboard-de-vendas">Dasboard de Vendas</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Dashboard de Vendas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#dashboard-comparativo">Dashboard Comparativo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../BR%20One%20Franquias.html#previsoes">Previsões</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+      <li class="breadcrumb-item active">Dashboard de Vendas</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dashboard-de-vendas">
+<h1>Dashboard de Vendas<a class="headerlink" href="#dashboard-de-vendas" title="Link permanente para este cabeçalho"></a></h1>
+<p><strong>Introdução</strong></p>
+<p>Um dashboard é um painel visual que apresenta, de maneira centralizada,
+um conjunto informações, com indicadores e métricas, e com isso pode
+servir de auxílio na tomada de decisões e apresentar o status da empresa
+em uma única tela para o gestor.</p>
+<p>Portanto, o módulo de Dashboard de Vendas faz uma representação visual
+de dados da operação comercial em tempo real das vendas da loja,
+possibilitando o seu acompanhamento e a quantidade de GCs, o ticket
+médio e os produtos vendidos.</p>
+<p><strong>Qual utilidade deste módulo?</strong></p>
+<p>O módulo Dashboard de Vendas é um painel de controle que centraliza,
+organiza e apresenta os dados comerciais de vendas da franquia, com os
+GCs e ticket médio. É uma ferramenta visual que fornece um panorama
+sobre o progresso da empresa em relação ao seu cumprimento de metas e
+objetivos. O painel é atualizado em tempo real para que gestores tenham
+acesso às principais informações sobre o processo comercial, em poucos
+segundos.</p>
+<p><strong>Acesso ao Módulo</strong></p>
+<p>Ao entrar no módulo, mostrará por padrão um dashboard vazio, para que os
+dados apareçam é necessário filtrar pelas opções no cabeçalho, como
+mostra na imagem abaixo.</p>
+<img alt="../../_images/image210.png" src="../../_images/image210.png" />
+<p>Na opção de filtro por loja é possível selecionar uma ou mais lojas de
+acordo com os tipos (Matriz, Cofre ou Venda), inclusive todas as
+filiais, caso necessário. Ainda, é possível selecionar automaticamente
+um conjunto de lojas ao marcar a opção “Lojas Shopping” ou “Lojas
+Drive”. Além disso, é possível determinar um intervalo pelo filtro de
+tempo, tendo as demais opções apresentadas na imagem acima. Para que as
+configurações sejam salvas e aplicadas ao dashboard, selecione a seta
+laranja <strong>(1)</strong>. Para demonstração de uso da sua funcionalidade foram
+selecionadas as lojas do drive-thru no período de Abril.</p>
+<img alt="../../_images/image3.jpeg" src="../../_images/image3.jpeg" />
+<p>O módulo conta com cinco modos de visualização das informações <strong>(1)</strong>:
+<strong>visão geral</strong>, que traz de forma resumida todos os pontos importantes
+para o gestor; <strong>por lojas</strong>, que separa os dados pelas lojas e seus
+tipos (drive-thru ou shopping); <strong>por segmento</strong> (balcão, NGK, delivery
+etc.); por <strong>tipo de pagamento</strong> e, por último, por <strong>produtos</strong>
+(bebidas frias, lanches, sobremesas etc.).</p>
+<p><strong>Visão Geral</strong></p>
+<p>Na aba de visão geral é possível ver o total de vendas realizadas
+durante o período <strong>(1)</strong>, o total de Guest Counts <strong>(2)</strong>, o Ticket
+médio <strong>(3)</strong>, os cancelamentos realizados <strong>(4)</strong> e o acumulado por
+hora (tendo a opção de visualizar por GCs ou por ticket médio) <strong>(5)</strong>.</p>
+<img alt="../../_images/image412.png" src="../../_images/image412.png" />
+<p><strong>Campo de Vendas, GCs e Ticket Médio</strong></p>
+<p>Os campos de Vendas, GCs e Ticket Médio do dashboard possuem a mesma
+exibição gráfica, contendo os componentes de indicador de status
+<strong>(1)</strong>, total acumulado <strong>(2)</strong>, meta estabelecida <strong>(3)</strong>, MTD (month
+to date) <strong>(4)</strong> e YTD (year to date) <strong>(5)</strong>, como mostra a imagem
+abaixo.</p>
+<img alt="../../_images/image511.png" src="../../_images/image511.png" />
+<p>O indicador de status <strong>(1)</strong> é um componente gráfico que permite saber
+se o total acumulado <strong>(2)</strong> se encontra abaixo da meta estabelecida
+<strong>(3)</strong> através do ponteiro na zona vermelha, ou acima da meta, indicado
+pelo ponteiro situado na zona azul. Na imagem acima, por exemplo, o
+ponteiro está indicando que os resultados estão quase do esperado pela
+meta estabelecida.</p>
+<p>Já o indicador MTD <strong>(4)</strong> é uma métrica utilizada para comparar o
+período do primeiro dia do mês corrente até a data de visualização do
+dashboard com o mesmo período no ano passado, ou seja, se o usuário
+estiver visualizando o dashboard em 01 de abril de 2024, este resultado
+será comparado com o resultado do mesmo período do ano anterior: dia
+primeiro até o 01 de abril de 2023. Na imagem acima, por exemplo, o MTD
+está marcado em verde, indicando que houve um acréscimo de 7,09% em
+relação ao resultado atingido no ano passado.</p>
+<p>Por último temos o indicador YTD <strong>(5)</strong> no qual faz uma comparação do
+início do ano corrente até a data de visualização do dashboard e compara
+com o mesmo período no ano passado. Ou seja, se o usuário estiver
+visualizando o dashboard em 01 de abril de 2024, irá pegar o total
+acumulado do dia primeiro de janeiro do ano corrente até a data de
+visualização e irá comparar com o resultado do dia primeiro de janeiro
+até 01 de abril do ano passado. Na imagem acima, por exemplo, o YTD está
+marcado em verde, indicando que houve um acréscimo de 55,96% em relação
+ao resultado atingido no período do ano passado.</p>
+<p>Perceba que sua diferença com o MTD é referente ao tempo de comparação,
+o YTD irá começar desde primeiro de janeiro até a data presente do
+dashboard, enquanto o MTD se limitará apenas ao mês corrente da
+visualização.</p>
+<p><strong>Cancelamentos</strong></p>
+<p>No campo de “Cancelamentos” é exibido o total de GCs e o total em reais
+de todos os cancelamentos efetuados, ao clicar sobre este campo, abrirá
+uma tela contendo os detalhes da loja, nota fiscal, caixa, chave de
+acesso, data, hora e valor. A faixa ao lado de cada linha significa se a
+nota foi cancelada por substituição ou apenas cancelada, como mostra a
+imagem abaixo.</p>
+<img alt="../../_images/image66.png" src="../../_images/image66.png" />
+<p>Ao selecionar um dos cancelamentos, podemos ver os detalhes do pedido,
+com a descrição de cada item, quantidade, preço unitário e total.</p>
+<img alt="../../_images/image73.png" src="../../_images/image73.png" />
+<p><strong>Acumulado por 15min, 30min e 60min</strong></p>
+<p>Este campo mostra em um gráfico de barras a quantidade de cupons
+emitidos (GCs) e o ticket médio em um gráfico de linhas a cada hora,
+desde a abertura até o fechamento da loja, de acordo com o filtro
+utilizado.</p>
+<img alt="../../_images/image83.png" src="../../_images/image83.png" />
+<p><strong>Vendas</strong></p>
+<p><strong>Loja</strong></p>
+<p>Após ter selecionado na página principal as lojas que deseja visualizar
+no dashboard durante um determinado período, é possível visualizar as
+informações separadas por <strong>LOJA</strong> ou <strong>TIPO DE LOJA</strong> pela aba
+“<strong>Lojas”,</strong> nela são apresentadas as informações do total de vendas
+ou GCs através de um gráfico de rosca. A imagem abaixo evidencia os
+demais usos e filtros.</p>
+<img alt="../../_images/image93.png" src="../../_images/image93.png" />
+<p>Cada cor é referente a uma <strong>LOJA</strong> ou <strong>TIPO DE LOJA,</strong> e é possível
+selecionar uma das cores para exibir os detalhes (como o total de
+vendas/GC da loja e seu percentual), além disso, se selecionar a seta da
+loja é possível abrir um resumo geral separado pelos caixas e segmentos,
+abaixo é possível visualizar uma prévia do uso.</p>
+<img alt="../../_images/image10.gif" src="../../_images/image10.gif" />
+<p>Cada bloco representa um caixa (com seu respectivo número de caixa), o
+símbolo de cifrão representa a valor de vendas, o símbolo do boneco
+representa a quantia de GCs e o símbolo de dinheiro representa o ticket
+médio. Dentro de cada bloco temos o total de itens pedidos separados por
+produtos. No rodapé temos o total de vendas, o total de GCs e o ticket
+médio da loja.</p>
+<img alt="../../_images/image112.png" src="../../_images/image112.png" />
+<p><strong>Segmentos</strong></p>
+<p>A aba “<strong>Segmentos</strong>” apresenta as informações de acordo com o
+<strong>TIPO DE SEGMENTO</strong> (caixas)<strong>,</strong> nela são apresentadas as
+informações do total de vendas ou GCs através de um gráfico de rosca.
+Seu funcionamento é semelhante ao da aba anterior e pode ser conferido
+abaixo através do vídeo curto.</p>
+<img alt="../../_images/image12.gif" src="../../_images/image12.gif" />
+<p><strong>Pagamentos</strong></p>
+<p>A aba de pagamentos segue a mesma lógica e funcionalidade das demais,
+porém separada por tipo de pagamento, como mostra a imagem abaixo.</p>
+<img alt="../../_images/image132.png" src="../../_images/image132.png" />
+<p><strong>Produtos</strong></p>
+<p>A última aba do módulo é a aba de “<strong>Produtos</strong>”, na qual apresenta
+o total de vendas realizadas separadas pelos produtos da loja, ela é
+diferente das demais representações, pois não apresenta a quantidade do
+valor do ticket médio, em seu lugar são exibidos a quantidade total do
+item e o cálculo de MGC, além disso é possível ver todos os itens
+pedidos dentro daquele tipo de produto ao clicar sobre ele.</p>
+<img alt="../../_images/image14.gif" src="../../_images/image14.gif" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Medi%C3%A7%C3%B5es.html" class="btn btn-neutral float-left" title="Medições" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Dashboard%20Comparativo.html" class="btn btn-neutral float-right" title="Dashboard Comparativo" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

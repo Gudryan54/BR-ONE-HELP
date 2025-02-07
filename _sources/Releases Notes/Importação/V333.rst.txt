@@ -1,0 +1,22 @@
+Versão 4.11.333
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nesta atualização, trazemos melhorias significativas para o controle das despesas e operações de importação. Agora, ajustes foram implementados para evitar inconsistências no lançamento de valores, garantir maior integridade nas edições de INVOICE e facilitar o processo de cancelamento do LCM de “Fechamento de numerário”. Além disso, corrigimos um erro relacionado à geração de despesas para itens com Método de avaliação **“Série /Lote”**, proporcionando mais estabilidade ao sistema.
+
+.. note:: **Melhorias**
+
+-  **Despesas de Importação:** Valores lançados após a geração do LCM de "Fechamento Numerário" não serão considerados, evitando discrepâncias nos cálculos.
+
+.. image:: /_static/Releases\ Notes/Importação/V333/01.png
+
+-  **Cancelamento de LCM:** Implementamos uma nova tratativa que melhora a experiência e segurança no cancelamento do LCM de "Fechamento Numerário".
+
+.. image:: /_static/Releases\ Notes/Importação/V333/02.png
+
+-  **Edição de INVOICE:** Agora, após a inserção de um INVOICE, suas~despesas não poderão mais ser editadas, garantindo mais controle e confiabilidade nos dados.
+
+.. image:: /_static/Releases\ Notes/Importação/V333/03.png
+
+.. note:: **Correções**
+
+-  **Erro na geração de Despesas de Importação:** Corrigimos uma falha que impedia a geração de despesas para itens com método de avaliação "Série/Lote", garantindo que o processo ocorra corretamente.

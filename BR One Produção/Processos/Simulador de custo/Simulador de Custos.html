@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador de Custos &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Simulador de Custos Global" href="Simulador%20de%20Custos%20Global.html" />
+    <link rel="prev" title="Saída de insumos para itens de baixo custo" href="../Manuten%C3%A7%C3%A3o/Sa%C3%ADda%20de%20insumos%20para%20itens%20de%20baixo%20custo.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Simulador de Custos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Simulador%20de%20Custos%20Global.html">Simulador de Custos Global</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Simulador de Custos</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="simulador-de-custos">
+<h1>Simulador de Custos<a class="headerlink" href="#simulador-de-custos" title="Link permanente para este cabeçalho"></a></h1>
+<p>Com o simulador de custos é possível identificar a simulação do custo total de um item, usando como base um roteiro e as listas de preços selecionadas. Este valor simulado também poderá ser salvo em uma lista de preços.</p>
+<p>A tela do simulador de custos pode ser localizada em:</p>
+<p><strong>Produção -&gt; Custos -&gt; Simulador de Custos</strong></p>
+<a class="reference internal image-reference" href="../../../_images/00116.png"><img alt="../../../_images/00116.png" src="../../../_images/00116.png" style="width: 737.6px; height: 432.0px;" /></a>
+<p>O cabeçalho é utilizado para identificar qual o item será simulado, por padrão ao selecionar o item, o campo <strong>‘Roteiro’</strong> será preenchido automaticamente com o roteiro padrão do item, mas é possível alterá-lo manualmente para a utilização de outro roteiro.</p>
+<a class="reference internal image-reference" href="../../../_images/GIF18.gif"><img alt="../../../_images/GIF18.gif" src="../../../_images/GIF18.gif" style="width: 736.8000000000001px; height: 429.6px;" /></a>
+<p>Na parte direita do cabeçalho é o local para definir a prioridade no qual o sistema buscará o custo para os componentes na simulação, isso é, caso o componente não tenha custo na primeira lista de preços passará a olhar a segunda lista definida e assim até olhar as 4 listas de preços definidas (ou menos pois o preenchimento das 4 não é obrigatório para a simulação), e caso ainda assim não identifique nenhum custo, será levado custo 0 para o componente.</p>
+<a class="reference internal image-reference" href="../../../_images/00216.png"><img alt="../../../_images/00216.png" src="../../../_images/00216.png" style="width: 738.4000000000001px; height: 135.20000000000002px;" /></a>
+<p>A quantidade por padrão sempre virá preenchida com 1, mas esta quantidade pode ser alterada no momento da simulação ou até mesmo definir outra quantidade padrão no campo <strong>‘Quantidade padrão’</strong> da aba Dados de planejamento do cadastro do item.</p>
+<a class="reference internal image-reference" href="../../../_images/00315.png"><img alt="../../../_images/00315.png" src="../../../_images/00315.png" style="width: 560.8000000000001px; height: 334.40000000000003px;" /></a>
+<p>O parâmetro <strong>‘Quantidade padrão para semiacabados’</strong> permite ao sistema calcular os custos dos roteiros para os itens semi-acabados utilizando a quantidade padrão do cadastro do item na aba <strong>‘Dados de planejamento’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/00412.png"><img alt="../../../_images/00412.png" src="../../../_images/00412.png" style="width: 379.20000000000005px; height: 96.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0058.png"><img alt="../../../_images/0058.png" src="../../../_images/0058.png" style="width: 1063.2px; height: 428.8px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0068.png"><img alt="../../../_images/0068.png" src="../../../_images/0068.png" style="width: 1082.4px; height: 450.40000000000003px;" /></a>
+<p>Com esse parâmetro selecionado no simulador de custo, o sistema irá executar o cálculo para cada semi-acabado do roteiro selecionado com base na quantidade padrão. Com isso, o custo das quantidades fixas e tempos fixos serão rateados para a quantidade total produzida, reduzindo o custo unitário de cada item.</p>
+<p><strong>Exemplo:</strong></p>
+<p>Para produzir um bolo é necessário produzir a cobertura, para produzir a cobertura inicialmente é necessário limpar o equipamento, para essa limpeza é utilizado um produto de limpeza e mais a mão de obra que executa esta limpeza.
+Independente de ser produzido uma cobertura ou mil coberturas a quantidade de custo desses itens é a mesma. Ao fabricar uma calda esse custo será totalmente absorvido para apenas uma calda, o que irá elevar o custo unitário.</p>
+<p>Se ao executar o simulador de custos o usuário selecionar o parâmetro <strong>‘Quantidade padrão para semiacabados’</strong>, caso a quantidade padrão seja por exemplo 1.000 coberturas, o custo fixo será rateado individualmente para cada peça, reduzindo assim o custo unitário.</p>
+<p>Caso o semi-acabado não possua roteiro padrão, a estrutura deste semi-acabado não será carregada no simulador e os custos não serão somados ao item pai, levando o valor zerado conforme mostrado abaixo:</p>
+<p>Sem roteiro padrão para o SA0012</p>
+<a class="reference internal image-reference" href="../../../_images/0076.png"><img alt="../../../_images/0076.png" src="../../../_images/0076.png" style="width: 1028.8px; height: 436.8px;" /></a>
+<p>Com roteiro padrão para o SA0012</p>
+<a class="reference internal image-reference" href="../../../_images/0085.png"><img alt="../../../_images/0085.png" src="../../../_images/0085.png" style="width: 1062.4px; height: 452.8px;" /></a>
+<p>Ao clicar em <strong>‘Simular’</strong> todos os custos serão simulados com base nas listas encontradas e apresentados em tela. É possível na coluna <strong>‘Lista de Origem’</strong> identificar em qual lista de preços o sistema identificou o custo do item:</p>
+<a class="reference internal image-reference" href="../../../_images/0094.png"><img alt="../../../_images/0094.png" src="../../../_images/0094.png" style="width: 907.2px; height: 275.2px;" /></a>
+<p>Caso o sistema repasse cada uma das listas de preços selecionadas e ainda assim não identifique nenhum preço definido para o item, levará o mesmo sem valor.</p>
+<a class="reference internal image-reference" href="../../../_images/0103.png"><img alt="../../../_images/0103.png" src="../../../_images/0103.png" style="width: 1062.4px; height: 452.8px;" /></a>
+<p>As colunas de <strong>‘Custo máquina’</strong>, <strong>‘Custo mão-de-obra’</strong> e <strong>‘Custo ferramentas’</strong> usará para o cálculo o campo <strong>‘Custo hora’</strong> definido na tela <strong>‘Grupo de recursos’</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/01111.png"><img alt="../../../_images/01111.png" src="../../../_images/01111.png" style="width: 268.8px; height: 232.0px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0127.png"><img alt="../../../_images/0127.png" src="../../../_images/0127.png" style="width: 932.8000000000001px; height: 456.8px;" /></a>
+<p>Caso o sistema não identifique <strong>‘Custo hora’</strong> no grupo de recursos buscará o custo hora no <strong>‘Centro de trabalho’</strong> vinculado ao grupo de recursos.</p>
+<a class="reference internal image-reference" href="../../../_images/0133.png"><img alt="../../../_images/0133.png" src="../../../_images/0133.png" style="width: 937.6px; height: 455.20000000000005px;" /></a>
+<p>As colunas mostrarão um somatório total identificados no rodapé da tela e na lateral direita o custo total identificado para aquela linha.</p>
+<a class="reference internal image-reference" href="../../../_images/0143.png"><img alt="../../../_images/0143.png" src="../../../_images/0143.png" style="width: 984.8000000000001px; height: 470.40000000000003px;" /></a>
+<p>Após a simulação os campos <strong>‘Custo unitário’</strong> e <strong>‘Custo total’</strong> localizados no cabeçalho da tela serão preenchidos com os valores encontrados:</p>
+<a class="reference internal image-reference" href="../../../_images/0153.png"><img alt="../../../_images/0153.png" src="../../../_images/0153.png" style="width: 375.20000000000005px; height: 96.0px;" /></a>
+<p>Esses valores podem ser apenas visualizados ou caso necessite salvá-los em uma lista de preços também é possível, para isso é necessário clicar no botão <strong>‘Salvar’</strong> do rodapé da página.</p>
+<p>A configuração que irá definir se os valores simulados serão atualizados apenas para o item pai na lista de preços ou se todos os níveis terão seus custos atualizados na lista de preços, é a configuração <strong>‘Atualizar preços’</strong> localizado nas <strong>Configurações de produção -&gt; Aba simulador de custos</strong>.</p>
+<p><strong>Atualizar preços</strong></p>
+<p>O campo <strong>‘Todos níveis’</strong> faz com que seja alterado o preço de todos os componentes utilizados no roteiro do item(s) selecionado(s) nas telas de simulador de custo individual ou global.</p>
+<p>O Campo <strong>‘Item pai’</strong> faz com seja alterado apenas o preço do(s) item(s) selecionado(s) no simulador de custo individual ou global.</p>
+<a class="reference internal image-reference" href="../../../_images/0163.png"><img alt="../../../_images/0163.png" src="../../../_images/0163.png" style="width: 596.8000000000001px; height: 129.6px;" /></a>
+<p>Ao clicar em salvar caso a opção seja <strong>‘Item pai’</strong> aparecerá a mensagem abaixo:</p>
+<a class="reference internal image-reference" href="../../../_images/0173.png"><img alt="../../../_images/0173.png" src="../../../_images/0173.png" style="width: 397.6px; height: 120.80000000000001px;" /></a>
+<p>Clicando em <strong>‘Sim’</strong> teremos as mensagens informando que o histórico está sendo salvo e depois do processo gravado com sucesso.</p>
+<a class="reference internal image-reference" href="../../../_images/0183.png"><img alt="../../../_images/0183.png" src="../../../_images/0183.png" style="width: 144.0px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Salvando histórico…</em></p>
+<a class="reference internal image-reference" href="../../../_images/0193.png"><img alt="../../../_images/0193.png" src="../../../_images/0193.png" style="width: 176.8px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Preço atualizado com sucesso.</em></p>
+<p>Caso a opção esteja <strong>‘Todos os níveis’</strong> ao clicar em <strong>‘Salvar’</strong> a mensagem abaixo vai aparecer:</p>
+<a class="reference internal image-reference" href="../../../_images/0202.png"><img alt="../../../_images/0202.png" src="../../../_images/0202.png" style="width: 397.6px; height: 120.80000000000001px;" /></a>
+<p><em>Br One :: salvar preço simulado de todos os componentes na lista de preços de custo?</em></p>
+<a class="reference internal image-reference" href="../../../_images/02111.png"><img alt="../../../_images/02111.png" src="../../../_images/02111.png" style="width: 203.20000000000002px; height: 14.4px;" /></a>
+<p><em>BR One :: [ItemXX]  X linhas processadas de X</em></p>
+<a class="reference internal image-reference" href="../../../_images/0183.png"><img alt="../../../_images/0183.png" src="../../../_images/0183.png" style="width: 144.0px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Salvando histórico…</em></p>
+<a class="reference internal image-reference" href="../../../_images/0193.png"><img alt="../../../_images/0193.png" src="../../../_images/0193.png" style="width: 176.8px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Preço atualizado com sucesso.</em></p>
+<p>O custo unitário do item será salvo para o item simulado na lista definida no campo <strong>‘Lista de preços de custo’</strong> localizado no caminho:</p>
+<p><strong>Administração -&gt; Inicialização do sistema -&gt; Configurações gerais -&gt; Aba Estoque</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/0225.png"><img alt="../../../_images/0225.png" src="../../../_images/0225.png" style="width: 824.8000000000001px; height: 432.8px;" /></a>
+<p>Após salvar o resultado da simulação, ao acessar a lista de preços e localizar o item é possível visualizar o preço identificado no simulador.</p>
+<a class="reference internal image-reference" href="../../../_images/0233.png"><img alt="../../../_images/0233.png" src="../../../_images/0233.png" style="width: 744.0px; height: 283.2px;" /></a>
+<p>Caso esteja selecionado <strong>‘Todos os níveis’</strong> o campo <strong>‘Preço’</strong> na lista de preços do simulador será atualizado tanto para o item simulado quanto para os componentes.</p>
+<a class="reference internal image-reference" href="../../../_images/0242.png"><img alt="../../../_images/0242.png" src="../../../_images/0242.png" style="width: 744.0px; height: 283.2px;" /></a>
+<p>Caso não tenha sido definida uma lista de preços de custo, ao clicar no botão <strong>‘Salvar’</strong>, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/0252.png"><img alt="../../../_images/0252.png" src="../../../_images/0252.png" style="width: 508.8px; height: 13.600000000000001px;" /></a>
+<p><em>BR One :: Não foi definida uma lista de preços de custo. Defina uma lista de preço nas Configurações gerais, aba Estoque, sub aba Itens.</em></p>
+<p>Após Salvar o resultado da simulação o sistema adicionará uma linha na tela de histórico das simulações. A tela de histórico das simulações anteriores pode ser acessada tanto na tela do simulador quanto dentro do item indo na opção <strong>‘Histórico simulador de custo’</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/GIF210.gif"><img alt="../../../_images/GIF210.gif" src="../../../_images/GIF210.gif" style="width: 735.2px; height: 429.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0262.png"><img alt="../../../_images/0262.png" src="../../../_images/0262.png" style="width: 782.4000000000001px; height: 453.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0271.png"><img alt="../../../_images/0271.png" src="../../../_images/0271.png" style="width: 962.4000000000001px; height: 272.0px;" /></a>
+<p>Caso queira <strong>‘Excluir’</strong> alguma linha também é possível indo no botão <strong>‘Excluir’</strong>, porém, o sistema sempre mantém uma linha no histórico.</p>
+<a class="reference internal image-reference" href="../../../_images/GIF31.gif"><img alt="../../../_images/GIF31.gif" src="../../../_images/GIF31.gif" style="width: 652.0px; height: 320.8px;" /></a>
+<p>Também é possível acessar os detalhes de cada linha de histórico.</p>
+<a class="reference internal image-reference" href="../../../_images/GIF41.gif"><img alt="../../../_images/GIF41.gif" src="../../../_images/GIF41.gif" style="width: 658.4000000000001px; height: 431.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0183.png"><img alt="../../../_images/0183.png" src="../../../_images/0183.png" style="width: 144.0px; height: 13.600000000000001px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/0193.png"><img alt="../../../_images/0193.png" src="../../../_images/0193.png" style="width: 176.8px; height: 13.600000000000001px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Manuten%C3%A7%C3%A3o/Sa%C3%ADda%20de%20insumos%20para%20itens%20de%20baixo%20custo.html" class="btn btn-neutral float-left" title="Saída de insumos para itens de baixo custo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Simulador%20de%20Custos%20Global.html" class="btn btn-neutral float-right" title="Simulador de Custos Global" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

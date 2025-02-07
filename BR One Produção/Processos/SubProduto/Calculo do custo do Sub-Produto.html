@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cálculo do custo do Sub-Produto &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="GGF antecipado" href="../GGF%20Antecipado/GGF%20Antecipado.html" />
+    <link rel="prev" title="Entrada de Sub-Produto" href="Sub-Produto%20Entrada%20de%20PA.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Sub-Produto%20Roteiro.html">Roteiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sub-Produto%20Ordem%20de%20Produ%C3%A7%C3%A3o.html">Ordem de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sub-Produto%20Entrada%20de%20PA.html">Entrada de Sub-Produto</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Cálculo do custo do Sub-Produto</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Cálculo do custo do Sub-Produto</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="calculo-do-custo-do-sub-produto">
+<h1>Cálculo do custo do Sub-Produto<a class="headerlink" href="#calculo-do-custo-do-sub-produto" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para realização da demonstração do cáculo, iremos criar uma <strong>Ordem de produção</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img0137.png"><img alt="../../../_images/img0137.png" src="../../../_images/img0137.png" style="width: 840.8000000000001px; height: 316.8px;" /></a>
+<p>Realizado a configuração de 2 Sub-Produto na <strong>Aba Sub-Produto:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img0236.png"><img alt="../../../_images/img0236.png" src="../../../_images/img0236.png" style="width: 840.8000000000001px; height: 319.20000000000005px;" /></a>
+<p>Na Ordem de Produção para encontrar o custo do PA e do Sub-Produto é preciso saber o custo dos componentes.</p>
+<p><strong>Custo dos componentes que compõem o PA</strong></p>
+<ul class="simple">
+<li><p><strong>Componente COMP035:</strong> Custo unitário <strong>R$ 100,00</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0331.png"><img alt="../../../_images/img0331.png" src="../../../_images/img0331.png" style="width: 563.2px; height: 435.20000000000005px;" /></a>
+<ul class="simple">
+<li><p><strong>Componente COMP036:</strong> Custo unitário <strong>R$ 100,00</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0426.png"><img alt="../../../_images/img0426.png" src="../../../_images/img0426.png" style="width: 561.6px; height: 437.6px;" /></a>
+<ul class="simple">
+<li><p><strong>Componente COMP039:</strong> Custo unitário <strong>R$ 100,00</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0525.png"><img alt="../../../_images/img0525.png" src="../../../_images/img0525.png" style="width: 564.0px; height: 438.40000000000003px;" /></a>
+<p>Nesse exemplo o custo total dos componentes para quantidade planejada do PA será:</p>
+<p><strong>Custo total dos componentes para produção da OP</strong> = Quantidade planejada do componente * Custo unitário do componente</p>
+<p><strong>Custo total dos componentes para produção da OP</strong> = 10 * 300,00</p>
+<p><strong>Custo total dos componentes para produção da OP</strong> = 3.000,00</p>
+<p>Na Ordem de Produção para encontrar o custo do PA e do Sub-Produto é preciso saber o custo dos recusrsos do GGF antecipado, caso esteja habilitado.</p>
+<p><strong>Custo Hora dos Recursos por PA</strong></p>
+<ul class="simple">
+<li><p><strong>Recurso Maquina:</strong> Custo Hora <strong>50,00</strong></p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0625.png"><img alt="../../../_images/img0625.png" src="../../../_images/img0625.png" style="width: 310.40000000000003px; height: 356.0px;" /></a>
+<p>Nesse exemplo o custo total dos recursos para a quantidade planejada do PA será:</p>
+<p><strong>Custo total dos recursos para produção da OP</strong> = Tempo planejado do recurso em horas * o custo hora do recurso</p>
+<p><strong>Custo total dos recursos para produção da OP</strong> = (600/60) * 50,00</p>
+<p><strong>Custo total dos recursos para produção da OP</strong> = 10 * 50,00</p>
+<p><strong>Custo total dos recursos para produção da OP</strong> = 500,00</p>
+<p>Para recuperação do custo do Sub-Produto, também é levado em consideração os parâmetros das configurações de produção na aba <strong>Entrada de PA</strong></p>
+<p>Para acessar as Configurações de produção é necessário ir no menu:</p>
+<p><strong>Administração -&gt; Definição -&gt; Produção -&gt; Configurações de produção</strong></p>
+<p><strong>Configurações de Produção - Aba Entrada de PA:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img0723.png"><img alt="../../../_images/img0723.png" src="../../../_images/img0723.png" style="width: 601.6px; height: 233.60000000000002px;" /></a>
+<p>A <strong>primeira combinação</strong> dos parâmetros para realização do cálculo é:</p>
+<ul class="simple">
+<li><p><strong>Cálculo do custo Sub-Produto</strong> = <strong>Unitário</strong></p></li>
+<li><p><strong>Considera GGF antecipado custo Sub-Produto = Sim</strong></p></li>
+</ul>
+<p>Na Ordem de produção do PA com quantidade planejada de 10, foi realizado uma entrada de 2 PAs</p>
+<a class="reference internal image-reference" href="../../../_images/img0820.png"><img alt="../../../_images/img0820.png" src="../../../_images/img0820.png" style="width: 348.0px; height: 204.0px;" /></a>
+<p>Foram informados a quantidade dos Sub-Produtos</p>
+<ul class="simple">
+<li><p><strong>SUB001:</strong> Quantidade 3</p></li>
+<li><p><strong>SUB002:</strong> Quantidade 2</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0919.png"><img alt="../../../_images/img0919.png" src="../../../_images/img0919.png" style="width: 578.4px; height: 308.0px;" /></a>
+<p>Para encontrar o custo do primeiro item <strong>SUB001</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (((Custo total dos componentes planejado) + (Custo total do recurso planejado)) / (Quantidade Total Planejada do Produto Acabado)) * (Percentual de custo definido para o Sub-Produto)</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> ((3.000 + 500) / 10) * 0,25</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (3.500 / 10) * 0,25</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 350,00 * 0,25</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 87,50</p>
+<p>Após encontrado o custo unitário, o custo total será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo total do Sub-Produto =</strong> Custo Unitário Sub-Produto * Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo total do Sub-Produto</strong> = 87,50 <a href="#id1"><span class="problematic" id="id2">*</span></a>3</p>
+<p><strong>Custo total do Sub-Produto</strong> = 262,50</p>
+<a class="reference internal image-reference" href="../../../_images/img1020.png"><img alt="../../../_images/img1020.png" src="../../../_images/img1020.png" style="width: 725.6px; height: 112.80000000000001px;" /></a>
+<p>Para encontrar o custo do segundo item <strong>SUB002</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (((Custo total dos componentes planejado) + (Custo total do recurso planejado)) / (Quantidade Total Planejada do Produto Acabado)) * (Percentual de custo definido para o Sub-Produto)</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> ((3.000 + 500) / 10) * 0,47</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (3.500 / 10) * 0,47</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 164,50</p>
+<p>Após encontrado o custo unitário, o custo total será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo total do Sub-Produto =</strong> Custo Unitário Sub-Produto * Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo total do Sub-Produto =</strong> 164,50 * 2</p>
+<p><strong>Custo total do Sub-Produto =</strong> 329,00</p>
+<a class="reference internal image-reference" href="../../../_images/img1122.png"><img alt="../../../_images/img1122.png" src="../../../_images/img1122.png" style="width: 725.6px; height: 108.0px;" /></a>
+<p>O <strong>custo unitario do PA</strong> nessa configuração será:</p>
+<p><strong>Custo do PA</strong> = (Soma do Custo dos Recursos por unidade de PA) + (soma do custo dos componentes por unidade de PA)</p>
+<p><strong>Custo unitário do PA =</strong> 50 + 300,00</p>
+<p><strong>Custo unitário do PA =</strong> 350,00</p>
+<a class="reference internal image-reference" href="../../../_images/img1220.png"><img alt="../../../_images/img1220.png" src="../../../_images/img1220.png" style="width: 794.4000000000001px; height: 114.4px;" /></a>
+<p><strong>Configurações de Produção - Aba Entrada de PA:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img1319.png"><img alt="../../../_images/img1319.png" src="../../../_images/img1319.png" style="width: 600.8000000000001px; height: 218.4px;" /></a>
+<p>A <strong>segunda combinação</strong> dos parâmetros para realização do cálculo é:</p>
+<ul class="simple">
+<li><p><strong>Cálculo do custo Sub-Produto</strong> = <strong>Unitário</strong></p></li>
+<li><p><strong>Considera GGF antecipado custo Sub-Produto = Não</strong></p></li>
+</ul>
+<p>Na Ordem de produção do PA com quantidade planejada de 10, foi realizado uma entrada de 2 PAs</p>
+<a class="reference internal image-reference" href="../../../_images/img1420.png"><img alt="../../../_images/img1420.png" src="../../../_images/img1420.png" style="width: 349.6px; height: 202.4px;" /></a>
+<p>Foram informados a quantidade dos Sub-Produtos</p>
+<ul class="simple">
+<li><p><strong>SUB001:</strong> Quantidade 3</p></li>
+<li><p><strong>SUB002:</strong> Quantidade 2</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img1517.png"><img alt="../../../_images/img1517.png" src="../../../_images/img1517.png" style="width: 576.0px; height: 309.6px;" /></a>
+<p>Para encontrar o custo do primeiro item <strong>SUB001</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (((Custo total dos componentes planejado) + (Custo total do recurso planejado)) / (Quantidade Total Planejada do Produto Acabado)) * (Percentual de custo definido para o Sub-Produto)</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (3.000/10) <a href="#id3"><span class="problematic" id="id4">*</span></a>0,25</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 300,00 <a href="#id5"><span class="problematic" id="id6">*</span></a>0,25</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 75,00</p>
+<p>Após encontrado o custo unitário, o custo total será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo total do Sub-Produto =</strong> Custo Unitário Sub-Produto * Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo total do Sub-Produto =</strong> 75,00 * 3</p>
+<p><strong>Custo total do Sub-Produto =</strong> 225,00</p>
+<a class="reference internal image-reference" href="../../../_images/img1614.png"><img alt="../../../_images/img1614.png" src="../../../_images/img1614.png" style="width: 713.6px; height: 105.60000000000001px;" /></a>
+<p>Para encontrar o custo do segundo item <strong>SUB002</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (((Custo total dos componentes planejado) + (Custo total do recurso planejado)) / (Quantidade Total Planejada do Produto Acabado)) * (Percentual de custo definido para o Sub-Produto)</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> (3.000/10) * 0,47</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 300,00 * 0,47</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 141,00</p>
+<p>Após encontrado o custo unitário, o custo total será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo total do Sub-Produto =</strong> Custo Unitário Sub-Produto * Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo total do Sub-Produto =</strong> 141,00 * 2</p>
+<p><strong>Custo total do Sub-Produto =</strong> 282,00</p>
+<a class="reference internal image-reference" href="../../../_images/img1713.png"><img alt="../../../_images/img1713.png" src="../../../_images/img1713.png" style="width: 714.4000000000001px; height: 105.60000000000001px;" /></a>
+<p>O <strong>custo unitario do PA</strong> nessa configuração será:</p>
+<p><strong>Custo do PA</strong> = (Soma do Custo dos Recursos por unidade de PA) + (soma do custo dos componentes por unidade de PA)</p>
+<p><strong>Custo unitário do PA =</strong> 50,00 + 300,00</p>
+<p><strong>Custo unitário do PA =</strong> 350,00</p>
+<a class="reference internal image-reference" href="../../../_images/img1814.png"><img alt="../../../_images/img1814.png" src="../../../_images/img1814.png" style="width: 816.8000000000001px; height: 102.4px;" /></a>
+<p><strong>Configurações de Produção - Aba Entrada de PA:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img1913.png"><img alt="../../../_images/img1913.png" src="../../../_images/img1913.png" style="width: 602.4px; height: 226.4px;" /></a>
+<p>A <strong>terceira combinação</strong> dos parâmetros para realização do cálculo é:</p>
+<ul class="simple">
+<li><p><strong>Cálculo do custo Sub-Produto</strong> = <strong>Total</strong></p></li>
+<li><p><strong>Considera GGF antecipado custo Sub-Produto = Sim</strong></p></li>
+</ul>
+<p>Na Ordem de produção do PA com quantidade planejada de 10, foi realizado uma entrada de 2 PAs</p>
+<a class="reference internal image-reference" href="../../../_images/img2012.png"><img alt="../../../_images/img2012.png" src="../../../_images/img2012.png" style="width: 348.0px; height: 205.60000000000002px;" /></a>
+<p>Foram informados a quantidade dos Sub-Produtos</p>
+<ul class="simple">
+<li><p><strong>SUB001:</strong> Quantidade 3</p></li>
+<li><p><strong>SUB002:</strong> Quantidade 2</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img2111.png"><img alt="../../../_images/img2111.png" src="../../../_images/img2111.png" style="width: 576.8000000000001px; height: 309.6px;" /></a>
+<p>Para encontrar o custo do primeiro item <strong>SUB001</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo total Sub-Produto</strong> = Quantidade apontada do PA * (Soma do custo dos componentes por unidade de PA + Soma dos custos dos recursos por unidades de PA) * %Custo</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * (300 + 50) * %0,25</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * 350 <a href="#id7"><span class="problematic" id="id8">*</span></a>0,25</p>
+<p><strong>Custo total do Sub-Produto</strong> = 175,00</p>
+<p>Após encontrado o custo total, o custo unitário será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> Custo total do Sub-Produto / Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 175,00 / 3</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 58,33</p>
+<a class="reference internal image-reference" href="../../../_images/img2210.png"><img alt="../../../_images/img2210.png" src="../../../_images/img2210.png" style="width: 724.0px; height: 108.0px;" /></a>
+<p>Para encontrar o custo do segundo item <strong>SUB002</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo total Sub-Produto</strong> = Quantidade apontada do PA * (Soma do custo dos componentes por unidade de PA + Soma dos custos dos recursos por unidades de PA) * %Custo</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * (300+50) * 0,47</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * 350 * 0,47</p>
+<p><strong>Custo total do Sub-Produto</strong> = 700,00 * 0,47</p>
+<p><strong>Custo total do Sub-Produto</strong> = 329,00</p>
+<p>Após encontrado o custo total, o custo unitário será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> Custo total do Sub-Produto / Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 329,00 / 2</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 164,50</p>
+<a class="reference internal image-reference" href="../../../_images/img2310.png"><img alt="../../../_images/img2310.png" src="../../../_images/img2310.png" style="width: 723.2px; height: 100.80000000000001px;" /></a>
+<p><strong>IMPORTANTE:</strong> Nessa configuração, após encontrado o custo do Sub-Produto esse valor é abatido do custo do PA.</p>
+<p>O <strong>custo unitario do PA</strong> nessa configuração será:</p>
+<p><strong>Custo do PA</strong> = ((Quantidade apontada do PA * (Soma do Custo dos Recursos por unidade de PA) + (soma do custo dos componentes por unidade de PA)) – (soma dos totais do Sub-Produto)) / Quantidade apontada do PA</p>
+<p><strong>Custo unitário do PA =</strong> ((2 * (50 + 300)) – (329+175)) /2</p>
+<p><strong>Custo unitário do PA =</strong> ((2 * 350) – 504) /2</p>
+<p><strong>Custo unitário do PA =</strong> (700 - 504) /2</p>
+<p><strong>Custo unitário do PA =</strong> 196 / 2</p>
+<p><strong>Custo unitário do PA =</strong> 98,00</p>
+<a class="reference internal image-reference" href="../../../_images/img2410.png"><img alt="../../../_images/img2410.png" src="../../../_images/img2410.png" style="width: 806.4000000000001px; height: 105.60000000000001px;" /></a>
+<p><strong>Configurações de Produção - Aba Entrada de PA:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img2511.png"><img alt="../../../_images/img2511.png" src="../../../_images/img2511.png" style="width: 601.6px; height: 221.60000000000002px;" /></a>
+<p>A <strong>quarta combinação</strong> dos parâmetros para realização do cálculo é:</p>
+<ul class="simple">
+<li><p><strong>Cálculo do custo Sub-Produto = Total</strong></p></li>
+<li><p><strong>Considera GGF antecipado custo Sub-Produto = Não</strong></p></li>
+</ul>
+<p>Na Ordem de produção do PA com quantidade planejada de 10, foi realizado uma entrada de 2 PAs</p>
+<a class="reference internal image-reference" href="../../../_images/img269.png"><img alt="../../../_images/img269.png" src="../../../_images/img269.png" style="width: 350.40000000000003px; height: 202.4px;" /></a>
+<p>Foram informados a quantidade dos Sub-Produtos</p>
+<ul class="simple">
+<li><p><strong>SUB001</strong> Quantidade 3</p></li>
+<li><p><strong>SUB002</strong> Quantidade 2</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img277.png"><img alt="../../../_images/img277.png" src="../../../_images/img277.png" style="width: 578.4px; height: 305.6px;" /></a>
+<p>Para encontrar o custo do primeiro item <strong>SUB001</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo total Sub-Produto</strong> = Quantidade apontada do PA * (Soma do custo dos componentes por unidade de PA) * %Custo</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * 300,00 * 0,25</p>
+<p><strong>Custo total do Sub-Produto</strong> = 150,00</p>
+<p>Após encontrado o custo total, o custo unitário será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> Custo total do Sub-Produto / Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 150 / 3</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 50,00</p>
+<a class="reference internal image-reference" href="../../../_images/img288.png"><img alt="../../../_images/img288.png" src="../../../_images/img288.png" style="width: 711.2px; height: 104.80000000000001px;" /></a>
+<p>Para encontrar o custo do segundo item <strong>SUB002</strong> para essa configuração é utilizado a seguinte fórmula:</p>
+<p><strong>Custo total Sub-Produto</strong> = Quantidade apontada do PA * (Soma do custo dos componentes por unidade de PA) * %Custo</p>
+<p><strong>Custo total do Sub-Produto</strong> = 2 * 300,00 * 0,47</p>
+<p><strong>Custo total do Sub-Produto</strong> = 282,00</p>
+<p>Após encontrado o custo total, o custo unitário será de acordo com a fórmula abaixo:</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> Custo total do Sub-Produto / Quantidade apontada para o Sub-Produto</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 282 / 2</p>
+<p><strong>Custo Unitário Sub-Produto =</strong> 141,00</p>
+<a class="reference internal image-reference" href="../../../_images/img296.png"><img alt="../../../_images/img296.png" src="../../../_images/img296.png" style="width: 709.6px; height: 110.4px;" /></a>
+<p><strong>IMPORTANTE:</strong> Nessa configuração, após encontrado o custo do Sub-Produto esse valor é abatido do custo do PA.</p>
+<p>O <strong>custo unitario do PA</strong> nessa configuração será:</p>
+<p><strong>Custo do PA</strong> = ((Quantidade apontada do PA * (Soma do Custo dos Recursos por unidade de PA) + (soma do custo dos componentes por unidade de PA)) – (soma dos totais do Sub-Produto)) / Quantidade apontada do PA</p>
+<p><strong>Custo unitário do PA =</strong> ((2 * (50,00 + 300,00)) – (150,00 + 282,00 )) /2</p>
+<p><strong>Custo unitário do PA =</strong> ((2 * 350,00) – 432,00) / 2</p>
+<p><strong>Custo unitário do PA =</strong> (700,00 -432,00) / 2</p>
+<p><strong>Custo unitário do PA =</strong> 268,00 / 2</p>
+<p><strong>Custo unitário do PA =</strong> 134,00</p>
+<a class="reference internal image-reference" href="../../../_images/img306.png"><img alt="../../../_images/img306.png" src="../../../_images/img306.png" style="width: 810.4000000000001px; height: 104.0px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Sub-Produto%20Entrada%20de%20PA.html" class="btn btn-neutral float-left" title="Entrada de Sub-Produto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../GGF%20Antecipado/GGF%20Antecipado.html" class="btn btn-neutral float-right" title="GGF antecipado" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fechamento de custo em Segundo Plano &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Movimentos do Fechamento de Custo" href="Movimentos%20do%20Fechamento%20de%20Custo.html" />
+    <link rel="prev" title="Fechamento de custo contábil" href="Fechamento%20de%20custo%20cont%C3%A1bil.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20custo%20cont%C3%A1bil.html">Fechamento de custo contábil</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Fechamento de custo em Segundo Plano</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Movimentos%20do%20Fechamento%20de%20Custo.html">Movimentos do Fechamento de Custo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html">Memória de Cálculo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html">Estrutura dos Produtos com custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html">Estrutura dos Produtos sem custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20c%C3%A1lculo%20Subindo%20custos%20de%20Heran%C3%A7a.html">Memória de cálculo: Subindo custos de Herança</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Fechamento de custo em Segundo Plano</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fechamento-de-custo-em-segundo-plano">
+<h1>Fechamento de custo em Segundo Plano<a class="headerlink" href="#fechamento-de-custo-em-segundo-plano" title="Link permanente para este cabeçalho"></a></h1>
+<p>O add-on permite realizar o processo de fechamento de custo em segundo plano, possibilitando a utilização do SAP e BR One durante a simulação e processamento do processo.
+Entretanto, antes de iniciarmos o processo é preciso realizar a configuração das contas e GGF antecipado, na aba “Custos” da tela “Configuração de produção” e criar o “Cadastro de GGF” que será utilizado no processo.</p>
+<a class="reference internal image-reference" href="../../../_images/img0127.png"><img alt="../../../_images/img0127.png" class="align-center" src="../../../_images/img0127.png" style="width: 680.4px; height: 398.7px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>Simulação do fechamento de custo</strong></p>
+<p>Finalizado as configurações, a realização do fechamento de custo em segundo plano, é iniciado na tela “Fechamento de custo contábil”, onde devemos definir o “GGF” que será utilizado no fechamento, após essa definição o usuário deve clicar na <strong>“seta”</strong> do botão <strong>“Simular”</strong> e clicar em <strong>“1 – Segundo plano”</strong>:</p>
+<a class="reference internal image-reference" href="../../../_images/img0227.png"><img alt="../../../_images/img0227.png" class="align-center" src="../../../_images/img0227.png" style="width: 581.6px; height: 404.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Dessa forma o add-on irá iniciar o processo e retornará uma mensagem do sistema alertando sobre a execução do fechamento em segundo plano:</p>
+<a class="reference internal image-reference" href="../../../_images/img0323.png"><img alt="../../../_images/img0323.png" class="align-center" src="../../../_images/img0323.png" style="width: 506.0px; height: 157.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Fechamento de custo contábil em execução de segundo plano.</strong></strong></p><p>Será indicado também o início da execução em segundo plano no Log de mensagens do sistema, segue abaixo exemplo:</p>
+<a class="reference internal image-reference" href="../../../_images/img0419.png"><img alt="../../../_images/img0419.png" class="align-center" src="../../../_images/img0419.png" style="width: 617.5px; height: 86.45px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao finalizar a execução em segundo plano da simulação do fechamento de custo, o add-on irá retornar novamente uma mensagem do sistema, segue abaixo exemplo:</p>
+<a class="reference internal image-reference" href="../../../_images/img0518.png"><img alt="../../../_images/img0518.png" class="align-center" src="../../../_images/img0518.png" style="width: 498.0px; height: 152.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Execução do fechamento de custo contábil finalizado.</strong></strong></p><p>E novamente, será indicado o término da execução em segundo plano no “Log de mensagens do sistema”, segue abaixo exemplo:</p>
+<a class="reference internal image-reference" href="../../../_images/img0619.png"><img alt="../../../_images/img0619.png" class="align-center" src="../../../_images/img0619.png" style="width: 648.0px; height: 107.10000000000001px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Ao abrir a tela de “Fechamento de custo contábil” e selecionar qualquer GGF pendente de simulação será exibido uma mensagem do sistema, indicando o carregamento da simulação:</p>
+<a class="reference internal image-reference" href="../../../_images/img0716.png"><img alt="../../../_images/img0716.png" class="align-center" src="../../../_images/img0716.png" style="width: 503.0px; height: 153.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O usuário poderá escolher entre três opções:
+- <strong>Sim:</strong> será carregado a simulação do fechamento de custo e retornado em tela.
+- <strong>Não:</strong> não será aberto em tela a simulação do fechamento de custo, podendo assim, realizar novamente a simulação para o GGF ou escolher um novo GGF para realizar a simulação do fechamento de custo.
+- <strong>Cancelar:</strong> cancela a ação e não seleciona nenhum GGF.</p>
+<p>Ao clicar em “Sim”, a o add-on irá abrir uma tela indicando o carregamento da simulação do fechamento de custo:</p>
+<a class="reference internal image-reference" href="../../../_images/img0814.png"><img alt="../../../_images/img0814.png" class="align-center" src="../../../_images/img0814.png" style="width: 282.0px; height: 119.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>O tempo de carregamento varia conforme o tempo da simulação do fechamento, nesse momento, usuário não deve utilizar o SAP e o BR One.</p>
+<p><strong>Processamento do fechamento de custo</strong></p>
+<p>Após carregar a simulação do fechamento de custo, os valores serão carregados e exibidos em tela nas abas “Resultado” e “LCM e Reavaliações”, para validação dos valores.</p>
+<p>Nesse momento será possível processar a simulação do fechamento de custo, para realizar o processo em segundo plano o usuário deve clicar na “seta” do botão “Processar” e clicar em “1 – Segundo plano”:</p>
+<a class="reference internal image-reference" href="../../../_images/img0914.png"><img alt="../../../_images/img0914.png" class="align-center" src="../../../_images/img0914.png" style="width: 597.6px; height: 428.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Poderá ser exibido a mensagem de sistema abaixo, caso possuam meses anteriores com fechamento em aberto:</p>
+<a class="reference internal image-reference" href="../../../_images/img1013.png"><img alt="../../../_images/img1013.png" class="align-center" src="../../../_images/img1013.png" style="width: 503.0px; height: 157.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Existem GGFs anteriores a este que ainda estão em aberto. Se for feito o processamento para o GGF atual, não será mais possível processar os anteriores. Continuar?</strong></strong></p><p>Caso usuário clique em “Não” o processamento será cancelado, caso usuário clique “Sim”, processo irá continuar normalmente, onde será exibido duas mensagens do sistema:</p>
+<a class="reference internal image-reference" href="../../../_images/img1114.png"><img alt="../../../_images/img1114.png" class="align-center" src="../../../_images/img1114.png" style="width: 505.0px; height: 159.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Este processo é irreversível e impossibilitará a realização de lançamentos referentes à produção no período processado. Continuar?</strong></strong></p><a class="reference internal image-reference" href="../../../_images/img1213.png"><img alt="../../../_images/img1213.png" class="align-center" src="../../../_images/img1213.png" style="width: 507.0px; height: 349.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Para dar sequência no processo usuário deve clicar em “Sim” em ambas. Nesse momento o add-on irá iniciar o processamento em segundo plano, será exibido a mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1313.png"><img alt="../../../_images/img1313.png" class="align-center" src="../../../_images/img1313.png" style="width: 284.0px; height: 118.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>Após será exibido outra mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1414.png"><img alt="../../../_images/img1414.png" class="align-center" src="../../../_images/img1414.png" style="width: 501.0px; height: 153.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Fechamento de custo contábil em execução de segundo plano.</strong></strong></p><p>Ao clicar em “Ok”, o add-on permitirá que o usuário utilize normalmente o add-on e após a finalização do processamento, o sistema retornará a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img1511.png"><img alt="../../../_images/img1511.png" class="align-center" src="../../../_images/img1511.png" style="width: 501.0px; height: 153.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Execução do fechamento de custo contábil finalizado.</strong></strong></p><p><strong>Atenção:</strong></p>
+<p>Durante os processos de simulação e processamento o usuário poderá utilizar normalmente o SAP e o BR One, e caso o usuário abra a tela de fechamento de custo e selecione um GGF, o add-on irá retornar a seguinte mensagem do sistema, impedindo, que seja iniciado uma nova simulação do fechamento de custo:</p>
+<a class="reference internal image-reference" href="../../../_images/img169.png"><img alt="../../../_images/img169.png" class="align-center" src="../../../_images/img169.png" style="width: 501.0px; height: 154.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p class="centered">
+<strong><strong>BR One :: Atenção! Uma execução em segundo plano está em curso. Por favor, aguarde até que a execução atual seja concluída.</strong></strong></p></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Fechamento%20de%20custo%20cont%C3%A1bil.html" class="btn btn-neutral float-left" title="Fechamento de custo contábil" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Movimentos%20do%20Fechamento%20de%20Custo.html" class="btn btn-neutral float-right" title="Movimentos do Fechamento de Custo" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

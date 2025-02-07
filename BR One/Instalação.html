@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instalação e Configuração do Add-On &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Buscar" href="../search.html" />
+    <link rel="next" title="Instalação do add-on BR One Cloud" href="Cloud.html" />
+    <link rel="prev" title="Especificações mínimas de Hardware" href="Especifica%C3%A7%C3%B5es%20m%C3%ADnimas%20de%20Hardware.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../BR%20One.html">BR One</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Pr%C3%A9%20requisitos.html">Pré Requisitos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Especifica%C3%A7%C3%B5es%20m%C3%ADnimas%20de%20Hardware.html">Especificações mínimas de Hardware</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Instalação e Configuração do Add-On</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cloud.html">Instalação do add-on BR One Cloud</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Atualiza%C3%A7%C3%A3o.html">Atualização do Add-On</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Valida%C3%A7%C3%B5es%20obrigat%C3%B3rias.html">Validações obrigatórias do add-on</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Script.html">Scripts adicionais</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Inicializa%C3%A7%C3%A3o%20do%20add-on%20BR%20One.html">Inicialização do add-on BR One</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Funcionalidades.html">Funcionalidades de Suporte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Desinstala%C3%A7%C3%A3o%20do%20Add-On.html">Desinstalação do Add-On</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Instala%C3%A7%C3%A3o%20LightWeight.html">BR One versão LightWeight</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../BR%20One.html">BR One</a></li>
+      <li class="breadcrumb-item active">Instalação e Configuração do Add-On</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="instalacao-e-configuracao-do-add-on">
+<h1>Instalação e Configuração do Add-On<a class="headerlink" href="#instalacao-e-configuracao-do-add-on" title="Link permanente para este cabeçalho"></a></h1>
+<p><strong>Atualização de licença</strong></p>
+<p>Antes de iniciar a Instalação do BR One é necessário que seja incluído na pasta <em>“Ampliações”</em> do SAP o arquivo de licenças do BR One (<em>“AuthBROne.dll”</em>) atualizado para a versão utilizada. A pasta de <em>“Ampliações”</em> deve ser uma pasta do Servidor onde todos os clients tenham acesso de leitura. Esta pasta pode ser localizada ou definida em: <em>“Administração/Inicialização do sistema/Configurações gerais”</em>.</p>
+<p>Em um client SAP 32bit a licença deverá ser colocada na raiz da pasta Ampliações. Para um client SAP 64bit deve ser colocada na subpasta AuthBROne_x64 dentro da pasta Ampliações.</p>
+<p>Após a Instalação (detalhada em tópico seguinte) a licença será automaticamente baixada desta pasta para a máquina onde o client SAP está instalado.</p>
+<p>Alternativamente em caso de problemas ao acessar esta pasta, esta licença pode ser manualmente copiada diretamente para a pasta do add-on, devendo apenas ser respeitado a respectiva plataforma (32bit/64bit) para definir qual licença deverá ser copiada.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.004.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.004.png" />
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.005.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.005.png" />
+<p>Na Aba caminho &gt; pasta de ampliações.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.006.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.006.png" />
+<p><strong>Atualizar na inicialização:</strong></p>
+<p>Pasta Ampliações, Pasta do add-on, Resultado</p>
+<img alt="../_images/image_2023_07_12T17_08_30_137Z.png" src="../_images/image_2023_07_12T17_08_30_137Z.png" />
+<p><strong>Atualizar pelo menu:</strong></p>
+<p>Pasta Ampliações Pasta do add-on Resultado</p>
+<img alt="../_images/image_2023_07_12T17_08_54_031Z.png" src="../_images/image_2023_07_12T17_08_54_031Z.png" />
+<p><strong>Processo de registro e Instalação</strong></p>
+<p><strong>Processo de registro</strong></p>
+<p>O processo de registro do add-on faz com que este fique cadastrado na base SBO-COMMON e possa ser utilizado por todas as empresas (BD) existentes no mesmo servidor de BD da base SBO-COMMON.</p>
+<p>Para isto seguir os passos seguintes:</p>
+<p>Acessar a tela de Administração de add-on, acessando os menus Administração/Add-Ons/Administração de add-on, conforme a imagem abaixo:</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.007.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.007.png" />
+<p>Após entrar na tela, clique no botão Registrar add-on para que seja apresentada a tela Registro de add-on, conforme a imagem abaixo:</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.008.jpeg" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.008.jpeg" />
+<p>Clique no botão […] e localize a pasta com os arquivos de Instalação. Selecione o arquivo BROne.ard.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.009.jpeg" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.009.jpeg" />
+<p>Após selecionar o arquivo, marque o flag Instalar como parte do registro, conforme a imagem abaixo:</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.010.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.010.png" />
+<p>Caso não seja feito a Instalação neste momento, deverá ser posteriormente realizado no menu Administrador add-on.</p>
+<p><strong>Processo de Instalação</strong></p>
+<p>O processo de Instalação faz com que além de ser registrado, que seja feito a Instalação local na máquina (client) a que está sendo feito o registro do add-on, logo o add-on poderá ser utilizado nesta máquina.</p>
+<p>Para o processo de Instalação, pode ser dado continuidade ao processo de registro (Instalar como parte do registro), conforme tópico anterior, ou ser a Instalação de um registro anterior (menu <em>“Administrador add-on”</em>).</p>
+<p>Para continuidade ao processo de registro, deve-se clicar em OK e a Instalação do Add-on iniciará automaticamente (conforme tela abaixo). Na tela seguinte, clique em <em>“Avançar”.</em></p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.011.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.011.png" />
+<p>Será mostrado o caminho onde o add-on será instalado. Clique em Instalar. Será exibido a seguinte mensagem:</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.012.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.012.png" />
+<p>Após o processo de Instalação ser completado, clique em Concluir para finalizar. Caso seja a primeira vez que o add-on esteja sendo instalado, ao iniciar o mesmo será solicitada as credenciais de banco de dados conforme informado na mensagem de “Pós – Instalação”.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.013.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.013.png" />
+<p><strong>Grupo padrão</strong></p>
+<p>Na tela de Administração de add-on é possível escolher o Grupo padrão de inicialização do add-on.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.014.jpeg" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.014.jpeg" />
+<p>Por padrão, em uma primeira Instalação o add-on ficará desativado. Caso seja uma atualização manterá a configuração anterior. Existem quatro opções de configuração: Manual, Automático, Obrigatório e Desativado.</p>
+<ul class="simple">
+<li><p><strong>Manual</strong>: O usuário terá que iniciar o add-on manualmente quando achar que é necessário.</p></li>
+<li><p><strong>Automático</strong>: O add-on iniciará automaticamente sempre que for efetuado logon no sistema.</p></li>
+<li><p><strong>Obrigatório</strong>: O add-on será iniciado automaticamente e o usuário não tem a opção de parar o add-on. Significa que o add-on ficará ativo todo o tempo que o usuário estiver logado no sistema. Esta deve ser opção preferida para a maioria das empresas. Isto garante que sempre todos os processos customizados estarão ativos.</p></li>
+<li><p><strong>Desativado</strong>: O add-on não será iniciado.</p></li>
+</ul>
+<p>A opção escolhida acima será padrão para todos os usuários do sistema. Caso algum usuário possua uma regra específica poderá ser tratado na aba <em>“Add-ons por usuário”</em>, exceto quando a opção <em>“Obrigatório”</em> for padrão, pois nesse caso as opções da coluna <em>“Preferências”</em> estarão indisponíveis para alteração.</p>
+<p>Na imagem a seguir será feito o tratamento específico para um usuário quando a opção selecionada <strong>não</strong> for “Obrigatório”.</p>
+<p>Na tela de <em>“Administração de add-on”</em>, na aba <em>“Add-ons por usuário”,</em> deverá ser selecionado o usuário em que deseja atribuir uma regra específica e alterado na coluna <em>“Preferências”</em> para opção desejada e atualizado esta tela.</p>
+<img alt="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.015.png" src="../_images/Aspose.Words.539b1124-ee1f-434b-9718-1dc8b49c9c8c.015.png" />
+<p>Quando este usuário logar no SAP o add-on será iniciado conforme a regra definida para o mesmo.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Especifica%C3%A7%C3%B5es%20m%C3%ADnimas%20de%20Hardware.html" class="btn btn-neutral float-left" title="Especificações mínimas de Hardware" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Cloud.html" class="btn btn-neutral float-right" title="Instalação do add-on BR One Cloud" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

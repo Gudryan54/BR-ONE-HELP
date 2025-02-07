@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Depósito Fechado &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Cadastro do item fictício" href="../Item%20Ficticio/Cadastro%20do%20item.html" />
+    <link rel="prev" title="Assistente de cancelamento" href="../Transferencia%20entre%20filiais/Processo/Assistente%20de%20cancelamento.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Depósito Fechado</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Depósito Fechado</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="deposito-fechado">
+<h1>Depósito Fechado<a class="headerlink" href="#deposito-fechado" title="Link permanente para este cabeçalho"></a></h1>
+<p>O processo de Faturamento de Depósito Fechado exige a configuração do processo de <strong>Transferencia entre filiais.</strong></p>
+<p><strong>Faturamento em Depósito Fechado</strong></p>
+<p>Para acessar a tela de Faturamento de Depósito Fechado, basta acessar o menu:</p>
+<p><strong>Vendas C/R</strong> -&gt; <strong>Faturamento em depósito fechado</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img1.png"><img alt="../../../_images/img1.png" src="../../../_images/img1.png" style="width: 481.6px; height: 416.8px;" /></a>
+<p>Após seleção a tela <strong>BR One :: Faturamento em deposito fechado</strong> será apresentada.</p>
+<a class="reference internal image-reference" href="../../../_images/img2.png"><img alt="../../../_images/img2.png" src="../../../_images/img2.png" style="width: 481.6px; height: 250.4px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img3.png"><img alt="../../../_images/img3.png" src="../../../_images/img3.png" style="width: 481.6px; height: 250.4px;" /></a>
+<p>A tela possui os seguintes campos de filtro:</p>
+<p><strong>Cliente:</strong> Apresentará todos os Parceiros de Negócios cadastrados como cliente no sistema.</p>
+<p><strong>Ponto de Entrega:</strong> Apresentrá os pontos de entrega do cadastrado do cliente, somente permitirá ser preenchido o campo, caso o campo cliente esteja com filtro.</p>
+<p><strong>Filial:</strong> Apresentará todas as Filiais ativas cadastradas no sistema para seleção.</p>
+<p><strong>Processo:</strong> Apresentará os processos que fazem parte do Faturamento de deposito fechado, sendo eles:</p>
+<ul class="simple">
+<li><p><strong>Pedido de Venda</strong></p></li>
+<li><p><strong>NF de entrega futura</strong></p></li>
+<li><p><strong>Esboço de NF de Saída</strong></p></li>
+<li><p><strong>Esboço de NF de Faturamento</strong></p></li>
+<li><p><strong>Pedido de Transferência</strong></p></li>
+</ul>
+<p><strong>Data de entrega:</strong> Apresentará o calendário para realizar o filtro por Data De/Até.</p>
+<p><strong>Nº Documento:</strong> Apresentará o número dos documentos conforme selecionados no campo Processo para realizar o filtro De/Até.</p>
+<p><strong>N° do item:</strong> Apresentará os itens cadastrados para realizar filto De/Até.</p>
+<p>A tela possui os seguintes campos na grid:</p>
+<ul class="simple">
+<li><p><strong>Selecionado</strong>:  Campo do tipo checkbox utilizado para seleção da linha e processamento.</p></li>
+<li><p><strong>Nº do documento:</strong> Apresenta o número do documento selecionado previamente no campo processo do cabeçalho.</p></li>
+<li><p><strong>Código do item</strong>: Apresenta os códigos dos itens no documento selecionado previamente no campo processo do cabeçalho.</p></li>
+<li><p><strong>Descrição do Item:</strong> Apresenta a descrição dos itens no documento selecionado previamente no campo processo do cabeçalho.</p></li>
+<li><p><strong>Depósito:</strong> Apresenta o deposito dos itens no documento selecionado previamente no campo processo do cabeçalho.</p></li>
+<li><p><strong>Quantidade:</strong> Apresenta a quantidade dos itens no documento selecionado previamente no campo processo do cabeçalho. O valor do campo quantidade pode ser alterado.</p></li>
+<li><p><strong>Cliente:</strong> Apresenta o código do cliente no documento selecionado previamente no campo processo do cabeçalho ou no campo cliente.</p></li>
+<li><p><strong>Data de Entrega:</strong> Apresenta a data de entrega no documento selecionado previamente no campo processo do cabeçalho.</p></li>
+</ul>
+<p>A tela possui os seguintes botões:</p>
+<ul class="simple">
+<li><p><strong>Filtrar:</strong> O botão aciona a consulta com base nos parametros escolhidos pelo usuário para apresentação em tela.</p></li>
+<li><p><strong>Cancelar:</strong> O botão tem ação de finalizar a tela.</p></li>
+<li><p><strong>Processar:</strong> O botão possui a ação de processar os documentos selecionados na grid.</p></li>
+</ul>
+<p><strong>Processo do Faturamento em Deposito Fechado</strong></p>
+<p>O processo de Faturamento em Deposito Fechado é utilizado para faturar um determinado produto na Filial A, porém este é produzido pela Filial B.</p>
+<p>Para o início do processo devemos ter Pedidos de Vendas ou NF de Entrega Futuras inseridos no sistema.</p>
+<p>Para filtrar os Pedido de Vendas ou NF de Entrega Futuras não há necessidade de preenchermos o campo Cliente, apenas se for necessário Pedidos de Vendas ou NF de Entragas Futuras de um cliente especifico.</p>
+<a class="reference internal image-reference" href="../../../_images/img43.png"><img alt="../../../_images/img43.png" src="../../../_images/img43.png" style="width: 481.6px; height: 257.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img5.png"><img alt="../../../_images/img5.png" src="../../../_images/img5.png" style="width: 481.6px; height: 253.60000000000002px;" /></a>
+<p>Utilizando Pedido de Vendas no processo, selecionamos o Pedido de Venda e Item desejado, marcando o checkbox do campo selecionado.</p>
+<a class="reference internal image-reference" href="../../../_images/img62.png"><img alt="../../../_images/img62.png" src="../../../_images/img62.png" style="width: 481.6px; height: 268.8px;" /></a>
+<p>Ao clicarmos no botão Processar, será aberto a tela BR One:: Seleção da filial de transferência para seleção da Filial será feita a transferencia.</p>
+<a class="reference internal image-reference" href="../../../_images/img7.png"><img alt="../../../_images/img7.png" src="../../../_images/img7.png" style="width: 481.6px; height: 263.2px;" /></a>
+<p>Caso não selecionarmos nenhuma linha, a mensagem de alerta no rodapé será apresentada ‘Erro pois nenhuma linha foi selecionada’.</p>
+<a class="reference internal image-reference" href="../../../_images/img8.png"><img alt="../../../_images/img8.png" src="../../../_images/img8.png" style="width: 892.8000000000001px; height: 65.60000000000001px;" /></a>
+<p>Caso selecionarmos a mesma filial do cabeçalho, neste exemplo SBO_BROne será apresentada a mensagem ‘A filial da transferência não pode ser nula ou igual a filial dos documentos selecionados’.</p>
+<a class="reference internal image-reference" href="../../../_images/img9.png"><img alt="../../../_images/img9.png" src="../../../_images/img9.png" style="width: 481.6px; height: 265.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img1012.png"><img alt="../../../_images/img1012.png" src="../../../_images/img1012.png" style="width: 995.2px; height: 80.0px;" /></a>
+<p>Selecionando a filial desejada e clicando em OK, a tela do Pedido de Transferência de Estoque será aberto.</p>
+<a class="reference internal image-reference" href="../../../_images/img1113.png"><img alt="../../../_images/img1113.png" src="../../../_images/img1113.png" style="width: 481.6px; height: 258.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img1212.png"><img alt="../../../_images/img1212.png" src="../../../_images/img1212.png" style="width: 454.40000000000003px; height: 408.8px;" /></a>
+<p>Podemos utilizar o botão Copiar para e assim efetivarmos o Pedido de Transferencia de Estoque para uma Trasnferencia de Estoque.</p>
+<a class="reference internal image-reference" href="../../../_images/img1312.png"><img alt="../../../_images/img1312.png" src="../../../_images/img1312.png" style="width: 464.0px; height: 414.40000000000003px;" /></a>
+<p>Podemos também utilizar a opção Pedido de Transferencia no cabeçalho da tela de Faturamento de Deposito Fechado.</p>
+<a class="reference internal image-reference" href="../../../_images/img1413.png"><img alt="../../../_images/img1413.png" src="../../../_images/img1413.png" style="width: 481.6px; height: 261.6px;" /></a>
+<p>Após selecionarmos as linhas dos pedidos desejados e selecionar o botão processar, os pedidos de transferencia de estoque serão transformados em Transferencia de Estoque e o Esboço de Nota Fiscal de Saída será apresentado em tela.</p>
+<a class="reference internal image-reference" href="../../../_images/img1510.png"><img alt="../../../_images/img1510.png" src="../../../_images/img1510.png" style="width: 481.6px; height: 460.8px;" /></a>
+<p>O esboço de Nota Fiscal de Saída pode ser adicionado já quando for aberto na tela ou localizado através do filtro na tela de Faturamento Deposito Fechado.</p>
+<a class="reference internal image-reference" href="../../../_images/img168.png"><img alt="../../../_images/img168.png" src="../../../_images/img168.png" style="width: 733.6px; height: 391.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img16_1.png"><img alt="../../../_images/img16_1.png" src="../../../_images/img16_1.png" style="width: 607.2px; height: 373.6px;" /></a>
+<p>Após adicionarmos o Esboço da Nota Fiscal de Saída o mesmo se tornará uma Nota Fiscal de Saída e será aberto automaticamente em tela o Esboço de Nota Fiscal de Entrada para a filial SBO_BROne.</p>
+<a class="reference internal image-reference" href="../../../_images/img178.png"><img alt="../../../_images/img178.png" src="../../../_images/img178.png" style="width: 456.8px; height: 401.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img17_1.png"><img alt="../../../_images/img17_1.png" src="../../../_images/img17_1.png" style="width: 463.20000000000005px; height: 397.6px;" /></a>
+<p>Ao adicionarmos o Esboço de Nota Fiscal de Entrada o mesmo se tornará uma Nota Fiscal de Entrada e será aberto automaticamente um Esboço de Nota Fiscal de Saída para a filial SBO_BROne.</p>
+<a class="reference internal image-reference" href="../../../_images/img189.png"><img alt="../../../_images/img189.png" src="../../../_images/img189.png" style="width: 484.0px; height: 359.20000000000005px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img18_1.png"><img alt="../../../_images/img18_1.png" src="../../../_images/img18_1.png" style="width: 482.40000000000003px; height: 359.20000000000005px;" /></a>
+<p>Podemos localizar também este documento na tela de Faturamento em Deposito Fechado através do filtro de cabeçalho Esboço de NF de Faturamento.</p>
+<a class="reference internal image-reference" href="../../../_images/img198.png"><img alt="../../../_images/img198.png" src="../../../_images/img198.png" style="width: 779.2px; height: 413.6px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/img19_1.png"><img alt="../../../_images/img19_1.png" src="../../../_images/img19_1.png" style="width: 603.2px; height: 406.40000000000003px;" /></a>
+<p>Ao adicionarmos o Esboço da Nota Fiscal de Saída o mesmo se tronará uma Nota Fiscal de Saída para a filial SBO_BROne finalizando assim o processo de Faturamento em Deposito Fechado.</p>
+<a class="reference internal image-reference" href="../../../_images/img207.png"><img alt="../../../_images/img207.png" src="../../../_images/img207.png" style="width: 481.6px; height: 463.20000000000005px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Transferencia%20entre%20filiais/Processo/Assistente%20de%20cancelamento.html" class="btn btn-neutral float-left" title="Assistente de cancelamento" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../Item%20Ficticio/Cadastro%20do%20item.html" class="btn btn-neutral float-right" title="Cadastro do item fictício" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

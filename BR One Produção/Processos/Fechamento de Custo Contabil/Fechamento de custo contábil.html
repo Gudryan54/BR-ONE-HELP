@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fechamento de custo contábil &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Fechamento de custo em Segundo Plano" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html" />
+    <link rel="prev" title="GGF antecipado" href="../GGF%20Antecipado/GGF%20Antecipado.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Fechamento de custo contábil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html">Fechamento de custo em Segundo Plano</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Movimentos%20do%20Fechamento%20de%20Custo.html">Movimentos do Fechamento de Custo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html">Memória de Cálculo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html">Estrutura dos Produtos com custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html">Estrutura dos Produtos sem custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20c%C3%A1lculo%20Subindo%20custos%20de%20Heran%C3%A7a.html">Memória de cálculo: Subindo custos de Herança</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Fechamento de custo contábil</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="fechamento-de-custo-contabil">
+<h1>Fechamento de custo contábil<a class="headerlink" href="#fechamento-de-custo-contabil" title="Link permanente para este cabeçalho"></a></h1>
+<p>Nesta tela será realizado o fechamento de custo contábil para os <strong>GGFs cadastrados</strong> na tela de <strong>Cadastro de GGF</strong>, podendo ser executado um único ou para cada filial.</p>
+<a class="reference internal image-reference" href="../../../_images/img0128.png"><img alt="../../../_images/img0128.png" src="../../../_images/img0128.png" style="width: 601.3px; height: 347.2px;" /></a>
+<p>Antes de realizar o fechamento de custo contábil, devem ser configurados dois campos importantes para o processo na tela <strong>Configurações de produção</strong> na aba Custos.</p>
+<p><strong>Fechamento de custos</strong></p>
+<ul class="simple">
+<li><p>Previsto</p></li>
+<li><p>Apontamento de horas</p></li>
+<li><p>Conta de alocação temporária de custos</p></li>
+<li><p>Conta de refugo</p></li>
+</ul>
+<p>Ao escolher um GGF, existem 2 botões na tela que podem ser utilizados, são eles:</p>
+<ul class="simple">
+<li><p><strong>Simular</strong></p></li>
+<li><p><strong>Processar</strong></p></li>
+</ul>
+<p>Para processar um fechamento, é necessário simular antes, através do botão <strong>Simular</strong>.</p>
+<p>O botão <strong>processar</strong> só será habilitado a partir do <strong>primeiro dia do mês seguinte</strong>, ou seja, se o GGF é do mês <strong>05/2020</strong>, o botão <strong>Processar</strong> só será habilitado a partir do dia 01/06/2020.</p>
+<p>Se o campo <strong>Conta para apontamentos de refugo</strong> estiver vazio, ao tentar simular, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/img0228.png"><img alt="../../../_images/img0228.png" src="../../../_images/img0228.png" style="width: 407.4px; height: 11.899999999999999px;" /></a>
+<p><em>BR One :: Conta contábil “Conta para apontamentos de refugo” deve estar configurada antes da execução deste processo.</em></p>
+<p>Ao clicar no botão <strong>Simular</strong>, o fechamento será simulado e a seguinte tela será exibida enquanto a simulação é carregada:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.004.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.004.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.004.png" style="width: 167.29999999999998px; height: 71.39999999999999px;" /></a>
+<p>Se a simulação for concluída com sucesso, a seguinte mensagem aparecerá:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.005.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.005.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.005.png" style="width: 149.79999999999998px; height: 9.1px;" /></a>
+<p><em>BR One :: Fechamento de custos calculado.</em></p>
+<p>Se as informações não puderem ser carregadas, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.006.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.006.png" />
+<p><em>Falha ao carregar informações.</em></p>
+<p>Se ao processar a simulação do fechamento de custos houver <strong>recursividade nas OPs</strong>, ou seja, a OP 1 tem no cabeçalho o item A e entre seus componentes os itens B e C, e a OP 2 tem no cabeçalho o item B e entre seus componentes os itens D e E.</p>
+<p>Caso o usuário insira como componente o item A na OP 2, ele estará utilizando o item pai (A) como item filho na OP 2.</p>
+<p>O fechamento de custo será simulado conforme as configurações determinadas no cadastro do <strong>GGF</strong> e configurações de produção aba <strong>Custo</strong>, podendo ser por filial ou não.</p>
+<p>A validação por filial será a partir do <strong>cadastro do GGF</strong>, e ao entrar no Fechamento de custo serão listados todos os meses/ano por filial para serem simulados e processados.</p>
+<p>Se utilizado por filial, as <strong>OPs</strong> dentro da simulação/processamento serão apenas da filial vinculada no <strong>cadastro do GGF</strong> selecionado.</p>
+<p>Ao simular o fechamento, não será possível, e será exibida a tela <strong>OPs com problemas na recursividade</strong>, informando as OPs que impedem o fechamento de custos:</p>
+<a class="reference internal image-reference" href="../../../_images/71.png"><img alt="../../../_images/71.png" src="../../../_images/71.png" style="width: 532.6999999999999px; height: 357.7px;" /></a>
+<p>No exemplo acima, a OP 2059 de item pai <strong>I05983</strong> tem como item filho o item <strong>I05993</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/81.png"><img alt="../../../_images/81.png" src="../../../_images/81.png" style="width: 583.0999999999999px; height: 375.9px;" /></a>
+<p>E o item <strong>I05993</strong> é item pai da OP 1061 que tem o item <strong>I05983</strong> como item filho.</p>
+<a class="reference internal image-reference" href="../../../_images/91.png"><img alt="../../../_images/91.png" src="../../../_images/91.png" style="width: 580.3px; height: 377.29999999999995px;" /></a>
+<p>Para resolver essa situação, é necessário marcar a flag <strong>Ignorar no fechamento de custos</strong> na aba <strong>Custos</strong> da OP.</p>
+<a class="reference internal image-reference" href="../../../_images/1010.png"><img alt="../../../_images/1010.png" src="../../../_images/1010.png" style="width: 586.5999999999999px; height: 378.7px;" /></a>
+<p><strong>OBS.:</strong> Caso o usuário tente adicionar uma Entrada de PA ou Saída de insumos em uma OP que está com a flag <strong>Ignorar no fechamento de custos</strong> marcada, exibirá a seguinte mensagem:</p>
+<a class="reference internal image-reference" href="../../../_images/img0717.png"><img alt="../../../_images/img0717.png" src="../../../_images/img0717.png" style="width: 376.59999999999997px; height: 11.899999999999999px;" /></a>
+<p><em>Não é possível efetuar o processo quando a flag “Ignorar no fechamento de custos” estiver marcado.</em></p>
+<p>Quando a flag estiver <strong>marcada</strong>, ao simular o fechamento de custos, a OP será <strong>desconsiderada no fechamento</strong>.</p>
+<p>Após a simulação ser finalizada, será carregado na tela nas abas <strong>Resultado</strong> e <strong>LCM e Reavaliações</strong> a simulação criada para aquele mês, ano e filial selecionado no campo GGF.
+Para calcular o LCM e Reavaliações, é realizado o cálculo do <strong>LLC</strong> (<em>LowLevelCode</em>) do maior nível para o menor.</p>
+<p><strong>Por exemplo:</strong></p>
+<p>Se uma OP A <strong>(nível 0)</strong> tem os itens B <strong>(nível 1)</strong> e C <strong>(nível 1)</strong> e para utilizar o item B, são necessários os itens D <strong>(nível 2)</strong> e E <strong>(nível 2)</strong>, então o LLC irá começar a ser calculado do nível 2 <strong>(itens D e E)</strong>, depois o nível 1 <strong>(B e C</strong>) e por último nível 0 <strong>(item A)</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/123.png"><img alt="../../../_images/123.png" src="../../../_images/123.png" style="width: 942.9px; height: 260.4px;" /></a>
+<p>Após concluída a simulação, o botão <strong>Validações Inativos</strong> ficará ativo e ao seleciona-lo a mensagem na tela para verificar <strong>itens, depósitos ou conta inativa</strong> na simulação será exibido e processo de verificação será executado.</p>
+<a class="reference internal image-reference" href="../../../_images/134.png"><img alt="../../../_images/134.png" src="../../../_images/134.png" style="width: 541.0999999999999px; height: 368.9px;" /></a>
+<p>A aba <strong>Resultado</strong> exibe todas as linhas cadastradas no <strong>Cadastro de GGF</strong> e todas as OPs que tiveram rateio conforme regra do <strong>GGF cadastrado</strong>, este rateio pode ser por:</p>
+<ul class="simple">
+<li><p><strong>Quantidade</strong></p></li>
+<li><p><strong>Horas maquina</strong></p></li>
+<li><p><strong>Horas mão de obra</strong></p></li>
+<li><p><strong>Hora ferramenta</strong></p></li>
+</ul>
+<p>Serão apresentadas todas as <strong>Ordens de Produção</strong> que registraram a <strong>Entrada de Produto Acabado</strong> durante o mês de encerramento para filial do cadastro do <strong>GGF</strong>, independentemente do depósito da filial onde essa entrada tenha ocorrido.
+Todas essas entradas serão consideradas para rateio..</p>
+<a class="reference internal image-reference" href="../../../_images/144.png"><img alt="../../../_images/144.png" src="../../../_images/144.png" style="width: 900.1999999999999px; height: 348.59999999999997px;" /></a>
+<p>No exemplo acima foi feita a <strong>simulação para o mês 05/2023</strong> com a forma de rateio <strong>Quantidade</strong>, dividindo o valor do GGF de R$40.000 entre o total da quantidade de todas as OPs que fizeram entrada de PA.</p>
+<p>O valor do rateio para cada OP será <strong>dividido proporcionalmente</strong>.</p>
+<p>O cálculo realizado é da seguinte forma:</p>
+<ul class="simple">
+<li><p><strong>Rateio por Quantidade</strong></p></li>
+</ul>
+<p><strong>Valor do rateio</strong> = <em>(Qtde apont. da linha * Valor do GGF) / Soma da coluna Qtde apont. por conta contábil do GGF</em></p>
+<ul class="simple">
+<li><p><strong>Rateio por Horas (máquina, mão de obra, ferramenta)</strong></p></li>
+</ul>
+<p><strong>Valor do rateio</strong> = <em>(Horas da linha * Valor do GGF) / Soma da coluna Horas por conta contábil do GGF</em></p>
+<p><strong>Pelo exemplo citado o cadastro do GGF está por rateio por quantidade:</strong></p>
+<p>A soma da <strong>coluna Qtde apont. por conta contábil do GGF</strong> apontada é <strong>48</strong>.</p>
+<p>A Qtde apont. da linha da OP 340 é <strong>1</strong>.</p>
+<p>O Valor do GGF é <strong>R$40.000</strong>.</p>
+<p>Logo o cálculo para encontrar o <strong>Rateio</strong> dessa linha será:</p>
+<p><strong>Valor do rateio</strong> = <em>(Qtde apont. da linha * Valor do GGF) / Soma da coluna Qtde apont. por conta contábil do GGF</em></p>
+<p><strong>Valor do rateio</strong> = (1 * 40.000) / 48</p>
+<p><strong>Valor do rateio</strong> = 40.000 / 48</p>
+<p><strong>Valor do rateio</strong> = 833,33</p>
+<p>Então, para a OP 340, a coluna Rateio terá o valor de 833,33.</p>
+<a class="reference internal image-reference" href="../../../_images/152.png"><img alt="../../../_images/152.png" src="../../../_images/152.png" style="width: 900.1999999999999px; height: 348.59999999999997px;" /></a>
+<p>Na aba <strong>LCM e Reavaliações</strong> são apresentados todos os LCMs e todas as reavaliações que serão necessárias realizar para compor os custos do gasto do mês.</p>
+<p>Aqui são listados os lançamentos realizados no processo de validação do item rateado na aba <strong>resultado</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/162.png"><img alt="../../../_images/162.png" src="../../../_images/162.png" style="width: 865.9px; height: 202.29999999999998px;" /></a>
+<p>Se o parâmetro <strong>Utilizar GGF antecipado</strong> estiver marcado. Após a simulação será carregada também uma linha para que seja gerado um LCM (ao processar) com o valor total acumulado da conta de GGF antecipado do período do GGF contra a conta contábil de alocação temporária.</p>
+<ul class="simple">
+<li><p><strong>Crédito:</strong> Conta de alocação temporária</p></li>
+<li><p><strong>Débito:</strong> Conta de GFF antecipado</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/172.png"><img alt="../../../_images/172.png" src="../../../_images/172.png" style="width: 912.0999999999999px; height: 358.4px;" /></a>
+<p>O valor é a soma de todos os LCM de antecipado no mês do fechamento referente as OPs que estão na aba <strong>Resultado</strong>.</p>
+<p>Após simular o fechamento, ele poderá ser processado.</p>
+<p>Clique em <strong>Processar</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.018.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.018.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.018.png" style="width: 268.0px; height: 14.0px;" /></a>
+<p>Caso o usuário tenha apenas a versão para teste, a seguinte mensagem será exibida ao clicar em <strong>Processar:</strong></p>
+<p><em>BR One :: Processo liberado apenas para homologação.</em></p>
+<p>Ao clicar em <strong>Processar</strong>, a seguinte mensagem será exibida, alertando que não será possível realizar lançamentos referentes à produção no período processado:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.019.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.019.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.019.png" style="width: 342.29999999999995px; height: 96.6px;" /></a>
+<p><em>BR One :: Este processo é irreversível e impossibilitará a realização de lançamentos referentes à produção no período processado. Continuar?</em></p>
+<p>Ao clicar em <strong>Sim</strong>, o processo será continuado, e em <strong>Não</strong>, o processo será abortado.</p>
+<p>Se houver um cadastro de GGF de um mês anterior aberto, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.020.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.020.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.020.png" style="width: 343.7px; height: 96.6px;" /></a>
+<p><em>BR One :: Existem GGFs anteriores a este que ainda não estão em aberto. Se for feito o processamento para o GGF atual, não será mais possível processar os anteriores.</em></p>
+<p><em>Continuar?</em></p>
+<p>Ao clicar em <strong>Sim</strong>, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.021.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.021.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.021.png" style="width: 380.8px; height: 259.2px;" /></a>
+<p><em>BR One :: Este processo irá gerar diversos LCMs e reavaliações de estoque. Devido a isto o processamento pode ser demorado e eventualmente o client do SAP pode apresentar congelamentos.</em></p>
+<p><strong>Recomendações para processamento:</strong></p>
+<ul class="simple">
+<li><p><em>Realizar no servidor ou em uma máquina com boa capacidade de processamento e que esteja conectada na rede via cabo.</em></p></li>
+<li><p><em>Realizar em um período em que o BD não esteja com outros processamentos e não esteja com outros usuários conectados no SAP.</em></p></li>
+<li><p><em>Realizar backup dos BDs do SAP e UPP_BRONE antes de realizar o processamento. Continuar?</em></p></li>
+</ul>
+<p>Ao clicar em <strong>Sim</strong>, o fechamento será processado e <strong>não será mais possível realizar o fechamento de custo contábil para meses anteriores.</strong> Ao clicar em Não, o processo será abortado.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.022.jpeg"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.022.jpeg" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.022.jpeg" style="width: 406.0px; height: 15.0px;" /></a>
+<p>Se não houver dados para processar e o usuário clicar em <strong>Processar</strong>, o fechamento não será executado e a seguinte mensagem será exibida:</p>
+<p><em>BR One :: Erro ao processar. Retorno: (Falha ao gravar valores de GGFs pendentes).</em></p>
+<p>Enquanto o fechamento estiver sendo processado, as seguintes mensagens aparecerão:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.023.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.023.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.023.png" style="width: 239.0px; height: 107.0px;" /></a>
+<p>Sendo assim:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.024.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.024.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.024.png" style="width: 389.0px; height: 17.0px;" /></a>
+<p><em>BR One :: Gerando Lançamentos contábeis e Reavaliações do estoque. Aguarde…</em></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.025.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.025.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.025.png" style="width: 297.0px; height: 21.0px;" /></a>
+<p>Sendo assim:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.026.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.026.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.026.png" style="width: 251.0px; height: 16.0px;" /></a>
+<p><em>BR One :: Gerando LCM inicial agrupando o GGF. Aguarde…</em></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.027.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.027.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.027.png" style="width: 249.0px; height: 18.0px;" /></a>
+<p><em>BR One :: Gerando LCMs necessários. Aguarde… BR One :: Atualizando OPs necessárias. Aguarde…</em></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.028.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.028.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.028.png" style="width: 543.0px; height: 13.0px;" /></a>
+<p>Caso tenha ocorrido algum erro no processo, uma mensagem de erro será exibida indicando o erro:</p>
+<p><em>BR One :: Erro ao processar. Retorno: (x)</em></p>
+<p>Se o processo for concluído com sucesso, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.029.png"><img alt="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.029.png" src="../../../_images/Aspose.Words.dcd418d4-e4e4-4bcd-be2b-b4941044fdaf.029.png" style="width: 185.0px; height: 13.0px;" /></a>
+<p><em>BR One :: Processamento concluído.</em></p>
+<p>Após o processo, o registro do GGF utilizado estará com o status <strong>Fechado</strong> e não será possível alterar <strong>nenhum campo</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/302.png"><img alt="../../../_images/302.png" src="../../../_images/302.png" style="width: 560.0px; height: 130.2px;" /></a>
+<p>A tela <strong>Fechamento de custo contábil</strong> também ficará com os campos e botões <strong>desabilitados</strong>, impedindo assim a edição dos campos.</p>
+<a class="reference internal image-reference" href="../../../_images/313.png"><img alt="../../../_images/313.png" src="../../../_images/313.png" style="width: 576.8px; height: 388.5px;" /></a>
+<p>Todos os LCMs e Reavaliações de estoque da aba <strong>LCM e Reavaliações</strong> serão criados.</p>
+<p>Logo, podem ser consultados individualmente através da coluna <strong>Documento</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/322.png"><img alt="../../../_images/322.png" src="../../../_images/322.png" style="width: 586.5999999999999px; height: 378.7px;" /></a>
+<p>Será gerado um <strong>LCM</strong> se o item não tiver estoque e já foi dada a saída para ele.</p>
+<p>Se o item tiver estoque, será gerada uma <strong>reavaliação.</strong></p>
+<p>É gerado um LCM para cada <strong>LLC</strong> (<em>LowLevelCode</em>).</p>
+<ul class="simple">
+<li><p><strong>Exemplo de LCM:</strong></p></li>
+</ul>
+<p><strong>Conta de Crédito:</strong> Conta de alocação temporária</p>
+<p><strong>Conta de Débito:</strong> Conta de Material Vendidos – CPV</p>
+<a class="reference internal image-reference" href="../../../_images/331.png"><img alt="../../../_images/331.png" src="../../../_images/331.png" style="width: 632.0999999999999px; height: 388.5px;" /></a>
+<ul class="simple">
+<li><p><strong>Exemplo de Reavaliação do estoque:</strong></p></li>
+</ul>
+<p><strong>Conta de Crédito:</strong> Conta de alocação temporária</p>
+<p><strong>Conta de Débito:</strong> Conta de Estoque</p>
+<a class="reference internal image-reference" href="../../../_images/341.png"><img alt="../../../_images/341.png" src="../../../_images/341.png" style="width: 352.79999999999995px; height: 375.9px;" /></a>
+<p>Caso o Item seja identificado como um semi acabado, consumido dentro de outra Ordem de Produção, o seguinte <strong>LCM</strong> é realizado:</p>
+<p><strong>Conta de Crédito:</strong> Conta de alocação temporária</p>
+<p><strong>Conta de Débito:</strong> Conta de material em processo – WIP</p>
+<p>Quando a quantidade de estoque no último dia do mês do processamento for maior que zero e a quantidade em estoque do dia atual do processamento for igual a 0, será gerado um LCM com a conta de débito igual à <strong>Conta de estoque não alocado</strong> e a conta de crédito igual à <strong>Conta de alocação temporária de custos</strong>.</p>
+<p>Também será gerado um novo <strong>LCM</strong> com a conta de crédito igual à <strong>Conta de estoque não alocado</strong> e a conta de débito <strong>CPV (Conta de materiais vendidos)</strong>, com a <strong>data atual do processamento</strong>.</p>
+<p><strong>A seguir temos alguns exemplos de lançamentos de LCM:</strong></p>
+<p>O add-on verifica a <strong>quantidade em estoque</strong> no <strong>depósito</strong> que foi realizado a <strong>entrada de PA</strong> no <strong>último dia</strong> do mês que está sendo processado.</p>
+<p>Se o mês processado é <strong>05/2023</strong> ele valida a quantidade de estoque no dia <strong>31/05/2023</strong>,  nesse exemplo foi realizado o total de 80 PA no mês 05/2023.</p>
+<p><strong>Validações:</strong></p>
+<ul class="simple">
+<li><p>Caso a quantidade encontrada no estoque <strong>no dia 31/05/2023 seja 0</strong>, e no dia atual da simulação possua 80, o add-on realiza os seguintes lançamentos, mesmo que no dia atual tenha estoque:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/351.png"><img alt="../../../_images/351.png" src="../../../_images/351.png" style="width: 863.0999999999999px; height: 294.0px;" /></a>
+<ul class="simple">
+<li><p>Caso a quantidade encontrada no estoque <strong>no dia 31/05/2023 = 80</strong>, e no dia atual da simulação possua 80, o add-on realiza os seguintes lançamentos:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/361.png"><img alt="../../../_images/361.png" src="../../../_images/361.png" style="width: 862.4px; height: 272.29999999999995px;" /></a>
+<ul class="simple">
+<li><p>Caso a quantidade encontrada no estoque <strong>no dia 31/05/2023 = 80</strong> que é a quantidade realizada na entrada desse PA, e no dia atual da simulação possua 45 em estoque, o add-on joga o valor total dos 80 que seriam reavaliados na quantidade de 45 aumentando o custo do item.</p></li>
+</ul>
+<p>Gerando os seguintes lançamentos:</p>
+<a class="reference internal image-reference" href="../../../_images/371.png"><img alt="../../../_images/371.png" src="../../../_images/371.png" style="width: 905.0999999999999px; height: 286.29999999999995px;" /></a>
+<ul class="simple">
+<li><p>Caso o add-on identifique que o PA foi consumido em outra Ordem de produção, será gerado os seguintes lançamentos:</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/381.png"><img alt="../../../_images/381.png" src="../../../_images/381.png" style="width: 905.0999999999999px; height: 289.09999999999997px;" /></a>
+<ul class="simple">
+<li><p>Caso a quantidade encontrada no estoque <strong>no dia 31/05/2023 = 50</strong> e a quantidade realizada na entrada desse PA foi de 80, e no dia atual da simulação possua 45 em estoque, o add-on joga o valor total dos 50 que seriam reavaliados na quantidade de 45 aumentando o custo do item e realiza um LCM para conta de material vendido de 30.</p></li>
+</ul>
+<p>Gerando os seguintes lançamentos:</p>
+<a class="reference internal image-reference" href="../../../_images/391.png"><img alt="../../../_images/391.png" src="../../../_images/391.png" style="width: 863.8px; height: 378.7px;" /></a>
+<ul class="simple">
+<li><p>Caso a quantidade encontrada no estoque <strong>no dia 31/05/2023 = 80</strong> e a quantidade realizada na entrada desse PA foi de 80, e no dia atual da simulação não possua estoque, o add-on realiza os seguintes lançamentos:</p></li>
+</ul>
+<p>Será gerado um <strong>LCM</strong> no último dia do mês do fechamento de custo <strong>31/05/2023</strong> nas contas:</p>
+<p><strong>Conta de crédito:</strong> Conta de alocação temporária de custos</p>
+<p><strong>Conta de débito:</strong> Conta de estoque não alocado</p>
+<p>E será gerado um novo <strong>LCM</strong> com a <strong>data atual</strong> do processamento do fechamento de custo nas contas:</p>
+<p><strong>Conta de crédito:</strong> Conta de estoque não alocado</p>
+<p><strong>Conta de débito:</strong> Conta de Material Vendidos – CPV</p>
+<a class="reference internal image-reference" href="../../../_images/40.png"><img alt="../../../_images/40.png" src="../../../_images/40.png" style="width: 742.6999999999999px; height: 347.9px;" /></a>
+<p><strong>Isso só ocorre nesse cenário onde no último dia do mês havia quantidade e na data da simulação/processamento não tenha nenhuma quantidade.</strong></p>
+<p>Após o fechamento ser processado, ele poderá ser consultado novamente.</p>
+<p>Para isso, basta navegar entre os registros ou clicar em <strong>Procurar</strong> no menu e, em seguida, selecionar um fechamento no campo GGF.</p>
+<p>Ao selecionar, ele será carregado automaticamente.</p>
+<a class="reference internal image-reference" href="../../../_images/411.png"><img alt="../../../_images/411.png" src="../../../_images/411.png" style="width: 737.8px; height: 209.29999999999998px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/421.png"><img alt="../../../_images/421.png" src="../../../_images/421.png" style="width: 585.1999999999999px; height: 392.7px;" /></a>
+<ul class="simple">
+<li><p><strong>Fechamento de Custo antecipado</strong></p></li>
+</ul>
+<p>Será considerado no apontamento do <strong>Produto Acabado</strong> o <strong>custo hora</strong> do <strong>recurso antecipado</strong> (planejado) que será agregado ao custo do <strong>Produto Acabado</strong>, no momento da <strong>entrada do produto acabado</strong> da <strong>Ordem de Produção</strong> e posteriormente, ser considerado no fechamento de custo.</p>
+<ul class="simple">
+<li><p><strong>Produto Acabado</strong></p></li>
+</ul>
+<p>Para composição do <strong>custo antecipado</strong> dos recursos que serão agregados no <strong>produto acabado</strong>, será verificado o <strong>tempo planejado</strong> do grupo de recurso na <strong>Ordem de Produção</strong>, e o parâmetro de <strong>Custo Múltiplos do Recurso</strong> nas <strong>Configurações de produção</strong> na aba <strong>Geral</strong> para recuperar o custo hora que será calculado de acordo com o tempo planejado.</p>
+<p>Pontos a serem considerados:</p>
+<ol class="arabic simple">
+<li><p>Será recuperada a <strong>UNIDADE MEDIDA DE TEMPO</strong> das <strong>Configurações de produção</strong> para validar a quantidade de hora planejada do recurso.</p></li>
+<li><p>O custo antecipado só será calculado para recursos que estiverem nas operações que não forem externas, ou seja, recursos de operações externas serão ignorados no cálculo do custo antecipado.</p></li>
+</ol>
+<p>Para encontrar o custo do <strong>Recurso</strong> que será incluído no <strong>Produto Acabado</strong>, deverá ser realizado o seguinte cálculo:</p>
+<p><strong>Custo dos Recursos por unidade de PA=</strong> (Custo do recurso encontrado * tempo planejado <strong>em horas</strong> / quantidade planejada do produto acabado)</p>
+<p>Esse custo é o que será <strong>agregado ao custo unitário</strong> atual do produto acabado.</p>
+<p>O custo unitário do produto acabado será composto pelo custo do material próprio <strong>(A)</strong> (não pode ser item de terceiro em minha propriedade), somado ao custo do recurso por PA <strong>(B)</strong> (somente operações internas) e ao custo de Terceiro (se aplicável) <strong>(C)</strong>.</p>
+<p><strong>(A)</strong> O Custo do Material próprio será o valor total da saída de materiais próprios dividido pela quantidade do produto acabado.
+<strong>(B)</strong> O Custo do Recurso será o valor do custo hora do cadastro do recurso ou grupo de recurso multiplicado pelo tempo planejado em horas dividido pela quantidade planejada do produto acabado.
+<strong>(C)</strong> O Custo de Terceiro ocorre nos casos de compra de beneficiamento e composto pelo valor da Nota Fiscal de Entrada do serviço de industrialização, gravada no campo da Ordem de Produção <strong>“Rateio de Custo de Terceiro”</strong></p>
+<p>O custo por produto acabado será <strong>(A) + (B) + (C)</strong></p>
+<p>No custo da hora do recurso, caso esteja com valor ZERO, deverá recuperar o Custo hora do Grupo de Recurso. Caso exista mais de um recurso na ordem de Produção e algum não possuir custo hora, esse recurso deverá ser o custo hora do Grupo de recurso.</p>
+<p>Ao adicionar o Produto acabado, será gerado um LCM adicional. Nesse LCM, deverá ser considerada a quantidade <strong>total</strong> apontada na <strong>Entrada de Produto acabado</strong> e multiplicar pelo custo do recurso por unidade de PA.</p>
+<p><strong>Custo do Recurso Total PA=</strong> (Custo do recurso do encontrado * tempo planejado em horas / quantidade planejada do produto acabado) * Quantidade apontada de PA</p>
+<p><strong>Custo do Recurso Total PA=</strong> (50,00 * 2 / 10) * 6</p>
+<p><strong>Custo do Recurso Total PA=</strong> 60,00</p>
+<p><strong>Custo do recurso:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/43.png"><img alt="../../../_images/43.png" src="../../../_images/43.png" style="width: 569.8px; height: 392.0px;" /></a>
+<p><strong>Tempo planejado em horas e quantidade planejada do produto acabado:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/44.png"><img alt="../../../_images/44.png" src="../../../_images/44.png" style="width: 618.0999999999999px; height: 368.9px;" /></a>
+<p><strong>Quantidade apontada de PA:</strong></p>
+<a class="reference internal image-reference" href="../../../_images/45.png"><img alt="../../../_images/45.png" src="../../../_images/45.png" style="width: 474.59999999999997px; height: 378.7px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/46.png"><img alt="../../../_images/46.png" src="../../../_images/46.png" style="width: 934.4999999999999px; height: 326.9px;" /></a>
+<p>Esse LCM será gerado automaticamente com o custo do recurso calculado, de acordo com a quantidade que foi realizada a entrada de Produto Acabado.
+No exemplo, o custo antecipado será <strong>R$60,00</strong> para 06 unidades do Produto Acabado.</p>
+<a class="reference internal image-reference" href="../../../_images/47.png"><img alt="../../../_images/47.png" src="../../../_images/47.png" style="width: 663.5999999999999px; height: 377.29999999999995px;" /></a>
+<p>Serão recuperadas as seguintes contas:</p>
+<p><strong>Débito</strong>: Conta de Material em Processo (Depósito do Produto Acabado que está realizando a entrada).</p>
+<p><strong>Crédito</strong>: Conta GGF antecipado.</p>
+<a class="reference internal image-reference" href="../../../_images/48.png"><img alt="../../../_images/48.png" src="../../../_images/48.png" style="width: 880.5999999999999px; height: 310.79999999999995px;" /></a>
+<ul class="simple">
+<li><p><strong>Fechamento custo contábil</strong></p></li>
+</ul>
+<p>No <strong>Fechamento do Custo Contábil</strong> será recuperado o valor antecipado já inserido no custo do Produto acabado da Ordem de Produção e esses valores serão utilizados para o <strong>fechamento de custo contábil novo.</strong></p>
+<p>Sendo assim, será recuperado o valor total acumulado da <strong>conta de GGF antecipado</strong> do período do GGF e realizado um <strong>LCM</strong> com a conta contábil de alocação temporária, ambas definidas nas <strong>Configurações de Produção</strong> ([<strong>1.12.1</strong>](#_bookmark13)).</p>
+<p><strong>Débito</strong>: Conta GGF antecipado.</p>
+<p><strong>Crédito</strong>: Conta de Alocação Temporária de custos.</p>
+<p>Esse LCM será mostrado na tela de <strong>Fechamento de Custos</strong> na aba <strong>LCM e Reavaliações</strong>.</p>
+<p>A conta parametrizada nas configurações de Produção “Conta de GGF antecipado” só será utilizada para os LCMs desse processo.</p>
+<ul class="simple">
+<li><p><strong>Fechamento 100% Refugo</strong></p></li>
+</ul>
+<p>Quando uma Ordem de produção possui custo pendente para ser alocado e ela for fechada, ao realizar o fechamento de custos e detectar que este custo foi gasto apenas para a geração de refugos, uma vez que não foi realizada nenhuma entrada após a alocação deste custo, neste momento será realizado um Lançamento contábil manual creditando a <strong>Conta de alocação temporária de custos</strong> e debitando a <strong>Conta para apontamentos de refugo</strong>.</p>
+<p>No exemplo abaixo, foi criado um GGF para o mês de Fevereiro/2020 com o recurso <strong>Horas Máquina</strong> e com o valor <strong>R$1.000</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/49.png"><img alt="../../../_images/49.png" src="../../../_images/49.png" style="width: 882.6999999999999px; height: 93.1px;" /></a>
+<p>A <strong>Conta de alocação temporário de custos</strong> é a <strong>1.01.01.01.02</strong> e a <strong>Conta para apontamentos de refugo</strong></p>
+<a class="reference internal image-reference" href="../../../_images/50.png"><img alt="../../../_images/50.png" src="../../../_images/50.png" style="width: 796.5999999999999px; height: 383.59999999999997px;" /></a>
+<p>Ao <strong>simular</strong> o fechamento de custo de <strong>fevereiro/2020</strong>, no caso das OPs 6 e 7, ambas contêm entrada de PA, apontamento de produção e estão fechadas.</p>
+<p>Nesse caso, entrarão no processo normal de fechamento de custo.</p>
+<p>No caso das OPs 8 e 9, as OPs tem apontamento de produção, mas não possuem entrada de PA (ambas estão fechadas), logo, possui um custo pendente a ser rateado que ficará numa conta transitória, e será gerado um LCM repassando o custo pendente para a conta de refugo <strong>1.12.1.14</strong>.</p>
+<p>No caso das OPs 14 e 15, são OPs que possuem apontamento de produção sem data/hora final, não possuem entrada de PA e estão fechadas, não recebendo custo de rateio no fechamento de custo.</p>
+<a class="reference internal image-reference" href="../../../_images/511.png"><img alt="../../../_images/511.png" src="../../../_images/511.png" style="width: 929.5999999999999px; height: 182.7px;" /></a>
+<p>Na aba <strong>LCM e Reavaliações</strong>, os dois últimos LCMs fazem parte do processo, no qual podemos observar que não possuem quantidade (é rateado no cadastro de GGF somente Horas Máquina) mas possuem custo, sendo que a conta <strong>1.01.01.01.02</strong> é uma conta temporária de alocação de recursos e foi criado um LCM para a conta de refugo <strong>1.01.01.02.01</strong>.</p>
+<p>Há duas linhas de LCM de lançamento em conta de refugo devido ao processo agrupar por item, ou seja, o processo agrupa todos os itens de mesmo código e gera um único lançamento contábil manual.</p>
+<a class="reference internal image-reference" href="../../../_images/52.png"><img alt="../../../_images/52.png" src="../../../_images/52.png" style="width: 945.6999999999999px; height: 126.69999999999999px;" /></a>
+<p>Após processar, o <strong>LCM nº 925</strong> foi gerado e o custo pendente na conta temporária de alocação de recursos foi realocado para a conta correta de refugo.</p>
+<a class="reference internal image-reference" href="../../../_images/53.png"><img alt="../../../_images/53.png" src="../../../_images/53.png" style="width: 882.0px; height: 130.9px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/54.png"><img alt="../../../_images/54.png" src="../../../_images/54.png" style="width: 801.5px; height: 355.59999999999997px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../GGF%20Antecipado/GGF%20Antecipado.html" class="btn btn-neutral float-left" title="GGF antecipado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html" class="btn btn-neutral float-right" title="Fechamento de custo em Segundo Plano" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

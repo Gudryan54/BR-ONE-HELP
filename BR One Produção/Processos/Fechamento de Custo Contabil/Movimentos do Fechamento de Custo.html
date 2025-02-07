@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movimentos do Fechamento de Custo &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Memória de Cálculo" href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html" />
+    <link rel="prev" title="Fechamento de custo em Segundo Plano" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20custo%20cont%C3%A1bil.html">Fechamento de custo contábil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html">Fechamento de custo em Segundo Plano</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Movimentos do Fechamento de Custo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html">Memória de Cálculo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20com%20custo%20antecipado.html">Estrutura dos Produtos com custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estrutura%20dos%20Produtos%20sem%20custo%20antecipado.html">Estrutura dos Produtos sem custo antecipado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mem%C3%B3ria%20de%20c%C3%A1lculo%20Subindo%20custos%20de%20Heran%C3%A7a.html">Memória de cálculo: Subindo custos de Herança</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Movimentos do Fechamento de Custo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="movimentos-do-fechamento-de-custo">
+<h1>Movimentos do Fechamento de Custo<a class="headerlink" href="#movimentos-do-fechamento-de-custo" title="Link permanente para este cabeçalho"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para uma melhor visualização das imagens, abra-as em outra guia.</p>
+</div>
+<p>Na aba “LCM e Reavaliações” da  tela de Fechamento de Custo do BR One, é demonstrado os movimentos que ocorreram no período de fechamento, segue abaixo todas as movimentções existentes que podem ocorrer:</p>
+<ol class="arabic simple">
+<li><p>Lançamentos da conta GGF antecipado para conta GGF transferência temporária</p></li>
+<li><p>Lançamentos para a temporária</p></li>
+<li><p>Lançamentos dos produtos desmontados</p></li>
+<li><p>Lançamentos ajuste desmontagem</p></li>
+<li><p>Lançamentos dos produtos consumidos ou vendidos</p></li>
+<li><p>Reavaliações necessárias (custo próprio item)</p></li>
+<li><p>Lançamentos das heranças realizadas</p></li>
+<li><p>Reavaliações necessárias (Herança)</p></li>
+<li><p>Lançamentos das heranças de desmontagens</p></li>
+</ol>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<section id="lancamentos-da-conta-ggf-antecipado-para-conta-ggf-transferencia-temporaria">
+<h2>Lançamentos da conta GGF antecipado para conta GGF transferência temporária<a class="headerlink" href="#lancamentos-da-conta-ggf-antecipado-para-conta-ggf-transferencia-temporaria" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este movimento ocorre quando a configuração <strong>‘Utilizar GGF antecipado’</strong> está selecionada, desta forma sempre que for realizada uma entrada de PA será gerado um lançamento contábil na <strong>‘Conta de GGF antecipado’</strong> e desta forma ao simular o fechamento de custo contábil, o sistema irá somar todos os lançamentos que foram realizados nesta conta dentro do mês do fechamento para ajustar o valor rateado com o valor do que foi antecipado durante as entradas de produto acabado:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta GGF antecipado”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/0112.png"><img alt="../../../_images/0112.png" class="align-center" src="../../../_images/0112.png" style="width: 683.1px; height: 173.70000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/0211.png"><img alt="../../../_images/0211.png" class="align-center" src="../../../_images/0211.png" style="width: 900.0px; height: 118.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamentos-para-a-temporaria">
+<h2>Lançamentos para a temporária<a class="headerlink" href="#lancamentos-para-a-temporaria" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este movimento é o primeiro passo do fechamento de custos que tem como objetivo identificar os valores que foram inseridos na tela de <strong>Cadastro de GGF</strong> e direcionar para uma conta temporária para posteriormente ser distribuídos entre os itens e acordo com suas movimentações no mês. O cadastro do GGF é realizado de acordo com a conta contábil e seu valor para rateio, o exemplo abaixo é cadastrado um total de 6.500 em GGF:</p>
+<a class="reference internal image-reference" href="../../../_images/052.png"><img alt="../../../_images/052.png" class="align-center" src="../../../_images/052.png" style="width: 863.1px; height: 152.1px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>No fechamento de custo esses valores são rateados entre os itens que possuírem ordem de produção de acordo com o tipo de rateio da base, assim são enviados para uma conta temporária na tela de fechamento de custos:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de GGF”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de alocação temporária “</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/063.png"><img alt="../../../_images/063.png" class="align-center" src="../../../_images/063.png" style="width: 815.4px; height: 175.79999999999998px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A definição desta conta de alocação temporária ocorre na tela de <strong>Configurações de produção &gt; aba Custos</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/073.png"><img alt="../../../_images/073.png" class="align-center" src="../../../_images/073.png" style="width: 596.8000000000001px; height: 248.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamento-dos-produtos-desmontados">
+<h2>Lançamento dos produtos desmontados<a class="headerlink" href="#lancamento-dos-produtos-desmontados" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse movimento ocorre sempre que Ordens de produção padrão listado no rateio do GGF tem em suas transações saída de mercadoria do PA que está vinculada a uma OP de desmontagem, ou seja, foi consumido dentro de uma OP de desmontagem. Isso ocorre apenas para cenários onde a empresa produz o mesmo item e consome ele dentro da OP de desmontagem.</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de desmontagem”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/084.png"><img alt="../../../_images/084.png" class="align-center" src="../../../_images/084.png" style="width: 677.4px; height: 198.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p>A conta contábil de desmontagem pode ser localizada em <strong>Configurações de produção &gt; aba O.P</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/093.png"><img alt="../../../_images/093.png" class="align-center" src="../../../_images/093.png" style="width: 599.2px; height: 217.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamentos-ajuste-desmontagem">
+<h2>Lançamentos ajuste desmontagem<a class="headerlink" href="#lancamentos-ajuste-desmontagem" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse movimento ocorre sempre que há Ordem de produção do tipo Desmontagem considerada no rateio do GGF. Assim o valor calculado para essas OPs será somado e gerado um LCM de ajuste para desmontagem.</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de desmontagem”</p></li>
+</ul>
+<p>No print abaixo todas as OPs são de desmontagem. É possível notar que todo valor rateado para as OPs é somado posteriormente e apresentado na linha de ‘Lançamentos ajuste desmontagem’:</p>
+<a class="reference internal image-reference" href="../../../_images/1012.png"><img alt="../../../_images/1012.png" class="align-center" src="../../../_images/1012.png" style="width: 667.8px; height: 127.8px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<a class="reference internal image-reference" href="../../../_images/113.png"><img alt="../../../_images/113.png" class="align-center" src="../../../_images/113.png" style="width: 666.4000000000001px; height: 68.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<blockquote>
+<div><p>A definição desta conta contábil de desmontagem ocorre na tela de <strong>Configurações de produção &gt; aba OP</strong>.</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../../_images/124.png"><img alt="../../../_images/124.png" class="align-center" src="../../../_images/124.png" style="width: 596.8000000000001px; height: 216.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamentos-dos-produtos-consumidos-ou-vendidos">
+<h2>Lançamentos dos produtos consumidos ou vendidos<a class="headerlink" href="#lancamentos-dos-produtos-consumidos-ou-vendidos" title="Link permanente para este cabeçalho"></a></h2>
+<p><strong>Consumidos:</strong></p>
+<p>Esse movimento ocorre sempre que Ordens de produção listado no rateio do GGF tem em suas transações Saídas do PA que estão vinculadas com OP padrão, ou seja, foi consumido a baixa do item do estoque dentro de uma Ordem de produção.</p>
+<p>Dessa maneira o sistema realiza um LCM na conta de WIP (Material em Processo):</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de material em processo”</p></li>
+</ul>
+<p>Lembrando que a conta de material em processo é recuperada do cadastro do item, podendo ser: <strong>Por deposito</strong>, <strong>nível de item</strong>, <strong>grupo de itens</strong>, ou se a empresa usar determinação avançada na <strong>Determinação de conta do razão</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/135.png"><img alt="../../../_images/135.png" class="align-center" src="../../../_images/135.png" style="width: 621.6px; height: 189.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+<p><strong>Vendidos:</strong></p>
+<p>Esse movimento ocorre sempre que Ordens de produção listado no rateio do GGF tem em suas transações Saídas do PA que não estão vinculadas com OP, ou seja, foi dado baixa do item do estoque através de uma venda ou ajuste de inventario.</p>
+<p>Dessa maneira o sistema realiza um LCM na conta de CPV (Custo de produtos vendidos):</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de produto vendido”</p></li>
+</ul>
+<p>Lembrando que a conta de Custo de produtos vendidos é recuperada do cadastro do item, podendo ser: <strong>Por deposito</strong>, <strong>nível de item</strong>, <strong>grupo de itens</strong>, ou se a empresa usar determinação avançada na <strong>Determinação de conta do razão</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/145.png"><img alt="../../../_images/145.png" class="align-center" src="../../../_images/145.png" style="width: 593.4px; height: 84.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="reavaliacoes-necessarias-custo-proprio-item">
+<h2>Reavaliações necessárias (custo próprio item)<a class="headerlink" href="#reavaliacoes-necessarias-custo-proprio-item" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse movimento ocorre sempre que Ordens de produção listadas no rateio do GGF tem quantidade acumulada no último dia do mês e no dia atual do processo, ou seja, foi realizado o fechamento e possuía 30 quantidades acumulado e no dia atual da simulação/processamento existe quantidade acumulada. Dessa maneira o sistema realiza a Reavaliação de estoque na conta de Estoque.</p>
+<p>Na exibição as contas de crédito e débito são a mesmas, pois a reavaliação é feita de acordo com o valor passado, se for positivo o próprio SAP debita em estoque, se for negativo credita em estoque, sempre contra a conta de alocação temporária:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de alocação temporária”</p></li>
+<li><p><strong>Conta de Débito:</strong>  “Conta de alocação temporária”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/153.png"><img alt="../../../_images/153.png" class="align-center" src="../../../_images/153.png" style="width: 695.4px; height: 156.6px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamentos-das-herancas-realizadas">
+<h2>Lançamentos das heranças realizadas<a class="headerlink" href="#lancamentos-das-herancas-realizadas" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este movimento ocorre sempre que houver entradas de PA onde as OPs foram consumidas em outras Ordens de Produção, isso é, item semiacabado. O custo para cada semiacabado precisa ser identificado e agregado ao item pai, isso é chamado de herança pois diz-se que pai “herda” os custos de cada nível da OP.</p>
+<p>Então o processo do fechamento ocorre da seguinte forma: O sistema calcula e agrega os custos desde o nível mais baixo da OP agregando na conta WIP (Material em processo), estes custos devem ser agregados ao primeiro nível, que é o item pai.</p>
+<p>Após distribuir os custos dos Semiacabados e agregados a conta WIP, é identificado o PA pai daquele item e realiza a distribuição ao custo do PA, no caso se identificar que o PA teve saída, é gerado esses lançamentos na conta de produtos vendidos:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de material em processo”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de produto vendido”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/163.png"><img alt="../../../_images/163.png" class="align-center" src="../../../_images/163.png" style="width: 642.0px; height: 166.2px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="reavaliacoes-necessarias-heranca">
+<h2>Reavaliações necessárias (Herança)<a class="headerlink" href="#reavaliacoes-necessarias-heranca" title="Link permanente para este cabeçalho"></a></h2>
+<p>Este movimento ocorre sempre que houver entradas de PA onde as OPs foram consumidas em outras Ordens de Produção, isso é, item semiacabado. O custo para cada semiacabado precisa ser identificado e agregado ao item pai, isso é chamado de herança pois diz-se que pai “herda” os custos de cada nível da OP.</p>
+<p>Então o processo do fechamento ocorre da seguinte forma: O sistema calcula e agrega os custos desde o nível mais baixo da OP agregando na conta WIP (Material em processo), estes custos devem ser agregados ao primeiro nível, que é o item pai.</p>
+<p>Após distribuir os custos dos Semiacabados e agregados a conta WIP, é identificado o PA pai daquele item e realiza a distribuição ao custo do PA, no caso se identificar que o PA possui quantidade em estoque é gerado uma reavaliação de estoque.</p>
+<p>Na exibição as contas de crédito e débito são a mesmas, pois a reavaliação é feita de acordo com o valor passado, nesse caso o valor é positivo o próprio SAP debita em estoque:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de material em processo”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de material em processo”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/173.png"><img alt="../../../_images/173.png" class="align-center" src="../../../_images/173.png" style="width: 782.4000000000001px; height: 157.60000000000002px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+<section id="lancamentos-das-herancas-de-desmontagens">
+<h2>Lançamentos das heranças de desmontagens<a class="headerlink" href="#lancamentos-das-herancas-de-desmontagens" title="Link permanente para este cabeçalho"></a></h2>
+<p>Esse movimento ocorre sempre que nas ordens de produção identificadas para o rateio possuir itens que são semiacabados em OPs de desmontagem e que houveram entrada de componentes:</p>
+<ul class="simple">
+<li><p><strong>Conta de Crédito:</strong> “Conta de material em processo”</p></li>
+<li><p><strong>Conta de Débito:</strong> “Conta de desmontagem”</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/183.png"><img alt="../../../_images/183.png" class="align-center" src="../../../_images/183.png" style="width: 640.8px; height: 165.0px;" /></a>
+<div class="line-block">
+<div class="line"></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Fechamento%20de%20Custo%20em%20Segundo%20Plano.html" class="btn btn-neutral float-left" title="Fechamento de custo em Segundo Plano" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Mem%C3%B3ria%20de%20C%C3%A1lculo.html" class="btn btn-neutral float-right" title="Memória de Cálculo" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

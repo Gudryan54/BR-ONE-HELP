@@ -1,0 +1,41 @@
+Versão 4.11.326
+~~~~~~~~~~~~~~~~
+
+**Melhorias** 
+
+- **Campo depósito origem diferentes para cada linha do componente**
+
+Com a mais recente atualização do **BR One 326**, foram implementadas melhorias nas telas **BR One :: Pedido de Transf. de estoque** e **BR
+One :: Transferência de Estoque**, acessíveis pelo botão direito na OP.
+Agora, ambas as telas possuem o campo **Depósito Origem** para cada linha de componente. Dessa forma, o usuário pode selecionar um depósito
+diferente para cada componente ao realizar o **pedido de transferência** ou a **transferência**.
+
+-  **Pedido de transferência de estoque**
+
+.. image :: /_static/Releases\ Notes/Produção/V326/img10871-01.png
+
+-  **Transferência de estoque**
+
+.. image :: /_static/Releases\ Notes/Produção/V326/img10871-02.png
+
+Correções
+
+- **Lentidão na seleção de lotes na saída de insumos**
+
+Realizado ajuste para otimizar o tempo de seleção dos lotes na saída de insumos.
+
+- **Erro ao adicionar uma NF**
+
+Realizado ajuste para evitar que ao adicionar uma NF ocorra uma inconsistência.
+
+- **MRP considerando data de entrega acima do pedido de venda**
+
+Realizado ajuste na consulta para considerar a data de entrega do pedido de venda.
+
+- **SAP fechando ao duplicar um roteiro**
+
+Realizado ajuste para evitar que o SAP feche ao duplicar um roteiro.
+
+- **Recomendações do MRP com erro**
+
+Realizado ajuste geral nas recomendações do MRP.

@@ -1,0 +1,33 @@
+Versão 4.11.332
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Melhoria**
+   
+- **Tratativa para a busca pelo pagador padrão da tela “Despesas de Importação”**
+
+Na atualização mais recente do **BR One 332**, foi ajustado para que o **“Pagador padrão”** das **“Despesas de importação”**, 
+seja recuperado como padrão da tela **“Despesas de importação”** e será editável caso o usuário queira alterar.
+
+
+.. note::
+
+   **Correções**
+
+- **Erro nos valores das despesas adicionais nos LCM de ajuste e consequentemente no fechamento numerário**
+
+Realizado ajuste nos valores do LCM de despesas de nacionalização, que agora recupera e rateia de forma assertiva aos valores das despesas adicionais. 
+
+- **Erro ao atualizar um esboço de NF e entrada por fora do processo de importação**
+
+Realizado ajuste, onde não estava sendo possível atualizar o esboço de NF de entrada (Nacionalização). 
+
+- **Erro ao gerar LCM de ajuste**
+
+Realizado ajuste, onde não estava sendo possível realizar as Despesas de importação, retornado o seguinte erro: *“BR One :: Erro ao gerar LCM de ajuste, por favor gerar manualmente. 
+Retorno: Erro ao inserir o lançamento contábil manual. Retorno: (-5011)  [JDT1.Account][line: 1] , 'Código inválido da conta'.”*
+
+**Comportamento errado nas despesas e no LCM de ajuste da Nacionalização**
+
+Realizado ajuste nos arredondamentos dos rateios das despesas adicionais da Nacionalização.

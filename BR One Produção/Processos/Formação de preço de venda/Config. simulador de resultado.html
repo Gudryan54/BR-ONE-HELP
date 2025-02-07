@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Config. simulador de resultado &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Formação de Preço de Vendas" href="Forma%C3%A7%C3%A3o%20de%20Pre%C3%A7o%20de%20Vendas.html" />
+    <link rel="prev" title="Autorização" href="Autoriza%C3%A7%C3%A3o.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Autoriza%C3%A7%C3%A3o.html">Autorização</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Config. simulador de resultado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Forma%C3%A7%C3%A3o%20de%20Pre%C3%A7o%20de%20Vendas.html">Formação de Preço de Vendas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20NF%20Entrada.html">Copiar de - NF Entrada</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Lista%20de%20pre%C3%A7os.html">Copiar de - Lista de preços</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Processo%20de%20importa%C3%A7%C3%A3o.html">Copiar de - Processo de importação</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Copiar%20de%20-%20Roteiro%20de%20produ%C3%A7%C3%A3o.html">Copiar de - Roteiro de produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Arredondamento.html">Arredondamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Calcular.html">Operações - Calcular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Detalhes%20itens.html">Operações - Detalhes itens</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Opera%C3%A7%C3%B5es%20-%20Gravar%20lista.html">Operações - Gravar lista</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Detalhamento%20dos%20campos.html">Detalhamento dos campos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Corrigir%20valores%20nulos%20e%20n%C3%A3o%20calculados.html">Corrigir valores nulos e não calculados</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Config. simulador de resultado</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="config-simulador-de-resultado">
+<h1>Config. simulador de resultado<a class="headerlink" href="#config-simulador-de-resultado" title="Link permanente para este cabeçalho"></a></h1>
+<p>Para acessar a <em>Config. simulador de resultado</em> é necessário ir  no menu:</p>
+<p><strong>Administração -&gt; Configuração -&gt; Estoque -&gt; Config. simulador de resultado</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img1.JPG"><img alt="../../../_images/img1.JPG" src="../../../_images/img1.JPG" style="width: 276.0px; height: 324.0px;" /></a>
+<p>A tela é aberta no modo de Procurar, para adicionar deve ativar o botão Adicionar ou Ctrl+A, a tela ficará no modo de adição:</p>
+<a class="reference internal image-reference" href="../../../_images/img2.JPG"><img alt="../../../_images/img2.JPG" src="../../../_images/img2.JPG" style="width: 275.2px; height: 322.40000000000003px;" /></a>
+<p>Devem ser configurados os valores dos Impostos, Markup e escolhido um tipo de cálculo: <strong>Margem</strong> ou <strong>Markup</strong>, que serão utilizados na tela <strong>Formação de preços de vendas.</strong></p>
+<p>A tela é de cadastro, ou seja, permite criar diversos padrões que poderão ser carregados na tela de formação de preço de venda.</p>
+<p>Se for escolhido o tipo <strong>Margem</strong>, os cálculos na tela <strong>Detalhes itens (Operações &gt; Detalhes itens)</strong> serão baseados no valor da coluna <strong>R$ Sugerido</strong> e quando o tipo for <strong>Markup</strong>, serão baseados no valor da coluna <strong>Custo total</strong>.</p>
+<p>No tipo <strong>Margem</strong>, a soma dos campos não poderá ser igual ou ultrapassar o 100%.</p>
+<p>Caso seja, a seguinte mensagem será exibida:</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.005.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.005.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.005.jpeg" style="width: 397.6px; height: 16.0px;" /></a>
+<p><em>BR One :: O total não pode ser maior ou igual a 100% para este tipo de cálculo (Margem). Total = 100%</em></p>
+<p>O campo <strong>Descrição</strong> não poderá ser igual à descrição de um registro cadastrado.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.006.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.006.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.006.jpeg" style="width: 289.6px; height: 14.4px;" /></a>
+<p><em>BR One :: Já existe um cadastro com a mesma descrição inserida no banco.</em></p>
+<p>Se a Flag <strong>Considerar rentabilidade do roteiro</strong> estiver <strong>marcado</strong>, ao selecionar o padrão de markup na tela <strong>Formação de preço de venda</strong>, esse flag virá marcado e o campo <strong>Rentabilidade</strong> ficará bloqueado e com o valor <strong>0</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.007.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.007.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.007.jpeg" style="width: 511.20000000000005px; height: 323.20000000000005px;" /></a>
+<ul class="simple">
+<li><p>Flag <strong>Considerar rentabilidade do roteiro</strong></p></li>
+</ul>
+<p>Se estiver <strong>desmarcado</strong>  e o <strong>Tipo de Cálculo</strong> for <strong>Margem (Fator divisor)</strong></p>
+<p>A fórmula para calcular a coluna <em>R$ Sugerido</em> é: Base De Cálculo / (1 – (Soma Alíquotas / 100))</p>
+<p><strong>Exemplo:</strong> O item <strong>FF00111BB</strong> tem custo de <strong>R$</strong> <strong>14,82</strong>, e o total das alíquotas é <strong>28,05</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.008.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.008.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.008.jpeg" style="width: 420.0px; height: 348.0px;" /></a>
+<p>Ao clicar em <em>Calcular</em>, será feita a seguinte conta para o item:</p>
+<p>Base de cálculo / (1 – (Soma Alíquotas / 100))</p>
+<p>14,82  / (1 – (28,05/100)) = <strong>20,60</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.010.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.010.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.010.jpeg" style="width: 514.4px; height: 85.60000000000001px;" /></a>
+<p>Se estiver <strong>desmarcado</strong> e o <strong>Tipo de Cálculo</strong> for <strong>Mark-up (Fator multiplicador)</strong></p>
+<p>A fórmula para calcular a coluna <em>R$ Sugerido</em> é: Base de cálculo + (Base de cálculo x (Soma Alíquotas / 100)).</p>
+<p>Utilizando o exemplo acima com os mesmos itens e custo totais, ao clicar em <em>Calcular</em>, será feita a seguinte conta para o item:</p>
+<p>Base de cálculo + (Base de cálculo x (Soma Alíquotas / 100))</p>
+<p>14,82 + (14,82 x (28,05 / 100)) = <strong>18,98</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.011.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.011.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.011.jpeg" style="width: 513.6px; height: 77.60000000000001px;" /></a>
+<p>Se estiver <strong>marcado</strong>  e o <strong>Tipo de Cálculo</strong> for <strong>Margem (Fator divisor)</strong></p>
+<p>Se marcado, ele passa a considerar a rentabilidade do Roteiro de produção.</p>
+<p>A fórmula para calcular a coluna <em>R$ Sugerido</em> é: Base De Cálculo / (1 – (Soma Alíquotas / 100))</p>
+<p><strong>Exemplo:</strong> O item <strong>FF00111BB</strong> tem custo de <strong>R$</strong> <strong>16,74</strong>, e o total das alíquotas é <strong>28,05</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.013.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.013.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.013.jpeg" style="width: 390.40000000000003px; height: 322.40000000000003px;" /></a>
+<p>Ao clicar em <em>Calcular</em>, será feita a seguinte conta para o item:</p>
+<p>Base de cálculo / (1 – (Soma Alíquotas / 100))</p>
+<p>16,74  / (1 – (28,05/100)) = <strong>23,27</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.015.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.015.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.015.jpeg" style="width: 509.6px; height: 65.60000000000001px;" /></a>
+<p>Se estiver <strong>marcado</strong> e o <strong>Tipo de Cálculo</strong> for <strong>Mark-up (Fator multiplicador)</strong></p>
+<p>A fórmula para calcular a coluna <em>R$ Sugerido</em> é: Base de cálculo + (Base de cálculo x (Soma Alíquotas / 100)).</p>
+<p>Utilizando o exemplo acima com os mesmos itens e custo totais, ao clicar em <em>Calcular</em>, será feita a seguinte conta para o item:</p>
+<p>Base de cálculo + (Base de cálculo x (Soma Alíquotas / 100))</p>
+<p>16,74 + (16,74 x (28,05** / 100)) = <strong>21,44</strong></p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.016.jpeg"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.016.jpeg" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.016.jpeg" style="width: 504.0px; height: 64.0px;" /></a>
+<p><strong>Campo Rentabilidade</strong></p>
+<p>Se o usuário marcar a opção “Considerar rentabilidade do roteiro”, o Add-on bloqueia o campo rentabilidade no quadro “Markup</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.017.png"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.017.png" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.017.png" style="width: 280.8px; height: 142.4px;" /></a>
+<p><strong>Calcular I.R. e C.S.L.L</strong></p>
+<p>No campo “Calcular I.R e C.S.L.L”, será definido o tipo de cálculo para as opções de “I.R.” e “C.S.L.L”, na tela “Formação de preço de venda”, aba “Fatores”.</p>
+<a class="reference internal image-reference" href="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.012.png"><img alt="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.012.png" src="../../../_images/Aspose.Words.2faae23a-b3e8-4b3e-832f-b2ae73293b58.012.png" style="width: 280.8px; height: 327.20000000000005px;" /></a>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Autoriza%C3%A7%C3%A3o.html" class="btn btn-neutral float-left" title="Autorização" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Forma%C3%A7%C3%A3o%20de%20Pre%C3%A7o%20de%20Vendas.html" class="btn btn-neutral float-right" title="Formação de Preço de Vendas" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

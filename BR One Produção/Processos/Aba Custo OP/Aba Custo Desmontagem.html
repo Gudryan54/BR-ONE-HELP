@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ordem de Produção - Desmontagem &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Ordem de Produção - Beneficiamento de compra" href="Aba%20Custo%20Beneficiamento%20de%20compra.html" />
+    <link rel="prev" title="Ordem de Produção - Retrabalho" href="Aba%20Custo%20retrabalho.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Aba%20Custo%20Padr%C3%A3o.html">Ordem de Produção - Padrão</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aba%20Custo%20retrabalho.html">Ordem de Produção - Retrabalho</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Aba%20Custo%20Beneficiamento%20de%20compra.html">Ordem de Produção - Beneficiamento de compra</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Ordem de Produção - Desmontagem</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ordem-de-producao-desmontagem">
+<h1>Ordem de Produção - Desmontagem<a class="headerlink" href="#ordem-de-producao-desmontagem" title="Link permanente para este cabeçalho"></a></h1>
+<p>Detalhamento dos campos e cálculos utilizados na aba custo da Ordem de Produção Desmontagem.</p>
+<p>Para exemplificar o processo de produção, vamos utilizar uma Ordem de Produção (OP) com uma quantidade planejada de 5 unidades.</p>
+<p>Seu roteiro é composto por 2 componentes, sendo que a quantidade base de cada um deles é de 1 unidade e quantidade fixa é 0. E também composto por um recurso de mão de obra, sendo o tempo variável 5minutos e tempo fixo 2minutos.</p>
+<p>Para encontrar <strong>quantidade planejada</strong> de cada item:</p>
+<p><strong>Quantidade planejada</strong> = Quantidade base * quantidade planejada do cabeçalho da OP + quantidade fixo</p>
+<p>Para encontrar o <strong>tempo planejado</strong> de cada recurso:</p>
+<p><strong>Tempo planejado</strong> = Tempo variável * quantidade planejada do cabeçalho da OP + tempo fixo</p>
+<p><strong>Custos dos componentes utilizados:</strong></p>
+<ul class="simple">
+<li><p>Item I009 – R$ 2,50</p></li>
+<li><p>Item I010 – R$ 3,00</p></li>
+</ul>
+<p>Nesse cenário também iremos utilizar o custo do recurso através do GGF antecipado.</p>
+<p><strong>Custo hora dos recursos:</strong></p>
+<ul class="simple">
+<li><p>MAO01 - R$15,00</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/img0112.png"><img alt="../../../_images/img0112.png" src="../../../_images/img0112.png" style="width: 1093.0px; height: 546.0px;" /></a>
+<p>Iremos passar pelos campos da aba Custo</p>
+<p><strong>1. Custo não alocado</strong></p>
+<p>São listados os valores de custo alocado no fechamento de custo, caso a OP não tenha entrada de PA no mês do apontamento de horas.</p>
+<p><strong>2. Custo componentes</strong></p>
+<p>Na tela <strong>“BR One :: Detalhe custo de componentes” […]</strong>, são listados todos os documentos gerados como:</p>
+<ul class="simple">
+<li><p>Entrada de componentes;</p></li>
+</ul>
+<p>O sistema recupera o custo unitário de cada componente que será realizado o documento e multiplica pela quantidade, gerando assim o custo total.</p>
+<p>Na Entrada de componentes realizada para o <strong>item I009</strong> de 4 unidades com o custo unitário de R$ 2,50, resultando em um custo total de <strong>R$ 10,00</strong>. Já o <strong>item</strong> <strong>I010</strong> de 4 unidades com o custo unitário de R$ 3,00, totalizando um custo de <strong>R$ 12,00</strong>.</p>
+<img alt="../../../_images/img029.png" src="../../../_images/img029.png" />
+<p>Dessa forma, o custo dos componentes é a soma da coluna de custo total dos detalhes, sendo <strong>R$ 22,00</strong>.</p>
+<img alt="../../../_images/img0310.png" src="../../../_images/img0310.png" />
+<p><strong>3. Custo atual do PA</strong></p>
+<p>Na tela <strong>“BR One :: Detalhe custo atual do PA”</strong>, são listados todos os documentos gerados como:</p>
+<ul class="simple">
+<li><p>Saída de mercadoria (PA)</p></li>
+<li><p>LCM</p></li>
+</ul>
+<p><strong>Para encontrar o custo do Recurso por PA:</strong></p>
+<p><em>(Custo do recurso encontrado * tempo planejado em horas/quantidade planejada do produto acabado)</em></p>
+<p><em>(15 *</em> 0,45 <em>/5) =</em> <strong>1,35</strong></p>
+<p>O custo do recurso é de <strong>R$ 15,00/hora</strong>, o [tempo planejado](#tempoplanejado) transformado em horas é de 0,45 (ou seja, 27 minutos), a quantidade planejada do produto acabado é 5.</p>
+<p>O sistema recupera o custo unitário do PA que será realizado o documento e multiplica pela quantidade, gerando assim o custo total.</p>
+<p>Realizada saída de mercadoria (PA) do PA de 4 unidades com o custo unitário de R$ 5,50, resultando em um custo total de <strong>R$ 22,00.</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img048.png"><img alt="../../../_images/img048.png" src="../../../_images/img048.png" style="width: 964.0px; height: 132.0px;" /></a>
+<p>Para criação do LCM de GGF antecipado é recuperado o GGF antecipado por PA e multiplicado pela quantidade apontada. No caso 1,35 * 4 = <strong>R$ 5,40</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img058.png"><img alt="../../../_images/img058.png" src="../../../_images/img058.png" style="width: 964.0px; height: 130.0px;" /></a>
+<p>Nesse cenário também houve <strong>Apontamento de refugo</strong> na saída de produto acabado na quantidade de 1 PA.</p>
+<a class="reference internal image-reference" href="../../../_images/img068.png"><img alt="../../../_images/img068.png" src="../../../_images/img068.png" style="width: 963.0px; height: 135.0px;" /></a>
+<p>Veremos que o custo antecipado estará vinculado a uma LCM, que somará o total da <strong>“Saída de mercadoria”</strong>.</p>
+<a class="reference internal image-reference" href="../../../_images/img077.png"><img alt="../../../_images/img077.png" src="../../../_images/img077.png" style="width: 977.0px; height: 364.0px;" /></a>
+<p><strong>4. Rateios de custo de terceiros</strong></p>
+<p>Exibe os documentos que deram origem ao valor do rateio de custos de terceiros.</p>
+<p><strong>5. Custo atual do SUB</strong></p>
+<p>Na tela <strong>“BR One :: Detalhe custo atual do subproduto”</strong>, são listados todos os documentos gerados como:</p>
+<ul class="simple">
+<li><p>Entrada de Subproduto</p></li>
+<li><p>Estorno Entrada Subproduto</p></li>
+</ul>
+<p><strong>6. Custo por produto</strong></p>
+<p>Na OP de desmontagem esse campo fica com o valor <strong>0,00</strong> . O cálculo desse campo não se aplica para OP de desmontagem.</p>
+<p><strong>7. Desvio total</strong></p>
+<p>O desvio total da OP de desmontagem, possui um cálculo diferente da OP padrão, devido à finalidade de cada uma, a OP de desmontagem nos entrega componentes enquanto a OP padrão entrega um produto acabado. Segue abaixo fórmula e cálculo para exemplificação.</p>
+<p><em>Custo componentes – (Custo atual do PA + Rateio de custos de terceiros)</em></p>
+<p>-Custo componentes: R$ 22,00
+-Custo atual do PA: R$ 32,90</p>
+<p>-Rateio de custos de terceiros: R$0,00</p>
+<p><strong>Desvio total</strong> = R$ 22,00 – (R$ 32,90 + R$ 00,00)</p>
+<p><strong>Desvio total</strong> = R$ - 10,90</p>
+<a class="reference internal image-reference" href="../../../_images/img086.png"><img alt="../../../_images/img086.png" src="../../../_images/img086.png" style="width: 386.0px; height: 170.0px;" /></a>
+<p><strong>8. Desvio por produto</strong></p>
+<p>Na OP de desmontagem esse campo fica com o valor <strong>0,00</strong> . O cálculo desse campo não se aplica para OP de desmontagem.</p>
+<p><strong>9. Variação %</strong></p>
+<p>Na OP de desmontagem esse campo fica com o valor <strong>0,00</strong> . O cálculo desse campo não se aplica para OP de desmontagem.</p>
+<p><strong>10. Ignorar no fechamento de custos</strong></p>
+<p>As OPs que estiverem com essa opção marcada, não serão consideradas no cálculo do fechamento de custo mensal, para realização do rateio dos gastos gerais de fabricação cadastrados.</p>
+<p><strong>11. Quantidade concluída</strong></p>
+<p>Soma das quantidades que foram realizados os apontamentos na Saída de PA.</p>
+<a class="reference internal image-reference" href="../../../_images/img096.png"><img alt="../../../_images/img096.png" src="../../../_images/img096.png" style="width: 306.0px; height: 15.0px;" /></a>
+<p><strong>12. Quantidade refugo</strong></p>
+<p>Quantidade refugada em uma Saída de PA. Os componentes que tiverem o depósito <strong>Item de terceiros em minha propriedade serão desconsiderados.</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img105.png"><img alt="../../../_images/img105.png" src="../../../_images/img105.png" style="width: 305.0px; height: 15.0px;" /></a>
+<p><strong>13. % refugo</strong></p>
+<p>Para encontrar o % refugo é realizado o cálculo:</p>
+<p><em>(Quantidade de refugo / (Quantidade de refugo + Quantidade PA)) * 100</em></p>
+<ul class="simple">
+<li><p>Quantidade de refugo: 1</p></li>
+<li><p>Quantidade PA: 4</p></li>
+</ul>
+<p><strong>% refugo</strong> = (1 / (1 + 4)) * 100</p>
+<p><strong>% refugo</strong> = 20</p>
+<a class="reference internal image-reference" href="../../../_images/img116.png"><img alt="../../../_images/img116.png" src="../../../_images/img116.png" style="width: 308.0px; height: 16.0px;" /></a>
+<p><strong>14. Data fechamento</strong></p>
+<p>É informado a data que a OP foi fechada</p>
+<a class="reference internal image-reference" href="../../../_images/img125.png"><img alt="../../../_images/img125.png" src="../../../_images/img125.png" style="width: 307.0px; height: 16.0px;" /></a>
+<p><strong>15. Atraso (dias)</strong></p>
+<p>É informado a quantidade de dias de atraso da OP <strong>(Data fechamento – Data vencimento)</strong></p>
+<p><strong>16. Observações do diário</strong></p>
+<p>Nas observações do diário são listados todos os lançamentos de ajustes realizados no fechamento da Ordem de Produção.
+De acordo com o valor do desvio é realizado a validação das movimentações do item e os ajustes são inseridos.</p>
+<p><strong>Exemplos:</strong></p>
+<p><strong>1. Desvio positivo</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img135.png"><img alt="../../../_images/img135.png" src="../../../_images/img135.png" style="width: 821.0px; height: 98.0px;" /></a>
+<ul class="simple">
+<li><p><strong>LCM</strong></p></li>
+</ul>
+<p><strong>Crédito:</strong> Conta de desmontagem (configurações de produção na aba OP)</p>
+<p><strong>Débito:</strong>  Conta de Material em Processo (WIP)</p>
+<p><strong>Valor</strong> = Desvio Total</p>
+<p><strong>Valor</strong> = 11,10</p>
+<p><strong>2. Desvio negativo</strong></p>
+<a class="reference internal image-reference" href="../../../_images/img146.png"><img alt="../../../_images/img146.png" src="../../../_images/img146.png" style="width: 822.0px; height: 101.0px;" /></a>
+<ul class="simple">
+<li><p><strong>LCM</strong></p></li>
+</ul>
+<p><strong>Crédito:</strong> Conta de material em processo (WIP)</p>
+<p><strong>Débito:</strong>  Conta de desmontagem (configurações de produção na aba OP)</p>
+<p><strong>Valor</strong> = Desvio Total * (-1)</p>
+<p><strong>Valor</strong> = - 10,90 * (-1)</p>
+<p><strong>Valor</strong> = 10,90</p>
+<p><strong>OBS.:</strong> <em>Informações como *</em>‘Custo por produto’<strong>, **‘desvio por produto’</strong>, <strong>‘variação % da OP de desmontagem’</strong> não são relevantes para a OP de desmontagem, portanto, não são calculadas pelo sistema.*</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Aba%20Custo%20retrabalho.html" class="btn btn-neutral float-left" title="Ordem de Produção - Retrabalho" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Aba%20Custo%20Beneficiamento%20de%20compra.html" class="btn btn-neutral float-right" title="Ordem de Produção - Beneficiamento de compra" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+Versão 4.11.332
+~~~~~~~~~~~~~~~
+
+.. note::
+
+   **Melhoria**
+
+- **Cadastro de unidade de medidas** 
+
+Na atualização mais recente do **BR One versão 332**, foi implementada uma melhoria no cadastro de unidades de medida no módulo de
+**Qualidade**. Anteriormente, havia uma inconsistência que permitia a atualização do código já cadastrado. Além disso, ao adicionar um novo
+cadastro com um código existente, o cadastro anterior era sobrescrito.
+
+Com a nova tratativa, o campo **“Código”** estará bloqueado para edição após o cadastro inicial, e não será permitido adicionar novos registros
+com código e descrição duplicados.

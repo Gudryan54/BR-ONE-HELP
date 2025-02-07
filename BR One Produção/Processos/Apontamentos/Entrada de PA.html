@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrada de Produto Acabado &mdash; documentação Uppertools 0.1</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/uppertools.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../search.html" />
+    <link rel="next" title="Saída de Insumos" href="Sa%C3%ADda%20de%20Insumos.html" />
+    <link rel="prev" title="Ordem de Produção - Beneficiamento de compra" href="../Aba%20Custo%20OP/Aba%20Custo%20Beneficiamento%20de%20compra.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Uppertools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One.html">BR One</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../Escopo.html">Escopo BR One Produção</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#cadastros">Cadastros</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#processos">Processos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao">Ordem de Produção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#multidimensoes">Multidimensões</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-compras">Beneficiamento de Compras</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#beneficiamento-de-vendas">Beneficiamento de Vendas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-retrabalho">Ordem de Produção Retrabalho</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-producao-desmontagem">Ordem de Produção - Desmontagem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#aba-custo-da-op">Aba Custo da OP</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#apontamentos">Apontamentos</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Entrada de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20Insumos.html">Saída de Insumos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Produ%C3%A7%C3%A3o.html">Apontamento de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Estorno%20de%20Apontamento.html">Estornos de Produção</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Apontamento%20de%20Refugo.html">Apontamento de Refugo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sele%C3%A7%C3%A3o%20de%20Lote%20Autom%C3%A1tica%20por%20Data%20de%20Vencimento.html">Seleção de lote automática por data de vencimento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Sa%C3%ADda%20de%20PA.html">Saída de Produto Acabado</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Entrada%20de%20Componentes.html">Entrada de Componentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Altera%C3%A7%C3%A3o%20status%20recurso.html">Alteração status recurso</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Terminal%20de%20apontamento.html">Terminal de Apontamento</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parada%20de%20m%C3%BAltiplos%20recursos.html">Parada de múltiplos recursos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Monitor%20de%20recursos.html">Monitor de recursos</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#sub-produto">Sub-Produto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ggf-antecipado">GGF Antecipado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#fechamento-de-custo-contabil">Fechamento de Custo Contábil</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#make-to-order">Make to Order</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#manutencao">Manutenção</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#simulador-de-custo">Simulador de Custo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#transferencia-entre-filiais">Transferência entre filiais</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#deposito-fechado">Depósito Fechado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#item-ficticio">Item Ficticio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#mrp-sql">MRP - SQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#ordem-de-manutencao-metrologia">Ordem de Manutenção/Metrologia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#formacao-de-preco-de-venda">Formação de preço de venda</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#layout-crystal">Layout - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios">Relatórios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#relatorios-crystal">Relatórios - Crystal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#suporte-desk">Suporte Desk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html#autorizacao">Autorização</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade.html">BR One Qualidade</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Qualidade%20com%20Produ%C3%A7%C3%A3o%20SAP.html">BR One Qualidade com Produção SAP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Importa%C3%A7%C3%A3o.html">BR One Importação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20WMS.html">BR One WMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20Franquias.html">BR One Franquias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../BR%20One%20API.html">BR One API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Releases%20Notes.html">Releases Notes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Uppertools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../BR%20One%20Produ%C3%A7%C3%A3o.html">BR One Produção</a></li>
+      <li class="breadcrumb-item active">Entrada de Produto Acabado</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="entrada-de-produto-acabado">
+<h1>Entrada de Produto Acabado<a class="headerlink" href="#entrada-de-produto-acabado" title="Link permanente para este cabeçalho"></a></h1>
+<p>Nesta tela é possível realizar a entrada de produtos acabados.</p>
+<p>Para acessar essa tela pode utilizar as opções:</p>
+<ul class="simple">
+<li><p>Através do menu <strong>Produção -&gt; Entrada de produto acabado</strong>;</p></li>
+<li><p>Através do Terminal de Apontamentos;</p></li>
+<li><p>Através do botão direito na Ordem de Produção liberada.</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.002.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.002.png" />
+<p>Para realizar a entrada de produto acabado, basta informar os campos <strong>“Nº da ordem de produção”</strong>, o <strong>“Depósito”</strong> e a <strong>“Quantidade”</strong>.</p>
+<p>O CFL (Choose From List) do campo <strong>“Nº ordem produção”</strong> será carregado da seguinte forma:</p>
+<ul class="simple">
+<li><p>Quando o campo estiver vazio, apenas aparecerão as 100 primeiras OPs para seleção.</p></li>
+<li><p>Quando o campo estiver com (*), aparecerão todas as OPs disponíveis para entrada de PA.</p></li>
+<li><p>Quando houver algum filtro, aparecerão todas as OPs de acordo com o filtro informado.</p></li>
+</ul>
+<p><strong>OBS.:</strong> Ordens de produção que possuem a flag <strong>“Ignorar no fechamento de custos”</strong> marcada não serão carregadas no CFL. (Fechamento de custo contábil (xxx)).</p>
+<p>Caso o usuário tente adicionar uma entrada sem informar o número da OP, a seguinte mensagem será exibida ao usuário:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.003.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.003.png" />
+<p><em>BR One :: Informe uma ordem de produção.</em></p>
+<p>Para o campo <strong>“Depósito”</strong>, caso a base seja multifilias, só poderão ser selecionados depósitos que pertençam à mesma filial do depósito informado na ordem de produção.</p>
+<p>Caso o parâmetro <strong>“Bloquear alteração do campo depósito”</strong> esteja desmarcado, e o usuário tente adicionar uma entrada sem informar o depósito, a seguinte mensagem será exibida ao usuário:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.004.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.004.png" />
+<p><em>BR One :: Informe um depósito.</em></p>
+<p>Caso o usuário tente adicionar uma entrada sem informar uma quantidade, a seguinte mensagem será exibida ao usuário:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.005.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.005.png" />
+<p><em>BR One :: Informe uma quantidade maior que zero.</em></p>
+<p>Caso o usuário tente adicionar uma entrada de uma ordem de produção que não possua componentes, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.006.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.006.png" />
+<p><em>BR One :: Não é possível realizar uma Entrada de PA para uma OP sem componentes.</em></p>
+<p>Caso o usuário tente adicionar uma entrada sem data, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.007.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.007.png" />
+<p><em>BR One :: Informe uma data do documento.</em></p>
+<p>Caso o usuário tente adicionar uma entrada e as contas contábeis <strong>“Conta de material em processo”</strong> e/ou <strong>“Conta GGF arbitrado”</strong> estiverem com a flag <strong>“Bloquear lançamento manual”</strong> marcada, a seguinte mensagem será exibida:</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.008.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.008.png" />
+<p><em>BR One :: Para realização deste processo, o parâmetro “Bloquear lançamento manual” deve estar desmarcado na conta “x”</em></p>
+<p>Essa situação pode ser revertida, marcando a flag <strong>“Permitir a entrada de PA sem componentes ativos (custo zero)”</strong> (<strong>xxx</strong>).</p>
+<p>Ao realizar uma entrada de produto acabado, é feita uma entrada de mercadoria com o item produzido pela ordem de produção, porém, o caminho realizado pelo addon, varia conforme o tipo de ordem de produção.</p>
+<p>-<strong>Entrada de PA para uma OP Padrão</strong></p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.010.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.010.png" />
+<p>Na ordem de produção padrão, ao adicionar entrada de PA, é realizada:</p>
+<ul class="simple">
+<li><p>Saída de insumos para os componentes que estejam configurados como baixa por explosão;</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" />
+<ul class="simple">
+<li><p>Entrada de mercadoria para o PA;</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.012.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.012.png" />
+<ul class="simple">
+<li><p>LCM do GGF arbitrado (se configurado);</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" />
+<ul class="simple">
+<li><p>Ficha de analise do PA (se configurado).</p></li>
+</ul>
+<p>-<strong>Entrada de PA para uma OP de Retrabalho</strong></p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.014.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.014.png" />
+<p>Na ordem de produção de retrabalho, deve-se levar em consideração o tipo de administração do PA, se o mesmo for administrado por nenhum, ao adicionar a entrada de PA, é realizada:</p>
+<ul class="simple">
+<li><p>Saída de insumos para os componentes que estejam configurados como baixa por explosão;</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" />
+<ul class="simple">
+<li><p>Reavaliação de estoque para o PA;</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.016.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.016.png" />
+<ul class="simple">
+<li><p>LCM do GGF arbitrado (se configurado);</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" />
+<ul class="simple">
+<li><p>Transferência de estoque: Transfere o item do depósito de retrabalho para o depósito desejado da filial no qual o usuário está logado.</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.015.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.015.png" />
+<ul class="simple">
+<li><p>Ficha de analise do PA (se configurado).</p></li>
+</ul>
+<p>Quando o PA é administrado por <strong>lote/série</strong>, e não é realizado a troca de número de lote/série, o processo de entrada é igual ao demonstrado para PA administrado por nenhum, mas se realizar o troca do número do lote ou série, ao adicionar a entrada de PA, é realizada:</p>
+<ul class="simple">
+<li><p>Saída de insumos para os componentes que estejam configurados como baixa por explosão;</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.011.png" />
+<ul class="simple">
+<li><p>Saída de mercadorias (PA): Baixa do mesmo do depósito de retrabalho</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.018.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.018.png" />
+<ul class="simple">
+<li><p>Entrada de mercadoria (PA): Faz a entrada do <strong>“novo”</strong> lote do PA no depósito de retrabalho</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.019.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.019.png" />
+<ul class="simple">
+<li><p>LCM do GGF arbitrado (se configurado);</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.013.png" />
+<ul class="simple">
+<li><p>Transferência de estoque: Transfere o item do depósito de retrabalho para o depósito desejado da filial no qual o usuário está logado, deve ser escolhido o número de lote/série informado na entrada de mercadoria.</p></li>
+</ul>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.015.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.015.png" />
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.017.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.017.png" />
+<p><em>BR One :: O(s) lote(s) selecionado(s) precisa(m) ser o(s) mesmo(s) criado(s) na entrada de mercadoria [“x” (x)].</em></p>
+<ul class="simple">
+<li><p>Ficha de analise do PA (se configurado).</p></li>
+</ul>
+<p><strong>Entrada de PA para uma OP de Beneficiamento de Compra</strong></p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.020.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.020.png" />
+<p>Na ordem de produção de beneficiamento de compra, ao adicionar entrada de PA, é realizada:</p>
+<ul class="simple">
+<li><p>Saída de insumos para os componentes que estejam configurados como baixa por explosão;</p></li>
+</ul>
+<img alt="../../../_images/image_2023_07_27T17_22_13_628Z.png" src="../../../_images/image_2023_07_27T17_22_13_628Z.png" />
+<ul class="simple">
+<li><p>Entrada de mercadoria para o PA: No depósito de terceiro;</p></li>
+</ul>
+<img alt="../../../_images/entradabene.JPG" src="../../../_images/entradabene.JPG" />
+<ul class="simple">
+<li><p>Transferência de estoque: Transfere o PA do depósito de terceiro para o depósito padrão do item ou qualquer outro depósito da filial no qual o usuário esteja logado;</p></li>
+</ul>
+<img alt="../../../_images/image_2023_07_27T17_23_38_017Z.png" src="../../../_images/image_2023_07_27T17_23_38_017Z.png" />
+<ul class="simple">
+<li><p>Ficha de analise do PA (se configurado).</p></li>
+</ul>
+<p>A transferência de estoque pode ser realizada por DI, dependendo da configuração de beneficiamento, caso contrário a mesma é adicionada manualmente após a adição da entrada de mercadoria.</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.021.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.021.png" />
+<p>Para o documento de transferência do estoque é necessário salientar que a mesma é gerada conforme a configuração da tela de configurações de documento, se estiver configurado para gerar pedido de transferência de estoque, este será gerado após a adição da entrada de mercadoria, obrigando neste caso que o usuário realize a adição manual da transferência de estoque.</p>
+<img alt="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.022.png" src="../../../_images/Aspose.Words.7153a72b-6582-4c20-bda9-6c733d4a6e6c.022.png" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="../Aba%20Custo%20OP/Aba%20Custo%20Beneficiamento%20de%20compra.html" class="btn btn-neutral float-left" title="Ordem de Produção - Beneficiamento de compra" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Sa%C3%ADda%20de%20Insumos.html" class="btn btn-neutral float-right" title="Saída de Insumos" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Uppertools.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
